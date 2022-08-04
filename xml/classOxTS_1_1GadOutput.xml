@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOxTS_1_1GadOutput" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OxTS::GadOutput</compoundname>
+    <derivedcompoundref refid="classOxTS_1_1GadOutputFile" prot="public" virt="non-virtual">OxTS::GadOutputFile</derivedcompoundref>
+    <derivedcompoundref refid="classOxTS_1_1GadOutputUdp" prot="public" virt="non-virtual">OxTS::GadOutputUdp</derivedcompoundref>
+    <includes local="no">gad_output.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1GadOutput_1aca9dc9de11cc81a5235a85cd67ad58c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OxTS::GadOutput::OutputPacket</definition>
+        <argsstring>(unsigned char *packet, int packet_size)=0</argsstring>
+        <name>OutputPacket</name>
+        <reimplementedby refid="classOxTS_1_1GadOutputFile_1a4c566732943c37ec2deb99270f105775">OutputPacket</reimplementedby>
+        <reimplementedby refid="classOxTS_1_1GadOutputUdp_1a21ef727bc123a5900610fb1cf9b00dd1">OutputPacket</reimplementedby>
+        <param>
+          <type>unsigned char *</type>
+          <declname>packet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>packet_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output a GAD packet </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output.hpp" line="17" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Virtual interface class for different methods of outputting GAD. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OxTS::GadOutputFile</label>
+        <link refid="classOxTS_1_1GadOutputFile"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>OxTS::GadOutput</label>
+        <link refid="classOxTS_1_1GadOutput"/>
+      </node>
+      <node id="3">
+        <label>OxTS::GadOutputUdp</label>
+        <link refid="classOxTS_1_1GadOutputUdp"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output.hpp" line="10" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output.hpp" bodystart="9" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1GadOutput_1aca9dc9de11cc81a5235a85cd67ad58c6" prot="public" virt="pure-virtual"><scope>OxTS::GadOutput</scope><name>OutputPacket</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timestamping Data &mdash; OxTS C++ Generic Aiding SDK  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Data Rates" href="data-rates.html" />
+    <link rel="prev" title="Estimating errors" href="estimating-errors.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> OxTS C++ Generic Aiding SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction to Generic Aiding</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-requirements.html">Generic Aiding Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="estimating-errors.html">Estimating errors</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Timestamping Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#void">Void</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#latency">Latency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pps-relative">PPS Relative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gps-time">GPS time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#external-in-development">External (in development)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-rates.html">Data Rates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Aiding types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-position-updates.html">Position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-velocity-updates.html">Velocity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-attitude-updates.html">Attitude</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-heading-updates.html">Heading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-speed-updates.html">Speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example-my-first-gad.html">My First GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-static-aiding.html">Static Aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-static-aiding-no-boost.html">Static Aiding (No Boost)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-zv-wheelspeed.html">Zero Velocity Wheelspeed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-heading.html">Heading Update Example</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="defining-a-local-reference-frame.html">User-defined Local Frame (beta)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gad-files.html">.gad files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reassigning-traditional-sources.html">Reassigning Traditional Data Sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stream-priority.html">Stream Priority</a></li>
+<li class="toctree-l1"><a class="reference internal" href="position-only-initialisation.html">Position Only Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-options.html">All Configuration options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is-my-data-being-received.html">Is my data being received?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gal-cpp/index.html">C++</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OxTS C++ Generic Aiding SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Timestamping Data</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/longform/timestamps.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="timestamping-data">
+<span id="timestamps"></span><h1>Timestamping Data<a class="headerlink" href="#timestamping-data" title="Permalink to this heading"></a></h1>
+<p>When sending aiding data to an OxTS, a decision must be made about how this
+data is timestamped.</p>
+<p>Some methods of timestamping are more complex than others, requiring
+synchronisation of devices. These methods are often more accurate and robust.</p>
+<section id="void">
+<h2>Void<a class="headerlink" href="#void" title="Permalink to this heading"></a></h2>
+<p>Void timestamps are the simplest to set up for users, since there is no need to
+calculate any time or synchronise time between devices. When data is sent with
+a Void timestamp, the INS will apply a timestamp upon receipt of the data.</p>
+<p>For this setup to work optimally, there must be a negligible transport latency
+between the aiding device and the INS.</p>
+</section>
+<section id="latency">
+<h2>Latency<a class="headerlink" href="#latency" title="Permalink to this heading"></a></h2>
+<p>This is not a full timestamp, but rather an estimate of the latency on the
+transport between the aiding device and the INS. The INS then applies a
+timestamp to the data upon receipt, accounting for the latency.</p>
+</section>
+<section id="pps-relative">
+<h2>PPS Relative<a class="headerlink" href="#pps-relative" title="Permalink to this heading"></a></h2>
+<p>This is a timestamp relative to a PPS signal. The main thing to consider when
+using this timestamp type are where the PPS is coming from for the external
+system.</p>
+<ul class="simple">
+<li><p>In the case that the INS and the aiding source both have access to PPS from
+GPS, PPS relative timestamps can be used easily.</p></li>
+<li><p>If the aiding source does not have access to PPS from GPS, it must receive a
+PPS from somewhere else. OxTS devices can be configured to output a PPS.</p></li>
+</ul>
+</section>
+<section id="gps-time">
+<h2>GPS time<a class="headerlink" href="#gps-time" title="Permalink to this heading"></a></h2>
+<p>This is a full timestamp containing GPS week and Seconds from midnight Sunday.
+Obtaining this time from a GNSS receiver is the natural setup because it
+ensures synchronisation between the INS and aiding device, but it is not the
+only way to synchronise devices.</p>
+<p>Not having access to time from a GNSS receiver does not preclude users the use
+of this timestamp type. The key factor is being able to synchronise the clocks
+betwen the INS and the aiding device. OxTS devices offer a number of options
+for clock synchronisation:</p>
+<ul class="simple">
+<li><p>Precision Time Protocol (PTP)</p></li>
+<li><p>Network Time Protocol (NTP)</p></li>
+<li><p>PPS output from the INS</p></li>
+</ul>
+</section>
+<section id="external-in-development">
+<h2>External (in development)<a class="headerlink" href="#external-in-development" title="Permalink to this heading"></a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul class="simple">
+<li><p>This timestamp type is still in development and is therefore not fully
+supported or recommended for use. It is not guaranteed that this feature
+will make it to a full release.</p></li>
+<li><p>Synchronsing the INS <em>output</em> time to the externa time currently causes GPS
+data to be rejected, and can only be consequently used for indoor
+applications.</p></li>
+<li><p>Known bug: The external time must be greater than the internal INS time
+(counts up from 0 at power on) in order to synchronise output times.</p></li>
+</ul>
+</div>
+<p>The external timestamp allows users to stamp data with time from an external
+clock. The INS will then attempt to track the offset between its own internal
+time and the time of the external clock. If the offset is stable, the data will
+be used.</p>
+<p>The following advanced commands are are relevant for this aiding type:</p>
+<dl class="simple">
+<dt>-gad_time_sync_id[x]</dt><dd><p>[x] = The Generic Aiding stream ID which will be considered the external
+time leader. Currently only one lead stream is available.</p>
+</dd>
+<dt>-gad_time_min_stable_pkts[x]</dt><dd><p>[x] = Minimum number of packets from the lead stream with a stable time offset
+before external time is considered synchronised. (Default: 5)</p>
+</dd>
+<dt>-gad_time_min_stable_secs[x.xx]</dt><dd><p>[x.xx] = Minimum number of seconds from the lead stream with a stable time offset
+before external time is considered synchronised. (Default: 5.0)</p>
+</dd>
+</dl>
+<dl class="option-list">
+<dt><kbd><span class="option">-g<var>ad_time_out</var></span></kbd></dt>
+<dd><p>This configures the INS to use the external clock time for output data. This
+is not required for basic use of the synchronisation.</p>
+</dd>
+<dt><kbd><span class="option">-t<var>ime_sync_int</var></span></kbd></dt>
+<dd><p>Configures the INS to synchronise to its own internal PPS. This is required
+in order to allow output time synchronisation.</p>
+</dd>
+</dl>
+<p>The time can be set in the <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">Gad</span><span class="w"></span></code> class by the function
+<code class="code highlight cpp docutils literal highlight-cpp"><span class="n">SetTimeExternal</span><span class="p">(</span><span class="n">week</span><span class="p">,</span><span class="w"> </span><span class="n">secs</span><span class="p">)</span><span class="w"></span></code>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="estimating-errors.html" class="btn btn-neutral float-left" title="Estimating errors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="data-rates.html" class="btn btn-neutral float-right" title="Data Rates" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+<map id="OxTS::Gad" name="OxTS::Gad">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,96,133"/>
+<area shape="rect" id="node2" href="$classOxTS_1_1GadAttitude.html" title=" " alt="" coords="145,5,287,32"/>
+<area shape="rect" id="node3" href="$classOxTS_1_1GadHeading.html" title=" " alt="" coords="144,56,288,83"/>
+<area shape="rect" id="node4" href="$classOxTS_1_1GadPosition.html" title=" " alt="" coords="145,107,287,133"/>
+<area shape="rect" id="node5" href="$classOxTS_1_1GadSpeed.html" title=" " alt="" coords="151,157,281,184"/>
+<area shape="rect" id="node6" href="$classOxTS_1_1GadVelocity.html" title=" " alt="" coords="145,208,287,235"/>
+</map>

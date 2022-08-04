@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOxTS_1_1GadOutputUdp" kind="class" language="C++" prot="public">
+    <compoundname>OxTS::GadOutputUdp</compoundname>
+    <basecompoundref refid="classOxTS_1_1GadOutput" prot="public" virt="non-virtual">OxTS::GadOutput</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOxTS_1_1GadOutputUdp_1ae4ac378b0d06ec00a3c168f07e0fc781" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classnetworking__udp_1_1server" kindref="compound">networking_udp::server</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;networking_udp::server&gt; OxTS::GadOutputUdp::udpServer_</definition>
+        <argsstring></argsstring>
+        <name>udpServer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Server to receive the GAD. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" line="21" column="17" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1GadOutputUdp_1a2e0ec4ecb53649a7324ad467c45eb0ce" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OxTS::GadOutputUdp::unitGaPort</definition>
+        <argsstring></argsstring>
+        <name>unitGaPort</name>
+        <initializer>= GAD_PORT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port on the INS to recieve GAD. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" line="23" column="5" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1GadOutputUdp_1a994758d5a5122a88d78b746a52e1196a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::GadOutputUdp::GadOutputUdp</definition>
+        <argsstring>(std::string ip)</argsstring>
+        <name>GadOutputUdp</name>
+        <param>
+          <type>std::string</type>
+          <declname>ip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" line="26" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadOutputUdp_1a21ef727bc123a5900610fb1cf9b00dd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void OxTS::GadOutputUdp::OutputPacket</definition>
+        <argsstring>(unsigned char *packet, int packet_size) override</argsstring>
+        <name>OutputPacket</name>
+        <reimplements refid="classOxTS_1_1GadOutput_1aca9dc9de11cc81a5235a85cd67ad58c6">OutputPacket</reimplements>
+        <param>
+          <type>unsigned char *</type>
+          <declname>packet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>packet_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send the packet over UDP to the configured endpoint. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>packet</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encoded data to be sent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>packet_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the packet in bytes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" line="35" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OxTS::GadOutput</label>
+        <link refid="classOxTS_1_1GadOutput"/>
+      </node>
+      <node id="1">
+        <label>OxTS::GadOutputUdp</label>
+        <link refid="classOxTS_1_1GadOutputUdp"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OxTS::GadOutput</label>
+        <link refid="classOxTS_1_1GadOutput"/>
+      </node>
+      <node id="1">
+        <label>OxTS::GadOutputUdp</label>
+        <link refid="classOxTS_1_1GadOutputUdp"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" line="17" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" bodystart="16" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1GadOutputUdp_1a994758d5a5122a88d78b746a52e1196a" prot="public" virt="non-virtual"><scope>OxTS::GadOutputUdp</scope><name>GadOutputUdp</name></member>
+      <member refid="classOxTS_1_1GadOutputUdp_1a21ef727bc123a5900610fb1cf9b00dd1" prot="public" virt="virtual"><scope>OxTS::GadOutputUdp</scope><name>OutputPacket</name></member>
+      <member refid="classOxTS_1_1GadOutputUdp_1ae4ac378b0d06ec00a3c168f07e0fc781" prot="private" virt="non-virtual"><scope>OxTS::GadOutputUdp</scope><name>udpServer_</name></member>
+      <member refid="classOxTS_1_1GadOutputUdp_1a2e0ec4ecb53649a7324ad467c45eb0ce" prot="private" virt="non-virtual"><scope>OxTS::GadOutputUdp</scope><name>unitGaPort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

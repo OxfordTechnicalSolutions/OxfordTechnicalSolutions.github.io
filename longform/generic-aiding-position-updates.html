@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Position &mdash; OxTS C++ Generic Aiding SDK  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Velocity" href="generic-aiding-velocity-updates.html" />
+    <link rel="prev" title="Data Rates" href="data-rates.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> OxTS C++ Generic Aiding SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction to Generic Aiding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-requirements.html">Generic Aiding Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="estimating-errors.html">Estimating errors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timestamps.html">Timestamping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-rates.html">Data Rates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Aiding types</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Position</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#aiding-frames">Aiding Frames</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#latitude-longitude-altitude">Latitude, Longitude, Altitude</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user-defined-local-frame">User-defined Local Frame</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#covariance-matrix">Covariance matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lever-arm">Lever Arm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#config">Config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#optimising">Optimising</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-velocity-updates.html">Velocity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-attitude-updates.html">Attitude</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-heading-updates.html">Heading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-speed-updates.html">Speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example-my-first-gad.html">My First GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-static-aiding.html">Static Aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-static-aiding-no-boost.html">Static Aiding (No Boost)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-zv-wheelspeed.html">Zero Velocity Wheelspeed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-heading.html">Heading Update Example</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="defining-a-local-reference-frame.html">User-defined Local Frame (beta)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gad-files.html">.gad files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reassigning-traditional-sources.html">Reassigning Traditional Data Sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stream-priority.html">Stream Priority</a></li>
+<li class="toctree-l1"><a class="reference internal" href="position-only-initialisation.html">Position Only Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-options.html">All Configuration options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is-my-data-being-received.html">Is my data being received?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gal-cpp/index.html">C++</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OxTS C++ Generic Aiding SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Position</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/longform/generic-aiding-position-updates.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="position">
+<span id="gadpositionpage"></span><h1>Position<a class="headerlink" href="#position" title="Permalink to this heading"></a></h1>
+<p>The GA interface allows users to send a number of measurement updates to an
+OxTS Inertial Navigation System (INS) from external devices / sensors,
+including position estimates. Position aiding can currently be accepted in a
+few different coordinate frames, explained in detail below. Each of the fields
+for this data type can be set using functions from the
+<a class="reference internal" href="../gal-cpp/gal-cpp_gad.html#gadpositionclass"><span class="std std-ref">GadPosition</span></a> class.</p>
+<section id="aiding-frames">
+<span id="positionaidingframes"></span><h2>Aiding Frames<a class="headerlink" href="#aiding-frames" title="Permalink to this heading"></a></h2>
+<p>Position aiding can be provided to the INS in more than one coordinate frame,
+based on the needs of the user.</p>
+<section id="latitude-longitude-altitude">
+<span id="positionaidingframeslla"></span><h3>Latitude, Longitude, Altitude<a class="headerlink" href="#latitude-longitude-altitude" title="Permalink to this heading"></a></h3>
+<p>For this coordinate frame, data is expected in the WGS84 global coordinate
+frame.</p>
+</section>
+<section id="user-defined-local-frame">
+<span id="positionaidingframeslocal"></span><h3>User-defined Local Frame<a class="headerlink" href="#user-defined-local-frame" title="Permalink to this heading"></a></h3>
+<p>Position aiding is one of the aiding types which supports a user-defined local
+frame. More information on how to define the frame itself can be found here:
+<a class="reference internal" href="defining-a-local-reference-frame.html#definingalocalreferenceframe"><span class="std std-ref">User-defined Local Frame (beta)</span></a>.</p>
+<p>Position measurements in this frame are expected in metres.</p>
+</section>
+</section>
+<section id="covariance-matrix">
+<span id="positioncovariancematrix"></span><h2>Covariance matrix<a class="headerlink" href="#covariance-matrix" title="Permalink to this heading"></a></h2>
+<p>All aiding provided to the INS must come with a covariance matrix. This is
+necessary to give the Kalman Filter some indication of confidence in the data
+being provided, which it can then use to inform its decision to use /
+reject the data. More information on covariance matrices can be found at
+<a class="reference internal" href="estimating-errors.html#estimatingerrors"><span class="std std-ref">Estimating errors</span></a></p>
+<p>For position aiding, the values in covariance matrices are  expected with units
+<span class="math notranslate nohighlight">\(m^2\)</span> . For example, a covariance matrix where position in all axes is
+found to be (or assumed to be) independent might look like this:</p>
+<div class="math notranslate nohighlight" id="id1">
+\[\begin{split}\begin{bmatrix}
+0.01 &amp; 0.0  &amp; 0.0  \\
+0.0  &amp; 0.01 &amp; 0.0  \\
+0.0  &amp; 0.0  &amp; 0.01 \\
+\end{bmatrix}\end{split}\]</div>
+<p>This matrix shows that</p>
+<div class="math notranslate nohighlight">
+\[\sigma_x \sigma_x = \sigma_y \sigma_y = \sigma_z \sigma_z = 0.01 m^2\]</div>
+</section>
+<section id="lever-arm">
+<span id="positionlva"></span><h2>Lever Arm<a class="headerlink" href="#lever-arm" title="Permalink to this heading"></a></h2>
+<p>Position measurements must be provided with a lever arm <span class="math notranslate nohighlight">\((x,y,z)\)</span> which
+defines the translation from the IMU to the aiding sensor, in the IMU frame.</p>
+<section id="fixed">
+<span id="positionlvafixed"></span><h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this heading"></a></h3>
+<p>A fixed lever-arm is the simplest to set up, since it requires no external
+configuration. It is set within the Generic Aiding packet itself, using the
+function: …</p>
+</section>
+<section id="config">
+<span id="positionlvaconfig"></span><h3>Config<a class="headerlink" href="#config" title="Permalink to this heading"></a></h3>
+<p>A Config lever-arm is functionally equivalent to a Fixed lever-arm. The
+difference is that the lever-arm is set in the configuration of the INS instead
+of within the data packet itself.</p>
+</section>
+<section id="optimising">
+<span id="positionlvaoptimising"></span><h3>Optimising<a class="headerlink" href="#optimising" title="Permalink to this heading"></a></h3>
+<p>An Optimising lever-arm differs slightly from the other two types of lever-arm.</p>
+<ul class="simple">
+<li><p>The lever-arm will be taken from the .gap file on the INS (accuracy set in
+.gpa file). This can be set using NAVconfig in the Primary GNSS Antenna
+configuration.</p></li>
+<li><p>The lever-arm will be optimised by the Kalman Filter during operation,
+increasing its accuracy and therefore improving the quality of data provided
+to the system.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If an optimising lever-arm is used for a Generic Aiding source alongside a
+GNSS Antenna, it will create a conflict in the optimisation of the
+lever-arm. This can be avoided by reassigning the dual antenna lever-arm.
+See <a class="reference internal" href="reassigning-traditional-sources.html#reassigningtraditionaldatasources"><span class="std std-ref">Reassigning Traditional Data Sources</span></a> for more details.</p>
+</div>
+</section>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading"></a></h2>
+<p>[1]: <a class="reference external" href="https://en.wikipedia.org/wiki/Euler_angles">https://en.wikipedia.org/wiki/Euler_angles</a> “Information on Tait-Bryan angles”</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="data-rates.html" class="btn btn-neutral float-left" title="Data Rates" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="generic-aiding-velocity-updates.html" class="btn btn-neutral float-right" title="Velocity" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

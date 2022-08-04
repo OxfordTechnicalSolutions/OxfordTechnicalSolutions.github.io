@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOxTS_1_1GadHeading" kind="class" language="C++" prot="public">
+    <compoundname>OxTS::GadHeading</compoundname>
+    <basecompoundref refid="classOxTS_1_1Gad" prot="public" virt="non-virtual">OxTS::Gad</basecompoundref>
+    <includes local="no">gad.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1GadHeading_1a0c60773dcf61bb50e5e7d0fd0d88c0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::GadHeading::GadHeading</definition>
+        <argsstring>()</argsstring>
+        <name>GadHeading</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="650" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadHeading_1aeee66d210de7f64537df225b30ac1f8f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::GadHeading::GadHeading</definition>
+        <argsstring>(uint8_t stream_id)</argsstring>
+        <name>GadHeading</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>stream_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream ID for the attitude aiding source. Must be unique 128-254. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="654" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadHeading_1afb9b0cab7082f21f3b5fb7c1cf94f778" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::GadHeading::GetHeading</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeading</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="655" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadHeading_1aae1c62598c6282423d5492ce9c439d79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadHeading::SetHeading</definition>
+        <argsstring>(double heading)</argsstring>
+        <name>SetHeading</name>
+        <param>
+          <type>double</type>
+          <declname>heading</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the aiding heading measurement relative to the NED coordinate frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>heading</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(deg) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="661" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadHeading_1af90cdd6e741e1fb2cb3d3e45238815d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadHeading::SetHeadingLocal</definition>
+        <argsstring>(double heading)</argsstring>
+        <name>SetHeadingLocal</name>
+        <param>
+          <type>double</type>
+          <declname>heading</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the aiding heading measurement relative to the local coordinate frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>heading</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(deg) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="667" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadHeading_1a4a562050a6f59ca6b61f7bb6be1e2e78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadHeading::SetHeadingVar</definition>
+        <argsstring>(double v_h)</argsstring>
+        <name>SetHeadingVar</name>
+        <param>
+          <type>double</type>
+          <declname>v_h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the estimated variance on the aiding attitude measurement. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v_h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance estimate on the heading angle (deg)^2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="672" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadHeading_1aee93f154eab765085b03d5ff3be0c572" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::GadHeading::GetHeadingVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeadingVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="673" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadHeading_1a396b1dfcc5507097e8c9c2fa48df69e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadHeading::SetAidingAlignmentFixed</definition>
+        <argsstring>(double h, double p, double r)</argsstring>
+        <name>SetAidingAlignmentFixed</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the angles which specify the rotation required to align the IMU and aiding sensor frames. This alignment will not be optimised by the INS. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="681" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadHeading_1a06c9bc85db9d33c2e994f51fe2fb0fdd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::GadHeading::GetAidingAlignment</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAidingAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="682" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadHeading_1a3c2d31a3641ee36acf9c7af403f494f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadHeading::SetAidingAlignmentVar</definition>
+        <argsstring>(double h_v, double p_v, double r_v)</argsstring>
+        <name>SetAidingAlignmentVar</name>
+        <param>
+          <type>double</type>
+          <declname>h_v</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p_v</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>r_v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the estimated variance (error) on the alignment angles between the IMU and aiding sensor frames. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h_r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="690" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadHeading_1a54ddd009f8360a7ef8d258565095a7a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::GadHeading::GetAidingAlignmentVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAidingAlignmentVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="691" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Generic Aiding Heading. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OxTS::Gad</label>
+        <link refid="classOxTS_1_1Gad"/>
+      </node>
+      <node id="1">
+        <label>OxTS::GadHeading</label>
+        <link refid="classOxTS_1_1GadHeading"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OxTS::Gad</label>
+        <link refid="classOxTS_1_1Gad"/>
+      </node>
+      <node id="1">
+        <label>OxTS::GadHeading</label>
+        <link refid="classOxTS_1_1GadHeading"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="645" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="644" bodyend="692"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1Gad_1ae04da920e53256cab9c8f50a481c0f7e" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gad_1a77e6c8ec040c686ed9ab1864ac2b7ffd" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gad_1a969b016fca0ce657a2bb93796d975e93" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gad_1a4052e78602b043d98509da287a5e7543" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1GadHeading_1a0c60773dcf61bb50e5e7d0fd0d88c0f5" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GadHeading</name></member>
+      <member refid="classOxTS_1_1GadHeading_1aeee66d210de7f64537df225b30ac1f8f" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GadHeading</name></member>
+      <member refid="classOxTS_1_1Gad_1a2daad69a2de924b99a85e6ddf2ff9f11" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetAcqTimestamp</name></member>
+      <member refid="classOxTS_1_1Gad_1a7dc941a58fa0deb65abfa11c4bd58388" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetAcqValid</name></member>
+      <member refid="classOxTS_1_1GadHeading_1a06c9bc85db9d33c2e994f51fe2fb0fdd" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetAidingAlignment</name></member>
+      <member refid="classOxTS_1_1GadHeading_1a54ddd009f8360a7ef8d258565095a7a9" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetAidingAlignmentVar</name></member>
+      <member refid="classOxTS_1_1Gad_1a21a2849a36b1fd9b890bfdf2e055ec75" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>getCStruct</name></member>
+      <member refid="classOxTS_1_1Gad_1aa155d8cf748db123067da35a166ccbc1" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetDataType</name></member>
+      <member refid="classOxTS_1_1Gad_1a6be76196851638b4a25a32f33adb2afb" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetDataVal</name></member>
+      <member refid="classOxTS_1_1Gad_1ac2a6aa7b10ca294fe551c5eeff994434" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetDataVar</name></member>
+      <member refid="classOxTS_1_1GadHeading_1afb9b0cab7082f21f3b5fb7c1cf94f778" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetHeading</name></member>
+      <member refid="classOxTS_1_1GadHeading_1aee93f154eab765085b03d5ff3be0c572" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetHeadingVar</name></member>
+      <member refid="classOxTS_1_1Gad_1ac48d72ec6fb261e807a8da10708cf6e1" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetLocVal</name></member>
+      <member refid="classOxTS_1_1Gad_1a458cee20cd5c84c0888e9d114b5af278" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetLocValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a9f5e02e8d67aada5b7b8f9d941d626e2" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetLocVar</name></member>
+      <member refid="classOxTS_1_1Gad_1ac8ea696fb18c8d6220845faf1f969a9b" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetRes1Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1a3d3d3ccaa97d29fbfb64ca47215fd65d" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetRes2Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1ad6305b40f883de529a6aca9d3daff6e9" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetStreamId</name></member>
+      <member refid="classOxTS_1_1Gad_1a161be15173647a21ca43586f99447140" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gad_1a9381c69d74cafcccd16128917c57eab3" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetTimeExternalSecondsFromSunday</name></member>
+      <member refid="classOxTS_1_1Gad_1a950676d9ad2f578fbb6a7223d164db06" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetTimeExternalWeek</name></member>
+      <member refid="classOxTS_1_1Gad_1a21bf8a036eea13b7068b6ecefdd0fda0" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gad_1addda792b16bfcc2e938fda1390a1e751" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetTimeGpsSecondsFromSunday</name></member>
+      <member refid="classOxTS_1_1Gad_1af7e0e978c1aa32da6e77e8b28a12b33d" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetTimeGpsWeek</name></member>
+      <member refid="classOxTS_1_1Gad_1a405bc80b437e006589046bb44492af9f" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetTimeLatency</name></member>
+      <member refid="classOxTS_1_1Gad_1aa067198ed52f9881a74babe138f1b661" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gad_1af15d8cf52fdbffbc7a5ac22ca4e2b10c" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetTimeTAI</name></member>
+      <member refid="classOxTS_1_1Gad_1a482aaa4cf80bdf0eeaf1119417eca30d" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetTimeUTCUnix</name></member>
+      <member refid="classOxTS_1_1Gad_1aef7f27be7bb2c298403856d08e2bd982" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetTimeValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a28c6225bd6fc3504f5fc131f3326a6db" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>GetValValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a8137c74cd008022a2bef1b727697028d" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>operator=</name></member>
+      <member refid="classOxTS_1_1Gad_1aae55058389fd09f1e129195c220d64e8" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>operator=</name></member>
+      <member refid="classOxTS_1_1Gad_1af228853babc9b5cdc17c0cb88929a6c1" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetAcqTimestamp</name></member>
+      <member refid="classOxTS_1_1Gad_1a24de1d28039293e5d8c885608d8215dc" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetAcqValid</name></member>
+      <member refid="classOxTS_1_1GadHeading_1a396b1dfcc5507097e8c9c2fa48df69e6" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetAidingAlignmentFixed</name></member>
+      <member refid="classOxTS_1_1GadHeading_1a3c2d31a3641ee36acf9c7af403f494f6" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetAidingAlignmentVar</name></member>
+      <member refid="classOxTS_1_1Gad_1ade1f0c7339c6addb1aed62a73d9bfbeb" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetDataMode</name></member>
+      <member refid="classOxTS_1_1Gad_1a720bf083cfa6cf7f16bf12bbb0c2342f" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetDataType</name></member>
+      <member refid="classOxTS_1_1Gad_1ab97337e53aa1b422cb3a388a1a8774f1" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetDataVal</name></member>
+      <member refid="classOxTS_1_1Gad_1a7b94bfae5de1d3d496bc5234ff743177" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetDataValType</name></member>
+      <member refid="classOxTS_1_1Gad_1a3119ca81f3ff6d544be9ba67b686251b" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetDataVarDiag</name></member>
+      <member refid="classOxTS_1_1Gad_1a667094907538463da73b8d5b6bc4c265" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetDataVarSingle</name></member>
+      <member refid="classOxTS_1_1Gad_1a4a6bb42c89d112eacf14b4820954348a" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetDataVarUpperDiag</name></member>
+      <member refid="classOxTS_1_1GadHeading_1aae1c62598c6282423d5492ce9c439d79" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetHeading</name></member>
+      <member refid="classOxTS_1_1GadHeading_1af90cdd6e741e1fb2cb3d3e45238815d0" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetHeadingLocal</name></member>
+      <member refid="classOxTS_1_1GadHeading_1a4a562050a6f59ca6b61f7bb6be1e2e78" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetHeadingVar</name></member>
+      <member refid="classOxTS_1_1Gad_1ae34bb965c8924b9ef37eaf126c93e2fc" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetLocMode</name></member>
+      <member refid="classOxTS_1_1Gad_1ab32f7ab3b5514e9c694410a1bcb5a6a0" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetLocVal</name></member>
+      <member refid="classOxTS_1_1Gad_1a1bf9638d8edfbaf761de380ddf397095" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetLocValid</name></member>
+      <member refid="classOxTS_1_1Gad_1af4d796aa19e610aa46ebfe74d876b695" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetLocValType</name></member>
+      <member refid="classOxTS_1_1Gad_1a269bc1e8960adbf2b2de60d8454c3711" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetLocVarDiag</name></member>
+      <member refid="classOxTS_1_1Gad_1a7041a19c19c5c9dc9e3f0eafce8b6c81" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetLocVarSingle</name></member>
+      <member refid="classOxTS_1_1Gad_1af75e1d96f6777bb7b3f47bdffa49f869" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetLocVarUpperDiag</name></member>
+      <member refid="classOxTS_1_1Gad_1a1e834ee11a6cb90d92532c18b71dc4ae" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetRes1Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1af5a0f13f808a5e14661eb7916a71e563" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetRes2Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1a46f934b125ce7379918a8872e4bbe2a3" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetStreamId</name></member>
+      <member refid="classOxTS_1_1Gad_1af3b0e2d4aea781bcdd8221b6858d88b2" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gad_1a491cbe0599ee61ddd9cd0b0db04b5f27" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gad_1a2b263f6e257a2bb9579e2d91ca12ce7c" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetTimeLatency</name></member>
+      <member refid="classOxTS_1_1Gad_1ace5fba6a3146952f1fb51c11d3160dfa" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gad_1ade4b08d5cd64665a6d2556441b2b9fab" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetTimeTAI</name></member>
+      <member refid="classOxTS_1_1Gad_1a225192c7bd3917b2915ffb97a43dbb8a" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetTimeUTCUnix</name></member>
+      <member refid="classOxTS_1_1Gad_1a31acdd4c7ae446e840f98dfcff6ba248" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetTimeValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a8cb0a1a723312d6ba65850d0835a8b89" prot="public" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetTimeVoid</name></member>
+      <member refid="classOxTS_1_1Gad_1a16d13359a6377f177fb1fe11c3e72a84" prot="protected" virt="non-virtual"><scope>OxTS::GadHeading</scope><name>SetValValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a59cf7f8a81b2e63cdc6ce2bb6c81a927" prot="public" virt="virtual"><scope>OxTS::GadHeading</scope><name>~Gad</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

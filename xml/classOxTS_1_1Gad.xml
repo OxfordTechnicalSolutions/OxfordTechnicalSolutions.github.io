@@ -1,0 +1,1425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOxTS_1_1Gad" kind="class" language="C++" prot="public">
+    <compoundname>OxTS::Gad</compoundname>
+    <derivedcompoundref refid="classOxTS_1_1GadAttitude" prot="public" virt="non-virtual">OxTS::GadAttitude</derivedcompoundref>
+    <derivedcompoundref refid="classOxTS_1_1GadHeading" prot="public" virt="non-virtual">OxTS::GadHeading</derivedcompoundref>
+    <derivedcompoundref refid="classOxTS_1_1GadPosition" prot="public" virt="non-virtual">OxTS::GadPosition</derivedcompoundref>
+    <derivedcompoundref refid="classOxTS_1_1GadSpeed" prot="public" virt="non-virtual">OxTS::GadSpeed</derivedcompoundref>
+    <derivedcompoundref refid="classOxTS_1_1GadVelocity" prot="public" virt="non-virtual">OxTS::GadVelocity</derivedcompoundref>
+    <includes local="no">gad.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1aa8b4c8700650772bb137fd02fda3b116" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t OxTS::Gad::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of Aiding (position, velocity, ...). For enumerated values see GEN_TYPE. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="76" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1a83896159f5bbe9273191aa9eb92185e3" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t OxTS::Gad::stream_id</definition>
+        <argsstring></argsstring>
+        <name>stream_id</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Aiding stream ID to identify the source device. Values 128-254. Each stream should have a unique ID. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="80" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1a4f421bd45be65a8cd873b6446d7a80ab" prot="private" static="no" mutable="no">
+        <type><ref refid="classOxTS_1_1Gen3d" kindref="compound">Gen3d</ref></type>
+        <definition>Gen3d OxTS::Gad::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sub-struct VALUE. Contains navigation aiding data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="82" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1aad9e20ba1309ab385edffbfa82e1e957" prot="private" static="no" mutable="no">
+        <type>GenFlag</type>
+        <definition>GenFlag OxTS::Gad::val_valid</definition>
+        <argsstring></argsstring>
+        <name>val_valid</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="83" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1a089001b47033a75eef0c17e47da26a19" prot="private" static="no" mutable="no">
+        <type><ref refid="classOxTS_1_1Gen3d" kindref="compound">Gen3d</ref></type>
+        <definition>Gen3d OxTS::Gad::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sub-struct TIME. Contains the time the data was recorded. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="85" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1a6b62788372f37eae9e33288d2250e2c8" prot="private" static="no" mutable="no">
+        <type>GenFlag</type>
+        <definition>GenFlag OxTS::Gad::time_valid</definition>
+        <argsstring></argsstring>
+        <name>time_valid</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="86" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1a3c4ee33f1a1643cbd3387c210e304956" prot="private" static="no" mutable="no">
+        <type><ref refid="classOxTS_1_1Gen3d" kindref="compound">Gen3d</ref></type>
+        <definition>Gen3d OxTS::Gad::loc</definition>
+        <argsstring></argsstring>
+        <name>loc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sub-struct LOCATION. Contains lever arm (or alignment) data between the IMU and aiding source. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="90" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1a315e046e0cd41b2fa71c9951765a11f8" prot="private" static="no" mutable="no">
+        <type>GenFlag</type>
+        <definition>GenFlag OxTS::Gad::loc_valid</definition>
+        <argsstring></argsstring>
+        <name>loc_valid</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="91" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1ac42368667b7ce44068a66a6fff6d3580" prot="private" static="no" mutable="no">
+        <type><ref refid="classOxTS_1_1Gen3d" kindref="compound">Gen3d</ref></type>
+        <definition>Gen3d OxTS::Gad::res1</definition>
+        <argsstring></argsstring>
+        <name>res1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="93" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1ae4232e1f94b197e68e5626ce332b49ee" prot="private" static="no" mutable="no">
+        <type>GenFlag</type>
+        <definition>GenFlag OxTS::Gad::res1_valid</definition>
+        <argsstring></argsstring>
+        <name>res1_valid</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="94" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1a1c9548a7df84bdf5960a03bb3d4a965a" prot="private" static="no" mutable="no">
+        <type><ref refid="classOxTS_1_1Gen3d" kindref="compound">Gen3d</ref></type>
+        <definition>Gen3d OxTS::Gad::res2</definition>
+        <argsstring></argsstring>
+        <name>res2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="96" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1a493a07d4ffc3880c93579634ab0f3e58" prot="private" static="no" mutable="no">
+        <type>GenFlag</type>
+        <definition>GenFlag OxTS::Gad::res2_valid</definition>
+        <argsstring></argsstring>
+        <name>res2_valid</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="97" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1afc5172ba438f2dc30ae11146d809d9f8" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t OxTS::Gad::acq</definition>
+        <argsstring></argsstring>
+        <name>acq</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquisition Time Stamp. The INS will fill in this timestamp upon its arrival to the INS. Leave blank. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="102" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gad_1a042f5ceeb85e51f20e9c35d7398f7735" prot="private" static="no" mutable="no">
+        <type>GenFlag</type>
+        <definition>GenFlag OxTS::Gad::acq_valid</definition>
+        <argsstring></argsstring>
+        <name>acq_valid</name>
+        <initializer>= { 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="103" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a720bf083cfa6cf7f16bf12bbb0c2342f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetDataType</definition>
+        <argsstring>(int type)</argsstring>
+        <name>SetDataType</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="106" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1aa155d8cf748db123067da35a166ccbc1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OxTS::Gad::GetDataType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDataType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="107" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a16d13359a6377f177fb1fe11c3e72a84" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetValValid</definition>
+        <argsstring>(bool flag)</argsstring>
+        <name>SetValValid</name>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Time Valid flag <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boolean to indicate whether time is valid or invalid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="112" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a28c6225bd6fc3504f5fc131f3326a6db" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Gad::GetValValid</definition>
+        <argsstring>() const</argsstring>
+        <name>GetValValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Time Valid flag <simplesect kind="return"><para>flag boolean to indicate whether time validity </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="116" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1ade1f0c7339c6addb1aed62a73d9bfbeb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetDataMode</definition>
+        <argsstring>(int mode)</argsstring>
+        <name>SetDataMode</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="117" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a7b94bfae5de1d3d496bc5234ff743177" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetDataValType</definition>
+        <argsstring>(int x_type)</argsstring>
+        <name>SetDataValType</name>
+        <param>
+          <type>int</type>
+          <declname>x_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="118" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1ab97337e53aa1b422cb3a388a1a8774f1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetDataVal</definition>
+        <argsstring>(double x_0, double x_1, double x_2)</argsstring>
+        <name>SetDataVal</name>
+        <param>
+          <type>double</type>
+          <declname>x_0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x_1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="119" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a6be76196851638b4a25a32f33adb2afb" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::Gad::GetDataVal</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDataVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="120" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a4a6bb42c89d112eacf14b4820954348a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetDataVarUpperDiag</definition>
+        <argsstring>(double v_00, double v_11, double v_22, double v_01, double v_02, double v_12)</argsstring>
+        <name>SetDataVarUpperDiag</name>
+        <param>
+          <type>double</type>
+          <declname>v_00</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_11</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_22</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_01</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_02</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_12</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="121" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a3119ca81f3ff6d544be9ba67b686251b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetDataVarDiag</definition>
+        <argsstring>(double v_0, double v_1, double v_2)</argsstring>
+        <name>SetDataVarDiag</name>
+        <param>
+          <type>double</type>
+          <declname>v_0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="123" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a667094907538463da73b8d5b6bc4c265" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetDataVarSingle</definition>
+        <argsstring>(double v_0)</argsstring>
+        <name>SetDataVarSingle</name>
+        <param>
+          <type>double</type>
+          <declname>v_0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="124" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1ac2a6aa7b10ca294fe551c5eeff994434" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::Gad::GetDataVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDataVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="125" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a1bf9638d8edfbaf761de380ddf397095" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetLocValid</definition>
+        <argsstring>(bool flag)</argsstring>
+        <name>SetLocValid</name>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="127" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a458cee20cd5c84c0888e9d114b5af278" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Gad::GetLocValid</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLocValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="128" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1ae34bb965c8924b9ef37eaf126c93e2fc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetLocMode</definition>
+        <argsstring>(int mode)</argsstring>
+        <name>SetLocMode</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="129" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1af4d796aa19e610aa46ebfe74d876b695" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetLocValType</definition>
+        <argsstring>(int x_type)</argsstring>
+        <name>SetLocValType</name>
+        <param>
+          <type>int</type>
+          <declname>x_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="130" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1ab32f7ab3b5514e9c694410a1bcb5a6a0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetLocVal</definition>
+        <argsstring>(double x_0, double x_1, double x_2)</argsstring>
+        <name>SetLocVal</name>
+        <param>
+          <type>double</type>
+          <declname>x_0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x_1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x_2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="131" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1ac48d72ec6fb261e807a8da10708cf6e1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::Gad::GetLocVal</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLocVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="132" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1af75e1d96f6777bb7b3f47bdffa49f869" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetLocVarUpperDiag</definition>
+        <argsstring>(double v_00, double v_11, double v_22, double v_01, double v_02, double v_12)</argsstring>
+        <name>SetLocVarUpperDiag</name>
+        <param>
+          <type>double</type>
+          <declname>v_00</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_11</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_22</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_01</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_02</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_12</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="133" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a269bc1e8960adbf2b2de60d8454c3711" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetLocVarDiag</definition>
+        <argsstring>(double v_00, double v_11, double v_22)</argsstring>
+        <name>SetLocVarDiag</name>
+        <param>
+          <type>double</type>
+          <declname>v_00</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_11</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_22</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="135" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a7041a19c19c5c9dc9e3f0eafce8b6c81" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetLocVarSingle</definition>
+        <argsstring>(double v_0)</argsstring>
+        <name>SetLocVarSingle</name>
+        <param>
+          <type>double</type>
+          <declname>v_0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="136" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a9f5e02e8d67aada5b7b8f9d941d626e2" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::Gad::GetLocVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLocVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="137" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1Gad_1ae04da920e53256cab9c8f50a481c0f7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gad::Gad</definition>
+        <argsstring>()</argsstring>
+        <name>Gad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a77e6c8ec040c686ed9ab1864ac2b7ffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gad::Gad</definition>
+        <argsstring>(uint8_t stream_id, int8_t aiding_type)</argsstring>
+        <name>Gad</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>stream_id</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>aiding_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a59cf7f8a81b2e63cdc6ce2bb6c81a927" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual OxTS::Gad::~Gad</definition>
+        <argsstring>()</argsstring>
+        <name>~Gad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="145" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a969b016fca0ce657a2bb93796d975e93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gad::Gad</definition>
+        <argsstring>(const Gad &amp;g)</argsstring>
+        <name>Gad</name>
+        <param>
+          <type>const <ref refid="classOxTS_1_1Gad" kindref="compound">Gad</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a4052e78602b043d98509da287a5e7543" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gad::Gad</definition>
+        <argsstring>(const GEN_AIDING_DATA &amp;g)</argsstring>
+        <name>Gad</name>
+        <param>
+          <type>const GEN_AIDING_DATA &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor to allow direct copy to C struct. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="149" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a8137c74cd008022a2bef1b727697028d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOxTS_1_1Gad" kindref="compound">Gad</ref> &amp;</type>
+        <definition>Gad&amp; OxTS::Gad::operator=</definition>
+        <argsstring>(const Gad &amp;g)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classOxTS_1_1Gad" kindref="compound">Gad</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="151" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a21a2849a36b1fd9b890bfdf2e055ec75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GEN_AIDING_DATA</type>
+        <definition>GEN_AIDING_DATA OxTS::Gad::getCStruct</definition>
+        <argsstring>()</argsstring>
+        <name>getCStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="153" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1aae55058389fd09f1e129195c220d64e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOxTS_1_1Gad" kindref="compound">Gad</ref> &amp;</type>
+        <definition>Gad&amp; OxTS::Gad::operator=</definition>
+        <argsstring>(const GEN_AIDING_DATA &amp;g)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const GEN_AIDING_DATA &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy assignment operator GEN_AIDING_DATA -&gt; <ref refid="classOxTS_1_1Gad" kindref="compound">Gad</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="155" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a46f934b125ce7379918a8872e4bbe2a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetStreamId</definition>
+        <argsstring>(int id)</argsstring>
+        <name>SetStreamId</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Stream ID for this GAD packet </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="159" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1ad6305b40f883de529a6aca9d3daff6e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OxTS::Gad::GetStreamId</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStreamId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Stream ID for this GAD packet </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="161" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a31acdd4c7ae446e840f98dfcff6ba248" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetTimeValid</definition>
+        <argsstring>(bool flag)</argsstring>
+        <name>SetTimeValid</name>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Time Valid flag <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boolean to indicate whether time is valid or invalid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="167" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1aef7f27be7bb2c298403856d08e2bd982" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Gad::GetTimeValid</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Time Valid flag <simplesect kind="return"><para>flag boolean to indicate whether time validity </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="171" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1af3b0e2d4aea781bcdd8221b6858d88b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetTimeExternal</definition>
+        <argsstring>(double week, double secs)</argsstring>
+        <name>SetTimeExternal</name>
+        <param>
+          <type>double</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>secs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set time from an external clock <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Week in the external time frame </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Seconds in the external time frame </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="176" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a950676d9ad2f578fbb6a7223d164db06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::Gad::GetTimeExternalWeek</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeExternalWeek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the week in the external time </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="178" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a9381c69d74cafcccd16128917c57eab3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::Gad::GetTimeExternalSecondsFromSunday</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeExternalSecondsFromSunday</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the seconds into the week in the external time </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="180" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a161be15173647a21ca43586f99447140" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::Gad::GetTimeExternal</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeExternal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="181" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a491cbe0599ee61ddd9cd0b0db04b5f27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetTimeGps</definition>
+        <argsstring>(double week, double seconds_from_sunday)</argsstring>
+        <name>SetTimeGps</name>
+        <param>
+          <type>double</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>seconds_from_sunday</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set timestamp for this data <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GPS Week </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seconds_from_sunday</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Seconds from Midnight Sunday (s) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="186" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a21bf8a036eea13b7068b6ecefdd0fda0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::Gad::GetTimeGps</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeGps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="187" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1af7e0e978c1aa32da6e77e8b28a12b33d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::Gad::GetTimeGpsWeek</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeGpsWeek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the GPS Week value. Note that this function assumes that the time has been set in this format, there is no check. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="190" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1addda792b16bfcc2e938fda1390a1e751" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::Gad::GetTimeGpsSecondsFromSunday</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeGpsSecondsFromSunday</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the Seconds from Sunday value. Note that this function assumes that the time has been set in this format, there is no check. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="193" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1ade4b08d5cd64665a6d2556441b2b9fab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetTimeTAI</definition>
+        <argsstring>(double secs)</argsstring>
+        <name>SetTimeTAI</name>
+        <param>
+          <type>double</type>
+          <declname>secs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a PPS relative timestamp <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time since PPS timestamp (nanoseconds) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="198" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1af15d8cf52fdbffbc7a5ac22ca4e2b10c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::Gad::GetTimeTAI</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeTAI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get TAI timestamp. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="200" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1ace5fba6a3146952f1fb51c11d3160dfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetTimePpsRelative</definition>
+        <argsstring>(double ns)</argsstring>
+        <name>SetTimePpsRelative</name>
+        <param>
+          <type>double</type>
+          <declname>ns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="202" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1aa067198ed52f9881a74babe138f1b661" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::Gad::GetTimePpsRelative</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimePpsRelative</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="203" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a2b263f6e257a2bb9579e2d91ca12ce7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetTimeLatency</definition>
+        <argsstring>(double ns)</argsstring>
+        <name>SetTimeLatency</name>
+        <param>
+          <type>double</type>
+          <declname>ns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the timestamp type for this data to Latency. The latency is an estimate of the time taken for the packet to travel from the aiding source to the INS. Upon arrival the INS will timestamp the data, adjusting for the latency. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Latency estimate in (nanoseconds). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="211" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a405bc80b437e006589046bb44492af9f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::Gad::GetTimeLatency</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeLatency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get latency estimate. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="213" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a225192c7bd3917b2915ffb97a43dbb8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetTimeUTCUnix</definition>
+        <argsstring>(double secs)</argsstring>
+        <name>SetTimeUTCUnix</name>
+        <param>
+          <type>double</type>
+          <declname>secs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the timestamp as UTC time encoded as the number of seconds from the UNIX epoch. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>secs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time since unic epoch including leap seconds (seconds). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="217" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a482aaa4cf80bdf0eeaf1119417eca30d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::Gad::GetTimeUTCUnix</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeUTCUnix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get unix timestamp. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="219" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a8cb0a1a723312d6ba65850d0835a8b89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetTimeVoid</definition>
+        <argsstring>()</argsstring>
+        <name>SetTimeVoid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the timestamp type for this data to void. Data with a void timestamp will be timestamped by the INS upon receipt. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="224" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a1e834ee11a6cb90d92532c18b71dc4ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetRes1Valid</definition>
+        <argsstring>(bool flag)</argsstring>
+        <name>SetRes1Valid</name>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="226" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1ac8ea696fb18c8d6220845faf1f969a9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Gad::GetRes1Valid</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRes1Valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="227" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1af5a0f13f808a5e14661eb7916a71e563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetRes2Valid</definition>
+        <argsstring>(bool flag)</argsstring>
+        <name>SetRes2Valid</name>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="228" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a3d3d3ccaa97d29fbfb64ca47215fd65d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Gad::GetRes2Valid</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRes2Valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="229" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a24de1d28039293e5d8c885608d8215dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetAcqValid</definition>
+        <argsstring>(bool flag)</argsstring>
+        <name>SetAcqValid</name>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="232" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a7dc941a58fa0deb65abfa11c4bd58388" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Gad::GetAcqValid</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAcqValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="233" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1af228853babc9b5cdc17c0cb88929a6c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gad::SetAcqTimestamp</definition>
+        <argsstring>(uint32_t acq_time)</argsstring>
+        <name>SetAcqTimestamp</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>acq_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the acquisition time of the data. Not to be used outside of the INS. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="235" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gad_1a2daad69a2de924b99a85e6ddf2ff9f11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t OxTS::Gad::GetAcqTimestamp</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAcqTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the acquisition time of the data. Not expected to be set outside of the INS. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="237" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Cpp wrapper class for C struct GEN_AIDING_DATA </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>OxTS::Gad</label>
+        <link refid="classOxTS_1_1Gad"/>
+      </node>
+      <node id="4">
+        <label>OxTS::GadPosition</label>
+        <link refid="classOxTS_1_1GadPosition"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>OxTS::GadSpeed</label>
+        <link refid="classOxTS_1_1GadSpeed"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>OxTS::GadVelocity</label>
+        <link refid="classOxTS_1_1GadVelocity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>OxTS::GadHeading</label>
+        <link refid="classOxTS_1_1GadHeading"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OxTS::GadAttitude</label>
+        <link refid="classOxTS_1_1GadAttitude"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="71" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="70" bodyend="239"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1Gad_1afc5172ba438f2dc30ae11146d809d9f8" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>acq</name></member>
+      <member refid="classOxTS_1_1Gad_1a042f5ceeb85e51f20e9c35d7398f7735" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>acq_valid</name></member>
+      <member refid="classOxTS_1_1Gad_1ae04da920e53256cab9c8f50a481c0f7e" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gad_1a77e6c8ec040c686ed9ab1864ac2b7ffd" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gad_1a969b016fca0ce657a2bb93796d975e93" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gad_1a4052e78602b043d98509da287a5e7543" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gad_1a2daad69a2de924b99a85e6ddf2ff9f11" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetAcqTimestamp</name></member>
+      <member refid="classOxTS_1_1Gad_1a7dc941a58fa0deb65abfa11c4bd58388" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetAcqValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a21a2849a36b1fd9b890bfdf2e055ec75" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>getCStruct</name></member>
+      <member refid="classOxTS_1_1Gad_1aa155d8cf748db123067da35a166ccbc1" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetDataType</name></member>
+      <member refid="classOxTS_1_1Gad_1a6be76196851638b4a25a32f33adb2afb" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetDataVal</name></member>
+      <member refid="classOxTS_1_1Gad_1ac2a6aa7b10ca294fe551c5eeff994434" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetDataVar</name></member>
+      <member refid="classOxTS_1_1Gad_1ac48d72ec6fb261e807a8da10708cf6e1" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetLocVal</name></member>
+      <member refid="classOxTS_1_1Gad_1a458cee20cd5c84c0888e9d114b5af278" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetLocValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a9f5e02e8d67aada5b7b8f9d941d626e2" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetLocVar</name></member>
+      <member refid="classOxTS_1_1Gad_1ac8ea696fb18c8d6220845faf1f969a9b" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetRes1Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1a3d3d3ccaa97d29fbfb64ca47215fd65d" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetRes2Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1ad6305b40f883de529a6aca9d3daff6e9" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetStreamId</name></member>
+      <member refid="classOxTS_1_1Gad_1a161be15173647a21ca43586f99447140" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gad_1a9381c69d74cafcccd16128917c57eab3" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetTimeExternalSecondsFromSunday</name></member>
+      <member refid="classOxTS_1_1Gad_1a950676d9ad2f578fbb6a7223d164db06" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetTimeExternalWeek</name></member>
+      <member refid="classOxTS_1_1Gad_1a21bf8a036eea13b7068b6ecefdd0fda0" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gad_1addda792b16bfcc2e938fda1390a1e751" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetTimeGpsSecondsFromSunday</name></member>
+      <member refid="classOxTS_1_1Gad_1af7e0e978c1aa32da6e77e8b28a12b33d" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetTimeGpsWeek</name></member>
+      <member refid="classOxTS_1_1Gad_1a405bc80b437e006589046bb44492af9f" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetTimeLatency</name></member>
+      <member refid="classOxTS_1_1Gad_1aa067198ed52f9881a74babe138f1b661" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gad_1af15d8cf52fdbffbc7a5ac22ca4e2b10c" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetTimeTAI</name></member>
+      <member refid="classOxTS_1_1Gad_1a482aaa4cf80bdf0eeaf1119417eca30d" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetTimeUTCUnix</name></member>
+      <member refid="classOxTS_1_1Gad_1aef7f27be7bb2c298403856d08e2bd982" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetTimeValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a28c6225bd6fc3504f5fc131f3326a6db" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>GetValValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a3c4ee33f1a1643cbd3387c210e304956" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>loc</name></member>
+      <member refid="classOxTS_1_1Gad_1a315e046e0cd41b2fa71c9951765a11f8" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>loc_valid</name></member>
+      <member refid="classOxTS_1_1Gad_1a8137c74cd008022a2bef1b727697028d" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>operator=</name></member>
+      <member refid="classOxTS_1_1Gad_1aae55058389fd09f1e129195c220d64e8" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>operator=</name></member>
+      <member refid="classOxTS_1_1Gad_1ac42368667b7ce44068a66a6fff6d3580" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>res1</name></member>
+      <member refid="classOxTS_1_1Gad_1ae4232e1f94b197e68e5626ce332b49ee" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>res1_valid</name></member>
+      <member refid="classOxTS_1_1Gad_1a1c9548a7df84bdf5960a03bb3d4a965a" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>res2</name></member>
+      <member refid="classOxTS_1_1Gad_1a493a07d4ffc3880c93579634ab0f3e58" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>res2_valid</name></member>
+      <member refid="classOxTS_1_1Gad_1af228853babc9b5cdc17c0cb88929a6c1" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetAcqTimestamp</name></member>
+      <member refid="classOxTS_1_1Gad_1a24de1d28039293e5d8c885608d8215dc" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetAcqValid</name></member>
+      <member refid="classOxTS_1_1Gad_1ade1f0c7339c6addb1aed62a73d9bfbeb" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetDataMode</name></member>
+      <member refid="classOxTS_1_1Gad_1a720bf083cfa6cf7f16bf12bbb0c2342f" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetDataType</name></member>
+      <member refid="classOxTS_1_1Gad_1ab97337e53aa1b422cb3a388a1a8774f1" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetDataVal</name></member>
+      <member refid="classOxTS_1_1Gad_1a7b94bfae5de1d3d496bc5234ff743177" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetDataValType</name></member>
+      <member refid="classOxTS_1_1Gad_1a3119ca81f3ff6d544be9ba67b686251b" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetDataVarDiag</name></member>
+      <member refid="classOxTS_1_1Gad_1a667094907538463da73b8d5b6bc4c265" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetDataVarSingle</name></member>
+      <member refid="classOxTS_1_1Gad_1a4a6bb42c89d112eacf14b4820954348a" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetDataVarUpperDiag</name></member>
+      <member refid="classOxTS_1_1Gad_1ae34bb965c8924b9ef37eaf126c93e2fc" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetLocMode</name></member>
+      <member refid="classOxTS_1_1Gad_1ab32f7ab3b5514e9c694410a1bcb5a6a0" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetLocVal</name></member>
+      <member refid="classOxTS_1_1Gad_1a1bf9638d8edfbaf761de380ddf397095" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetLocValid</name></member>
+      <member refid="classOxTS_1_1Gad_1af4d796aa19e610aa46ebfe74d876b695" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetLocValType</name></member>
+      <member refid="classOxTS_1_1Gad_1a269bc1e8960adbf2b2de60d8454c3711" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetLocVarDiag</name></member>
+      <member refid="classOxTS_1_1Gad_1a7041a19c19c5c9dc9e3f0eafce8b6c81" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetLocVarSingle</name></member>
+      <member refid="classOxTS_1_1Gad_1af75e1d96f6777bb7b3f47bdffa49f869" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetLocVarUpperDiag</name></member>
+      <member refid="classOxTS_1_1Gad_1a1e834ee11a6cb90d92532c18b71dc4ae" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetRes1Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1af5a0f13f808a5e14661eb7916a71e563" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetRes2Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1a46f934b125ce7379918a8872e4bbe2a3" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetStreamId</name></member>
+      <member refid="classOxTS_1_1Gad_1af3b0e2d4aea781bcdd8221b6858d88b2" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gad_1a491cbe0599ee61ddd9cd0b0db04b5f27" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gad_1a2b263f6e257a2bb9579e2d91ca12ce7c" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetTimeLatency</name></member>
+      <member refid="classOxTS_1_1Gad_1ace5fba6a3146952f1fb51c11d3160dfa" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gad_1ade4b08d5cd64665a6d2556441b2b9fab" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetTimeTAI</name></member>
+      <member refid="classOxTS_1_1Gad_1a225192c7bd3917b2915ffb97a43dbb8a" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetTimeUTCUnix</name></member>
+      <member refid="classOxTS_1_1Gad_1a31acdd4c7ae446e840f98dfcff6ba248" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetTimeValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a8cb0a1a723312d6ba65850d0835a8b89" prot="public" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetTimeVoid</name></member>
+      <member refid="classOxTS_1_1Gad_1a16d13359a6377f177fb1fe11c3e72a84" prot="protected" virt="non-virtual"><scope>OxTS::Gad</scope><name>SetValValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a83896159f5bbe9273191aa9eb92185e3" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>stream_id</name></member>
+      <member refid="classOxTS_1_1Gad_1a089001b47033a75eef0c17e47da26a19" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>time</name></member>
+      <member refid="classOxTS_1_1Gad_1a6b62788372f37eae9e33288d2250e2c8" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>time_valid</name></member>
+      <member refid="classOxTS_1_1Gad_1aa8b4c8700650772bb137fd02fda3b116" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>type</name></member>
+      <member refid="classOxTS_1_1Gad_1a4f421bd45be65a8cd873b6446d7a80ab" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>val</name></member>
+      <member refid="classOxTS_1_1Gad_1aad9e20ba1309ab385edffbfa82e1e957" prot="private" virt="non-virtual"><scope>OxTS::Gad</scope><name>val_valid</name></member>
+      <member refid="classOxTS_1_1Gad_1a59cf7f8a81b2e63cdc6ce2bb6c81a927" prot="public" virt="virtual"><scope>OxTS::Gad</scope><name>~Gad</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

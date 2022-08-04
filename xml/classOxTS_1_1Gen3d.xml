@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOxTS_1_1Gen3d" kind="class" language="C++" prot="public">
+    <compoundname>OxTS::Gen3d</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">GEN_3D</basecompoundref>
+    <includes local="no">gad.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a44cd0e5f590acb7fc5f98536b4fb435b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gen3d::Gen3d</definition>
+        <argsstring>()</argsstring>
+        <name>Gen3d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1ae0172f0354989bef5db09a46ef0e9b5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gen3d::~Gen3d</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Gen3d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a534120b6188e7efca2de24ef23a5fe4e" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gen3d::Gen3d</definition>
+        <argsstring>(const GEN_3D &amp;g)</argsstring>
+        <name>Gen3d</name>
+        <param>
+          <type>const GEN_3D &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="25" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a48285905eac5f6af635eb40fb034cc45" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gen3d::operator::GEN_3D *</definition>
+        <argsstring>()</argsstring>
+        <name>operator::GEN_3D *</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Implicit conversion from <ref refid="classOxTS_1_1Gen3d" kindref="compound">Gen3d</ref> to GEN_3D* </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="28" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a2f3b169d80a462c1fe2d3f554d630fa6" prot="public" static="no" const="yes" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gen3d::operator const ::GEN_3D *</definition>
+        <argsstring>() const</argsstring>
+        <name>operator const ::GEN_3D *</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Implicit const conversion from <ref refid="classOxTS_1_1Gen3d" kindref="compound">Gen3d</ref> to GEN_3D* </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="30" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a1c7194f7f737c0d0c2afc893390131b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>GEN_3D</type>
+        <definition>GEN_3D OxTS::Gen3d::getCStruct</definition>
+        <argsstring>() const</argsstring>
+        <name>getCStruct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1ada2691401afce461c15f7c8a68490386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gen3d::SetMode</definition>
+        <argsstring>(int mode)</argsstring>
+        <name>SetMode</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the struct mode. Typically set to 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="37" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1afec09d4f12157ea3408cdd6de1653cef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OxTS::Gen3d::GetMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the struct mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a28e5b04be3fcdd7912619c9774af5b52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gen3d::SetValType</definition>
+        <argsstring>(int x_type)</argsstring>
+        <name>SetValType</name>
+        <param>
+          <type>int</type>
+          <declname>x_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value type. Index source depends on use of the struct. Sources include ::POS_SYS_TYPE, ::VEL_SYS_TYPE, ::SPEED_SYS_TYPE, ::LOC_SYS. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="43" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1abf23cc1ddc23b45b85d9ed5dc59e25f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OxTS::Gen3d::GetValType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetValType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the value type. See ::GetMode() for indexes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="45" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a8fe890665ede91ad35d0353e2482bcc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gen3d::SetValX</definition>
+        <argsstring>(double x)</argsstring>
+        <name>SetValX</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="47" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a5e8e7283801d170050c20f1278ecabea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::Gen3d::GetValX</definition>
+        <argsstring>() const</argsstring>
+        <name>GetValX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="48" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a891c6e4bc731e83f11796f3db3808f34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gen3d::SetValY</definition>
+        <argsstring>(double y)</argsstring>
+        <name>SetValY</name>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="49" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1ad9352cc5644ddfaaf2e3c1c6d077a767" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::Gen3d::GetValY</definition>
+        <argsstring>() const</argsstring>
+        <name>GetValY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="50" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1ad29b1ea9b83f66e0139495773beb8689" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gen3d::SetValZ</definition>
+        <argsstring>(double z)</argsstring>
+        <name>SetValZ</name>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="51" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a8a931191b26d0d9d48ffb9524d1a6da5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::Gen3d::GetValZ</definition>
+        <argsstring>() const</argsstring>
+        <name>GetValZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="52" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a18fa07db8d9475884c8e30d8951e35ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gen3d::SetVal</definition>
+        <argsstring>(double x, double y, double z)</argsstring>
+        <name>SetVal</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value array. Used to store the aiding data. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="54" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a24be602b7d6d33943269039b559005f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::Gen3d::GetVal</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="55" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1abc2bc60a743347aa4747214acb2734c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int OxTS::Gen3d::GetVarType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVarType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="57" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a22afaf285779631db5baaa129ea089cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gen3d::SetVarUpperDiag</definition>
+        <argsstring>(double v_00, double v_11, double v_22, double v_01, double v_02, double v_12)</argsstring>
+        <name>SetVarUpperDiag</name>
+        <param>
+          <type>double</type>
+          <declname>v_00</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_11</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_22</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_01</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_02</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_12</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="58" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a9f78246d40eb183028f05737d8082188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gen3d::SetVarDiag</definition>
+        <argsstring>(double v_00, double v_11, double v_22)</argsstring>
+        <name>SetVarDiag</name>
+        <param>
+          <type>double</type>
+          <declname>v_00</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_11</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v_22</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="60" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a2f3a3add397ce6ad2adb252593296b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gen3d::SetVarSingle</definition>
+        <argsstring>(double v_0)</argsstring>
+        <name>SetVarSingle</name>
+        <param>
+          <type>double</type>
+          <declname>v_0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="61" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gen3d_1a65c47f36e654a1a0d8f26925a4e9519b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::Gen3d::GetVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="62" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Cpp wrapper class for C struct GEN_3D.</para>
+<para>Provides an interface for concrete data structures used in <ref refid="classOxTS_1_1Gad" kindref="compound">Gad</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>GEN_3D</label>
+      </node>
+      <node id="1">
+        <label>OxTS::Gen3d</label>
+        <link refid="classOxTS_1_1Gen3d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>GEN_3D</label>
+      </node>
+      <node id="1">
+        <label>OxTS::Gen3d</label>
+        <link refid="classOxTS_1_1Gen3d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="18" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="17" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1Gen3d_1a44cd0e5f590acb7fc5f98536b4fb435b" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>Gen3d</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a534120b6188e7efca2de24ef23a5fe4e" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>Gen3d</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a1c7194f7f737c0d0c2afc893390131b7" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>getCStruct</name></member>
+      <member refid="classOxTS_1_1Gen3d_1afec09d4f12157ea3408cdd6de1653cef" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>GetMode</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a24be602b7d6d33943269039b559005f8" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>GetVal</name></member>
+      <member refid="classOxTS_1_1Gen3d_1abf23cc1ddc23b45b85d9ed5dc59e25f0" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>GetValType</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a5e8e7283801d170050c20f1278ecabea" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>GetValX</name></member>
+      <member refid="classOxTS_1_1Gen3d_1ad9352cc5644ddfaaf2e3c1c6d077a767" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>GetValY</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a8a931191b26d0d9d48ffb9524d1a6da5" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>GetValZ</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a65c47f36e654a1a0d8f26925a4e9519b" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>GetVar</name></member>
+      <member refid="classOxTS_1_1Gen3d_1abc2bc60a743347aa4747214acb2734c0" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>GetVarType</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a2f3b169d80a462c1fe2d3f554d630fa6" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>operator const ::GEN_3D *</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a48285905eac5f6af635eb40fb034cc45" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>operator::GEN_3D *</name></member>
+      <member refid="classOxTS_1_1Gen3d_1ada2691401afce461c15f7c8a68490386" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>SetMode</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a18fa07db8d9475884c8e30d8951e35ea" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>SetVal</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a28e5b04be3fcdd7912619c9774af5b52" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>SetValType</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a8fe890665ede91ad35d0353e2482bcc5" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>SetValX</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a891c6e4bc731e83f11796f3db3808f34" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>SetValY</name></member>
+      <member refid="classOxTS_1_1Gen3d_1ad29b1ea9b83f66e0139495773beb8689" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>SetValZ</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a9f78246d40eb183028f05737d8082188" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>SetVarDiag</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a2f3a3add397ce6ad2adb252593296b9f" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>SetVarSingle</name></member>
+      <member refid="classOxTS_1_1Gen3d_1a22afaf285779631db5baaa129ea089cb" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>SetVarUpperDiag</name></member>
+      <member refid="classOxTS_1_1Gen3d_1ae0172f0354989bef5db09a46ef0e9b5b" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>~Gen3d</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

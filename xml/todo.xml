@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Class <ref refid="classOxTS_1_1GadEncoderCsv" kindref="compound">OxTS::GadEncoderCsv</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000005"/>Implement this csv encoding wrapper.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1GadSpeed_1ada23012be4a67d2a2eda0a8a61f8c90a" kindref="member">OxTS::GadSpeed::SetAidingLeverArmConfig</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000004"/>Remove and set this mode to be default  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1GadSpeed_1ae593c36bcb38cfdaf4a0fdd37a0a03a8" kindref="member">OxTS::GadSpeed::SetWheelspeedCount</ref>  (double count, double period)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000002"/>Clarify where the timestamp should correspond to in the period: start, middle, end.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1GadSpeed_1a0cc7655e98f2df4400c5d1c015427825" kindref="member">OxTS::GadSpeed::SetWheelspeedVar</ref>  (double v_c)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000003"/>Clarify units  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1GadVelocity_1a22e6aa96f6507983a9db5c8186e289db" kindref="member">OxTS::GadVelocity::SetAidingLeverArmConfig</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>Remove and set this mode to be default </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

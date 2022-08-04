@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; OxTS C++ Generic Aiding SDK  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Generic Aiding Requirements" href="generic-aiding-requirements.html" />
+    <link rel="prev" title="OxTS C++ Generic Aiding SDK" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> OxTS C++ Generic Aiding SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction to Generic Aiding</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#reasons-to-use-generic-aiding">Reasons to use Generic Aiding</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#combining-users-data">Combining users’ data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#increasing-robustness-in-challenging-environments">Increasing robustness in challenging environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#indoor-gnss-denied">Indoor / GNSS denied</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#next-steps">Next steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-requirements.html">Generic Aiding Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="estimating-errors.html">Estimating errors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timestamps.html">Timestamping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-rates.html">Data Rates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Aiding types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-position-updates.html">Position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-velocity-updates.html">Velocity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-attitude-updates.html">Attitude</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-heading-updates.html">Heading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-speed-updates.html">Speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example-my-first-gad.html">My First GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-static-aiding.html">Static Aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-static-aiding-no-boost.html">Static Aiding (No Boost)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-zv-wheelspeed.html">Zero Velocity Wheelspeed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-heading.html">Heading Update Example</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="defining-a-local-reference-frame.html">User-defined Local Frame (beta)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gad-files.html">.gad files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reassigning-traditional-sources.html">Reassigning Traditional Data Sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stream-priority.html">Stream Priority</a></li>
+<li class="toctree-l1"><a class="reference internal" href="position-only-initialisation.html">Position Only Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-options.html">All Configuration options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is-my-data-being-received.html">Is my data being received?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gal-cpp/index.html">C++</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OxTS C++ Generic Aiding SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/longform/intro.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h1>
+<p>OxTS Inertial Navigation Systems (INS) have historically used inertial
+measurement units (IMU) as the basis of their navigation, and combined this
+with data from GNSS receivers.</p>
+<p>IMUs alone are incredibly useful, since they can provide data at much
+higher rates than many other sensors (&gt;100Hz). The drawback is that they have
+limited means of providing an absolute position relative to any global system
+beyond the pose at the time they were powered on. Additionally, measurements of
+acceleration and angular rate must be integrated to produce velocity and
+position data, meaning they accumulate errors over time and consequently are
+prone to drift. Using inertial sensors in this way is often referred to as
+“dead reckoning”.</p>
+<p>In contrast, GNSS receivers alone have much lower update rates, often in the
+region of 1-10Hz. However, they are capable of providing position in a global
+reference system up to ~2cm RMS in open sky conditions (with assistance from
+Ground Based Augmentation Services (GBAS)). Since these are measurements of
+position in a global frame, they are not prone to drift.</p>
+<p>Bringing these two types of sensor together in one device using sensor fusion
+makes for an excellent combination. The resulting navigation solution benefits
+from the high update rate of inertial sensors whilst being able to correct
+errors which would accumulate over time by “aiding” the system with data from
+the receivers.</p>
+<p>However, GNSS is far from the only aiding source available. As technology
+improves, an ever-increasing number of sensors are capable of producing
+measurement data which can be used to improve navigation solutions. These
+include, but are not limited to:</p>
+<ul class="simple">
+<li><p>LiDAR</p></li>
+<li><p>Cameras</p></li>
+<li><p>Ultra-wideband (UWB)</p></li>
+<li><p>RADAR</p></li>
+</ul>
+<p>This is where the Generic Aiding Interface comes in. This interface has been
+designed to accept multiple forms of aiding data and pass them to the INS to
+be used in the navigation solution. As long as the data is in this format, the
+sensor used to obtain it is irrelevant to the system. The types of aiding data
+which can be provided to the system are:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="generic-aiding-position-updates.html#gadpositionpage"><span class="std std-ref">Position</span></a></p></li>
+<li><p><a class="reference internal" href="generic-aiding-velocity-updates.html#gadvelocitypage"><span class="std std-ref">Velocity</span></a></p></li>
+<li><p><a class="reference internal" href="generic-aiding-attitude-updates.html#gadattitudepage"><span class="std std-ref">Attitude</span></a></p></li>
+<li><p><a class="reference internal" href="generic-aiding-speed-updates.html#gadspeedpage"><span class="std std-ref">Speed</span></a></p></li>
+</ul>
+<section id="reasons-to-use-generic-aiding">
+<h2>Reasons to use Generic Aiding<a class="headerlink" href="#reasons-to-use-generic-aiding" title="Permalink to this heading"></a></h2>
+<p>There are a number of different reasons why Generic Aiding might be effective
+for your application.</p>
+<section id="combining-users-data">
+<h3>Combining users’ data<a class="headerlink" href="#combining-users-data" title="Permalink to this heading"></a></h3>
+<p>OxTS has over 25 years in GNSS, IMUs, and sensor fusion etc. etc.</p>
+<p>Those with sensors capable of producing aiding data may find it beneficial to
+send this data to an INS. Data from individual sensors can be noisy, an INS can
+cut through the noise etc.</p>
+<p>Passing data to an INS can bridge the gap between slower update rates of other
+sensors in the same way as it does for GNSS. This can be crucial for
+applications such as robot driving.</p>
+</section>
+<section id="increasing-robustness-in-challenging-environments">
+<h3>Increasing robustness in challenging environments<a class="headerlink" href="#increasing-robustness-in-challenging-environments" title="Permalink to this heading"></a></h3>
+<p>Sensor fusion is a popular technique because a solution created from multiple
+data sources is often more accurate and more robust in challenging environments
+than a solution from any individual sensor.</p>
+<p>One of the simplest examples of an additional aiding source is a wheelspeed
+encoder. OxTS has been using these devices for years to improve navigation in
+more challenging GNSS environments.</p>
+<p>Generic Aiding opens the door to a large array of alternative sensors which can
+provide measurement data to the INS and help it to maintain its performance in
+a wider array of environments and applications.</p>
+</section>
+<section id="indoor-gnss-denied">
+<h3>Indoor / GNSS denied<a class="headerlink" href="#indoor-gnss-denied" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>The phrasing of this will need some discussion because of UWB</p></li>
+</ul>
+</section>
+</section>
+<section id="next-steps">
+<h2>Next steps<a class="headerlink" href="#next-steps" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="generic-aiding-requirements.html#genericaidingrequirements"><span class="std std-ref">Generic Aiding Requirements</span></a></p></li>
+<li><p><a class="reference internal" href="estimating-errors.html#estimatingerrors"><span class="std std-ref">Estimating errors</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="OxTS C++ Generic Aiding SDK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="generic-aiding-requirements.html" class="btn btn-neutral float-right" title="Generic Aiding Requirements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

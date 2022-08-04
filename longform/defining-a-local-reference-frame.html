@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User-defined Local Frame (beta) &mdash; OxTS C++ Generic Aiding SDK  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title=".gad files" href="gad-files.html" />
+    <link rel="prev" title="Heading Update Example" href="example-heading.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> OxTS C++ Generic Aiding SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction to Generic Aiding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-requirements.html">Generic Aiding Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="estimating-errors.html">Estimating errors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timestamps.html">Timestamping Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-rates.html">Data Rates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Aiding types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-position-updates.html">Position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-velocity-updates.html">Velocity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-attitude-updates.html">Attitude</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-heading-updates.html">Heading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic-aiding-speed-updates.html">Speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example-my-first-gad.html">My First GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-static-aiding.html">Static Aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-static-aiding-no-boost.html">Static Aiding (No Boost)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-zv-wheelspeed.html">Zero Velocity Wheelspeed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example-heading.html">Heading Update Example</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Material</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User-defined Local Frame (beta)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#define-the-frame">Define the frame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gad-files.html">.gad files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reassigning-traditional-sources.html">Reassigning Traditional Data Sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stream-priority.html">Stream Priority</a></li>
+<li class="toctree-l1"><a class="reference internal" href="position-only-initialisation.html">Position Only Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-options.html">All Configuration options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is-my-data-being-received.html">Is my data being received?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gal-cpp/index.html">C++</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OxTS C++ Generic Aiding SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>User-defined Local Frame (beta)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/longform/defining-a-local-reference-frame.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="user-defined-local-frame-beta">
+<span id="definingalocalreferenceframe"></span><h1>User-defined Local Frame (beta)<a class="headerlink" href="#user-defined-local-frame-beta" title="Permalink to this heading"></a></h1>
+<p>Generic Aiding functionality allows users to define a local coordinate system
+for some measurement types. Currently supported types are:</p>
+<ul class="simple">
+<li><p>Position</p></li>
+<li><p>Velocity</p></li>
+<li><p>Attitude</p></li>
+<li><p>Heading</p></li>
+</ul>
+<p>More detail on how to use the local frame with each update type can be found in
+the relevant document for the individual update type.</p>
+<section id="define-the-frame">
+<h2>Define the frame<a class="headerlink" href="#define-the-frame" title="Permalink to this heading"></a></h2>
+<p>This local frame is defined by two components:</p>
+<ul class="simple">
+<li><p><strong>Translation</strong>: (Lat, Long, Alt) in the WGS84 global frame. This sets the</p></li>
+<li><p>origin of the local coordinate frame in the global frame.</p></li>
+<li><p><strong>Rotation</strong>: (Yaw, Pitch, Roll) angles relative to the North, East, Down
+local coordinate frame. These angles follow the Tait-Bryan
+<span class="math notranslate nohighlight">\(Z_1 Y_2 X_3\)</span> convention with angles defined extrinsically. For more
+information see [here][1]. The rotation matrix is constructed from these
+values using the following formula:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}R = Z_1 Y_2 X_3 =
+\begin{bmatrix}
+c_1 c_2 &amp; c_1 s_2 s_3 - s_1 c_3 &amp; c_1 s_2 c_3 + s_1 s_3\\
+s_1 c_2 &amp; s_1 s_2 s_3 + c_1 c_3 &amp; s_1 s_2 c_3 - c_1 s_3\\
+-s_2    &amp; c_2 s_3               &amp; c_2 c_3              \\
+\end{bmatrix}
+\label{TaitBryanMatrix}\end{split}\]</div>
+<p>To make use of the local frame, the user must define the local coordinate frame
+in the configuration of the INS. Doing so requires the advanced commands:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">gad_lrf</span><span class="p">[</span><span class="n">lrf_id</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">lat</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">lon</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">alt</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">yaw</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">pitch</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">roll</span><span class="p">]</span><span class="w"></span>
+<span class="o">-</span><span class="n">gad_lrf_id</span><span class="p">[</span><span class="n">stream_id</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">lrf_id</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Angles are expected in degrees. The <cite>lrf_id</cite> is a unique identifier for each
+local reference frame. Up to 32 reference frames can be defined in this way.
+Once the local refence frame has been defined, it must be associated to the
+stream ID of the relevant aiding so that the INS knows which local reference
+frame to use for a particular aiding source.</p>
+<p>Note that this aiding type only supports right-handed coordinate systems.</p>
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this heading"></a></h2>
+<p>As an example, we define the rotation between the East, North, Up (ENU) local
+reference frame and North, East, Down (NED). We start with the NED frame and
+rotate around the Z axis, then Y, then X to align it to ENU. This will provide
+the correct angles for Yaw, Pitch, and Roll respectively.</p>
+<img alt="../_images/local-reference-rotation-example.gif" src="../_images/local-reference-rotation-example.gif" />
+<p>From the above diagram, we can see that the required rotations are
+<span class="math notranslate nohighlight">\(-90^{\circ}\)</span> around the z axis, followed by 180&amp;deg; around the y axis.
+No rotation is required around the x axis. The advanced command is then:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">gad_lrf</span><span class="p">[</span><span class="n">lrf_id</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">lat</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">lon</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">alt</span><span class="p">]</span><span class="n">_</span><span class="mf">-90.0</span><span class="n">_180</span><span class="mf">.0</span><span class="n">_0</span><span class="mf">.0</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The Latitude, Longitude, and Altitude are independent of the orientation of the
+local reference frame. They will need to be determined based on the location of
+the origin of the local frame on the Earth.</p>
+<p>A simple way to verify whether the rotation has been defined correctly is to
+create the rotation matrix from the YPR angles using ($ref{TaitBryanMatrix}$)
+and apply it to a dummy point <span class="math notranslate nohighlight">\(p_{user}\)</span> in the user-defined local frame.</p>
+<div class="math notranslate nohighlight">
+\[Rp_{user} = p_{ned}\]</div>
+<p>For most rotations, it is clear whether this point is in the correct place in the NED frame.</p>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading"></a></h2>
+<p>[1]: <a class="reference external" href="https://en.wikipedia.org/wiki/Euler_angles">https://en.wikipedia.org/wiki/Euler_angles</a> “More information on Euler Angles”</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="example-heading.html" class="btn btn-neutral float-left" title="Heading Update Example" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="gad-files.html" class="btn btn-neutral float-right" title=".gad files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

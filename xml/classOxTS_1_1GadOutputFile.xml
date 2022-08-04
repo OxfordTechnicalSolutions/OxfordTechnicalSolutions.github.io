@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classOxTS_1_1GadOutputFile" kind="class" language="C++" prot="public">
+    <compoundname>OxTS::GadOutputFile</compoundname>
+    <basecompoundref refid="classOxTS_1_1GadOutput" prot="public" virt="non-virtual">OxTS::GadOutput</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOxTS_1_1GadOutputFile_1ad3cda21231058e4d8431e169e18d7fbc" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string OxTS::GadOutputFile::file_out</definition>
+        <argsstring></argsstring>
+        <name>file_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="14" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1GadOutputFile_1a7eb12b6c7c48c894db8d7e649cca1cdd" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* OxTS::GadOutputFile::file_ptr</definition>
+        <argsstring></argsstring>
+        <name>file_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Path to file (include .gad extension) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="15" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1GadOutputFile_1a732ae5302af5842b23ecea1eb4e5e489" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::GadOutputFile::GadOutputFile</definition>
+        <argsstring>(std::string file_path)</argsstring>
+        <name>GadOutputFile</name>
+        <param>
+          <type>std::string</type>
+          <declname>file_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to file handler object Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="18" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadOutputFile_1ac9d73803bcd71f7bc0505976347db34c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::GadOutputFile::~GadOutputFile</definition>
+        <argsstring>()</argsstring>
+        <name>~GadOutputFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="23" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadOutputFile_1a4c566732943c37ec2deb99270f105775" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void OxTS::GadOutputFile::OutputPacket</definition>
+        <argsstring>(unsigned char *packet, int packet_size) override</argsstring>
+        <name>OutputPacket</name>
+        <reimplements refid="classOxTS_1_1GadOutput_1aca9dc9de11cc81a5235a85cd67ad58c6">OutputPacket</reimplements>
+        <param>
+          <type>unsigned char *</type>
+          <declname>packet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>packet_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output the packet to file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="28" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadOutputFile_1a3f69e201b185a30f4212d2a32de5d89d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadOutputFile::SetOutputFile</definition>
+        <argsstring>(FILE *file_ptr)</argsstring>
+        <name>SetOutputFile</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the output file pointer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="34" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadOutputFile_1a8519d0b51a6ebf20e263e7a784841d95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE* OxTS::GadOutputFile::GetOutputFile</definition>
+        <argsstring>()</argsstring>
+        <name>GetOutputFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the output file pointer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="39" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadOutputFile_1aab9a8e7db76468428c0c210357486911" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadOutputFile::SetOutputFilePath</definition>
+        <argsstring>(std::string file_path)</argsstring>
+        <name>SetOutputFilePath</name>
+        <param>
+          <type>std::string</type>
+          <declname>file_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the output file path </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="44" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadOutputFile_1acd73dbaed58b5114c81c3b0769ee26f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string OxTS::GadOutputFile::GetOutputFilePath</definition>
+        <argsstring>()</argsstring>
+        <name>GetOutputFilePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the output file path </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="49" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>OxTS::GadOutputFile</label>
+        <link refid="classOxTS_1_1GadOutputFile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OxTS::GadOutput</label>
+        <link refid="classOxTS_1_1GadOutput"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>OxTS::GadOutputFile</label>
+        <link refid="classOxTS_1_1GadOutputFile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OxTS::GadOutput</label>
+        <link refid="classOxTS_1_1GadOutput"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="12" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="11" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1GadOutputFile_1ad3cda21231058e4d8431e169e18d7fbc" prot="private" virt="non-virtual"><scope>OxTS::GadOutputFile</scope><name>file_out</name></member>
+      <member refid="classOxTS_1_1GadOutputFile_1a7eb12b6c7c48c894db8d7e649cca1cdd" prot="private" virt="non-virtual"><scope>OxTS::GadOutputFile</scope><name>file_ptr</name></member>
+      <member refid="classOxTS_1_1GadOutputFile_1a732ae5302af5842b23ecea1eb4e5e489" prot="public" virt="non-virtual"><scope>OxTS::GadOutputFile</scope><name>GadOutputFile</name></member>
+      <member refid="classOxTS_1_1GadOutputFile_1a8519d0b51a6ebf20e263e7a784841d95" prot="public" virt="non-virtual"><scope>OxTS::GadOutputFile</scope><name>GetOutputFile</name></member>
+      <member refid="classOxTS_1_1GadOutputFile_1acd73dbaed58b5114c81c3b0769ee26f5" prot="public" virt="non-virtual"><scope>OxTS::GadOutputFile</scope><name>GetOutputFilePath</name></member>
+      <member refid="classOxTS_1_1GadOutputFile_1a4c566732943c37ec2deb99270f105775" prot="public" virt="virtual"><scope>OxTS::GadOutputFile</scope><name>OutputPacket</name></member>
+      <member refid="classOxTS_1_1GadOutputFile_1a3f69e201b185a30f4212d2a32de5d89d" prot="public" virt="non-virtual"><scope>OxTS::GadOutputFile</scope><name>SetOutputFile</name></member>
+      <member refid="classOxTS_1_1GadOutputFile_1aab9a8e7db76468428c0c210357486911" prot="public" virt="non-virtual"><scope>OxTS::GadOutputFile</scope><name>SetOutputFilePath</name></member>
+      <member refid="classOxTS_1_1GadOutputFile_1ac9d73803bcd71f7bc0505976347db34c" prot="public" virt="non-virtual"><scope>OxTS::GadOutputFile</scope><name>~GadOutputFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
