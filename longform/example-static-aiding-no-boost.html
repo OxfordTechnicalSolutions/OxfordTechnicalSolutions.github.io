@@ -143,12 +143,17 @@ downloaded (not currently available).</p></li>
 <li><p>Navigate to the relevant directory in the build folder:
 <cite>cd &lt;build_dir&gt;/examples/gal</cite>.</p></li>
 <li><p>Run the executable: <cite>./static-aiding-no-boost-example</cite>. This will begin sending
-Generic Aiding packets.</p></li>
+Generic Aiding packets. You can also provide the number of packets to send: <cite>./static-aiding-no-boost-example 100</cite></p></li>
 </ol>
 </section>
 <section id="windows">
 <h3>Windows<a class="headerlink" href="#windows" title="Permalink to this heading"></a></h3>
-<p>Not currently officially supported.</p>
+<ol class="arabic simple">
+<li><p>Navigate to the relevant configuration directory in the build folder:
+<cite>cd &lt;build_dir&gt;/examples/gal/Debug</cite>.</p></li>
+<li><p>Run the executable: <cite>./static-aiding-no-boost-example.exe</cite>. This will begin sending
+Generic Aiding packets.  You can also provide the number of packets to send: <cite>./static-aiding-no-boost-example.exe 100</cite></p></li>
+</ol>
 </section>
 </section>
 <section id="source-code-breakdown">
@@ -189,7 +194,7 @@ time before continuing execution.</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">sendPackets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-<p>This variable determines how many packets to send before exiting the program.</p>
+<p>This variable determines how many packets to send before exiting the program. This can also be provided as a command line argument.</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="w"> </span><span class="n">gp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="p">(</span><span class="mi">129</span><span class="p">);</span><span class="w"></span>
 <span class="n">gp</span><span class="p">.</span><span class="n">SetWgs84Pos</span><span class="p">(</span><span class="mf">51.91520330</span><span class="p">,</span><span class="mf">-1.24479140</span><span class="p">,</span><span class="mf">111.525</span><span class="p">);</span><span class="w"></span>
 <span class="n">gp</span><span class="p">.</span><span class="n">SetPosVar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -228,12 +233,14 @@ provide the functionality to encode a Generic Aiding packet to binary.</p>
 <span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="n">gh</span><span class="p">.</span><span class="n">EncodePacket</span><span class="p">(</span><span class="n">gp</span><span class="p">);</span><span class="w"></span>
 
+<span class="w">  </span><span class="c1">// Add your code here for interacting with the static aiding packets.</span>
 <span class="w">  </span><span class="c1">// Use accessor functions geb.GetPacket() and geb.GetPacketSize() to send</span>
 <span class="w">  </span><span class="c1">// the packet via chosen UDP socket library to the INS IP address and port</span>
 <span class="w">  </span><span class="c1">// 50485.</span>
 
 <span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; packets sent&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;packet size: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">geb</span><span class="p">.</span><span class="n">GetPacketSize</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
 
 <span class="w">  </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
