@@ -105,7 +105,10 @@
              
   <section id="ncom-output">
 <span id="ncomupdates"></span><h1>NCOM Output<a class="headerlink" href="#ncom-output" title="Permalink to this heading"></a></h1>
-<p>When the INS receives a GAD packet with valid time it will output the packet on status packet 95.
+<p>NCOM is the most common output format from the OxTS INS, by default it is output over UDP to port 3000.</p>
+<p>For more information on the NCOM format please see the documentation provided on the OxTS support page:</p>
+<p><a class="reference external" href="https://support.oxts.com/hc/en-us/articles/115002163985-Decoding-OxTS-navigation-outputs">https://support.oxts.com/hc/en-us/articles/115002163985-Decoding-OxTS-navigation-outputs</a></p>
+<p>When the INS receives a GAD packet with valid time it will output the packet information on status channel 95.
 This packet is scheduled at 1Hz.</p>
 <img alt="../_images/ncom-status-packet-95.gif" src="../_images/ncom-status-packet-95.gif" />
 <p>The innovations will match the stream type and not all innovations will be valid for
