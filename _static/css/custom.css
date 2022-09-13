@@ -1,14 +1,14 @@
 .wy-side-nav-search, .wy-nav-top {
-    background: #FFFFFF;
+    background: #000000;
 }
 
 .wy-side-nav-search {
     display: block;
-    width: 300px;
+    width: 3px;
     padding: .809em;
     margin-bottom: .809em;
     z-index: 200;
-    background-color: #FFFFFF;
+    background-color: #000000;
     text-align: center;
     color: #fcfcfc
 }
