@@ -64,7 +64,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#optimising-advanced-level-information-for-internal-users">Optimising (advanced-level information for internal users)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="generic-aiding-velocity-updates.html">Velocity</a></li>
@@ -147,10 +146,9 @@ frame. More information on how to define the frame itself can be found here:
 </section>
 <section id="converting-between-frames">
 <span id="positioncovariancematrix"></span><h2>Converting between frames<a class="headerlink" href="#converting-between-frames" title="Permalink to this heading"></a></h2>
-<p>Euler angles are used to output the heading, pitch and roll, and these have singularities at two orientations. The RT has rules to avoid problems when operating close to the singularities; if you regenerate the rotation matrices given below then they will be correct.
-The Euler angles output are three consecutive rotations (first heading, then pitch and finally roll) that
-transform a vector measured in the navigation co-ordinate frame to the body co-ordinate frame. The navigation co-ordinate frame is the orientation on the earth at your current location with axes of north, east and down.
-If <span class="math notranslate nohighlight">\(V_n\)</span> is vector V measured in the navigation co-ordinate frame and <span class="math notranslate nohighlight">\(V_b\)</span> is the same vector measured in the body co-ordinate frame the two vectors are related by:</p>
+<p>Euler angles are used to output the heading, pitch and roll, and these have singularities at two orientations. The RT has rules to avoid problems when operating close to the singularities; if you regenerate the rotation matrices given below then they will be correct.</p>
+<p>The Euler angles output are three consecutive rotations (first heading, then pitch and finally roll) that transform a vector measured in the navigation co-ordinate frame to the body co-ordinate frame. The navigation co-ordinate frame is the orientation on the earth at your current location with axes of north, east and down.</p>
+<p>If <span class="math notranslate nohighlight">\(V_n\)</span> is vector <span class="math notranslate nohighlight">\(V\)</span> measured in the navigation co-ordinate frame and <span class="math notranslate nohighlight">\(V_b\)</span> is the same vector measured in the body co-ordinate frame the two vectors are related by:</p>
 <div class="math notranslate nohighlight">
 \[V_n = C_bn V_b\]</div>
 <div class="math notranslate nohighlight">
@@ -227,10 +225,6 @@ lever-arm. This can be avoided by reassigning the dual antenna lever-arm.
 See <a class="reference internal" href="reassigning-traditional-sources.html#reassigningtraditionaldatasources"><span class="std std-ref">Reassigning Traditional Data Sources</span></a> for more details.</p>
 </div>
 </section>
-</section>
-<section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this heading"></a></h2>
-<p>[1]: <a class="reference external" href="https://en.wikipedia.org/wiki/Euler_angles">https://en.wikipedia.org/wiki/Euler_angles</a> “Information on Tait-Bryan angles”</p>
 </section>
 </section>
 
