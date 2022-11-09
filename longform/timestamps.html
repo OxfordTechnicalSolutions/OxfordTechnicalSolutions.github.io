@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Data Rates" href="data-rates.html" />
-    <link rel="prev" title="Estimating errors" href="estimating-errors.html" /> 
+    <link rel="next" title="Position" href="generic-aiding-position-updates.html" />
+    <link rel="prev" title="Generic Aiding Requirements" href="generic-aiding-requirements.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,7 +45,6 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generic-aiding-requirements.html">Generic Aiding Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="estimating-errors.html">Estimating errors</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Timestamping Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#void">Void</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#latency">Latency</a></li>
@@ -54,7 +53,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#external-in-development">External (in development)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="data-rates.html">Data Rates</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Aiding types</span></p>
 <ul>
@@ -101,8 +99,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Timestamping Data</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Timestamping Data</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/longform/timestamps.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -116,6 +114,17 @@
 <span id="timestamps"></span><h1>Timestamping Data<a class="headerlink" href="#timestamping-data" title="Permalink to this heading"></a></h1>
 <p>When sending aiding data to an OxTS, a decision must be made about how this
 data is timestamped.</p>
+<p>On older systems, the Kalman filter runs about 1 second behind,
+so Generic Aiding updates must arrive well before the 1 second has passed.
+Newer systems run 0.5 seconds behind, so Generic Aiding updates need to arrive
+well within 0.5 seconds. The Kalman filter’s delay can be adjusted using (very)
+advanced commands.</p>
+<p>To adjust the Kalman filter’s delay add the following line to the advanced options in NAVconfig:</p>
+<p>-bns_delay1.0</p>
+<p>changing “1.0” to the value in seconds that the Kalman filter should be delayed.
+OxTS does not test delays longer than 1.0 seconds and normally runs with 0.5 seconds delay.
+Delaying the Kalman filter by more time will increase the drift and decrease the
+stability of the navigation system.</p>
 <p>Some methods of timestamping are more complex than others, requiring
 synchronisation of devices. These methods are often more accurate and robust.</p>
 <section id="void">
@@ -168,7 +177,7 @@ for clock synchronisation:</p>
 <li><p>This timestamp type is still in development and is therefore not fully
 supported or recommended for use. It is not guaranteed that this feature
 will make it to a full release.</p></li>
-<li><p>Synchronsing the INS <em>output</em> time to the externa time currently causes GPS
+<li><p>Synchronsing the INS <em>output</em> time to the external time currently causes GPS
 data to be rejected, and can only be consequently used for indoor
 applications.</p></li>
 <li><p>Known bug: The external time must be greater than the internal INS time
@@ -210,8 +219,8 @@ in order to allow output time synchronisation.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="estimating-errors.html" class="btn btn-neutral float-left" title="Estimating errors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="data-rates.html" class="btn btn-neutral float-right" title="Data Rates" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="generic-aiding-requirements.html" class="btn btn-neutral float-left" title="Generic Aiding Requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="generic-aiding-position-updates.html" class="btn btn-neutral float-right" title="Position" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

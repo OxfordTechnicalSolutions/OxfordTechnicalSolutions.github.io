@@ -45,9 +45,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generic-aiding-requirements.html">Generic Aiding Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="estimating-errors.html">Estimating errors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="timestamps.html">Timestamping Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-rates.html">Data Rates</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Aiding types</span></p>
 <ul>
@@ -104,8 +102,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>My First GAD</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">My First GAD</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/longform/example-my-first-gad.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -199,7 +197,7 @@ of packets to send.</p>
 Since we are creating <em>static</em> data, the velocity is zero in all axes. The
 covariance values for this data are set using the function
 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">SetVelNeuVar</span><span class="p">()</span><span class="w"></span></code>. For more information on covariances, see
-<a class="reference internal" href="estimating-errors.html#estimatingerrors"><span class="std std-ref">Estimating errors</span></a> or <a class="reference internal" href="generic-aiding-velocity-updates.html#velocitycovariancematrix"><span class="std std-ref">Covariance matrix</span></a>.</p>
+<span class="xref std std-ref">estimatingerrors</span> or <a class="reference internal" href="generic-aiding-velocity-updates.html#velocitycovariancematrix"><span class="std std-ref">Covariance matrix</span></a>.</p>
 <p>The function <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">SetTimeVoid</span><span class="p">()</span><span class="w"></span></code> indicates that the data will be sent with no
 timestamp, making it the simplest way to handle timing when working with
 Generic Aiding. In this setup, the INS will timestamp the packet upon receipt.</p>

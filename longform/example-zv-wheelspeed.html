@@ -45,9 +45,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generic-aiding-requirements.html">Generic Aiding Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="estimating-errors.html">Estimating errors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="timestamps.html">Timestamping Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-rates.html">Data Rates</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Aiding types</span></p>
 <ul>
@@ -105,8 +103,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Zero Velocity Wheelspeed</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Zero Velocity Wheelspeed</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/longform/example-zv-wheelspeed.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -207,7 +205,7 @@ of packets to send.</p>
 <p>Since we are creating zero wheelspeed data, the speed is set to zero in the
 forward axis. The covariance value for this data is set using the function
 <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">SetSpeedFwVar</span><span class="p">()</span><span class="w"></span></code>. For more information on covariances, see
-<a class="reference internal" href="estimating-errors.html#estimatingerrors"><span class="std std-ref">Estimating errors</span></a> or <a class="reference internal" href="generic-aiding-speed-updates.html#speedcovariancematrix"><span class="std std-ref">Covariance Matrix</span></a>. For this case we are
+<span class="xref std std-ref">estimatingerrors</span> or <a class="reference internal" href="generic-aiding-speed-updates.html#speedcovariancematrix"><span class="std std-ref">Covariance Matrix</span></a>. For this case we are
 assuming we know very confidently that the speed is zero, so we can set the
 covariance pretty tight.</p>
 <p>The function <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">SetTimeVoid</span><span class="p">()</span><span class="w"></span></code> indicates that the data will be sent with no

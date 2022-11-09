@@ -54,9 +54,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="generic-aiding-requirements.html">Generic Aiding Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="estimating-errors.html">Estimating errors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="timestamps.html">Timestamping Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-rates.html">Data Rates</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Aiding types</span></p>
 <ul>
@@ -103,8 +101,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Introduction</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Introduction</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/longform/intro.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -120,7 +118,7 @@
 measurement units (IMU) as the basis of their navigation, and combined this
 with data from GNSS receivers.</p>
 <p>IMUs alone are incredibly useful, since they can provide data at much
-higher rates than many other sensors (&gt;100Hz). The drawback is that they have
+higher rates than many other sensors (&gt;100 Hz). The drawback is that they have
 limited means of providing an absolute position relative to any global system
 beyond the pose at the time they were powered on. Additionally, measurements of
 acceleration and angular rate must be integrated to produce velocity and
@@ -128,8 +126,8 @@ position data, meaning they accumulate errors over time and consequently are
 prone to drift. Using inertial sensors in this way is often referred to as
 “dead reckoning”.</p>
 <p>In contrast, GNSS receivers alone have much lower update rates, often in the
-region of 1-10Hz. However, they are capable of providing position in a global
-reference system up to ~2cm RMS in open sky conditions (with assistance from
+region of 1-10 Hz. However, they are capable of providing position in a global
+reference system up to ~2 cm RMS in open sky conditions (with assistance from
 Ground Based Augmentation Services (GBAS)). Since these are measurements of
 position in a global frame, they are not prone to drift.</p>
 <p>Bringing these two types of sensor together in one device using sensor fusion
@@ -164,13 +162,10 @@ which can be provided to the system are:</p>
 for your application.</p>
 <section id="combining-users-data">
 <h3>Combining users’ data<a class="headerlink" href="#combining-users-data" title="Permalink to this heading"></a></h3>
-<p>OxTS has over 25 years in GNSS, IMUs, and sensor fusion etc. etc.</p>
-<p>Those with sensors capable of producing aiding data may find it beneficial to
-send this data to an INS. Data from individual sensors can be noisy, an INS can
-cut through the noise etc.</p>
-<p>Passing data to an INS can bridge the gap between slower update rates of other
-sensors in the same way as it does for GNSS. This can be crucial for
-applications such as robot driving.</p>
+<p>No one technology provides reliable pose (position and orientation) estimation in all conditions. It makes sense to combine technologies and gain the advantage that each one has. The problems of combining several sensors include getting a common measurement time and common co-ordinate frame, weighing different measurements when combining them and arbitrating between conflicting measurements.</p>
+<p>Inertial navigation is ideal as the central “core” where other sensors with different measurement times, different accuracies and different measurement frames can be fused to give improved results. Inertial measurements are always available. They have a high, regular, update rate with low latency (delay). Their error model is very well known and deterministic. They provide robust solutions by rejecting unreliable measurements from other sensors. Through sensor fusion they can deliver a full pose (position and orientation) even if the additional sensors only provide a partial pose. Perhaps the most important point is that they provide an excellent statistical framework for combining other sensors.</p>
+<p>Other sensors are added to inertial navigation to overcome its deficiencies, mostly long-term error growth. Sensors that measure position mitigate long term drift best, though velocity and orientation sensors can also help.</p>
+<p>OxTS has more than 20 years’ experience in combining inertial measurements with other sensors. Primarily we used GNSS but have experience with road vehicle models, wheel speed, Ultra-wide band (UWB) positioning, timing strips, cameras and compasses. We are opening our sensor fusion framework (GAD) to users who want to combine sensors that are suitable for their applications.</p>
 </section>
 <section id="increasing-robustness-in-challenging-environments">
 <h3>Increasing robustness in challenging environments<a class="headerlink" href="#increasing-robustness-in-challenging-environments" title="Permalink to this heading"></a></h3>
@@ -186,16 +181,14 @@ a wider array of environments and applications.</p>
 </section>
 <section id="indoor-gnss-denied">
 <h3>Indoor / GNSS denied<a class="headerlink" href="#indoor-gnss-denied" title="Permalink to this heading"></a></h3>
-<ul class="simple">
-<li><p>The phrasing of this will need some discussion because of UWB</p></li>
-</ul>
+<p>In GNSS-denied environments, such as multi-storey car parks and enclosed test centres, OxTS’ Poyzx 2GAD (ie. to Generic Aiding) solution enables Pozyx Ultra-wideband (UWB) to aid your INS.</p>
 </section>
 </section>
 <section id="next-steps">
 <h2>Next steps<a class="headerlink" href="#next-steps" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="generic-aiding-requirements.html#genericaidingrequirements"><span class="std std-ref">Generic Aiding Requirements</span></a></p></li>
-<li><p><a class="reference internal" href="estimating-errors.html#estimatingerrors"><span class="std std-ref">Estimating errors</span></a></p></li>
+<li><p><span class="xref std std-ref">estimatingerrors</span></p></li>
 </ul>
 </section>
 </section>
