@@ -150,31 +150,28 @@ frame. More information on how to define the frame itself can be found here:
 <p>Euler angles are used to output the heading, pitch and roll, and these have singularities at two orientations. The RT has rules to avoid problems when operating close to the singularities; if you regenerate the rotation matrices given below then they will be correct.
 The Euler angles output are three consecutive rotations (first heading, then pitch and finally roll) that
 transform a vector measured in the navigation co-ordinate frame to the body co-ordinate frame. The navigation co-ordinate frame is the orientation on the earth at your current location with axes of north, east and down.
-If <strong>:math: `V_n`</strong> is vector <strong>V</strong> measured in the navigation co-ordinate frame and <strong>:math: `V_b`</strong> is the same vector measured in the body co-ordinate frame the two vectors are related by:</p>
+If <span class="math notranslate nohighlight">\(V_n\)</span> is vector V measured in the navigation co-ordinate frame and <span class="math notranslate nohighlight">\(V_b\)</span> is the same vector measured in the body co-ordinate frame the two vectors are related by:</p>
 <div class="math notranslate nohighlight">
-\[\]</div>
-<p>V_n = C_bn V_b</p>
+\[V_n = C_bn V_b\]</div>
 <div class="math notranslate nohighlight">
-\[\]</div>
-<dl class="simple">
-<dt>V_n = begin{bmatrix}</dt><dd><p>cos(Ψ) &amp; -sin(Ψ)  &amp; 0  \
-sin(Ψ)  &amp; cos(Ψ) &amp; 0  \
-0  &amp; 0  &amp; 1 \
-end{bmatrix}begin{bmatrix}
-cos(θ) &amp; 0 &amp; sin(θ) \
-0  &amp; 1 &amp; 0  \
--sin(θ) &amp; 0 &amp; cos(θ) \
-end{bmatrix}begin{bmatrix}
-1 &amp; 0 &amp; 0 \
-0  &amp; cos(ϕ) &amp; -sin(ϕ)  \
-0 &amp; sin(ϕ) &amp; cos(ϕ) \
-end{bmatrix} V_b</p>
-</dd>
-</dl>
-<p>where:
-Ψ is the heading angle;
-θ is the pitch angle and
-ϕ is the roll angle.</p>
+\[\begin{split}V_n =
+\begin{bmatrix}
+cos(Ψ) &amp; -sin(Ψ)  &amp; 0  \\
+sin(Ψ)  &amp; cos(Ψ) &amp; 0  \\
+0  &amp; 0  &amp; 1 \\
+\end{bmatrix}\begin{bmatrix}
+cos(θ) &amp; 0 &amp; sin(θ) \\
+0  &amp; 1 &amp; 0  \\
+-sin(θ) &amp; 0 &amp; cos(θ) \\
+\end{bmatrix}\begin{bmatrix}
+1 &amp; 0 &amp; 0 \\
+0  &amp; cos(ϕ) &amp; -sin(ϕ)  \\
+0 &amp; sin(ϕ) &amp; cos(ϕ) \\
+\end{bmatrix} V_b\end{split}\]</div>
+<p>where:</p>
+<p>Ψ is the heading angle;</p>
+<p>θ is the pitch angle and</p>
+<p>ϕ is the roll angle.</p>
 </section>
 <section id="covariance-matrix">
 <h2>Covariance matrix<a class="headerlink" href="#covariance-matrix" title="Permalink to this heading"></a></h2>
