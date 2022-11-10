@@ -121,7 +121,7 @@
 type can be set using functions from the <a class="reference internal" href="../gal-cpp/gal-cpp_gad.html#gadheadingclass"><span class="std std-ref">GadHeading</span></a> class.</p>
 <section id="aiding-frames">
 <span id="headingaidingframes"></span><h2>Aiding Frames<a class="headerlink" href="#aiding-frames" title="Permalink to this heading"></a></h2>
-<p>Currently, heading aiding can only be provided in the navigation frame.</p>
+<p>Currently, heading aiding can only be provided in the navigation frame. The heading angle is the projection of the vehicle’s body x-axis in the navigation frame’s north-east plane. How we find this angle is normally to use the heading from the body to navigation frame heading, pitch, roll rotations.</p>
 <section id="navigation-frame">
 <span id="headingaidingframesnavigation"></span><h3>Navigation frame<a class="headerlink" href="#navigation-frame" title="Permalink to this heading"></a></h3>
 <p>This is the standard frame for supplying heading updates and moves inline with the vehicle</p>
@@ -141,15 +141,15 @@ being provided to the INS.</p>
 </section>
 <section id="alignment">
 <span id="headingalignment"></span><h2>Alignment<a class="headerlink" href="#alignment" title="Permalink to this heading"></a></h2>
-<p>Simimilarly to attitude measurements, heading measurements have an
+<p>Similarly to attitude measurements, heading measurements have an
 associated alignment, as opposed to a lever-arm. This is because the linear
 offset between the attitude sensor and the IMU does not affect the
 measurements, it is only the angular offset between the two which must be
 accounted for.</p>
 <section id="fixed">
 <span id="headingfixedlva"></span><h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this heading"></a></h3>
-<p>A fixed heading allignment is set within the Generic Aiding packet itself,
-using: SetAidingAllignmentFixed.</p>
+<p>A fixed heading alignment is set within the Generic Aiding packet itself,
+using: SetAidingAlignmentFixed.</p>
 </section>
 </section>
 </section>
