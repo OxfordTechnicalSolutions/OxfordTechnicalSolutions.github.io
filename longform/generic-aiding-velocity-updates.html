@@ -148,6 +148,7 @@ the fields for this data type can be set using functions from the
 <p>The <cite>-attitude</cite> option sets the orientation of the sensor frame with respect to the IMU frame.  The angles are defined intrinsically, following the Tait-Bryan <span class="math notranslate nohighlight">\(Z_1 Y_2 X_3\)</span> convention in degrees.
 The <cite>var_pit</cite> and <cite>var_roll</cite> inputs are optional, with the <cite>var_hea</cite> option being used for all 3 variances if the others are not specified. Note you must specify either one or three variances.</p>
 <p>The <cite>-location</cite> option specifies the lever arm <span class="math notranslate nohighlight">\((x,y,z)\)</span>. This defines the translation from the IMU to the aiding sensor, in the IMU frame. See the lever arm documentation for further information.</p>
+<p>A stream Id is a unique identifier for each GAD input.  One device can output any number of streams, these streams would each have different Ids.  When sending your data to the INS you should ensure each data source has a unique Id.</p>
 <section id="example">
 <span id="velocityodomexample"></span><h4>Example<a class="headerlink" href="#example" title="Permalink to this heading"></a></h4>
 <p>Defining the lever arm in the IMU frame is relatively intuitive, but finding
