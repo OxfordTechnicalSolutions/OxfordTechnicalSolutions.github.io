@@ -182,6 +182,12 @@ Generic Aiding which can be used with blended/xbns.</p>
 <tr class="row-odd"><td><p>gad_init_hea_from_pos</p></td>
 <td><p>[X] = on: enable dynamic heading initialisation from position data, [X] = off: disable heading initialisation from position data</p></td>
 </tr>
+<tr class="row-even"><td><p>gad_lrf[lrf_id]_[lat]_[lon]_[alt]_[yaw]_[pitch]_[roll]</p></td>
+<td><p>Angles are expected in degrees. <cite>lat</cite>, <cite>lon</cite> and <cite>alt</cite> should be the origin of your local frame.  This command sets a new GAD local reference frame with a specified Id. The <cite>lrf_id</cite> is a unique identifier for each local reference frame. Up to 32 reference frames can be defined in this way. Once the local refence frame has been defined, it must be associated to the stream Id of the relevant aiding so that the INS knows which local reference frame to use for a particular aiding source.</p></td>
+</tr>
+<tr class="row-odd"><td><p>gad_lrf_id[stream_id]_[lrf_id]</p></td>
+<td><p>This command sets a specific GAD <cite>stream_id</cite> to use the <cite>lrf_id</cite>.</p></td>
+</tr>
 </tbody>
 </table>
 <table class="colwidths-given docutils align-default" id="id2">
