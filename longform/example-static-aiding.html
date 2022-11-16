@@ -230,7 +230,7 @@ number of packets to send, the IP address to send the packets to, the output
 file, and whether to output to CSV or UDP. Naturally, only one of the IP
 address and output file are actually used on a given run.  These variables are also set form user input if provided.</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="w"> </span><span class="n">gp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="p">(</span><span class="mi">129</span><span class="p">);</span><span class="w"></span>
-<span class="n">gp</span><span class="p">.</span><span class="n">SetWgs84Pos</span><span class="p">(</span><span class="mf">51.91520330</span><span class="p">,</span><span class="mf">-1.24479140</span><span class="p">,</span><span class="mf">111.525</span><span class="p">);</span><span class="w"></span>
+<span class="n">gp</span><span class="p">.</span><span class="n">SetPosGeodetic</span><span class="p">(</span><span class="mf">51.91520330</span><span class="p">,</span><span class="mf">-1.24479140</span><span class="p">,</span><span class="mf">111.525</span><span class="p">);</span><span class="w"></span>
 <span class="n">gp</span><span class="p">.</span><span class="n">SetPosVar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 <span class="n">gp</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span><span class="w"></span>
 <span class="n">gp</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span><span class="w"></span>
@@ -242,8 +242,8 @@ Generic Aiding type has its own <cite>Gad&lt;type&gt;</cite> class which inherit
 superclass. These subclasses are designed to simplify the process of setting
 data for users when working with the different data types.</p>
 <p>When initialising an instance of any <cite>Gad</cite> class, it is necessary to assign it
-a unique stream ID. These can take values in the range 128-254, and each one
-must be unique.</p>
+a unique stream Id. These can take values in the range 128-254, and each one
+must be unique. See <a class="reference internal" href="Sensorcharacterisation.html#streamiddefinition"><span class="std std-ref">Stream Id</span></a> for more details on stream Ids.</p>
 <p>This particular position data is set in the WGS84 coordinate frame, using
 Latitude, Longitude, Altitude. The default values here correspond to the OxTS
 offices - users will need to change this to match their location. The
