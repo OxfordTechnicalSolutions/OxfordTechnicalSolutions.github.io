@@ -1,6 +1,6 @@
 .. _advancedcommands:
 
-Advanced Commands
+Advanced commands
 #################
 
 Advanced commands are options that can be set on the INS to allow different 
@@ -11,21 +11,19 @@ The easiest way to set these advanced commands is on the Commands tab inside the
 NAVconfig is available for Windows as part of NAVsuite, which is OxTS' proprietary suite of applications for configuring and interacting with OxTS devices.
 It is downloadable from the OxTS website https://support.oxts.com/hc/en-us/sections/115000789105-NAVsuite
 
-Commands specific for GAD applications
-########
 
-.. code-block::
+All configuration options
+#########################
 
-   -gad_lrf[lrf_id]_[lat]_[lon]_[alt]_[yaw]_[pitch]_[roll]
-   
-Angles are expected in degrees. This command sets a new GAD local reference frame with a specified Id.
-The `lrf_id` is a unique identifier for each local reference frame. Up to 32 reference frames can be defined in this way. 
-Once the local refence frame has been defined, it must be associated to the stream Id of the relevant aiding so that the INS knows which local reference 
-frame to use for a particular aiding source.
+This page contains a comprehensive list of configuration options relevant to 
+Generic Aiding which can be used with blended/xbns.
 
-.. code-block::
+.. csv-table:: All Generic Aiding Options
+   :file: assets/options-all.csv
+   :widths: 30, 30 
+   :header-rows: 1
 
-   -gad_lrf_id[stream_id]_[lrf_id]
-
-This command sets a specific GAD `stream_id` to use the `lrf_id`. 
-
+.. csv-table:: .gad file extraction options from blended
+   :file: assets/gad-file-blended-options.csv
+   :widths: 30, 30, 50 
+   :header-rows: 1
