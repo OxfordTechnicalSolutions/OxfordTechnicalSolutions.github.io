@@ -44,7 +44,7 @@
               <p class="caption" role="heading"><span class="caption-text">Introduction to Generic Aiding</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#reasons-to-use-generic-aiding">Reasons to use Generic Aiding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#reasons-to-use-generic-aiding">Reasons to use generic aiding</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#combining-users-data">Combining users’ data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#increasing-robustness-in-challenging-environments">Increasing robustness in challenging environments</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#indoor-gnss-denied">Indoor / GNSS denied</a></li>
@@ -148,7 +148,7 @@ include, but are not limited to:</p>
 <li><p>Ultra-wideband (UWB)</p></li>
 <li><p>RADAR</p></li>
 </ul>
-<p>This is where the Generic Aiding Interface comes in. This interface has been
+<p>This is where the Generic Aiding Data (GAD) interface comes in. This interface has been
 designed to accept multiple forms of aiding data and pass them to the INS to
 be used in the navigation solution. As long as the data is in this format, the
 sensor used to obtain it is irrelevant to the system. The types of aiding data
@@ -159,8 +159,9 @@ which can be provided to the system are:</p>
 <li><p><a class="reference internal" href="generic-aiding-attitude-updates.html#gadattitudepage"><span class="std std-ref">Attitude</span></a></p></li>
 <li><p><a class="reference internal" href="generic-aiding-speed-updates.html#gadspeedpage"><span class="std std-ref">Speed</span></a></p></li>
 </ul>
+<p>This data can be used for post-processing using GAD files <a class="reference internal" href="gad-files.html#gadfiles"><span class="std std-ref">.gad files (Advanced)</span></a> or by supplying the data to the INS in real time. Additional configuration options may be required.</p>
 <section id="reasons-to-use-generic-aiding">
-<h2>Reasons to use Generic Aiding<a class="headerlink" href="#reasons-to-use-generic-aiding" title="Permalink to this heading"></a></h2>
+<h2>Reasons to use generic aiding<a class="headerlink" href="#reasons-to-use-generic-aiding" title="Permalink to this heading"></a></h2>
 <p>There are a number of different reasons why Generic Aiding might be effective
 for your application.</p>
 <section id="combining-users-data">
