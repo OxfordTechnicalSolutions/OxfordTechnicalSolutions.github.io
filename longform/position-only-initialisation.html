@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Position Only Initialisation &mdash; OxTS C++ Generic Aiding SDK  documentation</title>
+  <title>Initialisation &mdash; OxTS C++ Generic Aiding SDK  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
@@ -70,7 +70,8 @@
 <li class="toctree-l1"><a class="reference internal" href="gad-files.html">.gad files (Advanced)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reassigning-traditional-sources.html">Reassigning traditional data sources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stream-priority.html">Stream priority</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Position Only Initialisation</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Initialisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#position-only-initialisation">Position-only initialisation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#velocity">Velocity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#heading-coming-soon">Heading (coming soon)</a></li>
 </ul>
@@ -99,7 +100,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Position Only Initialisation</li>
+      <li class="breadcrumb-item active">Initialisation</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/longform/position-only-initialisation.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -109,36 +110,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="position-only-initialisation">
-<span id="positiononlyinitialisation"></span><h1>Position Only Initialisation<a class="headerlink" href="#position-only-initialisation" title="Permalink to this heading"></a></h1>
-<p>Whilst the system is perfectly capable of operating with just position information
-from GAD, initialisation of the unit requires information for velocity and
-heading.
+  <section id="initialisation">
+<span id="positiononlyinitialisation"></span><h1>Initialisation<a class="headerlink" href="#initialisation" title="Permalink to this heading"></a></h1>
+<p>To successfully use GAD updates, the INS must be initalised. To initalise requires time, position, velocity and orientation.</p>
+</section>
+<section id="position-only-initialisation">
+<h1>Position-only initialisation<a class="headerlink" href="#position-only-initialisation" title="Permalink to this heading"></a></h1>
+<p>It is possible to operate the system using just position information from GAD.
 In lieu of providing an estimate of velocity and heading in the case of only
 having position information from GAD, two options can be used to dynamically
-initialise the unit.</p>
+initialise the unit.
+Time must be provided separately whether via command or input by the system. Care should be taken to make sure that time is consistent across all devices.</p>
 <section id="velocity">
 <h2>Velocity<a class="headerlink" href="#velocity" title="Permalink to this heading"></a></h2>
 <dl class="simple">
 <dt>-gad_init_vel_from_pos_[X]</dt><dd><p>[X] = on/off</p>
 </dd>
-</dl>
-<p>This command allows the system to create its own estimate of velocity from a GAD
-position stream, meaning the system can initialise.
-For initialisation to occur, the velocity in a straight line must exceed the
-‘motion speed’ option (default 5m/s) for a few seconds.
-This may be changed using the below command, although reducing this speed is
-not recommended.</p>
-<dl class="simple">
 <dt>-motion_speed[X]</dt><dd><p>[X] = Speed for dynamic initialisation, in m/s (default 5.0)</p>
 </dd>
 </dl>
-<p>It is important to note that the position updates (from a single stream) must
-be more regular than 1Hz for velocity to be calculated.
-More than 5Hz is highly recommended.
-Furthermore, if there are any available velocity streams, the system will use
-these for initialisation, rather than the position streams, regardless of this
-option being set.</p>
 </section>
 <section id="heading-coming-soon">
 <h2>Heading (coming soon)<a class="headerlink" href="#heading-coming-soon" title="Permalink to this heading"></a></h2>
@@ -146,12 +136,7 @@ option being set.</p>
 <dt>-gad_init_hea_from_pos_[X]</dt><dd><p>[X] = on/off</p>
 </dd>
 </dl>
-<p>If the velocity initialisation is being performed from position data, this
-option can also be set to allow the heading to be dynamically initialised from
-this velocity.
-As with the velocity from position aiding, if an actual heading stream is
-available, the system will use that for initialisation, assuming it reaches the
-usual thresholds for variance level.</p>
+<p>For more information on using these commands, see :ref’advancedcommands’.</p>
 </section>
 </section>
 
