@@ -206,6 +206,7 @@ To send to the INS instead of a CSV change output_type to OUTPUT_TYPE::UDP.  The
 </div>
 <p>Next, we set up the heading data with stream ID 132.   The heading is set to 180 degress,
 with a variance of 0.1.  The alignment offsets are all set to 0.0 with an associated variance of 5.0.</p>
+<p>Note that the offsets between the sensor and IMU should be given in the navigation frame.</p>
 <p>The function <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">SetTimeVoid</span><span class="p">()</span><span class="w"></span></code> indicates that the data will be sent with no
 timestamp, making it the simplest way to handle timing when working with
 Generic Aiding. In this setup, the INS will timestamp the packet upon receipt.</p>
