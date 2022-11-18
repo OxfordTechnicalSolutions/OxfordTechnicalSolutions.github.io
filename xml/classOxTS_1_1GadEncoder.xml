@@ -27,6 +27,7 @@
         <definition>unsigned char OxTS::GadEncoder::buffer[buffer_size]</definition>
         <argsstring>[buffer_size]</argsstring>
         <name>buffer</name>
+        <initializer>= { 0 }</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
