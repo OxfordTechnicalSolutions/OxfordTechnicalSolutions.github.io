@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classOxTS_1_1GadEncoder" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>OxTS::GadEncoder</compoundname>
     <derivedcompoundref refid="classOxTS_1_1GadEncoderBin" prot="public" virt="non-virtual">OxTS::GadEncoderBin</derivedcompoundref>
@@ -96,8 +96,8 @@
         <definition>virtual void OxTS::GadEncoder::EncodePacket</definition>
         <argsstring>(Gad &amp;g)=0</argsstring>
         <name>EncodePacket</name>
-        <reimplementedby refid="classOxTS_1_1GadEncoderCsv_1a97fb5b043784e83796dd19fed304b00c">EncodePacket</reimplementedby>
         <reimplementedby refid="classOxTS_1_1GadEncoderBin_1ac8c7fcd28986c9ddae1293d65bcfa2f2">EncodePacket</reimplementedby>
+        <reimplementedby refid="classOxTS_1_1GadEncoderCsv_1a97fb5b043784e83796dd19fed304b00c">EncodePacket</reimplementedby>
         <param>
           <type><ref refid="classOxTS_1_1Gad" kindref="compound">Gad</ref> &amp;</type>
           <declname>g</declname>
@@ -116,8 +116,8 @@
         <definition>virtual unsigned char* OxTS::GadEncoder::GetPacket</definition>
         <argsstring>()=0</argsstring>
         <name>GetPacket</name>
-        <reimplementedby refid="classOxTS_1_1GadEncoderCsv_1ac909fe72cb0b893e802b433fc43f220c">GetPacket</reimplementedby>
         <reimplementedby refid="classOxTS_1_1GadEncoderBin_1aa3be5cc2fd8d682a5f035725e21a02ab">GetPacket</reimplementedby>
+        <reimplementedby refid="classOxTS_1_1GadEncoderCsv_1ac909fe72cb0b893e802b433fc43f220c">GetPacket</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -134,8 +134,8 @@
         <definition>virtual std::size_t OxTS::GadEncoder::GetPacketSize</definition>
         <argsstring>()=0</argsstring>
         <name>GetPacketSize</name>
-        <reimplementedby refid="classOxTS_1_1GadEncoderCsv_1af4f9940a694eb2e6dca78fcc3279d963">GetPacketSize</reimplementedby>
         <reimplementedby refid="classOxTS_1_1GadEncoderBin_1a8f98769abe36a527bcfcffef65e9e646">GetPacketSize</reimplementedby>
+        <reimplementedby refid="classOxTS_1_1GadEncoderCsv_1af4f9940a694eb2e6dca78fcc3279d963">GetPacketSize</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -171,7 +171,7 @@
         <link refid="classOxTS_1_1GadEncoder"/>
       </node>
     </inheritancegraph>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp" line="24" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp" bodystart="23" bodyend="49"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp" line="23" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp" bodystart="24" bodyend="49"/>
     <listofallmembers>
       <member refid="classOxTS_1_1GadEncoder_1a4ab5985456957619702e67520ef729fa" prot="protected" virt="non-virtual"><scope>OxTS::GadEncoder</scope><name>buffer</name></member>
       <member refid="classOxTS_1_1GadEncoder_1a01b3f7e9242f9d4737b6ae2026e1da8c" prot="protected" virt="non-virtual"><scope>OxTS::GadEncoder</scope><name>buffer_offset</name></member>

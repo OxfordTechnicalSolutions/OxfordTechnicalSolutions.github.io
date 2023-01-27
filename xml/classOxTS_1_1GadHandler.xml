@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classOxTS_1_1GadHandler" kind="class" language="C++" prot="public">
     <compoundname>OxTS::GadHandler</compoundname>
     <includes local="no">gad_handler.hpp</includes>
@@ -166,7 +166,7 @@
     <detaileddescription>
 <para>Class to handle encoding and sending Generic Aiding packets. This can be to an INS in real time via UDP or to a .gad csv file. </para>
     </detaileddescription>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp" line="18" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp" bodystart="17" bodyend="46"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp" line="17" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp" bodystart="18" bodyend="46"/>
     <listofallmembers>
       <member refid="classOxTS_1_1GadHandler_1ad04210ea9ad78366860d46a7734a761e" prot="private" virt="non-virtual"><scope>OxTS::GadHandler</scope><name>encoder_</name></member>
       <member refid="classOxTS_1_1GadHandler_1a1f56dfe9cc77ab3d4cb3db874ec7f0f4" prot="public" virt="non-virtual"><scope>OxTS::GadHandler</scope><name>GadHandler</name></member>

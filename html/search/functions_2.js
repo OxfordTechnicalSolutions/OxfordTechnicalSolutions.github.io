@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gad_132',['Gad',['../classOxTS_1_1Gad.html#ae04da920e53256cab9c8f50a481c0f7e',1,'OxTS::Gad::Gad()'],['../classOxTS_1_1Gad.html#a77e6c8ec040c686ed9ab1864ac2b7ffd',1,'OxTS::Gad::Gad(uint8_t stream_id, int8_t aiding_type)'],['../classOxTS_1_1Gad.html#a969b016fca0ce657a2bb93796d975e93',1,'OxTS::Gad::Gad(const Gad &amp;g)'],['../classOxTS_1_1Gad.html#a4052e78602b043d98509da287a5e7543',1,'OxTS::Gad::Gad(const GEN_AIDING_DATA &amp;g)']]],
+  ['gad_132',['Gad',['../classOxTS_1_1Gad.html#a77e6c8ec040c686ed9ab1864ac2b7ffd',1,'OxTS::Gad::Gad(uint8_t stream_id, int8_t aiding_type)'],['../classOxTS_1_1Gad.html#a969b016fca0ce657a2bb93796d975e93',1,'OxTS::Gad::Gad(const Gad &amp;g)'],['../classOxTS_1_1Gad.html#a4052e78602b043d98509da287a5e7543',1,'OxTS::Gad::Gad(const GEN_AIDING_DATA &amp;g)'],['../classOxTS_1_1Gad.html#ae04da920e53256cab9c8f50a481c0f7e',1,'OxTS::Gad::Gad()']]],
   ['gadattitude_133',['GadAttitude',['../classOxTS_1_1GadAttitude.html#af9ba33f5061229ec0270824e168911b6',1,'OxTS::GadAttitude::GadAttitude()'],['../classOxTS_1_1GadAttitude.html#ab5ea46dd62ad58814195d3c641686327',1,'OxTS::GadAttitude::GadAttitude(uint8_t stream_id)']]],
   ['gadencoderbin_134',['GadEncoderBin',['../classOxTS_1_1GadEncoderBin.html#ad566069ee9a9228bf227462146ee79e1',1,'OxTS::GadEncoderBin']]],
   ['gadencodercsv_135',['GadEncoderCsv',['../classOxTS_1_1GadEncoderCsv.html#a54ebd10f0015296abcc648d3e9f3e499',1,'OxTS::GadEncoderCsv']]],
@@ -15,7 +15,7 @@ var searchData=
   ['getmode_144',['GetMode',['../classOxTS_1_1Gen3d.html#afec09d4f12157ea3408cdd6de1653cef',1,'OxTS::Gen3d']]],
   ['getoutputfile_145',['GetOutputFile',['../classOxTS_1_1GadOutputFile.html#a8519d0b51a6ebf20e263e7a784841d95',1,'OxTS::GadOutputFile']]],
   ['getoutputfilepath_146',['GetOutputFilePath',['../classOxTS_1_1GadOutputFile.html#acd73dbaed58b5114c81c3b0769ee26f5',1,'OxTS::GadOutputFile']]],
-  ['getpacket_147',['GetPacket',['../classOxTS_1_1GadEncoder.html#a34df3ac4567fc73b814d0efa23da37f9',1,'OxTS::GadEncoder::GetPacket()'],['../classOxTS_1_1GadEncoderBin.html#aa3be5cc2fd8d682a5f035725e21a02ab',1,'OxTS::GadEncoderBin::GetPacket()'],['../classOxTS_1_1GadEncoderCsv.html#ac909fe72cb0b893e802b433fc43f220c',1,'OxTS::GadEncoderCsv::GetPacket()']]],
+  ['getpacket_147',['GetPacket',['../classOxTS_1_1GadEncoder.html#a34df3ac4567fc73b814d0efa23da37f9',1,'OxTS::GadEncoder::GetPacket()'],['../classOxTS_1_1GadEncoderCsv.html#ac909fe72cb0b893e802b433fc43f220c',1,'OxTS::GadEncoderCsv::GetPacket()'],['../classOxTS_1_1GadEncoderBin.html#aa3be5cc2fd8d682a5f035725e21a02ab',1,'OxTS::GadEncoderBin::GetPacket()']]],
   ['getpacketsize_148',['GetPacketSize',['../classOxTS_1_1GadEncoder.html#ae41a535f29d2223bcbb969cfa8d3c78a',1,'OxTS::GadEncoder::GetPacketSize()'],['../classOxTS_1_1GadEncoderBin.html#a8f98769abe36a527bcfcffef65e9e646',1,'OxTS::GadEncoderBin::GetPacketSize()'],['../classOxTS_1_1GadEncoderCsv.html#af4f9940a694eb2e6dca78fcc3279d963',1,'OxTS::GadEncoderCsv::GetPacketSize()']]],
   ['getpos_149',['GetPos',['../classOxTS_1_1GadPosition.html#a697c384769f5d3a96df37ec3c6a7c96a',1,'OxTS::GadPosition']]],
   ['getposvar_150',['GetPosVar',['../classOxTS_1_1GadPosition.html#ac891f936ac3cb0db9dc85b695f2f5733',1,'OxTS::GadPosition']]],

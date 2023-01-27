@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classOxTS_1_1GadEncoderBin" kind="class" language="C++" prot="public">
     <compoundname>OxTS::GadEncoderBin</compoundname>
     <basecompoundref refid="classOxTS_1_1GadEncoder" prot="public" virt="non-virtual">OxTS::GadEncoder</basecompoundref>
@@ -73,9 +73,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
-      <memberdef kind="function" id="classOxTS_1_1GadEncoderBin_1a884bcef52a6b23b78184b39173e8324f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>const int</type>
-        <definition>static const int OxTS::GadEncoderBin::BufferOverrunCheck</definition>
+      <memberdef kind="function" id="classOxTS_1_1GadEncoderBin_1a1470e1534f0b0a26c41bdbae2d53a74d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int const</type>
+        <definition>static int const OxTS::GadEncoderBin::BufferOverrunCheck</definition>
         <argsstring>(size_t expected_data_size)</argsstring>
         <name>BufferOverrunCheck</name>
         <param>
@@ -185,12 +185,12 @@
         <link refid="classOxTS_1_1GadEncoder"/>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" line="13" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" bodystart="12" bodyend="74"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" line="12" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" bodystart="13" bodyend="74"/>
     <listofallmembers>
       <member refid="classOxTS_1_1GadEncoder_1a4ab5985456957619702e67520ef729fa" prot="protected" virt="non-virtual"><scope>OxTS::GadEncoderBin</scope><name>buffer</name></member>
       <member refid="classOxTS_1_1GadEncoder_1a01b3f7e9242f9d4737b6ae2026e1da8c" prot="protected" virt="non-virtual"><scope>OxTS::GadEncoderBin</scope><name>buffer_offset</name></member>
       <member refid="classOxTS_1_1GadEncoder_1aa23732db978dfb3919fde3c76861dbe0" prot="protected" virt="non-virtual"><scope>OxTS::GadEncoderBin</scope><name>buffer_size</name></member>
-      <member refid="classOxTS_1_1GadEncoderBin_1a884bcef52a6b23b78184b39173e8324f" prot="private" virt="non-virtual"><scope>OxTS::GadEncoderBin</scope><name>BufferOverrunCheck</name></member>
+      <member refid="classOxTS_1_1GadEncoderBin_1a1470e1534f0b0a26c41bdbae2d53a74d" prot="private" virt="non-virtual"><scope>OxTS::GadEncoderBin</scope><name>BufferOverrunCheck</name></member>
       <member refid="classOxTS_1_1GadEncoderBin_1a89f07bb2ee8b668729543a371ab56b53" prot="private" virt="non-virtual"><scope>OxTS::GadEncoderBin</scope><name>ccom_gad</name></member>
       <member refid="classOxTS_1_1GadEncoderBin_1af98ee55ce6a65ac9b8e517f3185e09d4" prot="private" virt="non-virtual"><scope>OxTS::GadEncoderBin</scope><name>EncodeGadBin</name></member>
       <member refid="classOxTS_1_1GadEncoderBin_1a6f312ffa27b5a2bf11ab93ba3a94f667" prot="private" virt="non-virtual"><scope>OxTS::GadEncoderBin</scope><name>EncodeGen3d</name></member>

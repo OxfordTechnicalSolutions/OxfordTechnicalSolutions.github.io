@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classnetworking__udp_1_1server" kind="class" language="C++" prot="public">
     <compoundname>networking_udp::server</compoundname>
     <includes local="no">udp_server_client.hpp</includes>
@@ -169,7 +169,7 @@
  <mdash/>SERVER<mdash/></para>
 <para>This sends a datagram over ethernet to the endpoint specified </para>
     </detaileddescription>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="151" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" bodystart="150" bodyend="277"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="150" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" bodystart="151" bodyend="277"/>
     <listofallmembers>
       <member refid="classnetworking__udp_1_1server_1aa3453ba7fce089c774b42a9abb1e5b13" prot="private" virt="non-virtual"><scope>networking_udp::server</scope><name>io_service</name></member>
       <member refid="classnetworking__udp_1_1server_1ae43e5050bfc61deb81d4d2f7c122cc55" prot="private" virt="non-virtual"><scope>networking_udp::server</scope><name>remote_endpoint</name></member>

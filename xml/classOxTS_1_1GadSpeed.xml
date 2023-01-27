@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classOxTS_1_1GadSpeed" kind="class" language="C++" prot="public">
     <compoundname>OxTS::GadSpeed</compoundname>
     <basecompoundref refid="classOxTS_1_1Gad" prot="public" virt="non-virtual">OxTS::Gad</basecompoundref>
@@ -389,7 +389,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="501" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="500" bodyend="573"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="500" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="501" bodyend="573"/>
     <listofallmembers>
       <member refid="classOxTS_1_1Gad_1ae04da920e53256cab9c8f50a481c0f7e" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>Gad</name></member>
       <member refid="classOxTS_1_1Gad_1a77e6c8ec040c686ed9ab1864ac2b7ffd" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>Gad</name></member>

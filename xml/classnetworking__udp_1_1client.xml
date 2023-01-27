@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classnetworking__udp_1_1client" kind="class" language="C++" prot="public">
     <compoundname>networking_udp::client</compoundname>
     <includes local="no">udp_server_client.hpp</includes>
@@ -167,7 +167,7 @@
     <detaileddescription>
 <para><mdash/>CLIENT<mdash/> Simple UDP client program which receives data on a given port </para>
     </detaileddescription>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="28" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" bodystart="27" bodyend="142"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="27" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" bodystart="28" bodyend="142"/>
     <listofallmembers>
       <member refid="classnetworking__udp_1_1client_1ad130eba5eeae3e19702e2849e4235b82" prot="public" virt="non-virtual"><scope>networking_udp::client</scope><name>client</name></member>
       <member refid="classnetworking__udp_1_1client_1a502bbb5fb8a487f376864d665be3f46c" prot="public" virt="non-virtual"><scope>networking_udp::client</scope><name>client</name></member>

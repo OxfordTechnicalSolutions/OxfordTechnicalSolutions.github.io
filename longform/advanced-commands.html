@@ -117,8 +117,7 @@ It is downloadable from the OxTS website <a class="reference external" href="htt
 </section>
 <section id="all-configuration-options">
 <h1>All configuration options<a class="headerlink" href="#all-configuration-options" title="Permalink to this heading"></a></h1>
-<p>This page contains a comprehensive list of configuration options relevant to
-Generic Aiding which can be used with blended/xbns.</p>
+<p>This page contains a comprehensive list of configuration options relevant to Generic Aiding.</p>
 <table class="colwidths-given docutils align-default" id="id3">
 <caption><span class="caption-text">All Generic Aiding Options</span><a class="headerlink" href="#id3" title="Permalink to this table"></a></caption>
 <colgroup>
@@ -131,41 +130,41 @@ Generic Aiding which can be used with blended/xbns.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>gad_csv_output</p></td>
-<td><p>[X] = on: turn on csv_output, [X] = off: turn off csv_output (default)</p></td>
+<tr class="row-even"><td><p>gad_csv_output_[enabled]</p></td>
+<td><p>off: turn off csv_output (default), immediate: turn on csv output with the data as logged, e.g. timestamps as delays, resolved: turn on csv output with the timestamps resolved.</p></td>
 </tr>
-<tr class="row-odd"><td><p>aid_gpsint1_[X]</p></td>
-<td><p>[X] = on: turn on GPS1, [X] = off: turn off GPS1</p></td>
+<tr class="row-odd"><td><p>aid_gpsint1_[enabled]</p></td>
+<td><p>on/off. Enable GPS1</p></td>
 </tr>
-<tr class="row-even"><td><p>aid_gpsint1_loc_id[X]</p></td>
-<td><p>Associate Leverarm ID [X] to primary GPS antenna</p></td>
+<tr class="row-even"><td><p>aid_gpsint1_loc_id[leverarm_ID]</p></td>
+<td><p>Associate leverarm_ID to primary GPS antenna</p></td>
 </tr>
-<tr class="row-odd"><td><p>aid_gpsatt_[X]</p></td>
-<td><p>[X] = on: turn on GNSS dual antenna, [X] = off: turn off GNSS dual antenna</p></td>
+<tr class="row-odd"><td><p>aid_gpsatt_[enabled]</p></td>
+<td><p>on/off. Enable GNSS dual antenna</p></td>
 </tr>
-<tr class="row-even"><td><p>aid_gpsatt_loc_id[X]</p></td>
-<td><p>Associate a heading angular offset ID [X] to the primary GPS antenna</p></td>
+<tr class="row-even"><td><p>aid_gpsatt_loc_id[heading_angular_offset_ID]</p></td>
+<td><p>Associate a heading_angular_offset_ID to the primary GPS antenna</p></td>
 </tr>
-<tr class="row-odd"><td><p>aid_gpsext_[X]</p></td>
-<td><p>[X] = on: turn on external GPS, [X] = off: turn off external GPS</p></td>
+<tr class="row-odd"><td><p>aid_gpsext_[enabled]</p></td>
+<td><p>on/off. Enable external GPS</p></td>
 </tr>
-<tr class="row-even"><td><p>aid_gpsext_loc_id[X]</p></td>
-<td><p>Associates the external GPS to a fixed lever arm with ID [X].</p></td>
+<tr class="row-even"><td><p>aid_gpsext_loc_id[leverarm_ID]</p></td>
+<td><p>Associates the external GPS to a fixed leverarm_ID</p></td>
 </tr>
-<tr class="row-odd"><td><p>aid_wspeed_[X]</p></td>
-<td><p>[X] = on: turn on internal wheelspeed, [X] = off: turn off internal wheelspeed.</p></td>
+<tr class="row-odd"><td><p>aid_wspeed_[enabled]</p></td>
+<td><p>on/off. Enable internal wheelspeed</p></td>
 </tr>
-<tr class="row-even"><td><p>aid_wspeed_loc_id[X]</p></td>
-<td><p>Associates the internal wheelspeed to a fixed leverarm with ID [X].</p></td>
+<tr class="row-even"><td><p>aid_wspeed_loc_id[leverarm_ID]</p></td>
+<td><p>Associates the internal wheelspeed to a fixed leverarm_ID</p></td>
 </tr>
-<tr class="row-odd"><td><p>gad_[X][Y]</p></td>
-<td><p>[X] = on: turn on stream with id [Y], [X] = off: turn off stream with id [Y]</p></td>
+<tr class="row-odd"><td><p>gad_[enabled][stream_ID]</p></td>
+<td><p>on/off. Enable stream with stream_ID</p></td>
 </tr>
-<tr class="row-even"><td><p>gad_loc_id[X]_[Y]</p></td>
-<td><p>Associate stream ID [X] with Lever Arm ID [Y]</p></td>
+<tr class="row-even"><td><p>gad_loc_id[stream_ID]_[leverarm_ID]</p></td>
+<td><p>Associate stream_ID with leverarm_ID</p></td>
 </tr>
-<tr class="row-odd"><td><p>gad_att_id[X]_[Y]</p></td>
-<td><p>Associate stream ID [X] with Attitude ID [Y]</p></td>
+<tr class="row-odd"><td><p>gad_att_id[stream_ID]_[attitude_ID]</p></td>
+<td><p>Associate stream_ID with attitude_ID</p></td>
 </tr>
 <tr class="row-even"><td><p>locationA_B_C_D_X</p></td>
 <td><p>Create loc ID [A] for Lever Arm ([B],[C],[D]), with common variance [X]</p></td>
@@ -179,26 +178,26 @@ Generic Aiding which can be used with blended/xbns.</p>
 <tr class="row-odd"><td><p>attitudeA_B_C_D_X_Y_Z</p></td>
 <td><p>Create att ID [A] for Attitude ([B],[C],[D]), with variance ([X],[Y],[Z])</p></td>
 </tr>
-<tr class="row-even"><td><p>gad_init_vel_from_pos</p></td>
-<td><p>[X] = on: enable dynamic velocity initialisation from GAD position data, [X] = off: disable velocity initialisation from position data</p></td>
+<tr class="row-even"><td><p>gad_init_vel_from_pos_[enabled]</p></td>
+<td><p>on/off. Enable dynamic velocity initialisation from GAD position data</p></td>
 </tr>
-<tr class="row-odd"><td><p>gad_init_hea_from_pos</p></td>
-<td><p>[X] = on: enable dynamic heading initialisation from position data, [X] = off: disable heading initialisation from position data</p></td>
+<tr class="row-odd"><td><p>gad_init_hea_from_pos_[enabled]</p></td>
+<td><p>on/off. Enable dynamic heading initialisation from position data</p></td>
 </tr>
 <tr class="row-even"><td><p>gad_lrf[lrf_id]_[lat]_[lon]_[alt]_[yaw]_[pitch]_[roll]</p></td>
-<td><p>Angles are expected in degrees. [lat], [lon] and [alt] should be the origin of your local frame.  This command sets a new GAD local reference frame with a specified Id. The [lrf_id] is a unique identifier for each local reference frame. Up to 32 reference frames can be defined in this way. Once the local refence frame has been defined, it must be associated to the stream Id of the relevant aiding so that the INS knows which local reference frame to use for a particular aiding source.</p></td>
+<td><p>Angles are expected in degrees. lat, lon and alt should be the origin of your local frame.  This command sets a new GAD local reference frame with a specified Id. The lrf_id is a unique identifier for each local reference frame. Up to 32 reference frames can be defined in this way. Once the local refence frame has been defined, it must be associated to the stream Id of the relevant aiding so that the INS knows which local reference frame to use for a particular aiding source</p></td>
 </tr>
 <tr class="row-odd"><td><p>gad_lrf_id[stream_id]_[lrf_id]</p></td>
-<td><p>This command sets a specific GAD [stream_id] to use the [lrf_id].</p></td>
+<td><p>This command sets a specific GAD stream_id to use the lrf_id</p></td>
 </tr>
-<tr class="row-even"><td><p>gad_init_vel_from_pos_[X]</p></td>
-<td><p>[X] = on/off. This command allows the system to create its own estimate of velocity from a GAD position stream, meaning the system can initialise. For initialisation to occur, the velocity in a straight line must exceed the ‘motion speed’ option (default 5 m/s) for a few seconds. This may be changed using the below command, although reducing this speed is not recommended.</p></td>
+<tr class="row-even"><td><p>gad_init_vel_from_pos_[enabled]</p></td>
+<td><p>on/off. This command allows the system to create its own estimate of velocity from a GAD position stream, meaning the system can initialise. For initialisation to occur, the velocity in a straight line must exceed the ‘motion speed’ option (default 5 m/s) for a few seconds. This may be changed using the below command, although reducing this speed is not recommended</p></td>
 </tr>
-<tr class="row-odd"><td><p>motion_speed[X]</p></td>
-<td><p>[X] = Speed for dynamic initialisation, in m/s (default 5.0). It is important to note that the position updates (from a single stream) must be more regular than 1Hz for velocity to be calculated. More than 5 Hz is highly recommended. Furthermore, if there are any available velocity streams, the system will use these for initialisation, rather than the position streams, regardless of this option being set.</p></td>
+<tr class="row-odd"><td><p>motion_speed[speed]</p></td>
+<td><p>Set speed for dynamic initialisation, in m/s (default 5.0). It is important to note that the position updates (from a single stream) must be more regular than 1Hz for velocity to be calculated. More than 5 Hz is highly recommended. Furthermore, if there are any available velocity streams, the system will use these for initialisation, rather than the position streams, regardless of this option being set</p></td>
 </tr>
-<tr class="row-even"><td><p>gad_init_hea_from_pos_[X]</p></td>
-<td><p><a href="#id1"><span class="problematic" id="id2">*</span></a>In development. [X] = on/off. If the velocity initialisation is being performed from position data, this option can also be set to allow the heading to be dynamically initialised from this velocity. As with the velocity from position aiding, if an actual heading stream is available, the system will use that for initialisation, assuming it reaches the usual thresholds for variance level.</p></td>
+<tr class="row-even"><td><p>gad_init_hea_from_pos_[enabled]</p></td>
+<td><p><a href="#id1"><span class="problematic" id="id2">*</span></a>In development. on/off. If the velocity initialisation is being performed from position data, this option can also be set to allow the heading to be dynamically initialised from this velocity. As with the velocity from position aiding, if an actual heading stream is available, the system will use that for initialisation, assuming it reaches the usual thresholds for variance level</p></td>
 </tr>
 </tbody>
 </table>

@@ -181,8 +181,8 @@ To output to a live device omit the final 2 arguments: <cite>static-aiding-examp
 <section id="source-code-breakdown">
 <h2>Source Code Breakdown<a class="headerlink" href="#source-code-breakdown" title="Permalink to this heading"></a></h2>
 <p>Here we run through the source code, explaining the purpose of each of the lines.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad.hpp&quot;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad_handler.hpp&quot;</span><span class="cp"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad_handler.hpp&quot;</span>
 </pre></div>
 </div>
 <p>These are the two includes required for most users of Generic Aiding. <cite>gad.hpp</cite>
@@ -190,54 +190,54 @@ contains the <cite>Gad</cite> class used to form the basis of all Generic Aiding
 <cite>gad_handler.hpp</cite> contains the <cite>GadHandler</cite> class, which provides functionality
 to encode and send the data packets.</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifdef _WIN32</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;windows.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;windows.h&gt;</span>
 <span class="cp">#elif __linux__</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unistd.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unistd.h&gt;</span>
 <span class="cp">#endif</span>
 
-<span class="k">namespace</span><span class="w"> </span><span class="nn">OxTS</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">Sleep</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">sleepMs</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">OxTS</span>
+<span class="p">{</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">Sleep</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">sleepMs</span><span class="p">)</span>
+<span class="p">{</span>
 <span class="cp">#ifdef __linux__</span>
 <span class="w">    </span><span class="n">usleep</span><span class="p">(</span><span class="n">sleepMs</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1000</span><span class="p">);</span><span class="w">   </span><span class="c1">// usleep takes sleep time in us (1 millionth of a second)</span>
 <span class="cp">#endif</span>
 <span class="cp">#ifdef _WIN32</span>
 <span class="w">    </span><span class="n">Sleep</span><span class="p">(</span><span class="n">sleepMs</span><span class="p">);</span><span class="w">    </span><span class="c1">// Sleep takes sleep time in ms.</span>
 <span class="cp">#endif</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 <span class="p">}</span><span class="w"> </span><span class="c1">// OxTS</span>
 </pre></div>
 </div>
 <p>This code is not exclusive to Generic Aiding. It is a basic implementation of a
 cross-platform sleep function, which will make the system wait a set period of
 time before continuing execution.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">OUTPUT_TYPE</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">UDP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="n">CSV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">OUTPUT_TYPE</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">UDP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="n">CSV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="p">};</span>
 </pre></div>
 </div>
 <p>Extremely simple enum, to allow switching between CSV (file) and UDP (via
 ethernet) output in this example.</p>
 <p>Now we enter the <cite>main()</cite> function:</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">sendPackets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span><span class="w"></span>
-<span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">unit_ip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;192.168.25.22&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">file_out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;out.gad&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="kt">int</span><span class="w"> </span><span class="n">output_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OUTPUT_TYPE</span><span class="o">::</span><span class="n">UDP</span><span class="p">;</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">sendPackets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">unit_ip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;192.168.25.22&quot;</span><span class="p">;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">file_out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;out.gad&quot;</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">output_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OUTPUT_TYPE</span><span class="o">::</span><span class="n">UDP</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>These variables determine some of the setup of the example, including the
 number of packets to send, the IP address to send the packets to, the output
 file, and whether to output to CSV or UDP. Naturally, only one of the IP
 address and output file are actually used on a given run.  These variables are also set form user input if provided.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="w"> </span><span class="n">gp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="p">(</span><span class="mi">129</span><span class="p">);</span><span class="w"></span>
-<span class="n">gp</span><span class="p">.</span><span class="n">SetPosGeodetic</span><span class="p">(</span><span class="mf">51.91520330</span><span class="p">,</span><span class="mf">-1.24479140</span><span class="p">,</span><span class="mf">111.525</span><span class="p">);</span><span class="w"></span>
-<span class="n">gp</span><span class="p">.</span><span class="n">SetPosVar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
-<span class="n">gp</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span><span class="w"></span>
-<span class="n">gp</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span><span class="w"></span>
-<span class="n">gp</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="w"> </span><span class="n">gp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="p">(</span><span class="mi">129</span><span class="p">);</span>
+<span class="n">gp</span><span class="p">.</span><span class="n">SetPosGeodetic</span><span class="p">(</span><span class="mf">51.91520330</span><span class="p">,</span><span class="mf">-1.24479140</span><span class="p">,</span><span class="mf">111.525</span><span class="p">);</span>
+<span class="n">gp</span><span class="p">.</span><span class="n">SetPosVar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">gp</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span>
+<span class="n">gp</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="n">gp</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>This portion of code sets up the static Generic Aiding Position data. Each
@@ -261,12 +261,12 @@ is the linear offset from the INS to the aiding device, in the IMU frame. The
 variance indicates how accurately these values are known. By setting the lever
 arm to “Fixed”, it is indicated to the INS that this lever arm is not to be
 optimised. This is the most common setup.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadVelocity</span><span class="w"> </span><span class="n">gv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadVelocity</span><span class="p">(</span><span class="mi">130</span><span class="p">);</span><span class="w"></span>
-<span class="n">gv</span><span class="p">.</span><span class="n">SetVelNeu</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span><span class="w"></span>
-<span class="n">gv</span><span class="p">.</span><span class="n">SetVelNeuVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span><span class="w"></span>
-<span class="n">gv</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span><span class="w"></span>
-<span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span><span class="w"></span>
-<span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadVelocity</span><span class="w"> </span><span class="n">gv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadVelocity</span><span class="p">(</span><span class="mi">130</span><span class="p">);</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetVelNeu</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetVelNeuVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Next, we set up the velocity data, which follows a similar pattern to the
@@ -277,12 +277,12 @@ Since we are creating <em>static</em> data, the velocity is zero in all axes.</p
 data for this example. This might suggest that the data is coming from the
 same source which is capable of calculating both types of measurement; perhaps
 a GNSS receiver.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadAttitude</span><span class="w"> </span><span class="n">ga</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadAttitude</span><span class="p">(</span><span class="mi">131</span><span class="p">);</span><span class="w"></span>
-<span class="n">ga</span><span class="p">.</span><span class="n">SetAtt</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span><span class="w"></span>
-<span class="n">ga</span><span class="p">.</span><span class="n">SetAttVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span><span class="w"></span>
-<span class="n">ga</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span><span class="w"></span>
-<span class="n">ga</span><span class="p">.</span><span class="n">SetAidingAlignmentOptimising</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span><span class="w"></span>
-<span class="n">ga</span><span class="p">.</span><span class="n">SetAidingAlignmentVar</span><span class="p">(</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">5.0</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadAttitude</span><span class="w"> </span><span class="n">ga</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadAttitude</span><span class="p">(</span><span class="mi">131</span><span class="p">);</span>
+<span class="n">ga</span><span class="p">.</span><span class="n">SetAtt</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="n">ga</span><span class="p">.</span><span class="n">SetAttVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="n">ga</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span>
+<span class="n">ga</span><span class="p">.</span><span class="n">SetAidingAlignmentOptimising</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="n">ga</span><span class="p">.</span><span class="n">SetAidingAlignmentVar</span><span class="p">(</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">5.0</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>The attitude data differs slightly from the two previous aiding types since it
@@ -305,38 +305,38 @@ find the angles more accurately and therefore improve the quality of the aiding.
 “Optimising”, alignment for GNSS Dual Antenna must be reassigned. For more
 information, see <a class="reference internal" href="reassigning-traditional-sources.html#reassigningtraditionaldatasources"><span class="std std-ref">Reassigning traditional data sources</span></a> .</p>
 </div>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadHandler</span><span class="w"> </span><span class="n">gh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadHandler</span><span class="p">();</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadHandler</span><span class="w"> </span><span class="n">gh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadHandler</span><span class="p">();</span>
 
-<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">output_type</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="no">OUTPUT_TYPE</span><span class="o">::</span><span class="no">UDP</span><span class="w"> </span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToBin</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToUdp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="no">OUTPUT_TYPE</span><span class="o">::</span><span class="no">CSV</span><span class="w"> </span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToCsv</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToFile</span><span class="p">(</span><span class="n">file_out</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="k">default</span><span class="w"> </span><span class="o">:</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Output type not known.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">output_type</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="no">OUTPUT_TYPE</span><span class="o">::</span><span class="no">UDP</span><span class="w"> </span><span class="p">:</span>
+<span class="w">    </span><span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToBin</span><span class="p">();</span>
+<span class="w">    </span><span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToUdp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="no">OUTPUT_TYPE</span><span class="o">::</span><span class="no">CSV</span><span class="w"> </span><span class="p">:</span>
+<span class="w">    </span><span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToCsv</span><span class="p">();</span>
+<span class="w">    </span><span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToFile</span><span class="p">(</span><span class="n">file_out</span><span class="p">);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">default</span><span class="w"> </span><span class="o">:</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Output type not known.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>This block of code initialises an instance of the <cite>GadHandler</cite> and sets it up
 to either send Generic Aiding data via UDP or to CSV file, based on the
 configuration option at the start of the file.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">sendPackets</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">gp</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">gv</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">ga</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">sendPackets</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">gp</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">gv</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">ga</span><span class="p">);</span>
 
-<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; packets sent&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; packets sent&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 
-<span class="w">  </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>This final code block creates a for loop in which the Generic Aiding data is

@@ -163,8 +163,8 @@ Generic Aiding packets.  You can also provide the number of packets to send: <ci
 <section id="source-code-breakdown">
 <h2>Source Code Breakdown<a class="headerlink" href="#source-code-breakdown" title="Permalink to this heading"></a></h2>
 <p>Here we run through the source code, explaining the purpose of each of the lines.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad.hpp&quot;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp&quot;</span><span class="cp"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp&quot;</span>
 </pre></div>
 </div>
 <p>These are the two includes required for most users of Generic Aiding. <cite>gad.hpp</cite>
@@ -172,22 +172,22 @@ contains the <cite>Gad</cite> class used to form the basis of all Generic Aiding
 <cite>gad_handler.hpp</cite> contains the <cite>GadHandler</cite> class, which provides functionality
 to encode and send the data packets.</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifdef _WIN32</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;windows.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;windows.h&gt;</span>
 <span class="cp">#elif __linux__</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unistd.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;unistd.h&gt;</span>
 <span class="cp">#endif</span>
 
-<span class="k">namespace</span><span class="w"> </span><span class="nn">OxTS</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">Sleep</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">sleepMs</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">OxTS</span>
+<span class="p">{</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">Sleep</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">sleepMs</span><span class="p">)</span>
+<span class="p">{</span>
 <span class="cp">#ifdef __linux__</span>
 <span class="w">    </span><span class="n">usleep</span><span class="p">(</span><span class="n">sleepMs</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1000</span><span class="p">);</span><span class="w">   </span><span class="c1">// usleep takes sleep time in us (1 millionth of a second)</span>
 <span class="cp">#endif</span>
 <span class="cp">#ifdef _WIN32</span>
 <span class="w">    </span><span class="n">Sleep</span><span class="p">(</span><span class="n">sleepMs</span><span class="p">);</span><span class="w">    </span><span class="c1">// Sleep takes sleep time in ms.</span>
 <span class="cp">#endif</span>
-<span class="p">}</span><span class="w"></span>
+<span class="p">}</span>
 <span class="p">}</span><span class="w"> </span><span class="c1">// OxTS</span>
 </pre></div>
 </div>
@@ -195,16 +195,16 @@ to encode and send the data packets.</p>
 cross-platform sleep function, which will make the system wait a set period of
 time before continuing execution.</p>
 <p>Now we enter the <cite>main()</cite> function:</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">num_packets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="p">;</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">num_packets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>This variable determines how many packets to send before exiting the program. This can also be provided as a command line argument.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="w"> </span><span class="n">gp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="p">(</span><span class="mi">129</span><span class="p">);</span><span class="w"></span>
-<span class="n">gp</span><span class="p">.</span><span class="n">SetPosGeodetic</span><span class="p">(</span><span class="mf">51.91520330</span><span class="p">,</span><span class="mf">-1.24479140</span><span class="p">,</span><span class="mf">111.525</span><span class="p">);</span><span class="w"></span>
-<span class="n">gp</span><span class="p">.</span><span class="n">SetPosVar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
-<span class="n">gp</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span><span class="w"></span>
-<span class="n">gp</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span><span class="w"></span>
-<span class="n">gp</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="w"> </span><span class="n">gp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadPosition</span><span class="p">(</span><span class="mi">129</span><span class="p">);</span>
+<span class="n">gp</span><span class="p">.</span><span class="n">SetPosGeodetic</span><span class="p">(</span><span class="mf">51.91520330</span><span class="p">,</span><span class="mf">-1.24479140</span><span class="p">,</span><span class="mf">111.525</span><span class="p">);</span>
+<span class="n">gp</span><span class="p">.</span><span class="n">SetPosVar</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">gp</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span>
+<span class="n">gp</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="n">gp</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>This portion of code sets up the static Generic Aiding Position data. Each
@@ -228,26 +228,26 @@ is the linear offset from the INS to the aiding device, in the IMU frame. The
 variance indicates how accurately these values are known. By setting the lever
 arm to “Fixed” (see <a class="reference internal" href="generic-aiding-position-updates.html#positionlvafixed"><span class="std std-ref">Fixed</span></a>), it is indicated to the INS that
 this lever arm is not to be optimised. This is the most common setup.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadEncoderBin</span><span class="w"> </span><span class="n">geb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadEncoderBin</span><span class="p">();</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadEncoderBin</span><span class="w"> </span><span class="n">geb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadEncoderBin</span><span class="p">();</span>
 </pre></div>
 </div>
 <p>This block of code initialises an instance of the <cite>GadEncoderBin</cite>. This will
 provide the functionality to encode a Generic Aiding packet to binary.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_packets</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">gh</span><span class="p">.</span><span class="n">EncodePacket</span><span class="p">(</span><span class="n">gp</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_packets</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">gh</span><span class="p">.</span><span class="n">EncodePacket</span><span class="p">(</span><span class="n">gp</span><span class="p">);</span>
 
 <span class="w">  </span><span class="c1">// Add your code here for interacting with the static aiding packets.</span>
 <span class="w">  </span><span class="c1">// Use accessor functions geb.GetPacket() and geb.GetPacketSize() to send</span>
 <span class="w">  </span><span class="c1">// the packet via chosen UDP socket library to the INS IP address and port</span>
 <span class="w">  </span><span class="c1">// 50485.</span>
 
-<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; packets sent&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;packet size: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">geb</span><span class="p">.</span><span class="n">GetPacketSize</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; packets sent&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;packet size: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">geb</span><span class="p">.</span><span class="n">GetPacketSize</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 
-<span class="w">  </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>This final code block creates a for loop in which the Generic Aiding data is

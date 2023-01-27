@@ -109,16 +109,18 @@
   <section id="ncom-output">
 <span id="ncomupdates"></span><h1>NCOM Output<a class="headerlink" href="#ncom-output" title="Permalink to this heading"></a></h1>
 <p>NCOM is the most common output format from the OxTS INS, by default it is output over UDP to port 3000.</p>
-<p>For more information on the NCOM format please see the documentation provided on the OxTS support page:</p>
+<p>For information on decoding the NCOM format please see the documentation provided on the OxTS support page:</p>
 <p><a class="reference external" href="https://support.oxts.com/hc/en-us/articles/115002163985-Decoding-OxTS-navigation-outputs">https://support.oxts.com/hc/en-us/articles/115002163985-Decoding-OxTS-navigation-outputs</a></p>
+<p>The latest NCOM manual can be found here:</p>
+<p><a class="reference external" href="https://www.oxts.com/ncom-and-mcom/">https://www.oxts.com/ncom-and-mcom/</a></p>
 <p>When the INS receives a GAD packet with valid time it will output the packet information on status channel 95.
-This packet is scheduled at 1Hz.</p>
+This packet is scheduled at 1 Hz.</p>
 <img alt="../_images/ncom-status-packet-95.gif" src="../_images/ncom-status-packet-95.gif" />
-<p>The innovations will match the stream type and not all innovations will be valid for
-all stream types, for example;  attitude innovation updates will only use innovation1 and innovation2
+<p>The innovations will match the stream type. To date, no GAD update includes more than three measurements in the same packet, therefore there are only three innovations in this packet. Not all innovations will be valid for all stream types, for example; attitude innovation updates will only use innovation1 and innovation2
 measurements.</p>
 <p>Note also when using many streams there may be issues getting updates from a specific stream as
-this status channel will always return data from the last received GAD packet when the packet is sent.</p>
+this status channel will always return data from the last received GAD packet when the packet is sent.
+It is possible that data will not be visible from a specific stream when data is being constantly updated from another stream.</p>
 </section>
 
 

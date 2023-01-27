@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
   <compound refid="classnetworking__udp_1_1client" kind="class"><name>networking_udp::client</name>
     <member refid="classnetworking__udp_1_1client_1a78cc41c511db1943063cd7ab600aca73" kind="variable"><name>io_service</name></member>
     <member refid="classnetworking__udp_1_1client_1a39e9833009a7e0605d61d70d9148d92c" kind="variable"><name>remote_endpoint</name></member>
@@ -116,7 +116,7 @@
     <member refid="classOxTS_1_1GadEncoderBin_1a6f312ffa27b5a2bf11ab93ba3a94f667" kind="function"><name>EncodeGen3d</name></member>
     <member refid="classOxTS_1_1GadEncoderBin_1ab3a4225909fc63123791a7d86e4f327f" kind="function"><name>EncodeGen3dVar</name></member>
     <member refid="classOxTS_1_1GadEncoderBin_1af98ee55ce6a65ac9b8e517f3185e09d4" kind="function"><name>EncodeGadBin</name></member>
-    <member refid="classOxTS_1_1GadEncoderBin_1a884bcef52a6b23b78184b39173e8324f" kind="function"><name>BufferOverrunCheck</name></member>
+    <member refid="classOxTS_1_1GadEncoderBin_1a1470e1534f0b0a26c41bdbae2d53a74d" kind="function"><name>BufferOverrunCheck</name></member>
     <member refid="classOxTS_1_1GadEncoderBin_1ad566069ee9a9228bf227462146ee79e1" kind="function"><name>GadEncoderBin</name></member>
     <member refid="classOxTS_1_1GadEncoderBin_1ac8c7fcd28986c9ddae1293d65bcfa2f2" kind="function"><name>EncodePacket</name></member>
     <member refid="classOxTS_1_1GadEncoderBin_1aa3be5cc2fd8d682a5f035725e21a02ab" kind="function"><name>GetPacket</name></member>

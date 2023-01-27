@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classOxTS_1_1Gen3d" kind="class" language="C++" prot="public">
     <compoundname>OxTS::Gen3d</compoundname>
     <basecompoundref prot="public" virt="non-virtual">GEN_3D</basecompoundref>
@@ -419,7 +419,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="18" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="17" bodyend="64"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="17" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="18" bodyend="64"/>
     <listofallmembers>
       <member refid="classOxTS_1_1Gen3d_1a44cd0e5f590acb7fc5f98536b4fb435b" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>Gen3d</name></member>
       <member refid="classOxTS_1_1Gen3d_1a534120b6188e7efca2de24ef23a5fe4e" prot="public" virt="non-virtual"><scope>OxTS::Gen3d</scope><name>Gen3d</name></member>

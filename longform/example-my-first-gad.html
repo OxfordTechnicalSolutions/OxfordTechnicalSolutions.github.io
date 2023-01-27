@@ -169,8 +169,8 @@ e.g. <cite>my-first-gad-example.exe 192.168.25.10 1000</cite>.</p></li>
 <section id="source-code-breakdown">
 <h2>Source Code Breakdown<a class="headerlink" href="#source-code-breakdown" title="Permalink to this heading"></a></h2>
 <p>Here we run through the source code, explaining the purpose of each of the lines.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad.hpp&quot;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad_handler.hpp&quot;</span><span class="cp"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad_handler.hpp&quot;</span>
 </pre></div>
 </div>
 <p>These are the two includes required for most users of Generic Aiding. <cite>gad.hpp</cite>
@@ -178,11 +178,11 @@ contains the <cite>Gad</cite> class used to form the basis of all Generic Aiding
 <cite>gad_handler.hpp</cite> contains the <cite>GadHandler</cite> class, which provides functionality
 to encode and send the data packets.</p>
 <p>Now we enter the <cite>main()</cite> function:</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">argv</span><span class="p">[])</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w"> </span><span class="p">...</span><span class="w"></span>
-<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">unit_ip</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span><span class="w"></span>
-<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">num_packets</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+<span class="w"> </span><span class="p">...</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">unit_ip</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">num_packets</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
 </pre></div>
 </div>
 <p>There are two input arguments for this executable: the IPv4 address of
@@ -190,21 +190,21 @@ the INS which will be receiving the data, and the number of packets to send.
 Note that there is no advanced parsing or error handling to check that the
 argument has been inputted correctly. The other variable here sets the number
 of packets to send.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadVelocity</span><span class="w"> </span><span class="n">gv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadVelocity</span><span class="p">(</span><span class="mi">130</span><span class="p">);</span><span class="w"></span>
-<span class="n">gv</span><span class="p">.</span><span class="n">SetVelNeu</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span><span class="w"></span>
-<span class="n">gv</span><span class="p">.</span><span class="n">SetVelNeuVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span><span class="w"></span>
-<span class="n">gv</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span><span class="w"></span>
-<span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span><span class="w"></span>
-<span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadVelocity</span><span class="w"> </span><span class="n">gv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadVelocity</span><span class="p">(</span><span class="mi">130</span><span class="p">);</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetVelNeu</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetVelNeuVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Next, we set up the velocity data with stream ID 130.</p>
 <p>The velocity is set in the North, East, Up (left-handed) coordinate system.
 Since we are creating <em>static</em> data, the velocity is zero in all axes. The
 covariance values for this data are set using the function
-<code class="code highlight cpp docutils literal highlight-cpp"><span class="n">SetVelNeuVar</span><span class="p">()</span><span class="w"></span></code>. For more information on covariances, see
+<code class="code highlight cpp docutils literal highlight-cpp"><span class="n">SetVelNeuVar</span><span class="p">()</span></code>. For more information on covariances, see
 <span class="xref std std-ref">estimatingerrors</span> or <a class="reference internal" href="generic-aiding-velocity-updates.html#velocitycovariancematrix"><span class="std std-ref">Covariance matrix</span></a>.</p>
-<p>The function <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">SetTimeVoid</span><span class="p">()</span><span class="w"></span></code> indicates that the data will be sent with no
+<p>The function <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">SetTimeVoid</span><span class="p">()</span></code> indicates that the data will be sent with no
 timestamp, making it the simplest way to handle timing when working with
 Generic Aiding. In this setup, the INS will timestamp the packet upon receipt.</p>
 <p>The final step to fill out the data packet is to set the lever-arm between the
@@ -215,23 +215,23 @@ IMU and the aiding device. Each object has its own frame of reference, and how w
 from the IMU (marked on the case of the INS) to the aiding device, measured in
 metres. The covariance values on this lever-arm are then set according to how
 accurately each translation could be measured including rotation errors.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadHandler</span><span class="w"> </span><span class="n">gh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadHandler</span><span class="p">();</span><span class="w"></span>
-<span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToBin</span><span class="p">();</span><span class="w"></span>
-<span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToUdp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadHandler</span><span class="w"> </span><span class="n">gh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OxTS</span><span class="o">::</span><span class="n">GadHandler</span><span class="p">();</span>
+<span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToBin</span><span class="p">();</span>
+<span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToUdp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>This block of code initialises an instance of the <cite>GadHandler</cite> and sets it up
 to send binary Generic Aiding data via UDP.</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_packets</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">gv</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;packet &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; sent&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_packets</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">gv</span><span class="p">);</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;packet &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; sent&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">  </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>This final code block creates a <cite>for</cite> loop in which the Generic Aiding data is
-encoded and sent via UDP to the INS. With <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">OxTS</span><span class="o">::</span><span class="n">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="w"></span></code>, the data
+encoded and sent via UDP to the INS. With <code class="code highlight cpp docutils literal highlight-cpp"><span class="n">OxTS</span><span class="o">::</span><span class="n">Sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span></code>, the data
 will be sent at a rate of ~10Hz.</p>
 </section>
 <section id="is-my-data-being-received-by-the-ins">
