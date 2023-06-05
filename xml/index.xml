@@ -190,6 +190,7 @@
     <member refid="classOxTS_1_1GadPosition_1a7ad99a09a1f62f3f8bd1afee8492c10e" kind="function"><name>SetAidingLeverArmOptimising</name></member>
     <member refid="classOxTS_1_1GadPosition_1ac37d73387db89a2bd64b0e9ca41fc313" kind="function"><name>SetAidingLeverArmConfig</name></member>
     <member refid="classOxTS_1_1GadPosition_1ae83d2a4cafc6768a1b1c282f9372cc37" kind="function"><name>SetAidingLeverArmVar</name></member>
+    <member refid="classOxTS_1_1GadPosition_1a413ef5b1a547a41142f28f0b560030ff" kind="function"><name>SetAidingLeverArmVarUpperDiag</name></member>
     <member refid="classOxTS_1_1GadPosition_1a05aadac5cd03071b3dd50797127484c0" kind="function"><name>GetAidingLeverArmVar</name></member>
   </compound>
   <compound refid="classOxTS_1_1GadSpeed" kind="class"><name>OxTS::GadSpeed</name>
