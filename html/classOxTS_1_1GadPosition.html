@@ -124,8 +124,6 @@ std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="separator:ac37d73387db89a2bd64b0e9ca41fc313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae83d2a4cafc6768a1b1c282f9372cc37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOxTS_1_1GadPosition.html#ae83d2a4cafc6768a1b1c282f9372cc37">SetAidingLeverArmVar</a> (double x, double y, double z)</td></tr>
 <tr class="separator:ae83d2a4cafc6768a1b1c282f9372cc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a413ef5b1a547a41142f28f0b560030ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOxTS_1_1GadPosition.html#a413ef5b1a547a41142f28f0b560030ff">SetAidingLeverArmVarUpperDiag</a> (double v_xx, double v_yy, double v_zz, double v_xy, double v_xz, double v_yz)</td></tr>
-<tr class="separator:a413ef5b1a547a41142f28f0b560030ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05aadac5cd03071b3dd50797127484c0"><td class="memItemLeft" align="right" valign="top"><a id="a05aadac5cd03071b3dd50797127484c0"></a>
 std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAidingLeverArmVar</b> () const</td></tr>
 <tr class="separator:a05aadac5cd03071b3dd50797127484c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -474,70 +472,6 @@ std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><
     <tr><td class="paramname">x</td><td>Variance on the lever arm from INS to aiding source in the x axis of the IMU frame. </td></tr>
     <tr><td class="paramname">y</td><td>Variance on the lever arm from INS to aiding source in the y axis of the IMU frame. </td></tr>
     <tr><td class="paramname">z</td><td>Variance on the lever arm from INS to aiding source in the z axis of the IMU frame. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a413ef5b1a547a41142f28f0b560030ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a413ef5b1a547a41142f28f0b560030ff">&#9670;&nbsp;</a></span>SetAidingLeverArmVarUpperDiag()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OxTS::GadPosition::SetAidingLeverArmVarUpperDiag </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>v_xx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>v_yy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>v_zz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>v_xy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>v_xz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>v_yz</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the variance (accuracy) of the lever arm measurements from the INS to the aiding source, including off-diagonal terms. Only required for fixed lever-arm.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v_xx</td><td>Variance on the lever arm from INS to aiding source in the x axis of the IMU frame. </td></tr>
-    <tr><td class="paramname">v_yy</td><td>Variance on the lever arm from INS to aiding source in the x axis of the IMU frame. </td></tr>
-    <tr><td class="paramname">v_zz</td><td>Variance on the lever arm from INS to aiding source in the x axis of the IMU frame. </td></tr>
-    <tr><td class="paramname">v_xy</td><td>Covariance on the lever arm from INS to aiding source between the x and y axes of the IMU frame. </td></tr>
-    <tr><td class="paramname">v_xz</td><td>Covariance on the lever arm from INS to aiding source between the x and z axes of the IMU frame. </td></tr>
-    <tr><td class="paramname">v_yz</td><td>Covariance on the lever arm from INS to aiding source between the y and z axes of the IMU frame. </td></tr>
   </table>
   </dd>
 </dl>

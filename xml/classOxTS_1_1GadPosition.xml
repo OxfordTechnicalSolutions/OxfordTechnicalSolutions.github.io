@@ -584,94 +584,6 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="349" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1GadPosition_1a413ef5b1a547a41142f28f0b560030ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void OxTS::GadPosition::SetAidingLeverArmVarUpperDiag</definition>
-        <argsstring>(double v_xx, double v_yy, double v_zz, double v_xy, double v_xz, double v_yz)</argsstring>
-        <name>SetAidingLeverArmVarUpperDiag</name>
-        <param>
-          <type>double</type>
-          <declname>v_xx</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>v_yy</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>v_zz</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>v_xy</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>v_xz</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>v_yz</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Set the variance (accuracy) of the lever arm measurements from the INS to the aiding source, including off-diagonal terms. Only required for fixed lever-arm.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>v_xx</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Variance on the lever arm from INS to aiding source in the x axis of the IMU frame. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v_yy</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Variance on the lever arm from INS to aiding source in the x axis of the IMU frame. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v_zz</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Variance on the lever arm from INS to aiding source in the x axis of the IMU frame. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v_xy</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Covariance on the lever arm from INS to aiding source between the x and y axes of the IMU frame. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v_xz</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Covariance on the lever arm from INS to aiding source between the x and z axes of the IMU frame. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v_yz</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Covariance on the lever arm from INS to aiding source between the y and z axes of the IMU frame. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="361" column="6"/>
-      </memberdef>
       <memberdef kind="function" id="classOxTS_1_1GadPosition_1a05aadac5cd03071b3dd50797127484c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; double &gt;</type>
         <definition>std::vector&lt;double&gt; OxTS::GadPosition::GetAidingLeverArmVar</definition>
@@ -683,7 +595,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="365" column="13"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="350" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -715,7 +627,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="244" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="245" bodyend="366"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="244" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="245" bodyend="351"/>
     <listofallmembers>
       <member refid="classOxTS_1_1Gad_1ae04da920e53256cab9c8f50a481c0f7e" prot="public" virt="non-virtual"><scope>OxTS::GadPosition</scope><name>Gad</name></member>
       <member refid="classOxTS_1_1Gad_1a77e6c8ec040c686ed9ab1864ac2b7ffd" prot="public" virt="non-virtual"><scope>OxTS::GadPosition</scope><name>Gad</name></member>
@@ -758,7 +670,6 @@
       <member refid="classOxTS_1_1GadPosition_1a03f50242de33a27ea134ead005e10fe7" prot="public" virt="non-virtual"><scope>OxTS::GadPosition</scope><name>SetAidingLeverArmFixed</name></member>
       <member refid="classOxTS_1_1GadPosition_1a7ad99a09a1f62f3f8bd1afee8492c10e" prot="public" virt="non-virtual"><scope>OxTS::GadPosition</scope><name>SetAidingLeverArmOptimising</name></member>
       <member refid="classOxTS_1_1GadPosition_1ae83d2a4cafc6768a1b1c282f9372cc37" prot="public" virt="non-virtual"><scope>OxTS::GadPosition</scope><name>SetAidingLeverArmVar</name></member>
-      <member refid="classOxTS_1_1GadPosition_1a413ef5b1a547a41142f28f0b560030ff" prot="public" virt="non-virtual"><scope>OxTS::GadPosition</scope><name>SetAidingLeverArmVarUpperDiag</name></member>
       <member refid="classOxTS_1_1Gad_1ade1f0c7339c6addb1aed62a73d9bfbeb" prot="protected" virt="non-virtual"><scope>OxTS::GadPosition</scope><name>SetDataMode</name></member>
       <member refid="classOxTS_1_1Gad_1a720bf083cfa6cf7f16bf12bbb0c2342f" prot="protected" virt="non-virtual"><scope>OxTS::GadPosition</scope><name>SetDataType</name></member>
       <member refid="classOxTS_1_1Gad_1ab97337e53aa1b422cb3a388a1a8774f1" prot="protected" virt="non-virtual"><scope>OxTS::GadPosition</scope><name>SetDataVal</name></member>
