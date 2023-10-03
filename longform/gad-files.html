@@ -13,11 +13,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -116,7 +116,7 @@
            <div itemprop="articleBody">
              
   <section id="gad-files-advanced">
-<span id="gadfiles"></span><h1>.gad files (Advanced)<a class="headerlink" href="#gad-files-advanced" title="Permalink to this heading"></a></h1>
+<span id="gadfiles"></span><h1>.gad files (Advanced)<a class="headerlink" href="#gad-files-advanced" title="Link to this heading"></a></h1>
 <p>These files are not required for routine usage of GAD or developement, but can be useful when debugging for advanced users only.</p>
 <p>These files contain Generic Aiding data packets in CSV format (UTF-8 encoding).
 They can be exported from blended as a debug tool, or created from other data
@@ -124,7 +124,7 @@ and used in post-processing. These files are often the simplest way to test how
 aiding data from a particular source might be able to improve the navigation
 solution of the INS.</p>
 <section id="extracting-gad-files">
-<span id="extractinggadfiles"></span><h2>Extracting .gad files<a class="headerlink" href="#extracting-gad-files" title="Permalink to this heading"></a></h2>
+<span id="extractinggadfiles"></span><h2>Extracting .gad files<a class="headerlink" href="#extracting-gad-files" title="Link to this heading"></a></h2>
 <p>If Generic Aiding Data (GAD) is sent to an OxTS INS in real time, the unit will
 log this data in the RD file like any data on the INS. Blended.exe can be used
 to extract this data from the RD file and place it into a CSV formatted file.</p>
@@ -136,7 +136,7 @@ process. This can be useful to experiment with certain values or fix values
 which were set incorrectly in real time.</p></li>
 </ul>
 <table class="docutils align-default" id="id1">
-<caption><span class="caption-text">.gad file extraction options from blended</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<caption><span class="caption-text">.gad file extraction options from blended</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
 <colgroup>
 <col style="width: 27%" />
 <col style="width: 27%" />
@@ -165,7 +165,7 @@ which were set incorrectly in real time.</p></li>
 </table>
 </section>
 <section id="using-gad-files">
-<span id="usinggadfiles"></span><h2>Using .gad files<a class="headerlink" href="#using-gad-files" title="Permalink to this heading"></a></h2>
+<span id="usinggadfiles"></span><h2>Using .gad files<a class="headerlink" href="#using-gad-files" title="Link to this heading"></a></h2>
 <p>To use a .gad file, place it in the same directory as the RD file being
 processed. Then run either blended.exe or NAVsolve on the RD file and the .gad
 file will be automatically picked up.</p>
@@ -180,21 +180,21 @@ different fields within a packet.</p></li>
 </ul>
 </section>
 <section id="generating-gad-files">
-<span id="generatinggadfiles"></span><h2>Generating .gad files<a class="headerlink" href="#generating-gad-files" title="Permalink to this heading"></a></h2>
+<span id="generatinggadfiles"></span><h2>Generating .gad files<a class="headerlink" href="#generating-gad-files" title="Link to this heading"></a></h2>
 <p>As well as extracting the CSV files from blended, they can also be created from
 other data using this SDK. This is demonstrated in the
 <a class="reference internal" href="example-static-aiding.html#staticaidingexample"><span class="std std-ref">Static Aiding</span></a> example, which can create Generic Aiding packets and
 then send them either to an INS in real time or save the packets to CSV file.</p>
 </section>
 <section id="file-format">
-<span id="gadfileformat"></span><h2>File format<a class="headerlink" href="#file-format" title="Permalink to this heading"></a></h2>
+<span id="gadfileformat"></span><h2>File format<a class="headerlink" href="#file-format" title="Link to this heading"></a></h2>
 <p>The .gad CSV file is undeniably large. Since this is primarily a debugging /
 experimentation tool, it has been designed for human readability more than
 efficiency. Most users will find it easier to generate theses files using the
 CSV encoding functionality in the SDK, though they can be created manually
 using the file format below.</p>
 <table class="docutils align-default" id="id2">
-<caption><span class="caption-text">CSV File Format</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<caption><span class="caption-text">CSV File Format</span><a class="headerlink" href="#id2" title="Link to this table"></a></caption>
 <colgroup>
 <col style="width: 16%" />
 <col style="width: 16%" />

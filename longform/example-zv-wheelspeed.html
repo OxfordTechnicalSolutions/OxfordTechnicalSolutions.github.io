@@ -13,11 +13,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -121,7 +121,7 @@
            <div itemprop="articleBody">
              
   <section id="zero-velocity-wheelspeed">
-<span id="zvwheelspeedexample"></span><h1>Zero Velocity Wheelspeed<a class="headerlink" href="#zero-velocity-wheelspeed" title="Permalink to this heading"></a></h1>
+<span id="zvwheelspeedexample"></span><h1>Zero Velocity Wheelspeed<a class="headerlink" href="#zero-velocity-wheelspeed" title="Link to this heading"></a></h1>
 <p>This is the simplest example of Generic Aiding. The full source code for this
 example can be found in <cite>/examples/gal/zero-velocity-wheelspeed.cpp</cite>.</p>
 <p>In this example, zero speed data is sent to an OxTS INS in real time.</p>
@@ -131,7 +131,7 @@ example can be found in <cite>/examples/gal/zero-velocity-wheelspeed.cpp</cite>.
 <li><p><a class="reference internal" href="intro.html#introduction"><span class="std std-ref">Introduction</span></a></p></li>
 </ul>
 <section id="requirements">
-<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h2>
+<h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>An OxTS INS with the relevant Generic Aiding Feature Codes enabled. If you
 are not sure whether you have the right Feature Codes or are unfamiliar with
@@ -142,10 +142,10 @@ downloaded (not currently available).</p></li>
 </ul>
 </section>
 <section id="method">
-<h2>Method<a class="headerlink" href="#method" title="Permalink to this heading"></a></h2>
+<h2>Method<a class="headerlink" href="#method" title="Link to this heading"></a></h2>
 <p>How to run the executable.</p>
 <section id="linux">
-<h3>Linux<a class="headerlink" href="#linux" title="Permalink to this heading"></a></h3>
+<h3>Linux<a class="headerlink" href="#linux" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Navigate to the relevant directory in the build folder:
 <cite>cd &lt;build_dir&gt;/examples/gal</cite>.</p></li>
@@ -156,7 +156,7 @@ e.g. <cite>./zv-wheelspeed-example 192.168.25.10 1000</cite>.</p></li>
 </ol>
 </section>
 <section id="windows">
-<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this heading"></a></h3>
+<h3>Windows<a class="headerlink" href="#windows" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Navigate to the relevant configuration type directory in the build folder: cd
 &lt;build_dir&gt;/examples/gal/Debug.</p></li>
@@ -168,7 +168,7 @@ e.g. <cite>zv-wheelspeed-example.exe 192.168.25.10 1000</cite>.</p></li>
 </section>
 </section>
 <section id="ins-configuration">
-<h2>INS configuration<a class="headerlink" href="#ins-configuration" title="Permalink to this heading"></a></h2>
+<h2>INS configuration<a class="headerlink" href="#ins-configuration" title="Link to this heading"></a></h2>
 <p>There is a small amount of setup required in the INS config for this example.
 First, wheelspeed should be enabled through NAVconfig with a Pulses Per Metre
 (PPM) of 1000 and accuracy of this value of 1%. (Results in command
@@ -178,7 +178,7 @@ First, wheelspeed should be enabled through NAVconfig with a Pulses Per Metre
 should be inspected.</p>
 </section>
 <section id="source-code-breakdown">
-<h2>Source Code Breakdown<a class="headerlink" href="#source-code-breakdown" title="Permalink to this heading"></a></h2>
+<h2>Source Code Breakdown<a class="headerlink" href="#source-code-breakdown" title="Link to this heading"></a></h2>
 <p>Here we run through the source code, explaining the purpose of each of the lines.</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad.hpp&quot;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad_handler.hpp&quot;</span>
@@ -242,7 +242,7 @@ encoded and sent via UDP to the INS. With <code class="code highlight cpp docuti
 will be sent at a rate of ~10Hz.</p>
 </section>
 <section id="is-my-data-being-received-by-the-ins">
-<h2>Is my data being received by the INS?<a class="headerlink" href="#is-my-data-being-received-by-the-ins" title="Permalink to this heading"></a></h2>
+<h2>Is my data being received by the INS?<a class="headerlink" href="#is-my-data-being-received-by-the-ins" title="Link to this heading"></a></h2>
 <p>The INS should be initialised before sending the Generic Aiding data. To see
 if the INS is using the data you can check the measurments Innovation Zero
 VelocityUpdate [Xi, Yi, Zi] in NAVdisplay. If these are updating, the aiding

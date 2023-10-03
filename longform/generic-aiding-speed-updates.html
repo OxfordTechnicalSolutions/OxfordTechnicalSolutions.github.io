@@ -13,11 +13,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -120,7 +120,7 @@
            <div itemprop="articleBody">
              
   <section id="speed">
-<span id="gadspeedpage"></span><h1>Speed<a class="headerlink" href="#speed" title="Permalink to this heading"></a></h1>
+<span id="gadspeedpage"></span><h1>Speed<a class="headerlink" href="#speed" title="Link to this heading"></a></h1>
 <p>Speed / Wheelspeed Updates. This update type allows for a 1D speed measurement
 to be provided to the INS as aiding. Each of the fields for this data
 type can be set using functions from the <a class="reference internal" href="../gal-cpp/gal-cpp_gad.html#gadspeedclass"><span class="std std-ref">GadSpeed</span></a> class.</p>
@@ -136,11 +136,11 @@ internal mechanism in order to avoid interference. Use config option
 Therefore to check the INS is receiving the update the zero velocity innovations should be inspected.</p>
 </div>
 <section id="aiding-frames">
-<h2>Aiding Frames<a class="headerlink" href="#aiding-frames" title="Permalink to this heading"></a></h2>
+<h2>Aiding Frames<a class="headerlink" href="#aiding-frames" title="Link to this heading"></a></h2>
 <p>Wheelspeed does not have different aiding frames in the same way as other
 updates. It does however have the option to provide speed or wheelspeed.</p>
 <section id="wheelspeed">
-<h3>Wheelspeed<a class="headerlink" href="#wheelspeed" title="Permalink to this heading"></a></h3>
+<h3>Wheelspeed<a class="headerlink" href="#wheelspeed" title="Link to this heading"></a></h3>
 <p>OxTS has been using wheelspeed encoders as aiding sources for a number of
 years. They are a very simple and highly effective form of aiding.</p>
 <p>Wheelspeed encoders must be placed on a non-steered, non-driven axis for best
@@ -164,7 +164,7 @@ set here will determine how much this value is allowed to deviate from its
 initial value in search of the optimum.</p>
 </section>
 <section id="speed-beta">
-<h3>Speed (beta)<a class="headerlink" href="#speed-beta" title="Permalink to this heading"></a></h3>
+<h3>Speed (beta)<a class="headerlink" href="#speed-beta" title="Link to this heading"></a></h3>
 <p>This is a 1-Dimensional speed measurement in the forward direction of the
 vehicle frame.</p>
 <p>This update is still in development and is currently a special case of the
@@ -175,12 +175,12 @@ edges. When using this update type, users must configure
 </section>
 </section>
 <section id="covariance-matrix">
-<span id="speedcovariancematrix"></span><h2>Covariance Matrix<a class="headerlink" href="#covariance-matrix" title="Permalink to this heading"></a></h2>
+<span id="speedcovariancematrix"></span><h2>Covariance Matrix<a class="headerlink" href="#covariance-matrix" title="Link to this heading"></a></h2>
 <p>Since speed is a 1-dimensional measurement, the covariance matrix for speed
 updates is actually a scalar value. Expected units are <span class="math notranslate nohighlight">\(pulses^2\)</span></p>
 </section>
 <section id="lever-arm">
-<h2>Lever Arm<a class="headerlink" href="#lever-arm" title="Permalink to this heading"></a></h2>
+<h2>Lever Arm<a class="headerlink" href="#lever-arm" title="Link to this heading"></a></h2>
 <p>The lever arm for speed updates should always be set to Optimising. To
 configure the lever-arm (and PPM), users should navigate to the wheelspeed tab
 of NAVconfig. Alternatively, this can be done in the mobile.wsp file (and

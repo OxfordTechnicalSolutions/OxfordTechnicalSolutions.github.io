@@ -13,11 +13,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -115,7 +115,7 @@
            <div itemprop="articleBody">
              
   <section id="user-defined-local-frame">
-<span id="definingalocalreferenceframe"></span><h1>User-defined Local Frame<a class="headerlink" href="#user-defined-local-frame" title="Permalink to this heading"></a></h1>
+<span id="definingalocalreferenceframe"></span><h1>User-defined Local Frame<a class="headerlink" href="#user-defined-local-frame" title="Link to this heading"></a></h1>
 <p>Generic Aiding functionality allows users to define a local coordinate system
 for some measurement types. Currently supported types are:</p>
 <ul class="simple">
@@ -127,7 +127,7 @@ for some measurement types. Currently supported types are:</p>
 <p>More detail on how to use the local frame with each update type can be found in
 the relevant document for the individual update type.</p>
 <section id="define-the-frame">
-<h2>Define the frame<a class="headerlink" href="#define-the-frame" title="Permalink to this heading"></a></h2>
+<h2>Define the frame<a class="headerlink" href="#define-the-frame" title="Link to this heading"></a></h2>
 <p>This local frame is defined by two components:</p>
 <ul class="simple">
 <li><p><strong>Translation</strong>: (Lat, Long, Alt) in the WGS84 global frame. This sets the origin of the local coordinate frame in the global frame.</p></li>
@@ -153,7 +153,7 @@ in the configuration of the INS. Doing so requires the advanced commands:</p>
 <p>Note that this aiding type only supports right-handed coordinate systems.</p>
 </section>
 <section id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this heading"></a></h2>
+<h2>Example<a class="headerlink" href="#example" title="Link to this heading"></a></h2>
 <p>As an example, we define the rotation between the East, North, Up (ENU) local
 reference frame and North, East, Down (NED). We start with the NED frame and
 rotate around the Z axis, then Y, then X to align it to ENU. This will provide

@@ -13,11 +13,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -126,7 +126,7 @@
            <div itemprop="articleBody">
              
   <section id="position">
-<span id="gadpositionpage"></span><h1>Position<a class="headerlink" href="#position" title="Permalink to this heading"></a></h1>
+<span id="gadpositionpage"></span><h1>Position<a class="headerlink" href="#position" title="Link to this heading"></a></h1>
 <p>The generic aiding data (GAD) interface allows users to send a number of measurement updates to an
 OxTS Inertial Navigation System (INS) from external devices / sensors,
 including position estimates. Position aiding can currently be accepted in a
@@ -134,16 +134,16 @@ few different coordinate frames, explained in detail below. Each of the fields
 for this data type can be set using functions from the
 <a class="reference internal" href="../gal-cpp/gal-cpp_gad.html#gadpositionclass"><span class="std std-ref">GadPosition</span></a> class.</p>
 <section id="aiding-frames">
-<span id="positionaidingframes"></span><h2>Aiding frames<a class="headerlink" href="#aiding-frames" title="Permalink to this heading"></a></h2>
+<span id="positionaidingframes"></span><h2>Aiding frames<a class="headerlink" href="#aiding-frames" title="Link to this heading"></a></h2>
 <p>Position aiding can be provided to the INS in more than one coordinate frame,
 based on the needs of the user.</p>
 <section id="latitude-longitude-altitude">
-<span id="positionaidingframeslla"></span><h3>Latitude, longitude, altitude<a class="headerlink" href="#latitude-longitude-altitude" title="Permalink to this heading"></a></h3>
+<span id="positionaidingframeslla"></span><h3>Latitude, longitude, altitude<a class="headerlink" href="#latitude-longitude-altitude" title="Link to this heading"></a></h3>
 <p>For this coordinate frame, data is expected in the WGS84 global coordinate
 frame.</p>
 </section>
 <section id="user-defined-local-frame">
-<span id="positionaidingframeslocal"></span><h3>User-defined local frame<a class="headerlink" href="#user-defined-local-frame" title="Permalink to this heading"></a></h3>
+<span id="positionaidingframeslocal"></span><h3>User-defined local frame<a class="headerlink" href="#user-defined-local-frame" title="Link to this heading"></a></h3>
 <p>Position aiding is one of the aiding types which supports a user-defined local
 frame. More information on how to define the frame itself can be found here:
 <a class="reference internal" href="defining-a-local-reference-frame.html#definingalocalreferenceframe"><span class="std std-ref">User-defined Local Frame</span></a>.</p>
@@ -151,7 +151,7 @@ frame. More information on how to define the frame itself can be found here:
 </section>
 </section>
 <section id="converting-between-frames">
-<span id="positioncovariancematrix"></span><h2>Converting between frames<a class="headerlink" href="#converting-between-frames" title="Permalink to this heading"></a></h2>
+<span id="positioncovariancematrix"></span><h2>Converting between frames<a class="headerlink" href="#converting-between-frames" title="Link to this heading"></a></h2>
 <p>Euler angles are used to output the heading, pitch and roll, and these have singularities at two orientations. The RT has rules to avoid problems when operating close to the singularities; if you regenerate the rotation matrices given below then they will be correct.</p>
 <p>The Euler angles output are three consecutive rotations (first heading, then pitch and finally roll) that transform a vector measured in the navigation co-ordinate frame to the body co-ordinate frame. The navigation co-ordinate frame is the orientation on the earth at your current location with axes of north, east and down.</p>
 <p>If <span class="math notranslate nohighlight">\(V_n\)</span> is vector <span class="math notranslate nohighlight">\(V\)</span> measured in the navigation co-ordinate frame and <span class="math notranslate nohighlight">\(V_b\)</span> is the same vector measured in the body co-ordinate frame the two vectors are related by:</p>
@@ -178,7 +178,7 @@ cos(θ) &amp; 0 &amp; sin(θ) \\
 <p>ϕ is the roll angle.</p>
 </section>
 <section id="covariance-matrix">
-<h2>Covariance matrix<a class="headerlink" href="#covariance-matrix" title="Permalink to this heading"></a></h2>
+<h2>Covariance matrix<a class="headerlink" href="#covariance-matrix" title="Link to this heading"></a></h2>
 <p>All aiding provided to the INS must come with a covariance matrix. This is
 necessary to give the Kalman Filter some indication of confidence in the data
 being provided, which it can then use to inform its decision to use /
@@ -197,23 +197,23 @@ found to be (or assumed to be) independent might look like this:</p>
 \[\sigma_x \sigma_x = \sigma_y \sigma_y = \sigma_z \sigma_z = 0.01 m^2\]</div>
 </section>
 <section id="lever-arm">
-<span id="positionlva"></span><h2>Lever arm<a class="headerlink" href="#lever-arm" title="Permalink to this heading"></a></h2>
+<span id="positionlva"></span><h2>Lever arm<a class="headerlink" href="#lever-arm" title="Link to this heading"></a></h2>
 <p>Position measurements must be provided with a lever arm <span class="math notranslate nohighlight">\((x,y,z)\)</span> which
 defines the translation from the IMU to the aiding sensor, in the IMU frame.</p>
 <section id="fixed">
-<span id="positionlvafixed"></span><h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this heading"></a></h3>
+<span id="positionlvafixed"></span><h3>Fixed<a class="headerlink" href="#fixed" title="Link to this heading"></a></h3>
 <p>A fixed lever-arm is the simplest to set up, since it requires no external
 configuration. It is set within the Generic Aiding packet itself, using the
 function: …</p>
 </section>
 <section id="config">
-<span id="positionlvaconfig"></span><h3>Config<a class="headerlink" href="#config" title="Permalink to this heading"></a></h3>
+<span id="positionlvaconfig"></span><h3>Config<a class="headerlink" href="#config" title="Link to this heading"></a></h3>
 <p>A Config lever-arm is functionally equivalent to a Fixed lever-arm. The
 difference is that the lever-arm is set in the configuration of the INS instead
 of within the data packet itself.</p>
 </section>
 <section id="optimising-advanced-level-information-for-internal-users">
-<span id="positionlvaoptimising"></span><h3>Optimising (advanced-level information for internal users)<a class="headerlink" href="#optimising-advanced-level-information-for-internal-users" title="Permalink to this heading"></a></h3>
+<span id="positionlvaoptimising"></span><h3>Optimising (advanced-level information for internal users)<a class="headerlink" href="#optimising-advanced-level-information-for-internal-users" title="Link to this heading"></a></h3>
 <p>An optimising lever-arm differs slightly from the other two types of lever-arm.</p>
 <ul class="simple">
 <li><p>The lever-arm will be taken from the .gap file on the INS (accuracy set in

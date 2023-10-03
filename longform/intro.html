@@ -13,11 +13,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -120,7 +120,7 @@
            <div itemprop="articleBody">
              
   <section id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h1>
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
 <p>OxTS Inertial Navigation Systems (INS) have historically used inertial
 measurement units (IMU) as the basis of their navigation, and combined this
 with data from GNSS receivers.</p>
@@ -166,18 +166,18 @@ which can be provided to the system are:</p>
 </ul>
 <p>This data can be used for post-processing using GAD files <a class="reference internal" href="gad-files.html#gadfiles"><span class="std std-ref">.gad files (Advanced)</span></a> or by supplying the data to the INS in real time. Additional configuration options may be required.</p>
 <section id="reasons-to-use-generic-aiding">
-<h2>Reasons to use generic aiding<a class="headerlink" href="#reasons-to-use-generic-aiding" title="Permalink to this heading"></a></h2>
+<h2>Reasons to use generic aiding<a class="headerlink" href="#reasons-to-use-generic-aiding" title="Link to this heading"></a></h2>
 <p>There are a number of different reasons why Generic Aiding might be effective
 for your application.</p>
 <section id="combining-users-data">
-<h3>Combining users’ data<a class="headerlink" href="#combining-users-data" title="Permalink to this heading"></a></h3>
+<h3>Combining users’ data<a class="headerlink" href="#combining-users-data" title="Link to this heading"></a></h3>
 <p>No one technology provides reliable pose (position and orientation) estimation in all conditions. It makes sense to combine technologies and gain the advantage that each one has. The problems of combining several sensors include getting a common measurement time and common co-ordinate frame, weighing different measurements when combining them and arbitrating between conflicting measurements.</p>
 <p>Inertial navigation is ideal as the central “core” where other sensors with different measurement times, different accuracies and different measurement frames can be fused to give improved results. Inertial measurements are always available. They have a high, regular, update rate with low latency (delay). Their error model is very well known and deterministic. They provide robust solutions by rejecting unreliable measurements from other sensors. Through sensor fusion they can deliver a full pose (position and orientation) even if the additional sensors only provide a partial pose. Perhaps the most important point is that they provide an excellent statistical framework for combining other sensors.</p>
 <p>Other sensors are added to inertial navigation to overcome its deficiencies, mostly long-term error growth. Sensors that measure position mitigate long term drift best, though velocity and orientation sensors can also help.</p>
 <p>OxTS has more than 20 years’ experience in combining inertial measurements with other sensors. Primarily we used GNSS but have experience with road vehicle models, wheel speed, Ultra-wide band (UWB) positioning, timing strips, cameras and compasses. We are opening our sensor fusion framework (GAD) to users who want to combine sensors that are suitable for their applications.</p>
 </section>
 <section id="increasing-robustness-in-challenging-environments">
-<h3>Increasing robustness in challenging environments<a class="headerlink" href="#increasing-robustness-in-challenging-environments" title="Permalink to this heading"></a></h3>
+<h3>Increasing robustness in challenging environments<a class="headerlink" href="#increasing-robustness-in-challenging-environments" title="Link to this heading"></a></h3>
 <p>Sensor fusion is a popular technique because a solution created from multiple
 data sources is often more accurate and more robust in challenging environments
 than a solution from any individual sensor.</p>
@@ -189,17 +189,17 @@ provide measurement data to the INS and help it to maintain its performance in
 a wider array of environments and applications.</p>
 </section>
 <section id="indoor-gnss-denied">
-<h3>Indoor / GNSS denied<a class="headerlink" href="#indoor-gnss-denied" title="Permalink to this heading"></a></h3>
+<h3>Indoor / GNSS denied<a class="headerlink" href="#indoor-gnss-denied" title="Link to this heading"></a></h3>
 <p>In GNSS-denied environments, such as multi-storey car parks and enclosed test centres, OxTS’ Poyzx 2GAD (ie. to Generic Aiding) solution enables Pozyx Ultra-wideband (UWB) to aid your INS.</p>
 </section>
 </section>
 <section id="generic-aiding-process-flow">
-<h2>Generic aiding process flow<a class="headerlink" href="#generic-aiding-process-flow" title="Permalink to this heading"></a></h2>
+<h2>Generic aiding process flow<a class="headerlink" href="#generic-aiding-process-flow" title="Link to this heading"></a></h2>
 <p>The diagram below describes the generic aiding process flow.</p>
 <img alt="Generic aiding process flow" class="align-center" src="../_images/Generic_aiding_process_flow_diagram_V2.jpg" />
 </section>
 <section id="next-steps">
-<h2>Next steps<a class="headerlink" href="#next-steps" title="Permalink to this heading"></a></h2>
+<h2>Next steps<a class="headerlink" href="#next-steps" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="generic-aiding-requirements.html#genericaidingrequirements"><span class="std std-ref">Generic Aiding Requirements</span></a></p></li>
 <li><p><span class="xref std std-ref">estimatingerrors</span></p></li>

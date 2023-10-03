@@ -13,11 +13,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -124,26 +124,26 @@
            <div itemprop="articleBody">
              
   <section id="velocity">
-<span id="gadvelocitypage"></span><h1>Velocity<a class="headerlink" href="#velocity" title="Permalink to this heading"></a></h1>
+<span id="gadvelocitypage"></span><h1>Velocity<a class="headerlink" href="#velocity" title="Link to this heading"></a></h1>
 <p>The GA interface allows users to send a number of measurement updates to an
 OxTS INS from external devices/ sensors, including velocity estimates. Each of
 the fields for this data type can be set using functions from the
 <a class="reference internal" href="../gal-cpp/gal-cpp_gad.html#gadvelocityclass"><span class="std std-ref">GadVelocity</span></a> class.</p>
 <section id="aiding-frames">
-<span id="velocityaidingframes"></span><h2>Aiding frames<a class="headerlink" href="#aiding-frames" title="Permalink to this heading"></a></h2>
+<span id="velocityaidingframes"></span><h2>Aiding frames<a class="headerlink" href="#aiding-frames" title="Link to this heading"></a></h2>
 <p>Velocity aiding can be provided to the INS in more than one coordinate frame, based on the needs of the user.</p>
 <section id="north-east-up-frame">
-<span id="velocityaidingframesneu"></span><h3>North, East, Up frame<a class="headerlink" href="#north-east-up-frame" title="Permalink to this heading"></a></h3>
+<span id="velocityaidingframesneu"></span><h3>North, East, Up frame<a class="headerlink" href="#north-east-up-frame" title="Link to this heading"></a></h3>
 <p>The NEU frame is the simplest way to provide velocity aiding to the INS, since it requires no other configuration. Note that this is a left-handed coordinate system.</p>
 <p>Velocity measurements in this frame are expected in <span class="math notranslate nohighlight">\(m/s\)</span>.</p>
 </section>
 <section id="user-defined-local-frame">
-<span id="velocityaidingframeslocal"></span><h3>User-defined local frame<a class="headerlink" href="#user-defined-local-frame" title="Permalink to this heading"></a></h3>
+<span id="velocityaidingframeslocal"></span><h3>User-defined local frame<a class="headerlink" href="#user-defined-local-frame" title="Link to this heading"></a></h3>
 <p>Velocity aiding supports a user-defined local frame. More information on how to define the frame itself can be found on the relevant page.</p>
 <p>Velocity measurements in this frame are expected in <span class="math notranslate nohighlight">\(m/s\)</span> .</p>
 </section>
 <section id="odometry-frame-beta">
-<span id="velocityaidingframesodometry"></span><h3>Odometry frame (beta)<a class="headerlink" href="#odometry-frame-beta" title="Permalink to this heading"></a></h3>
+<span id="velocityaidingframesodometry"></span><h3>Odometry frame (beta)<a class="headerlink" href="#odometry-frame-beta" title="Link to this heading"></a></h3>
 <p>For this aiding frame, data is expected in the frame of an odometry sensor fixed to the vehicle. In order to use this frame, the transformation between the sensor and the INS must be specified in the INS configuration. This can be done with advanced commands in NAVconfig or in the mobile.cfg file directly on the unit.</p>
 <p>The odometry frame requires a rotational transformation as well as the standard lever arm, which is specified in much the same way in the following commands:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">attitude</span><span class="p">[</span><span class="n">att_id</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">heading</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">pitch</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">roll</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">var_hea</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="o">*</span><span class="n">var_pit</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="o">*</span><span class="n">var_roll</span><span class="p">]</span>
@@ -157,7 +157,7 @@ The <cite>var_pit</cite> and <cite>var_roll</cite> inputs are optional, with the
 <p>The <cite>-location</cite> option specifies the lever arm <span class="math notranslate nohighlight">\((x,y,z)\)</span>. This defines the translation from the IMU to the aiding sensor, in the IMU frame. See the lever arm documentation for further information.</p>
 <p>A stream Id is a unique identifier for each GAD input.  One device can output any number of streams, these streams would each have different Ids.  When sending your data to the INS you should ensure each data source has a unique Id.</p>
 <section id="example">
-<span id="velocityodomexample"></span><h4>Example<a class="headerlink" href="#example" title="Permalink to this heading"></a></h4>
+<span id="velocityodomexample"></span><h4>Example<a class="headerlink" href="#example" title="Link to this heading"></a></h4>
 <p>Defining the lever arm in the IMU frame is relatively intuitive, but finding
 the angles of rotation can be less so for those who have not done it before.
 Hence, we provide an example.</p>
@@ -184,7 +184,7 @@ actual values are taken from the config options.</p>
 </section>
 </section>
 <section id="covariance-matrix">
-<span id="velocitycovariancematrix"></span><h2>Covariance matrix<a class="headerlink" href="#covariance-matrix" title="Permalink to this heading"></a></h2>
+<span id="velocitycovariancematrix"></span><h2>Covariance matrix<a class="headerlink" href="#covariance-matrix" title="Link to this heading"></a></h2>
 <p>All aiding provided to the INS must come with a covariance matrix. This is
 necessary to give the Kalman Filter some indication of confidence in the data
 being provided, which it can then use to inform its decision to use / reject
@@ -204,7 +204,7 @@ all axes is found to be (or assumed to be) independent might look like this:</p>
 \[\sigma_x \sigma_x = \sigma_y \sigma_y = \sigma_z \sigma_z = 0.01 (m/s)^2 .\]</div>
 </section>
 <section id="lever-arm">
-<span id="velocitylva"></span><h2>Lever Arm<a class="headerlink" href="#lever-arm" title="Permalink to this heading"></a></h2>
+<span id="velocitylva"></span><h2>Lever Arm<a class="headerlink" href="#lever-arm" title="Link to this heading"></a></h2>
 <p>Velocity measurements must be provided with a lever arm <span class="math notranslate nohighlight">\((x,y,z)\)</span> which
 defines the translation from the IMU to the aiding sensor, in the IMU frame.</p>
 </section>

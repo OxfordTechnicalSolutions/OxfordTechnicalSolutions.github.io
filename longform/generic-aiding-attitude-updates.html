@@ -13,11 +13,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -125,20 +125,20 @@
            <div itemprop="articleBody">
              
   <section id="attitude">
-<span id="gadattitudepage"></span><h1>Attitude<a class="headerlink" href="#attitude" title="Permalink to this heading"></a></h1>
+<span id="gadattitudepage"></span><h1>Attitude<a class="headerlink" href="#attitude" title="Link to this heading"></a></h1>
 <p>Attitude (otherwise known as orientation). Each of the fields for this data
 type can be set using functions from the <a class="reference internal" href="../gal-cpp/gal-cpp_gad.html#gadattitudeclass"><span class="std std-ref">GadAttitude</span></a> class.</p>
 <section id="aiding-frames">
-<span id="attitudeaidingframes"></span><h2>Aiding Frames<a class="headerlink" href="#aiding-frames" title="Permalink to this heading"></a></h2>
+<span id="attitudeaidingframes"></span><h2>Aiding Frames<a class="headerlink" href="#aiding-frames" title="Link to this heading"></a></h2>
 <p>Currently, attitude aiding can only be provided in the vehicle frame.</p>
 <section id="vehicle-frame">
-<span id="attitudeaidingframesvehicle"></span><h3>Vehicle frame<a class="headerlink" href="#vehicle-frame" title="Permalink to this heading"></a></h3>
+<span id="attitudeaidingframesvehicle"></span><h3>Vehicle frame<a class="headerlink" href="#vehicle-frame" title="Link to this heading"></a></h3>
 <p>This frame matches the one seen in NAVconfig when setting the IMU-vehicle
 alignment (.vat file). Units are degrees.</p>
 </section>
 </section>
 <section id="covariance-matrix">
-<span id="attitudecovariancematrix"></span><h2>Covariance Matrix<a class="headerlink" href="#covariance-matrix" title="Permalink to this heading"></a></h2>
+<span id="attitudecovariancematrix"></span><h2>Covariance Matrix<a class="headerlink" href="#covariance-matrix" title="Link to this heading"></a></h2>
 <p>The covariance matrix provides an estimate of the error on the measurements
 being provided to the INS. Below we show an example for attitude:</p>
 <div class="math notranslate nohighlight">
@@ -155,26 +155,26 @@ and that each measurement is independent (two independent measurements have
 covariance of 0).</p>
 </section>
 <section id="alignment">
-<span id="attitudealignment"></span><h2>Alignment<a class="headerlink" href="#alignment" title="Permalink to this heading"></a></h2>
+<span id="attitudealignment"></span><h2>Alignment<a class="headerlink" href="#alignment" title="Link to this heading"></a></h2>
 <p>Attitude measurements differ from other update types in that they have an
 associated alignment, as opposed to a lever-arm. This is because the linear
 offset between the attitude sensor and the IMU does not affect the
 measurements, it is only the angular offset between the two which must be
 accounted for.</p>
 <section id="fixed">
-<span id="attitudefixedlva"></span><h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this heading"></a></h3>
+<span id="attitudefixedlva"></span><h3>Fixed<a class="headerlink" href="#fixed" title="Link to this heading"></a></h3>
 <p>A fixed alignment is the simplest to set up, since it requires no external
 configuration. It is set within the Generic Aiding packet itself, using the
 function: …</p>
 </section>
 <section id="config">
-<span id="attitudeconfiglva"></span><h3>Config<a class="headerlink" href="#config" title="Permalink to this heading"></a></h3>
+<span id="attitudeconfiglva"></span><h3>Config<a class="headerlink" href="#config" title="Link to this heading"></a></h3>
 <p>A Config alignment is functionally equivalent to a Fixed alignment. The
 difference is that the alignment is set in the configuration of the INS instead
 of within the data packet itself.</p>
 </section>
 <section id="optimising">
-<span id="attitudeoptimisinglva"></span><h3>Optimising<a class="headerlink" href="#optimising" title="Permalink to this heading"></a></h3>
+<span id="attitudeoptimisinglva"></span><h3>Optimising<a class="headerlink" href="#optimising" title="Link to this heading"></a></h3>
 <p>An Optimising alignment differs slightly from the other two types of alignment.</p>
 <ul class="simple">
 <li><p>The alignment will be taken from the .att file on the INS (accuracy set in
@@ -193,7 +193,7 @@ by reassigning the dual antenna alignment. See
 </section>
 </section>
 <section id="calculating-alignment-hpr-angles">
-<h2>Calculating alignment HPR angles<a class="headerlink" href="#calculating-alignment-hpr-angles" title="Permalink to this heading"></a></h2>
+<h2>Calculating alignment HPR angles<a class="headerlink" href="#calculating-alignment-hpr-angles" title="Link to this heading"></a></h2>
 <p>TBC</p>
 </section>
 </section>
