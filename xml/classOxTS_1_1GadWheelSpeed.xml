@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOxTS_1_1GadWheelSpeed" kind="class" language="C++" prot="public">
+    <compoundname>OxTS::GadWheelSpeed</compoundname>
+    <basecompoundref refid="classOxTS_1_1Gad" prot="public" virt="non-virtual">OxTS::Gad</basecompoundref>
+    <includes local="no">gad.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a7047602ea35f3c7688a37ba1316de258" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::GadWheelSpeed::GadWheelSpeed</definition>
+        <argsstring>(uint8_t stream_id)</argsstring>
+        <name>GadWheelSpeed</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>stream_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="505" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a8e8eaaf4de731da64ccf5a8c350df845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadWheelSpeed::SetWheelSpeedFw</definition>
+        <argsstring>(double wheelspeed)</argsstring>
+        <name>SetWheelSpeedFw</name>
+        <param>
+          <type>double</type>
+          <declname>wheelspeed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the forward wheelspeed aiding estimate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wheelspeed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Forward wheelspeed estimate in the vehicle frame (m/s). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="512" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a862700490ea8dddab52e7698669a142d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::GadWheelSpeed::GetWheelSpeedFw</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWheelSpeedFw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="513" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a453da5c269f1d387d1158e3658a1274c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadWheelSpeed::SetWheelSpeedFwVar</definition>
+        <argsstring>(double v_s)</argsstring>
+        <name>SetWheelSpeedFwVar</name>
+        <param>
+          <type>double</type>
+          <declname>v_s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set estimated variance on the forward wheelspeed aiding measurement.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v_s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Forward wheelspeed estimate in the vehicle frame (units). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="519" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a9532d985d0bb2949c31096bce30f3a4b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::GadWheelSpeed::GetWheelSpeedFwVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWheelSpeedFwVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="520" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a71dd0a72ca07856ce85a85b8f550c65e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadWheelSpeed::SetWheelSpeedCount</definition>
+        <argsstring>(double count, double period)</argsstring>
+        <name>SetWheelSpeedCount</name>
+        <param>
+          <type>double</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the pulse count measurement from a wheelspeed encoder.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of pulses recorded during the period. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The period over which the current pulse count was recorded.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000002"><xreftitle>Todo</xreftitle><xrefdescription><para>Clarify where the timestamp should correspond to in the period: start, middle, end. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="530" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a798c0a2213532b7a86a2e6be3bede6a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::GadWheelSpeed::GetWheelSpeedCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWheelSpeedCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="531" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a7bfe6de85b875fb33048489990ac0f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadWheelSpeed::SetWheelSpeedVar</definition>
+        <argsstring>(double v_c)</argsstring>
+        <name>SetWheelSpeedVar</name>
+        <param>
+          <type>double</type>
+          <declname>v_c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the estimated variance on the wheelspeed pulse count.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v_c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Estimated variance (pulses). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>Clarify units </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="538" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1aa4041b30531fb553a620d090d910166e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double OxTS::GadWheelSpeed::GetWheelSpeedVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWheelSpeedVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="539" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a1384730ef3c3fd8e7b67ce9578f3c94e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadWheelSpeed::SetAidingLeverArmFixed</definition>
+        <argsstring>(double x, double y, double z)</argsstring>
+        <name>SetAidingLeverArmFixed</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set lever arm from the INS to the aiding source. This lever arm will not be optimised by the Kalman Filter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset from INS to aiding source in the x axis of the IMU frame (m). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset from INS to aiding source in the y axis of the IMU frame (m). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset from INS to aiding source in the z axis of the IMU frame (m). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="548" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a40893d9caf13a6a400b506093e26e1fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::GadWheelSpeed::GetAidingLeverArm</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAidingLeverArm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="549" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a8b2cb63958d4cbe0981eca3a23ebfbbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadWheelSpeed::SetAidingLeverArmOptimising</definition>
+        <argsstring>()</argsstring>
+        <name>SetAidingLeverArmOptimising</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set lever arm from the INS to the aiding source to be taken from the .gap file. This lever arm will be optimised by the Kalman Filter during navigation. Note that if using this, the GNSS antenna lever arm must be set in mobile.cfg. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="556" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a2fe17a365928f37f7039daaa56c16052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadWheelSpeed::SetAidingLeverArmConfig</definition>
+        <argsstring>()</argsstring>
+        <name>SetAidingLeverArmConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that lever arm will be configured in the configuration file on the INS. <xrefsect id="todo_1_todo000004"><xreftitle>Todo</xreftitle><xrefdescription><para>Remove and set this mode to be default </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="562" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1a0a318c9e324acab54cbea977160c6b62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::GadWheelSpeed::SetAidingLeverArmVar</definition>
+        <argsstring>(double x, double y, double z)</argsstring>
+        <name>SetAidingLeverArmVar</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the variance (accuracy) of the lever arm measurements from the INS to the aiding source.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance on the lever arm from INS to aiding source in the x axis of the IMU frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance on the lever arm from INS to aiding source in the y axis of the IMU frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance on the lever arm from INS to aiding source in the z axis of the IMU frame. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="571" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1GadWheelSpeed_1ac9e52781f5d31e6d306b2db4027affe9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; OxTS::GadWheelSpeed::GetAidingLeverArmVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAidingLeverArmVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="572" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Generic Aiding Wheelspeed (Legacy). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OxTS::Gad</label>
+        <link refid="classOxTS_1_1Gad"/>
+      </node>
+      <node id="1">
+        <label>OxTS::GadWheelSpeed</label>
+        <link refid="classOxTS_1_1GadWheelSpeed"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OxTS::Gad</label>
+        <link refid="classOxTS_1_1Gad"/>
+      </node>
+      <node id="1">
+        <label>OxTS::GadWheelSpeed</label>
+        <link refid="classOxTS_1_1GadWheelSpeed"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="500" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="501" bodyend="573"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1Gad_1ae04da920e53256cab9c8f50a481c0f7e" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gad_1a77e6c8ec040c686ed9ab1864ac2b7ffd" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gad_1a969b016fca0ce657a2bb93796d975e93" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gad_1a4052e78602b043d98509da287a5e7543" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a7047602ea35f3c7688a37ba1316de258" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GadWheelSpeed</name></member>
+      <member refid="classOxTS_1_1Gad_1a2daad69a2de924b99a85e6ddf2ff9f11" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetAcqTimestamp</name></member>
+      <member refid="classOxTS_1_1Gad_1a7dc941a58fa0deb65abfa11c4bd58388" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetAcqValid</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a40893d9caf13a6a400b506093e26e1fd" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetAidingLeverArm</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1ac9e52781f5d31e6d306b2db4027affe9" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetAidingLeverArmVar</name></member>
+      <member refid="classOxTS_1_1Gad_1a21a2849a36b1fd9b890bfdf2e055ec75" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>getCStruct</name></member>
+      <member refid="classOxTS_1_1Gad_1aa155d8cf748db123067da35a166ccbc1" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetDataType</name></member>
+      <member refid="classOxTS_1_1Gad_1a6be76196851638b4a25a32f33adb2afb" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetDataVal</name></member>
+      <member refid="classOxTS_1_1Gad_1ac2a6aa7b10ca294fe551c5eeff994434" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetDataVar</name></member>
+      <member refid="classOxTS_1_1Gad_1ac48d72ec6fb261e807a8da10708cf6e1" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetLocVal</name></member>
+      <member refid="classOxTS_1_1Gad_1a458cee20cd5c84c0888e9d114b5af278" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetLocValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a9f5e02e8d67aada5b7b8f9d941d626e2" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetLocVar</name></member>
+      <member refid="classOxTS_1_1Gad_1ac8ea696fb18c8d6220845faf1f969a9b" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetRes1Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1a3d3d3ccaa97d29fbfb64ca47215fd65d" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetRes2Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1ad6305b40f883de529a6aca9d3daff6e9" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetStreamId</name></member>
+      <member refid="classOxTS_1_1Gad_1a161be15173647a21ca43586f99447140" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gad_1a9381c69d74cafcccd16128917c57eab3" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetTimeExternalSecondsFromSunday</name></member>
+      <member refid="classOxTS_1_1Gad_1a950676d9ad2f578fbb6a7223d164db06" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetTimeExternalWeek</name></member>
+      <member refid="classOxTS_1_1Gad_1a21bf8a036eea13b7068b6ecefdd0fda0" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gad_1addda792b16bfcc2e938fda1390a1e751" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetTimeGpsSecondsFromSunday</name></member>
+      <member refid="classOxTS_1_1Gad_1af7e0e978c1aa32da6e77e8b28a12b33d" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetTimeGpsWeek</name></member>
+      <member refid="classOxTS_1_1Gad_1a405bc80b437e006589046bb44492af9f" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetTimeLatency</name></member>
+      <member refid="classOxTS_1_1Gad_1aa067198ed52f9881a74babe138f1b661" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gad_1af15d8cf52fdbffbc7a5ac22ca4e2b10c" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetTimeTAI</name></member>
+      <member refid="classOxTS_1_1Gad_1a482aaa4cf80bdf0eeaf1119417eca30d" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetTimeUTCUnix</name></member>
+      <member refid="classOxTS_1_1Gad_1aef7f27be7bb2c298403856d08e2bd982" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetTimeValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a28c6225bd6fc3504f5fc131f3326a6db" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetValValid</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a798c0a2213532b7a86a2e6be3bede6a2" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetWheelSpeedCount</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a862700490ea8dddab52e7698669a142d" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetWheelSpeedFw</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a9532d985d0bb2949c31096bce30f3a4b" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetWheelSpeedFwVar</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1aa4041b30531fb553a620d090d910166e" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>GetWheelSpeedVar</name></member>
+      <member refid="classOxTS_1_1Gad_1a8137c74cd008022a2bef1b727697028d" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>operator=</name></member>
+      <member refid="classOxTS_1_1Gad_1aae55058389fd09f1e129195c220d64e8" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>operator=</name></member>
+      <member refid="classOxTS_1_1Gad_1af228853babc9b5cdc17c0cb88929a6c1" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetAcqTimestamp</name></member>
+      <member refid="classOxTS_1_1Gad_1a24de1d28039293e5d8c885608d8215dc" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetAcqValid</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a2fe17a365928f37f7039daaa56c16052" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetAidingLeverArmConfig</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a1384730ef3c3fd8e7b67ce9578f3c94e" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetAidingLeverArmFixed</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a8b2cb63958d4cbe0981eca3a23ebfbbc" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetAidingLeverArmOptimising</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a0a318c9e324acab54cbea977160c6b62" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetAidingLeverArmVar</name></member>
+      <member refid="classOxTS_1_1Gad_1ade1f0c7339c6addb1aed62a73d9bfbeb" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetDataMode</name></member>
+      <member refid="classOxTS_1_1Gad_1a720bf083cfa6cf7f16bf12bbb0c2342f" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetDataType</name></member>
+      <member refid="classOxTS_1_1Gad_1ab97337e53aa1b422cb3a388a1a8774f1" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetDataVal</name></member>
+      <member refid="classOxTS_1_1Gad_1a7b94bfae5de1d3d496bc5234ff743177" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetDataValType</name></member>
+      <member refid="classOxTS_1_1Gad_1a3119ca81f3ff6d544be9ba67b686251b" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetDataVarDiag</name></member>
+      <member refid="classOxTS_1_1Gad_1a667094907538463da73b8d5b6bc4c265" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetDataVarSingle</name></member>
+      <member refid="classOxTS_1_1Gad_1a4a6bb42c89d112eacf14b4820954348a" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetDataVarUpperDiag</name></member>
+      <member refid="classOxTS_1_1Gad_1ae34bb965c8924b9ef37eaf126c93e2fc" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetLocMode</name></member>
+      <member refid="classOxTS_1_1Gad_1ab32f7ab3b5514e9c694410a1bcb5a6a0" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetLocVal</name></member>
+      <member refid="classOxTS_1_1Gad_1a1bf9638d8edfbaf761de380ddf397095" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetLocValid</name></member>
+      <member refid="classOxTS_1_1Gad_1af4d796aa19e610aa46ebfe74d876b695" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetLocValType</name></member>
+      <member refid="classOxTS_1_1Gad_1a269bc1e8960adbf2b2de60d8454c3711" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetLocVarDiag</name></member>
+      <member refid="classOxTS_1_1Gad_1a7041a19c19c5c9dc9e3f0eafce8b6c81" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetLocVarSingle</name></member>
+      <member refid="classOxTS_1_1Gad_1af75e1d96f6777bb7b3f47bdffa49f869" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetLocVarUpperDiag</name></member>
+      <member refid="classOxTS_1_1Gad_1a1e834ee11a6cb90d92532c18b71dc4ae" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetRes1Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1af5a0f13f808a5e14661eb7916a71e563" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetRes2Valid</name></member>
+      <member refid="classOxTS_1_1Gad_1a46f934b125ce7379918a8872e4bbe2a3" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetStreamId</name></member>
+      <member refid="classOxTS_1_1Gad_1af3b0e2d4aea781bcdd8221b6858d88b2" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gad_1a491cbe0599ee61ddd9cd0b0db04b5f27" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gad_1a2b263f6e257a2bb9579e2d91ca12ce7c" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetTimeLatency</name></member>
+      <member refid="classOxTS_1_1Gad_1ace5fba6a3146952f1fb51c11d3160dfa" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gad_1ade4b08d5cd64665a6d2556441b2b9fab" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetTimeTAI</name></member>
+      <member refid="classOxTS_1_1Gad_1a225192c7bd3917b2915ffb97a43dbb8a" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetTimeUTCUnix</name></member>
+      <member refid="classOxTS_1_1Gad_1a31acdd4c7ae446e840f98dfcff6ba248" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetTimeValid</name></member>
+      <member refid="classOxTS_1_1Gad_1a8cb0a1a723312d6ba65850d0835a8b89" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetTimeVoid</name></member>
+      <member refid="classOxTS_1_1Gad_1a16d13359a6377f177fb1fe11c3e72a84" prot="protected" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetValValid</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a71dd0a72ca07856ce85a85b8f550c65e" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetWheelSpeedCount</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a8e8eaaf4de731da64ccf5a8c350df845" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetWheelSpeedFw</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a453da5c269f1d387d1158e3658a1274c" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetWheelSpeedFwVar</name></member>
+      <member refid="classOxTS_1_1GadWheelSpeed_1a7bfe6de85b875fb33048489990ac0f94" prot="public" virt="non-virtual"><scope>OxTS::GadWheelSpeed</scope><name>SetWheelSpeedVar</name></member>
+      <member refid="classOxTS_1_1Gad_1a59cf7f8a81b2e63cdc6ce2bb6c81a927" prot="public" virt="virtual"><scope>OxTS::GadWheelSpeed</scope><name>~Gad</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

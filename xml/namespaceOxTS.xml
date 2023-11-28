@@ -6,6 +6,7 @@
     <innerclass refid="classOxTS_1_1Gad" prot="public">OxTS::Gad</innerclass>
     <innerclass refid="classOxTS_1_1GadPosition" prot="public">OxTS::GadPosition</innerclass>
     <innerclass refid="classOxTS_1_1GadVelocity" prot="public">OxTS::GadVelocity</innerclass>
+    <innerclass refid="classOxTS_1_1GadWheelSpeed" prot="public">OxTS::GadWheelSpeed</innerclass>
     <innerclass refid="classOxTS_1_1GadSpeed" prot="public">OxTS::GadSpeed</innerclass>
     <innerclass refid="classOxTS_1_1GadAttitude" prot="public">OxTS::GadAttitude</innerclass>
     <innerclass refid="classOxTS_1_1GadHeading" prot="public">OxTS::GadHeading</innerclass>

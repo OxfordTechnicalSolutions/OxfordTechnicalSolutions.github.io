@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Data &mdash; OxTS C++ Generic Aiding SDK  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=eafc0fe6" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -183,7 +185,7 @@
 <dt class="sig sig-object cpp" id="_CPPv4N4OxTS3GadE">
 <span id="_CPPv3N4OxTS3GadE"></span><span id="_CPPv2N4OxTS3GadE"></span><span id="OxTS::Gad"></span><span class="target" id="classOxTS_1_1Gad"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Gad</span></span></span><a class="headerlink" href="#_CPPv4N4OxTS3GadE" title="Link to this definition"></a><br /></dt>
 <dd><p>Cpp wrapper class for C struct GEN_AIDING_DATA </p>
-<p>Subclassed by <a class="reference internal" href="#classOxTS_1_1GadAttitude"><span class="std std-ref">OxTS::GadAttitude</span></a>, <a class="reference internal" href="#classOxTS_1_1GadHeading"><span class="std std-ref">OxTS::GadHeading</span></a>, <a class="reference internal" href="#classOxTS_1_1GadPosition"><span class="std std-ref">OxTS::GadPosition</span></a>, <a class="reference internal" href="#classOxTS_1_1GadSpeed"><span class="std std-ref">OxTS::GadSpeed</span></a>, <a class="reference internal" href="#classOxTS_1_1GadVelocity"><span class="std std-ref">OxTS::GadVelocity</span></a></p>
+<p>Subclassed by <a class="reference internal" href="#classOxTS_1_1GadAttitude"><span class="std std-ref">OxTS::GadAttitude</span></a>, <a class="reference internal" href="#classOxTS_1_1GadHeading"><span class="std std-ref">OxTS::GadHeading</span></a>, <a class="reference internal" href="#classOxTS_1_1GadPosition"><span class="std std-ref">OxTS::GadPosition</span></a>, <a class="reference internal" href="#classOxTS_1_1GadSpeed"><span class="std std-ref">OxTS::GadSpeed</span></a>, <a class="reference internal" href="#classOxTS_1_1GadVelocity"><span class="std std-ref">OxTS::GadVelocity</span></a>, OxTS::GadWheelSpeed</p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
@@ -1115,8 +1117,8 @@
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed10SetSpeedFwEd">
-<span id="_CPPv3N4OxTS8GadSpeed10SetSpeedFwEd"></span><span id="_CPPv2N4OxTS8GadSpeed10SetSpeedFwEd"></span><span id="OxTS::GadSpeed::SetSpeedFw__double"></span><span class="target" id="classOxTS_1_1GadSpeed_1a8edfa3f817c0824cf378138345324612"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSpeedFw</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">speed</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed10SetSpeedFwEd" title="Link to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed12SetSpeedFwMsEd">
+<span id="_CPPv3N4OxTS8GadSpeed12SetSpeedFwMsEd"></span><span id="_CPPv2N4OxTS8GadSpeed12SetSpeedFwMsEd"></span><span id="OxTS::GadSpeed::SetSpeedFwMs__double"></span><span class="target" id="classOxTS_1_1GadSpeed_1a8be07c362ccd23fc5c75ba9c13eda702"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSpeedFwMs</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">speed</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed12SetSpeedFwMsEd" title="Link to this definition"></a><br /></dt>
 <dd><p>Set the forward speed aiding estimate.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1126,74 +1128,123 @@
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK4OxTS8GadSpeed10GetSpeedFwEv">
-<span id="_CPPv3NK4OxTS8GadSpeed10GetSpeedFwEv"></span><span id="_CPPv2NK4OxTS8GadSpeed10GetSpeedFwEv"></span><span id="OxTS::GadSpeed::GetSpeedFwC"></span><span class="target" id="classOxTS_1_1GadSpeed_1a27bfcb5c034f1c234b9f382777891797"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetSpeedFw</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4OxTS8GadSpeed10GetSpeedFwEv" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed13SetSpeedFwVarEd">
-<span id="_CPPv3N4OxTS8GadSpeed13SetSpeedFwVarEd"></span><span id="_CPPv2N4OxTS8GadSpeed13SetSpeedFwVarEd"></span><span id="OxTS::GadSpeed::SetSpeedFwVar__double"></span><span class="target" id="classOxTS_1_1GadSpeed_1a35ca30385d21dd668d304b80dfd50f90"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSpeedFwVar</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_s</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed13SetSpeedFwVarEd" title="Link to this definition"></a><br /></dt>
-<dd><p>Set estimated variance on the forward speed aiding measurement.</p>
+<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed12SetSpeedBwMsEd">
+<span id="_CPPv3N4OxTS8GadSpeed12SetSpeedBwMsEd"></span><span id="_CPPv2N4OxTS8GadSpeed12SetSpeedBwMsEd"></span><span id="OxTS::GadSpeed::SetSpeedBwMs__double"></span><span class="target" id="classOxTS_1_1GadSpeed_1ab4b2f3ec81bd073a13406cc9937c38fe"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSpeedBwMs</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">speed</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed12SetSpeedBwMsEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the backward speed aiding estimate.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>v_s</strong> – Forward speed estimate in the vehicle frame (units). </p>
+<dd class="field-odd"><p><strong>speed</strong> – Backward speed estimate in the vehicle frame (m/s). </p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK4OxTS8GadSpeed13GetSpeedFwVarEv">
-<span id="_CPPv3NK4OxTS8GadSpeed13GetSpeedFwVarEv"></span><span id="_CPPv2NK4OxTS8GadSpeed13GetSpeedFwVarEv"></span><span id="OxTS::GadSpeed::GetSpeedFwVarC"></span><span class="target" id="classOxTS_1_1GadSpeed_1a5a6a648b65c42e5f9830772a54df53b4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetSpeedFwVar</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4OxTS8GadSpeed13GetSpeedFwVarEv" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed18SetWheelspeedCountEdd">
-<span id="_CPPv3N4OxTS8GadSpeed18SetWheelspeedCountEdd"></span><span id="_CPPv2N4OxTS8GadSpeed18SetWheelspeedCountEdd"></span><span id="OxTS::GadSpeed::SetWheelspeedCount__double.double"></span><span class="target" id="classOxTS_1_1GadSpeed_1ae593c36bcb38cfdaf4a0fdd37a0a03a8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetWheelspeedCount</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">count</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">period</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed18SetWheelspeedCountEdd" title="Link to this definition"></a><br /></dt>
-<dd><p>Set the pulse count measurement from a wheelspeed encoder.</p>
-<p><dl>
-<dt class="sig sig-object cpp">
-<em><span class="pre">Todo:</span></em></dt>
-<dd><p>Clarify where the timestamp should correspond to in the period: start, middle, end. </p>
+<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed12SetSpeedUnMsEd">
+<span id="_CPPv3N4OxTS8GadSpeed12SetSpeedUnMsEd"></span><span id="_CPPv2N4OxTS8GadSpeed12SetSpeedUnMsEd"></span><span id="OxTS::GadSpeed::SetSpeedUnMs__double"></span><span class="target" id="classOxTS_1_1GadSpeed_1a054c521f9ecb7e1ab8971a380199799b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSpeedUnMs</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">speed</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed12SetSpeedUnMsEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Set an unsigned speed aiding estimate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>speed</strong> – Unsigned speed estimate in the vehicle frame (m/s). </p>
+</dd>
+</dl>
 </dd></dl>
 
-</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed16SetSpeedFwPulsedEddd">
+<span id="_CPPv3N4OxTS8GadSpeed16SetSpeedFwPulsedEddd"></span><span id="_CPPv2N4OxTS8GadSpeed16SetSpeedFwPulsedEddd"></span><span id="OxTS::GadSpeed::SetSpeedFwPulsed__double.double.double"></span><span class="target" id="classOxTS_1_1GadSpeed_1adb5b05e9af3acb31b3079ec4b93ac3f4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSpeedFwPulsed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frequency</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">scale_factor</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">period</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed16SetSpeedFwPulsedEddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the forward pulsed speed aiding estimate.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>count</strong> – Number of pulses recorded during the period. </p></li>
-<li><p><strong>period</strong> – The period over which the current pulse count was recorded.</p></li>
+<li><p><strong>frequency</strong> – Pulse frequency in the forward vehicle direction (counts/s). </p></li>
+<li><p><strong>scale_factor</strong> – Scale factor converting counts to m, e.g. 0.01 for 100 counts/m. (m) </p></li>
+<li><p><strong>(optional)</strong> – period Time over which the speed measurement is taken (if known) (s). </p></li>
 </ul>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK4OxTS8GadSpeed18GetWheelspeedCountEv">
-<span id="_CPPv3NK4OxTS8GadSpeed18GetWheelspeedCountEv"></span><span id="_CPPv2NK4OxTS8GadSpeed18GetWheelspeedCountEv"></span><span id="OxTS::GadSpeed::GetWheelspeedCountC"></span><span class="target" id="classOxTS_1_1GadSpeed_1a35a452878c41070a66c9568efa760d5d"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetWheelspeedCount</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4OxTS8GadSpeed18GetWheelspeedCountEv" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed16SetWheelspeedVarEd">
-<span id="_CPPv3N4OxTS8GadSpeed16SetWheelspeedVarEd"></span><span id="_CPPv2N4OxTS8GadSpeed16SetWheelspeedVarEd"></span><span id="OxTS::GadSpeed::SetWheelspeedVar__double"></span><span class="target" id="classOxTS_1_1GadSpeed_1a0cc7655e98f2df4400c5d1c015427825"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetWheelspeedVar</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_c</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed16SetWheelspeedVarEd" title="Link to this definition"></a><br /></dt>
-<dd><p>Set the estimated variance on the wheelspeed pulse count.</p>
-<p><dl>
-<dt class="sig sig-object cpp">
-<em><span class="pre">Todo:</span></em></dt>
-<dd><p>Clarify units </p>
-</dd></dl>
-
-</p>
+<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed16SetSpeedBwPulsedEddd">
+<span id="_CPPv3N4OxTS8GadSpeed16SetSpeedBwPulsedEddd"></span><span id="_CPPv2N4OxTS8GadSpeed16SetSpeedBwPulsedEddd"></span><span id="OxTS::GadSpeed::SetSpeedBwPulsed__double.double.double"></span><span class="target" id="classOxTS_1_1GadSpeed_1a926ee2eef33b92abc70b9f910ded940c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSpeedBwPulsed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frequency</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">scale_factor</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">period</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed16SetSpeedBwPulsedEddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the backward pulsed speed aiding estimate.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>v_c</strong> – Estimated variance (pulses). </p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frequency</strong> – Pulse frequency in the backward vehicle direction (counts/s). </p></li>
+<li><p><strong>scale_factor</strong> – Scale factor converting counts to m, e.g. 0.01 for 100 counts/m. (m) </p></li>
+<li><p><strong>(optional)</strong> – period Time over which the speed measurement is taken (if known) (s). </p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4NK4OxTS8GadSpeed16GetWheelspeedVarEv">
-<span id="_CPPv3NK4OxTS8GadSpeed16GetWheelspeedVarEv"></span><span id="_CPPv2NK4OxTS8GadSpeed16GetWheelspeedVarEv"></span><span id="OxTS::GadSpeed::GetWheelspeedVarC"></span><span class="target" id="classOxTS_1_1GadSpeed_1a5800dfd0cc179f287ba9bc36a6a5c0da"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetWheelspeedVar</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4OxTS8GadSpeed16GetWheelspeedVarEv" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed16SetSpeedUnPulsedEddd">
+<span id="_CPPv3N4OxTS8GadSpeed16SetSpeedUnPulsedEddd"></span><span id="_CPPv2N4OxTS8GadSpeed16SetSpeedUnPulsedEddd"></span><span id="OxTS::GadSpeed::SetSpeedUnPulsed__double.double.double"></span><span class="target" id="classOxTS_1_1GadSpeed_1a965ca652c065d948222cb88af4312cb9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSpeedUnPulsed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frequency</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">scale_factor</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">period</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed16SetSpeedUnPulsedEddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Set an unsigned pulsed speed aiding estimate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frequency</strong> – Unsigned pulse frequency (counts/s). </p></li>
+<li><p><strong>scale_factor</strong> – Scale factor converting counts to m, e.g. 0.01 for 100 counts/m. (m) </p></li>
+<li><p><strong>(optional)</strong> – period Time over which the speed measurement is taken (if known) (s). </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4OxTS8GadSpeed8GetSpeedEv">
+<span id="_CPPv3NK4OxTS8GadSpeed8GetSpeedEv"></span><span id="_CPPv2NK4OxTS8GadSpeed8GetSpeedEv"></span><span id="OxTS::GadSpeed::GetSpeedC"></span><span class="target" id="classOxTS_1_1GadSpeed_1a3b87ea2667887d808281083d10fec7ba"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetSpeed</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4OxTS8GadSpeed8GetSpeedEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the aiding speed estimate. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed13SetSpeedMsVarEd">
+<span id="_CPPv3N4OxTS8GadSpeed13SetSpeedMsVarEd"></span><span id="_CPPv2N4OxTS8GadSpeed13SetSpeedMsVarEd"></span><span id="OxTS::GadSpeed::SetSpeedMsVar__double"></span><span class="target" id="classOxTS_1_1GadSpeed_1a423d4116e0119e2bc438cdf38b45b917"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSpeedMsVar</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_s</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed13SetSpeedMsVarEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Set estimated variance on the speed aiding measurement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>v_s</strong> – Estimated variance on the speed measurement ((m/s)^2). </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed17SetSpeedPulsedVarEdd">
+<span id="_CPPv3N4OxTS8GadSpeed17SetSpeedPulsedVarEdd"></span><span id="_CPPv2N4OxTS8GadSpeed17SetSpeedPulsedVarEdd"></span><span id="OxTS::GadSpeed::SetSpeedPulsedVar__double.double"></span><span class="target" id="classOxTS_1_1GadSpeed_1a0017f65686205d8f302f9f2311717486"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSpeedPulsedVar</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_s</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_sf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed17SetSpeedPulsedVarEdd" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the aiding speed variance estimate including scale factor and period </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>v_s</strong> – Pulse frequency variance estimate (variance on the measurement) (s^-2). </p></li>
+<li><p><strong>v_sf</strong> – Scale factor variance estimate (m^-2). </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed23SetSpeedPulsedVarPeriodEddd">
+<span id="_CPPv3N4OxTS8GadSpeed23SetSpeedPulsedVarPeriodEddd"></span><span id="_CPPv2N4OxTS8GadSpeed23SetSpeedPulsedVarPeriodEddd"></span><span id="OxTS::GadSpeed::SetSpeedPulsedVarPeriod__double.double.double"></span><span class="target" id="classOxTS_1_1GadSpeed_1af28564d3075e68329bec08b038d3cfc7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetSpeedPulsedVarPeriod</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_s</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_sf</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_p</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed23SetSpeedPulsedVarPeriodEddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the aiding speed variance estimate including scale factor and period </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>v_s</strong> – Pulse frequency variance estimate (variance on the measurement) (s^-2). </p></li>
+<li><p><strong>v_sf</strong> – Scale factor variance estimate (m^-2). </p></li>
+<li><p><strong>v_p</strong> – Period variance estimate (s^2). </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4OxTS8GadSpeed11GetSpeedVarEv">
+<span id="_CPPv3NK4OxTS8GadSpeed11GetSpeedVarEv"></span><span id="_CPPv2NK4OxTS8GadSpeed11GetSpeedVarEv"></span><span id="OxTS::GadSpeed::GetSpeedVarC"></span><span class="target" id="classOxTS_1_1GadSpeed_1a7e052dc2ecc2292d28bee56c5ea1c000"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetSpeedVar</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4OxTS8GadSpeed11GetSpeedVarEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the aiding speed variance estimate. </p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed22SetAidingLeverArmFixedEddd">
@@ -1214,12 +1265,6 @@
 <dt class="sig sig-object cpp" id="_CPPv4NK4OxTS8GadSpeed17GetAidingLeverArmEv">
 <span id="_CPPv3NK4OxTS8GadSpeed17GetAidingLeverArmEv"></span><span id="_CPPv2NK4OxTS8GadSpeed17GetAidingLeverArmEv"></span><span id="OxTS::GadSpeed::GetAidingLeverArmC"></span><span class="target" id="classOxTS_1_1GadSpeed_1adb57e841332d0f6908e27be9a278c687"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetAidingLeverArm</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4OxTS8GadSpeed17GetAidingLeverArmEv" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed27SetAidingLeverArmOptimisingEv">
-<span id="_CPPv3N4OxTS8GadSpeed27SetAidingLeverArmOptimisingEv"></span><span id="_CPPv2N4OxTS8GadSpeed27SetAidingLeverArmOptimisingEv"></span><span id="OxTS::GadSpeed::SetAidingLeverArmOptimising"></span><span class="target" id="classOxTS_1_1GadSpeed_1a34f591add0c18927c9cfa4bbcc5db01c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SetAidingLeverArmOptimising</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4OxTS8GadSpeed27SetAidingLeverArmOptimisingEv" title="Link to this definition"></a><br /></dt>
-<dd><p>Set lever arm from the INS to the aiding source to be taken from the .gap file. This lever arm will be optimised by the Kalman Filter during navigation. Note that if using this, the GNSS antenna lever arm must be set in mobile.cfg. </p>
-</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N4OxTS8GadSpeed23SetAidingLeverArmConfigEv">

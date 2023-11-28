@@ -8,19 +8,22 @@
     <detaileddescription>
 <para><variablelist>
 <varlistentry><term>Class <ref refid="classOxTS_1_1GadEncoderCsv" kindref="compound">OxTS::GadEncoderCsv</ref>  </term></varlistentry>
-<listitem><para><anchor id="todo_1_todo000005"/>Implement this csv encoding wrapper.  </para>
+<listitem><para><anchor id="todo_1_todo000006"/>Implement this csv encoding wrapper.  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="classOxTS_1_1GadSpeed_1ada23012be4a67d2a2eda0a8a61f8c90a" kindref="member">OxTS::GadSpeed::SetAidingLeverArmConfig</ref>  ()</term></varlistentry>
-<listitem><para><anchor id="todo_1_todo000004"/>Remove and set this mode to be default  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="classOxTS_1_1GadSpeed_1ae593c36bcb38cfdaf4a0fdd37a0a03a8" kindref="member">OxTS::GadSpeed::SetWheelspeedCount</ref>  (double count, double period)</term></varlistentry>
-<listitem><para><anchor id="todo_1_todo000002"/>Clarify where the timestamp should correspond to in the period: start, middle, end.  </para>
-</listitem>
-<varlistentry><term>Member <ref refid="classOxTS_1_1GadSpeed_1a0cc7655e98f2df4400c5d1c015427825" kindref="member">OxTS::GadSpeed::SetWheelspeedVar</ref>  (double v_c)</term></varlistentry>
-<listitem><para><anchor id="todo_1_todo000003"/>Clarify units  </para>
+<listitem><para><anchor id="todo_1_todo000005"/>Remove and set this mode to be default  </para>
 </listitem>
 <varlistentry><term>Member <ref refid="classOxTS_1_1GadVelocity_1a22e6aa96f6507983a9db5c8186e289db" kindref="member">OxTS::GadVelocity::SetAidingLeverArmConfig</ref>  ()</term></varlistentry>
-<listitem><para><anchor id="todo_1_todo000001"/>Remove and set this mode to be default </para>
+<listitem><para><anchor id="todo_1_todo000001"/>Remove and set this mode to be default  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1GadWheelSpeed_1a2fe17a365928f37f7039daaa56c16052" kindref="member">OxTS::GadWheelSpeed::SetAidingLeverArmConfig</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000004"/>Remove and set this mode to be default  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1GadWheelSpeed_1a71dd0a72ca07856ce85a85b8f550c65e" kindref="member">OxTS::GadWheelSpeed::SetWheelSpeedCount</ref>  (double count, double period)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000002"/>Clarify where the timestamp should correspond to in the period: start, middle, end.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1GadWheelSpeed_1a7bfe6de85b875fb33048489990ac0f94" kindref="member">OxTS::GadWheelSpeed::SetWheelSpeedVar</ref>  (double v_c)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000003"/>Clarify units </para>
 </listitem>
 </variablelist>
 </para>

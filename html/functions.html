@@ -141,6 +141,12 @@ $(function() {
 <li>GetPosVar()
 : <a class="el" href="classOxTS_1_1GadPosition.html#ac891f936ac3cb0db9dc85b695f2f5733">OxTS::GadPosition</a>
 </li>
+<li>GetSpeed()
+: <a class="el" href="classOxTS_1_1GadSpeed.html#a3b87ea2667887d808281083d10fec7ba">OxTS::GadSpeed</a>
+</li>
+<li>GetSpeedVar()
+: <a class="el" href="classOxTS_1_1GadSpeed.html#a7e052dc2ecc2292d28bee56c5ea1c000">OxTS::GadSpeed</a>
+</li>
 <li>GetStreamId()
 : <a class="el" href="classOxTS_1_1Gad.html#ad6305b40f883de529a6aca9d3daff6e9">OxTS::Gad</a>
 </li>
@@ -247,21 +253,24 @@ $(function() {
 : <a class="el" href="classOxTS_1_1GadPosition.html#ac37d73387db89a2bd64b0e9ca41fc313">OxTS::GadPosition</a>
 , <a class="el" href="classOxTS_1_1GadSpeed.html#ada23012be4a67d2a2eda0a8a61f8c90a">OxTS::GadSpeed</a>
 , <a class="el" href="classOxTS_1_1GadVelocity.html#a22e6aa96f6507983a9db5c8186e289db">OxTS::GadVelocity</a>
+, <a class="el" href="classOxTS_1_1GadWheelSpeed.html#a2fe17a365928f37f7039daaa56c16052">OxTS::GadWheelSpeed</a>
 </li>
 <li>SetAidingLeverArmFixed()
 : <a class="el" href="classOxTS_1_1GadPosition.html#a03f50242de33a27ea134ead005e10fe7">OxTS::GadPosition</a>
 , <a class="el" href="classOxTS_1_1GadSpeed.html#a0a572f8d413ca297db234328a0c33930">OxTS::GadSpeed</a>
 , <a class="el" href="classOxTS_1_1GadVelocity.html#a69478d9ebf86b4b05aec19234f658a84">OxTS::GadVelocity</a>
+, <a class="el" href="classOxTS_1_1GadWheelSpeed.html#a1384730ef3c3fd8e7b67ce9578f3c94e">OxTS::GadWheelSpeed</a>
 </li>
 <li>SetAidingLeverArmOptimising()
 : <a class="el" href="classOxTS_1_1GadPosition.html#a7ad99a09a1f62f3f8bd1afee8492c10e">OxTS::GadPosition</a>
-, <a class="el" href="classOxTS_1_1GadSpeed.html#a34f591add0c18927c9cfa4bbcc5db01c">OxTS::GadSpeed</a>
 , <a class="el" href="classOxTS_1_1GadVelocity.html#a11170fa7a855ff3b2274063a8da077ce">OxTS::GadVelocity</a>
+, <a class="el" href="classOxTS_1_1GadWheelSpeed.html#a8b2cb63958d4cbe0981eca3a23ebfbbc">OxTS::GadWheelSpeed</a>
 </li>
 <li>SetAidingLeverArmVar()
 : <a class="el" href="classOxTS_1_1GadPosition.html#ae83d2a4cafc6768a1b1c282f9372cc37">OxTS::GadPosition</a>
 , <a class="el" href="classOxTS_1_1GadSpeed.html#aec8b970ce1e3d817f678039a540103f7">OxTS::GadSpeed</a>
 , <a class="el" href="classOxTS_1_1GadVelocity.html#ae6e6c30da527c002c537fed3cf34c9ae">OxTS::GadVelocity</a>
+, <a class="el" href="classOxTS_1_1GadWheelSpeed.html#a0a318c9e324acab54cbea977160c6b62">OxTS::GadWheelSpeed</a>
 </li>
 <li>SetAtt()
 : <a class="el" href="classOxTS_1_1GadAttitude.html#aa8848d72e4d0c5eb123314bb2b82cad0">OxTS::GadAttitude</a>
@@ -306,7 +315,7 @@ $(function() {
 : <a class="el" href="classOxTS_1_1GadPosition.html#a928e000408218f2f8ab74d171795221b">OxTS::GadPosition</a>
 </li>
 <li>SetPosGeodeticVar()
-: <a class="el" href="classOxTS_1_1GadPosition.html#a6421346a8da8cfac0955dbf2c66ee2cc">OxTS::GadPosition</a>
+: <a class="el" href="classOxTS_1_1GadPosition.html#a319ca312b6dbf8305c7658a7b2ffafaf">OxTS::GadPosition</a>
 </li>
 <li>SetPosLocal()
 : <a class="el" href="classOxTS_1_1GadPosition.html#ac86e89ff1238b464bbbeee67a0d173d6">OxTS::GadPosition</a>
@@ -314,11 +323,32 @@ $(function() {
 <li>SetPosLocalVar()
 : <a class="el" href="classOxTS_1_1GadPosition.html#a3ce019fcb29f269ac5e922f884caac03">OxTS::GadPosition</a>
 </li>
-<li>SetSpeedFw()
-: <a class="el" href="classOxTS_1_1GadSpeed.html#a8edfa3f817c0824cf378138345324612">OxTS::GadSpeed</a>
+<li>SetSpeedBwMs()
+: <a class="el" href="classOxTS_1_1GadSpeed.html#ab4b2f3ec81bd073a13406cc9937c38fe">OxTS::GadSpeed</a>
 </li>
-<li>SetSpeedFwVar()
-: <a class="el" href="classOxTS_1_1GadSpeed.html#a35ca30385d21dd668d304b80dfd50f90">OxTS::GadSpeed</a>
+<li>SetSpeedBwPulsed()
+: <a class="el" href="classOxTS_1_1GadSpeed.html#a926ee2eef33b92abc70b9f910ded940c">OxTS::GadSpeed</a>
+</li>
+<li>SetSpeedFwMs()
+: <a class="el" href="classOxTS_1_1GadSpeed.html#a8be07c362ccd23fc5c75ba9c13eda702">OxTS::GadSpeed</a>
+</li>
+<li>SetSpeedFwPulsed()
+: <a class="el" href="classOxTS_1_1GadSpeed.html#adb5b05e9af3acb31b3079ec4b93ac3f4">OxTS::GadSpeed</a>
+</li>
+<li>SetSpeedMsVar()
+: <a class="el" href="classOxTS_1_1GadSpeed.html#a423d4116e0119e2bc438cdf38b45b917">OxTS::GadSpeed</a>
+</li>
+<li>SetSpeedPulsedVar()
+: <a class="el" href="classOxTS_1_1GadSpeed.html#a0017f65686205d8f302f9f2311717486">OxTS::GadSpeed</a>
+</li>
+<li>SetSpeedPulsedVarPeriod()
+: <a class="el" href="classOxTS_1_1GadSpeed.html#af28564d3075e68329bec08b038d3cfc7">OxTS::GadSpeed</a>
+</li>
+<li>SetSpeedUnMs()
+: <a class="el" href="classOxTS_1_1GadSpeed.html#a054c521f9ecb7e1ab8971a380199799b">OxTS::GadSpeed</a>
+</li>
+<li>SetSpeedUnPulsed()
+: <a class="el" href="classOxTS_1_1GadSpeed.html#a965ca652c065d948222cb88af4312cb9">OxTS::GadSpeed</a>
 </li>
 <li>SetStreamId()
 : <a class="el" href="classOxTS_1_1Gad.html#a46f934b125ce7379918a8872e4bbe2a3">OxTS::Gad</a>
@@ -371,11 +401,17 @@ $(function() {
 <li>SetVelOdomVar()
 : <a class="el" href="classOxTS_1_1GadVelocity.html#ab5146e8e35543102affad339f4615b9e">OxTS::GadVelocity</a>
 </li>
-<li>SetWheelspeedCount()
-: <a class="el" href="classOxTS_1_1GadSpeed.html#ae593c36bcb38cfdaf4a0fdd37a0a03a8">OxTS::GadSpeed</a>
+<li>SetWheelSpeedCount()
+: <a class="el" href="classOxTS_1_1GadWheelSpeed.html#a71dd0a72ca07856ce85a85b8f550c65e">OxTS::GadWheelSpeed</a>
 </li>
-<li>SetWheelspeedVar()
-: <a class="el" href="classOxTS_1_1GadSpeed.html#a0cc7655e98f2df4400c5d1c015427825">OxTS::GadSpeed</a>
+<li>SetWheelSpeedFw()
+: <a class="el" href="classOxTS_1_1GadWheelSpeed.html#a8e8eaaf4de731da64ccf5a8c350df845">OxTS::GadWheelSpeed</a>
+</li>
+<li>SetWheelSpeedFwVar()
+: <a class="el" href="classOxTS_1_1GadWheelSpeed.html#a453da5c269f1d387d1158e3658a1274c">OxTS::GadWheelSpeed</a>
+</li>
+<li>SetWheelSpeedVar()
+: <a class="el" href="classOxTS_1_1GadWheelSpeed.html#a7bfe6de85b875fb33048489990ac0f94">OxTS::GadWheelSpeed</a>
 </li>
 </ul>
 

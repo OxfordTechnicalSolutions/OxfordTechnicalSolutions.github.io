@@ -194,17 +194,19 @@
   </compound>
   <compound refid="classOxTS_1_1GadSpeed" kind="class"><name>OxTS::GadSpeed</name>
     <member refid="classOxTS_1_1GadSpeed_1a9f31001f4a68f2a9f941a85e059660b2" kind="function"><name>GadSpeed</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1a8edfa3f817c0824cf378138345324612" kind="function"><name>SetSpeedFw</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1a27bfcb5c034f1c234b9f382777891797" kind="function"><name>GetSpeedFw</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1a35ca30385d21dd668d304b80dfd50f90" kind="function"><name>SetSpeedFwVar</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1a5a6a648b65c42e5f9830772a54df53b4" kind="function"><name>GetSpeedFwVar</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1ae593c36bcb38cfdaf4a0fdd37a0a03a8" kind="function"><name>SetWheelspeedCount</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1a35a452878c41070a66c9568efa760d5d" kind="function"><name>GetWheelspeedCount</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1a0cc7655e98f2df4400c5d1c015427825" kind="function"><name>SetWheelspeedVar</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1a5800dfd0cc179f287ba9bc36a6a5c0da" kind="function"><name>GetWheelspeedVar</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1a8be07c362ccd23fc5c75ba9c13eda702" kind="function"><name>SetSpeedFwMs</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1ab4b2f3ec81bd073a13406cc9937c38fe" kind="function"><name>SetSpeedBwMs</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1a054c521f9ecb7e1ab8971a380199799b" kind="function"><name>SetSpeedUnMs</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1adb5b05e9af3acb31b3079ec4b93ac3f4" kind="function"><name>SetSpeedFwPulsed</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1a926ee2eef33b92abc70b9f910ded940c" kind="function"><name>SetSpeedBwPulsed</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1a965ca652c065d948222cb88af4312cb9" kind="function"><name>SetSpeedUnPulsed</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1a3b87ea2667887d808281083d10fec7ba" kind="function"><name>GetSpeed</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1a423d4116e0119e2bc438cdf38b45b917" kind="function"><name>SetSpeedMsVar</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1a0017f65686205d8f302f9f2311717486" kind="function"><name>SetSpeedPulsedVar</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1af28564d3075e68329bec08b038d3cfc7" kind="function"><name>SetSpeedPulsedVarPeriod</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1a7e052dc2ecc2292d28bee56c5ea1c000" kind="function"><name>GetSpeedVar</name></member>
     <member refid="classOxTS_1_1GadSpeed_1a0a572f8d413ca297db234328a0c33930" kind="function"><name>SetAidingLeverArmFixed</name></member>
     <member refid="classOxTS_1_1GadSpeed_1adb57e841332d0f6908e27be9a278c687" kind="function"><name>GetAidingLeverArm</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1a34f591add0c18927c9cfa4bbcc5db01c" kind="function"><name>SetAidingLeverArmOptimising</name></member>
     <member refid="classOxTS_1_1GadSpeed_1ada23012be4a67d2a2eda0a8a61f8c90a" kind="function"><name>SetAidingLeverArmConfig</name></member>
     <member refid="classOxTS_1_1GadSpeed_1aec8b970ce1e3d817f678039a540103f7" kind="function"><name>SetAidingLeverArmVar</name></member>
     <member refid="classOxTS_1_1GadSpeed_1a711573eeaabe3e0dec584a2846737658" kind="function"><name>GetAidingLeverArmVar</name></member>
@@ -228,6 +230,23 @@
     <member refid="classOxTS_1_1GadVelocity_1a22e6aa96f6507983a9db5c8186e289db" kind="function"><name>SetAidingLeverArmConfig</name></member>
     <member refid="classOxTS_1_1GadVelocity_1ae6e6c30da527c002c537fed3cf34c9ae" kind="function"><name>SetAidingLeverArmVar</name></member>
     <member refid="classOxTS_1_1GadVelocity_1aac548ec4370097a846875cff55ae7613" kind="function"><name>GetAidingLeverArmVar</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1GadWheelSpeed" kind="class"><name>OxTS::GadWheelSpeed</name>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a7047602ea35f3c7688a37ba1316de258" kind="function"><name>GadWheelSpeed</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a8e8eaaf4de731da64ccf5a8c350df845" kind="function"><name>SetWheelSpeedFw</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a862700490ea8dddab52e7698669a142d" kind="function"><name>GetWheelSpeedFw</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a453da5c269f1d387d1158e3658a1274c" kind="function"><name>SetWheelSpeedFwVar</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a9532d985d0bb2949c31096bce30f3a4b" kind="function"><name>GetWheelSpeedFwVar</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a71dd0a72ca07856ce85a85b8f550c65e" kind="function"><name>SetWheelSpeedCount</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a798c0a2213532b7a86a2e6be3bede6a2" kind="function"><name>GetWheelSpeedCount</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a7bfe6de85b875fb33048489990ac0f94" kind="function"><name>SetWheelSpeedVar</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1aa4041b30531fb553a620d090d910166e" kind="function"><name>GetWheelSpeedVar</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a1384730ef3c3fd8e7b67ce9578f3c94e" kind="function"><name>SetAidingLeverArmFixed</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a40893d9caf13a6a400b506093e26e1fd" kind="function"><name>GetAidingLeverArm</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a8b2cb63958d4cbe0981eca3a23ebfbbc" kind="function"><name>SetAidingLeverArmOptimising</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a2fe17a365928f37f7039daaa56c16052" kind="function"><name>SetAidingLeverArmConfig</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1a0a318c9e324acab54cbea977160c6b62" kind="function"><name>SetAidingLeverArmVar</name></member>
+    <member refid="classOxTS_1_1GadWheelSpeed_1ac9e52781f5d31e6d306b2db4027affe9" kind="function"><name>GetAidingLeverArmVar</name></member>
   </compound>
   <compound refid="classOxTS_1_1Gen3d" kind="class"><name>OxTS::Gen3d</name>
     <member refid="classOxTS_1_1Gen3d_1a44cd0e5f590acb7fc5f98536b4fb435b" kind="function"><name>Gen3d</name></member>
