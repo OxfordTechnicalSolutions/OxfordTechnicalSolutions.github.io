@@ -106,10 +106,10 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="602" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1GadSpeed_1adb5b05e9af3acb31b3079ec4b93ac3f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1GadSpeed_1a19bb7361cdc39230a38564c0e7ddce0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void OxTS::GadSpeed::SetSpeedFwPulsed</definition>
-        <argsstring>(double frequency, double scale_factor, double period=0.0)</argsstring>
+        <argsstring>(double frequency, double scale_factor, double period=1.0)</argsstring>
         <name>SetSpeedFwPulsed</name>
         <param>
           <type>double</type>
@@ -122,7 +122,7 @@
         <param>
           <type>double</type>
           <declname>period</declname>
-          <defval>0.0</defval>
+          <defval>1.0</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -159,10 +159,10 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="610" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1GadSpeed_1a926ee2eef33b92abc70b9f910ded940c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1GadSpeed_1ac72c091af8d9587f9068a8a9e4936b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void OxTS::GadSpeed::SetSpeedBwPulsed</definition>
-        <argsstring>(double frequency, double scale_factor, double period=0.0)</argsstring>
+        <argsstring>(double frequency, double scale_factor, double period=1.0)</argsstring>
         <name>SetSpeedBwPulsed</name>
         <param>
           <type>double</type>
@@ -175,7 +175,7 @@
         <param>
           <type>double</type>
           <declname>period</declname>
-          <defval>0.0</defval>
+          <defval>1.0</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -212,10 +212,10 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="618" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1GadSpeed_1a965ca652c065d948222cb88af4312cb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1GadSpeed_1ab371f057bfeeb0b6acedd552b2c58f36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void OxTS::GadSpeed::SetSpeedUnPulsed</definition>
-        <argsstring>(double frequency, double scale_factor, double period=0.0)</argsstring>
+        <argsstring>(double frequency, double scale_factor, double period=1.0)</argsstring>
         <name>SetSpeedUnPulsed</name>
         <param>
           <type>double</type>
@@ -228,7 +228,7 @@
         <param>
           <type>double</type>
           <declname>period</declname>
-          <defval>0.0</defval>
+          <defval>1.0</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -645,14 +645,14 @@
       <member refid="classOxTS_1_1Gad_1a1e834ee11a6cb90d92532c18b71dc4ae" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetRes1Valid</name></member>
       <member refid="classOxTS_1_1Gad_1af5a0f13f808a5e14661eb7916a71e563" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetRes2Valid</name></member>
       <member refid="classOxTS_1_1GadSpeed_1ab4b2f3ec81bd073a13406cc9937c38fe" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedBwMs</name></member>
-      <member refid="classOxTS_1_1GadSpeed_1a926ee2eef33b92abc70b9f910ded940c" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedBwPulsed</name></member>
+      <member refid="classOxTS_1_1GadSpeed_1ac72c091af8d9587f9068a8a9e4936b3c" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedBwPulsed</name></member>
       <member refid="classOxTS_1_1GadSpeed_1a8be07c362ccd23fc5c75ba9c13eda702" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedFwMs</name></member>
-      <member refid="classOxTS_1_1GadSpeed_1adb5b05e9af3acb31b3079ec4b93ac3f4" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedFwPulsed</name></member>
+      <member refid="classOxTS_1_1GadSpeed_1a19bb7361cdc39230a38564c0e7ddce0d" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedFwPulsed</name></member>
       <member refid="classOxTS_1_1GadSpeed_1a423d4116e0119e2bc438cdf38b45b917" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedMsVar</name></member>
       <member refid="classOxTS_1_1GadSpeed_1a0017f65686205d8f302f9f2311717486" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedPulsedVar</name></member>
       <member refid="classOxTS_1_1GadSpeed_1af28564d3075e68329bec08b038d3cfc7" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedPulsedVarPeriod</name></member>
       <member refid="classOxTS_1_1GadSpeed_1a054c521f9ecb7e1ab8971a380199799b" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedUnMs</name></member>
-      <member refid="classOxTS_1_1GadSpeed_1a965ca652c065d948222cb88af4312cb9" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedUnPulsed</name></member>
+      <member refid="classOxTS_1_1GadSpeed_1ab371f057bfeeb0b6acedd552b2c58f36" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetSpeedUnPulsed</name></member>
       <member refid="classOxTS_1_1Gad_1a46f934b125ce7379918a8872e4bbe2a3" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetStreamId</name></member>
       <member refid="classOxTS_1_1Gad_1af3b0e2d4aea781bcdd8221b6858d88b2" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetTimeExternal</name></member>
       <member refid="classOxTS_1_1Gad_1a491cbe0599ee61ddd9cd0b0db04b5f27" prot="public" virt="non-virtual"><scope>OxTS::GadSpeed</scope><name>SetTimeGps</name></member>

@@ -197,9 +197,9 @@
     <member refid="classOxTS_1_1GadSpeed_1a8be07c362ccd23fc5c75ba9c13eda702" kind="function"><name>SetSpeedFwMs</name></member>
     <member refid="classOxTS_1_1GadSpeed_1ab4b2f3ec81bd073a13406cc9937c38fe" kind="function"><name>SetSpeedBwMs</name></member>
     <member refid="classOxTS_1_1GadSpeed_1a054c521f9ecb7e1ab8971a380199799b" kind="function"><name>SetSpeedUnMs</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1adb5b05e9af3acb31b3079ec4b93ac3f4" kind="function"><name>SetSpeedFwPulsed</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1a926ee2eef33b92abc70b9f910ded940c" kind="function"><name>SetSpeedBwPulsed</name></member>
-    <member refid="classOxTS_1_1GadSpeed_1a965ca652c065d948222cb88af4312cb9" kind="function"><name>SetSpeedUnPulsed</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1a19bb7361cdc39230a38564c0e7ddce0d" kind="function"><name>SetSpeedFwPulsed</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1ac72c091af8d9587f9068a8a9e4936b3c" kind="function"><name>SetSpeedBwPulsed</name></member>
+    <member refid="classOxTS_1_1GadSpeed_1ab371f057bfeeb0b6acedd552b2c58f36" kind="function"><name>SetSpeedUnPulsed</name></member>
     <member refid="classOxTS_1_1GadSpeed_1a3b87ea2667887d808281083d10fec7ba" kind="function"><name>GetSpeed</name></member>
     <member refid="classOxTS_1_1GadSpeed_1a423d4116e0119e2bc438cdf38b45b917" kind="function"><name>SetSpeedMsVar</name></member>
     <member refid="classOxTS_1_1GadSpeed_1a0017f65686205d8f302f9f2311717486" kind="function"><name>SetSpeedPulsedVar</name></member>
