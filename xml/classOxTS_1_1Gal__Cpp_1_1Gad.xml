@@ -32,7 +32,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Aiding stream ID to identify the source device. Values 128-254. Each stream should have a unique ID. </para>
+<para>Aiding stream ID to identify the source device. Values 129-254. Each stream should have a unique ID. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

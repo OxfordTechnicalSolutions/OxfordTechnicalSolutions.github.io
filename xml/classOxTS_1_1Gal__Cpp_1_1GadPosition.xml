@@ -23,7 +23,7 @@
 <parametername>stream_id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Stream ID for the position aiding source. Must be unique 128-254. </para>
+<para>Stream ID for the position aiding source. Must be unique 129-254. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
