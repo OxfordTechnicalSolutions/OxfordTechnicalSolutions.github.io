@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started &mdash; GAD-SDK 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Aiding types" href="aiding_types/index.html" />
+    <link rel="prev" title="Overview of GAD SDK" href="overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            GAD-SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of GAD SDK</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-does-the-code-look-like">What does the code look like?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-setup-and-initialisation">Hardware setup and Initialisation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aiding_types/index.html">Aiding types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ismydatabeingreceived.html">Debug Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_post_processing.html">Post-processing GAD data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="section5.html">Advanced Options</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials and examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="my_first_gad.html">My first GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="static_aiding.html">Static-aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_can_ws.html">CAN wheel speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference section</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="KF.html">The Kalman Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Frames.html">Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lever_arm.html">Lever arms and Alignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cov.html">Covariance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time_stamping.html">Timestamping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary of terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_cols.html">GAD file column definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enum_tab.html">Table of GAD file Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adv_com.html">Advanced commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py_com.html">Python API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GAD-SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Getting Started</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/source/longform/gettingstarted.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="getting-started">
+<span id="gettingstarted"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h1>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<p>There are four things you need to start using this SDK:</p>
+<p><strong>An OxTS INS device</strong></p>
+<p>All OxTS INS devices currently for sale support GAD. If you have a legacy OxTS
+INS contact <a class="reference external" href="mailto:support&#37;&#52;&#48;oxts&#46;com">OxTS</a> to see if it supports GAD. It will also
+be useful to have a PC with the latest
+<a class="reference external" href="https://support.oxts.com/hc/en-us/sections/115000789105-NAVsuite">NAVsuite</a>
+software installed.</p>
+<p><strong>Feature Codes</strong></p>
+<p>Generic Aiding is an optional extra for your INS device that needs to be
+enabled using the right Feature Codes. To purchase the feature codes for your INS,
+please contact <a class="reference external" href="mailto:support&#37;&#52;&#48;oxts&#46;com">support<span>&#64;</span>oxts<span>&#46;</span>com</a>.</p>
+<p><strong>An aiding device</strong></p>
+<p>An aiding device is an external sensor which provides additional information
+on a vehicle’s dynamics and/or pose. This information is then used to aid the navigation solution.
+The device must be rigidly mounted to the same vehicle as your INS.</p>
+<p>Generic Aiding is supported by an ethernet interface on the INS, to allow for aiding in real time.
+To make use of this, the aiding device must either encode and send GAD over ethernet via
+UDP itself or must pass its data to an intermediate processor which is capable
+of encoding GAD.</p>
+<p><strong>The GAD SDK</strong></p>
+<p>The GAD Software Development Kit (SDK) is a set of development tools
+that allows for the interface between an external aiding source and an
+OxTS INS.
+You can download it from our
+<a class="reference external" href="https://github.com/OxfordTechnicalSolutions/gad-sdk/tree/main">GitHub</a>.
+The SDK needs to be installed on the device that will be generating the GAD
+packets. Installation instructions can be found
+<a class="reference external" href="https://github.com/OxfordTechnicalSolutions/gad-sdk/blob/main/README.md">here</a>.</p>
+</section>
+<section id="what-does-the-code-look-like">
+<span id="s3-example-code"></span><h2>What does the code look like?<a class="headerlink" href="#what-does-the-code-look-like" title="Link to this heading"></a></h2>
+<p>The SDK exists in C, C++ or Python, but this documentation will focus on C++ and Python only.
+It is assumed that the reader has a basic understanding of at least one of these languages, preferably C++ or Python.
+Here we go through an example which will introduce the basic concepts involved in creating GAD packets and
+sending them to an INS.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">C++</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;chrono&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;thread&gt;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="o">::</span><span class="nn">chrono_literals</span><span class="p">;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad_handler.hpp&quot;</span>
+
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Usage: </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;       ./my-first-gad &lt;INS IP&gt; &lt;number of packets&gt;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;       e.g. ./my-first-gad 192.168.25.100 100&quot;</span>
+<span class="w">                                  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">unit_ip</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">num_packets</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">stoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+
+<span class="w">        </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadHandler</span><span class="w"> </span><span class="n">gh</span><span class="p">;</span>
+<span class="w">        </span><span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToBin</span><span class="p">();</span>
+<span class="w">        </span><span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToUdp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadVelocity</span><span class="w"> </span><span class="n">gv</span><span class="p">(</span><span class="mi">130</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_packets</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">                </span><span class="n">gv</span><span class="p">.</span><span class="n">SetVelNed</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="w">                </span><span class="n">gv</span><span class="p">.</span><span class="n">SetVelNedVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="w">                </span><span class="n">gv</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span>
+<span class="w">                </span><span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="w">                </span><span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">gv</span><span class="p">);</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;packet &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; sent&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="mi">100</span><span class="n">ms</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>We will now break down the parts of the code which make use of the GAD
+SDK.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad_handler.hpp&quot;</span>
+</pre></div>
+</div>
+<p>Includes from the GAD SDK.</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">gad.hpp</span></code> contains the Gad classes required to construct our GAD
+packets of all aiding types. In this case we will be making use of
+<code class="code docutils literal notranslate"><span class="pre">GadVelocity</span></code>.</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">gad_handler.hpp</span></code> contains the GadHandler class, which provides
+functionality to encode and send the data packets.</p></li>
+</ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadHandler</span><span class="w"> </span><span class="n">gh</span><span class="p">;</span>
+<span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToBin</span><span class="p">();</span>
+<span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToUdp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>These three lines of code construct and configure the GAD handler,
+indicating that we will be sending binary encoded packets to the IP
+address of the INS.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadVelocity</span><span class="w"> </span><span class="nf">gv</span><span class="p">(</span><span class="mi">130</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>This constructs a GAD Velocity packet with stream ID 130. Stream IDs must be
+between 129 and 254.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="p">.</span><span class="n">SetVelNed</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetVelNedVar</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">);</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">);</span>
+
+<span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">gv</span><span class="p">);</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The first line sets the velocity measurement, which we have taken in
+the North, East, Down <a class="reference internal" href="Frames.html#frames"><span class="std std-ref">frame</span></a>. Since we are assuming the INS is
+stationary, the measurement is zero.</p></li>
+<li><p>The second line sets the covariance of our measurement. Typically,
+this is modelled based on the sensor providing the measurements.
+Since we do not have a real sensor for this example, we assume our
+“measurement” is reasonably accurate, with a standard deviation of
+10cm in all axes. For more information on covariance, see <a class="reference internal" href="cov.html#cov"><span class="std std-ref">Covariance</span></a>.</p></li>
+<li><p>Line three sets the timestamp for this GAD packet. Since we have not
+synchronised time between the PC that is running this example and
+the INS, it would not be reliable to use a full timestamp. Instead,
+we make use of a Void timestamp which flags to the INS that it should
+be timestamped on arrival. For more information on timestamping your
+data, see <a class="reference internal" href="time_stamping.html#time-stamp"><span class="std std-ref">Timestamping</span></a> .</p></li>
+<li><p>The fourth line sets the lever arm of the aiding device, i.e., the
+displacement (in IMU frame) between the sensor and INS. Here, we
+suppose that our “sensor” is one metre ahead of the INS in the
+vehicle. For more information on lever arms, see <a class="reference internal" href="lever_arm.html#lever-arms"><span class="std std-ref">Lever arms and Alignments</span></a>.</p></li>
+<li><p>The fifth line sets the lever arm’s covariance, again this is in the
+IMU frame. This reflects the accuracy with which the lever arm has
+been measured.</p></li>
+</ul>
+<p>Since our example is entirely static, none of these measurement values
+are updated as we loop through sending packets. Of course, if we had a
+real sensor, these values would be updated to reflect incoming
+measurements.</p>
+<p>After the relevant data for the GAD packet has been stored, the next
+line of code instructs the GadHandler to send the packet to the INS.</p>
+<p>Also, one should note the sleep function at the end of the code block.
+This is to ensure that the GAD packets are sent at a frequency of 10 Hz.
+In general, a GAD packet frequency between 10 and 1 Hz is recommended.</p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">oxts_sdk</span> <span class="k">as</span> <span class="nn">ox</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid number of command line arguments, requires: &lt;IP&gt; &lt;number of packets&gt;&quot;</span><span class="p">)</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">unit_ip</span> <span class="o">=</span>  <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">num_packets</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+        <span class="n">gh</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">GadHandler</span><span class="p">()</span>
+        <span class="n">gh</span><span class="o">.</span><span class="n">set_encoder_to_bin</span><span class="p">()</span>
+        <span class="n">gh</span><span class="o">.</span><span class="n">set_output_mode_to_udp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">)</span>
+
+        <span class="n">gv</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">GadVelocity</span><span class="p">(</span><span class="mi">130</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">num_packets</span><span class="p">,</span><span class="mi">1</span><span class="p">):</span>
+                <span class="n">gv</span><span class="o">.</span><span class="n">vel_ned</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">]</span>
+                <span class="n">gv</span><span class="o">.</span><span class="n">vel_ned_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">]</span>
+                <span class="n">gv</span><span class="o">.</span><span class="n">set_time_void</span><span class="p">()</span>
+                <span class="n">gv</span><span class="o">.</span><span class="n">aiding_lever_arm_fixed</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">]</span>
+                <span class="n">gv</span><span class="o">.</span><span class="n">aiding_lever_arm_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">]</span>
+
+                <span class="n">gh</span><span class="o">.</span><span class="n">send_packet</span><span class="p">(</span><span class="n">gv</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;packet &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; sent&quot;</span><span class="p">)</span>
+                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We will now break down the parts of the code which make use of the GAD
+SDK.</p>
+<p><code class="code docutils literal notranslate"><span class="pre">oxts_sdk</span></code> contains the all the code need for the GAD SDK, so we
+import the module with the shortened name <code class="code docutils literal notranslate"><span class="pre">ox</span></code>, for convenience.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">oxts_sdk</span> <span class="k">as</span> <span class="nn">ox</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">gh</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">GadHandler</span><span class="p">()</span>
+<span class="n">gh</span><span class="o">.</span><span class="n">set_encoder_to_bin</span><span class="p">()</span>
+<span class="n">gh</span><span class="o">.</span><span class="n">set_output_mode_to_udp</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>These three lines of code construct and configure the GAD handler,
+indicating that we will be sending binary encoded packets to the IP
+address of the INS.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span> <span class="o">=</span> <span class="n">ox</span><span class="o">.</span><span class="n">GadVelocity</span><span class="p">(</span><span class="mi">130</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This constructs a GAD Velocity packet with stream ID 130. Stream IDs must be
+between 129 and 254.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="o">.</span><span class="n">vel_ned</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">]</span>
+<span class="n">gv</span><span class="o">.</span><span class="n">vel_ned_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">]</span>
+<span class="n">gv</span><span class="o">.</span><span class="n">set_time_void</span><span class="p">()</span>
+<span class="n">gv</span><span class="o">.</span><span class="n">aiding_lever_arm_fixed</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">]</span>
+<span class="n">gv</span><span class="o">.</span><span class="n">aiding_lever_arm_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.01</span><span class="p">]</span>
+
+<span class="n">gh</span><span class="o">.</span><span class="n">send_packet</span><span class="p">(</span><span class="n">gv</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;packet &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; sent&quot;</span><span class="p">)</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The first line sets the velocity measurement, which we have taken in
+the North, East, Down <a class="reference internal" href="Frames.html#frames"><span class="std std-ref">frame</span></a>. Since we are assuming the INS is
+stationary, the measurement is zero.</p></li>
+<li><p>The second line sets the covariance of our measurement. Typically,
+this is modelled based on the sensor providing the measurements.
+Since we do not have a real sensor for this example, we assume our
+“measurement” is reasonably accurate, with a standard deviation of
+10cm in all axes. For more information on covariance, see <a class="reference internal" href="cov.html#cov"><span class="std std-ref">Covariance</span></a>.</p></li>
+<li><p>Line three sets the timestamp for this GAD packet. Since we have not
+synchronised time between the PC that is running this example and
+the INS, it would not be reliable to use a full timestamp. Instead,
+we make use of a Void timestamp which flags to the INS that it should
+be timestamped on arrival. For more information on timestamping your
+data, see <a class="reference internal" href="time_stamping.html#time-stamp"><span class="std std-ref">Timestamping</span></a> .</p></li>
+<li><p>The fourth line sets the lever arm of the aiding device, i.e., the
+displacement (in IMU frame) between the sensor and INS. Here, we
+suppose that our “sensor” is one metre ahead of the INS in the
+vehicle. For more information on lever arms, see <a class="reference internal" href="lever_arm.html#lever-arms"><span class="std std-ref">Lever arms and Alignments</span></a>.</p></li>
+<li><p>The fifth line sets the lever arm’s covariance, again this is in the
+IMU frame. This reflects the accuracy with which the lever arm has
+been measured.</p></li>
+</ul>
+<p>Since our example is entirely static, none of these measurement values
+are updated as we loop through sending packets. Of course, if we had a
+real sensor, these values would be updated to reflect incoming
+measurements.</p>
+<p>After the relevant data for the GAD packet has been stored, the next
+line of code instructs the GadHandler to send the packet to the INS.</p>
+<p>Also, one should note the sleep function at the end of the code block.
+This is to ensure that the GAD packets are sent at a frequency of 10 Hz.
+In general, a GAD packet frequency between 10 and 1 Hz is recommended.</p>
+</div></div>
+</section>
+<section id="hardware-setup-and-initialisation">
+<span id="hardware-setup"></span><h2>Hardware setup and Initialisation<a class="headerlink" href="#hardware-setup-and-initialisation" title="Link to this heading"></a></h2>
+<p>Once you have written the GAD SDK code, and if necessary, compiled it and created an executable.
+The next step is to configure your hardware.</p>
+<ul class="simple">
+<li><p>Install and configure the INS into your vehicle, as you would for aiding with
+GNSS. (Note, you can have the GNSS antenna connected while using GAD).</p></li>
+<li><p>Mount your aiding sensor(s) onto the vehicle, the sensor should be securely
+attached to the vehicle.</p></li>
+<li><p>Connect your sensor to the PC that will be running the GAD SDK program. Then
+connect the PC via
+<a class="reference external" href="https://support.oxts.com/hc/en-us/articles/360009611120-Connecting-to-an-OxTS-INS-using-Ethernet">UDP</a>.</p></li>
+<li><p>Once connected, power on the INS, then configure the INS using
+<a class="reference external" href="https://support.oxts.com/hc/en-us/sections/115000630029-NAVconfig">NavConfig</a>.
+If needed, extract the config file (.cfg) and make any necessary changes
+(see <a class="reference internal" href="aiding_types/index.html#aidingtypes"><span class="std std-ref">Aiding types</span></a> &amp; <a class="reference internal" href="section5.html#section5"><span class="std std-ref">Advanced Options</span></a>). After this, upload the edited file
+onto the INS.</p></li>
+<li><p>Power on your sensor(s) and ensure that they are working correctly using the
+appropriate third-party software.</p></li>
+<li><p>Initialise the INS, see <a class="reference internal" href="section5.html#section5"><span class="std std-ref">Advanced Options</span></a> for advanced initialisation options. In
+certain environments it might be difficult to initialise the INS, if this is the case,
+please contact <a class="reference external" href="mailto:support&#37;&#52;&#48;oxts&#46;com">OxTS support</a> .</p></li>
+<li><p>Start your GAD SDK script. You should now be ready to take your measurements!</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="overview.html" class="btn btn-neutral float-left" title="Overview of GAD SDK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="aiding_types/index.html" class="btn btn-neutral float-right" title="Aiding types" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Covariance &mdash; GAD-SDK 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/tabs.js?v=3030b3cb"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Timestamping" href="time_stamping.html" />
+    <link rel="prev" title="Lever arms and Alignments" href="lever_arm.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            GAD-SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of GAD SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aiding_types/index.html">Aiding types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ismydatabeingreceived.html">Debug Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_post_processing.html">Post-processing GAD data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="section5.html">Advanced Options</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials and examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="my_first_gad.html">My first GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="static_aiding.html">Static-aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_can_ws.html">CAN wheel speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference section</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="KF.html">The Kalman Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Frames.html">Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lever_arm.html">Lever arms and Alignments</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Covariance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#where-do-i-find-covariance-figures-for-my-aiding-sensor">Where do I find covariance figures for my aiding sensor?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="time_stamping.html">Timestamping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary of terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_cols.html">GAD file column definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enum_tab.html">Table of GAD file Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adv_com.html">Advanced commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py_com.html">Python API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GAD-SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Covariance</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/source/longform/cov.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="covariance">
+<span id="cov"></span><h1>Covariance<a class="headerlink" href="#covariance" title="Link to this heading"></a></h1>
+<p>All aiding provided to the INS must come with a (co)variance estimate. This gives the Kalman Filter some indication of the estimated accuracy of the data being provided, which it can then use to decide whether to use the data, and if so, how strongly the data should be weighted.</p>
+<p>The information contained within a covariance matrix can be separated into two parts.</p>
+<p>First, the diagonal matrix elements gives estimations of the error along each axis. This is known as the variance.</p>
+<p>Second, the off-diagonal matrix elements gives estimations of any correlations in errors between the different axes. This is known as the covariance.
+It’s quite rare in positioning for one axis to influence another, but it can happen.</p>
+<p>For the most part, however, we can assume that the errors for X, Y and Z are independent of each other. Assuming also that these values are the same, the very simplest covariance matrix might look like this:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
+0.01 &amp; 0.0 &amp; 0.0\\
+0.0 &amp; 0.01 &amp; 0.0\\
+0.0 &amp; 0.0 &amp; 0.01\\
+\end{bmatrix}
+\label{CovMatrix}\end{split}\]</div>
+</div></blockquote>
+<p>In this example, we have set our variance (<span class="math notranslate nohighlight">\({\sigma}\)</span><sup>2</sup>) in each axis to be <cite>0.01 m</cite> <sup>2</sup>. This implies a standard deviation (<span class="math notranslate nohighlight">\({\sigma}\)</span>) of 0.1 <cite>m</cite>.</p>
+<p>I.e.</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(\sigma_{x}\sigma_{x} = \sigma_{y}\sigma_{y} = \sigma_{z}\sigma_{z} = 0.01 m^{2}\)</span></p>
+</div></blockquote>
+<p>For other aiding types, the units differ:</p>
+<ul class="simple">
+<li><p>Velocity is expected in (m/s)<sup>2</sup> — not to be confused with acceleration (m/s<sup>2</sup>).</p></li>
+<li><p>Attitude is expected in <span class="math notranslate nohighlight">\({\circ}\)</span><sup>2</sup> .</p></li>
+<li><p>There are two variance options for the speed update. Refer to the <a class="reference internal" href="aiding_types/spe.html#spe-aidingtype"><span class="std std-ref">Speed aiding data type</span></a> section for more information.</p></li>
+</ul>
+<p>In the example above, we have a single value of covariance for all three axes, which we can use to set the covariance aiding position in the coordinate frame as follows:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gp</span><span class="p">.</span><span class="n">SetPosLocalVar</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.01</span><span class="p">);</span><span class="w"> </span><span class="c1">// Diagonal variance matrix, standard deviation 0.1m, 0.1m, 0.1m in x, y, z</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gp</span><span class="o">.</span><span class="n">pos_local_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">]</span> <span class="c1"># Diagonal variance matrix, standard deviation 0.1m, 0.1m, 0.1m in x, y, z</span>
+</pre></div>
+</div>
+</div></div>
+<p>If the variances for X, Y and Z were different, we would need to enter three different values.
+In example below, we have an estimated standard deviation of 0.1 in the X axis, 0.3 in the Y axis, and 0.2 in the Z axis:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
+0.01 &amp; 0.0 &amp; 0.0\\
+0.0 &amp; 0.09 &amp; 0.0\\
+0.0 &amp; 0.0 &amp; 0.04\\
+\end{bmatrix}
+\label{CovMatrix2}\end{split}\]</div>
+</div></blockquote>
+<p>In the code, you could represent that as:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-1-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-1-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gp</span><span class="p">.</span><span class="n">SetPosLocalVar</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.09</span><span class="p">,</span><span class="w"> </span><span class="mf">0.04</span><span class="p">);</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gp</span><span class="o">.</span><span class="n">pos_local_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.09</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">]</span>
+</pre></div>
+</div>
+</div></div>
+<p>Remember earlier when we said that sometimes your variables in one axis can affect your variables in another axis? In a scenario where we have covariance between the X, Y and Z axes, our matrix might end up with six different values.
+The reason we don’t have nine is that the matrix produces three identical pairs of values:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
+0.01 &amp; 0.25 &amp; 0.02\\
+0.25 &amp; 0.09 &amp; 0.25\\
+0.02 &amp; 0.25 &amp; 0.04\\
+\end{bmatrix}
+\label{CovMatrix3}\end{split}\]</div>
+</div></blockquote>
+<p>So you can see, for instance, that <span class="math notranslate nohighlight">\(\sigma_{x}\sigma_{y}\)</span> would produce the same answer as <span class="math notranslate nohighlight">\(\sigma_{y}\sigma_{x}\)</span> .</p>
+<p>In the code, you could represent this covariance matrix as:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-2-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-2-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-2-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="p">.</span><span class="n">SetVelOdomVar</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.09</span><span class="p">,</span><span class="w"> </span><span class="mf">0.04</span><span class="p">,</span><span class="w"> </span><span class="mf">0.25</span><span class="p">,</span><span class="w"> </span><span class="mf">0.02</span><span class="p">,</span><span class="w"> </span><span class="mf">0.25</span><span class="p">);</span><span class="w"> </span><span class="c1">// Full covariance matrix, in (m/s)^2</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-2-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="o">.</span><span class="n">vel_odom_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.09</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">]</span> <span class="c1"># Full covariance matrix, in (m/s)^2</span>
+</pre></div>
+</div>
+</div></div>
+<p>The order of variables in the command above is the variance in X, Y, then Z, followed by the covariance of XY, then XZ, and finally YZ.</p>
+<section id="where-do-i-find-covariance-figures-for-my-aiding-sensor">
+<h2>Where do I find covariance figures for my aiding sensor?<a class="headerlink" href="#where-do-i-find-covariance-figures-for-my-aiding-sensor" title="Link to this heading"></a></h2>
+<p>The first place to start is the documentation that comes with the sensor. Often, it will include covariance data,
+or information on how it can be extracted.</p>
+<p>Since the quality of measurement from a sensor can vary significantly from one measurement to the next,
+the best scenario is one where the sensor’s software calculates the covariance for each measurement.
+Consult your sensor’s documentation to see if this information is outputted.</p>
+<p>Even if covariances are not directly provided by the sensor, the measurement with basic variance estimations can often be used as an effective aiding update.
+A good starting point for this would be to calculate the variance when the sensor is stationary. For example, with a sensor that measures velocity,
+one could record the velocity output over a period of time. It can be assumed that the mean value of the velocity is zero in X, Y and Z. Thus, the variances along
+X, Y and Z can be calculate using the standard formula:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[\sigma^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}\]</div>
+</div></blockquote>
+<p>Where <span class="math notranslate nohighlight">\(x_{i}\)</span> is the value of one measurement, <span class="math notranslate nohighlight">\(\bar{x}\)</span> is the mean value of all measurements (in the case of velocity this will be zero),
+and <span class="math notranslate nohighlight">\(n\)</span> is the number of observations.</p>
+<p>While it is unlikely that the variance will be the same when the sensor is moving, the estimate provide by this method can still be surprisingly useful.
+To further improve the variance, one can scale the variances based on the corresponding innovations when the sensor and INS are moving.
+For more information on the innovations provided by the OxTS INS, see <a class="reference internal" href="ismydatabeingreceived.html#data-used"><span class="std std-ref">here</span></a>.</p>
+<p>A more complete method for calculating the variance would be to take set of test measurements in an environment with good GNSS coverage.
+Thus, the GNSS and INS data could then be used to produce an NCOM file that acts as a reference measurement.
+One can then compare this reference NCOM to the GAD data produced by the sensor.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="lever_arm.html" class="btn btn-neutral float-left" title="Lever arms and Alignments" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="time_stamping.html" class="btn btn-neutral float-right" title="Timestamping" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

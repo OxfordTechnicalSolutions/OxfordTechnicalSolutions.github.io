@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index &mdash; OxTS C++ Generic Aiding SDK  documentation</title>
+  <title>Index &mdash; GAD-SDK 0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
+      <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css" />
 
   
@@ -16,9 +16,10 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
         <script src="_static/doctools.js?v=888ff710"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/tabs.js?v=3030b3cb"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -33,7 +34,7 @@
           
           
           <a href="index.html" class="icon icon-home">
-            OxTS C++ Generic Aiding SDK
+            GAD-SDK
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -43,45 +44,38 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Introduction to Generic Aiding</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="longform/intro.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-requirements.html">Generic Aiding Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/timestamps.html">Timestamping Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/sensorcharacterisation.html">Sensor characterisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/intro.html">Welcome</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Aiding types</span></p>
+<p class="caption" role="heading"><span class="caption-text">Manual</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-position-updates.html">Position</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-velocity-updates.html">Velocity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-attitude-updates.html">Attitude</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-heading-updates.html">Heading</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-speed-updates.html">Speed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/overview.html">Overview of GAD SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/aiding_types/index.html">Aiding types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/ismydatabeingreceived.html">Debug Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/GAD_post_processing.html">Post-processing GAD data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/section5.html">Advanced Options</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorials and examples</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="longform/example-my-first-gad.html">My First GAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/example-static-aiding.html">Static Aiding</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/example-static-aiding-no-boost.html">Static Aiding (No Boost)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/example-zv-wheelspeed.html">Zero Velocity Wheelspeed</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/example-heading.html">Heading Update Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/my_first_gad.html">My first GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/static_aiding.html">Static-aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/example_can_ws.html">CAN wheel speed</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Additional Material</span></p>
+<p class="caption" role="heading"><span class="caption-text">Reference section</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="longform/defining-a-local-reference-frame.html">User-defined Local Frame</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/gad-files.html">.gad files (Advanced)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/reassigning-traditional-sources.html">Reassigning traditional data sources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/stream-priority.html">Stream priority</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/position-only-initialisation.html">Initialisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/position-only-initialisation.html#position-only-initialisation">Position-only initialisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/is-my-data-being-received.html">Is my data being received?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/ncom-updates.html">NCOM Output</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/advanced-commands.html">Advanced commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/advanced-commands.html#all-configuration-options">All configuration options</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">API</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/KF.html">The Kalman Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/Frames.html">Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/lever_arm.html">Lever arms and Alignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/cov.html">Covariance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/time_stamping.html">Timestamping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/Glossary.html">Glossary of terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/GAD_cols.html">GAD file column definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/enum_tab.html">Table of GAD file Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/adv_com.html">Advanced commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/py_com.html">Python API</a></li>
 </ul>
 
         </div>
@@ -90,7 +84,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">OxTS C++ Generic Aiding SDK</a>
+          <a href="index.html">GAD-SDK</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -111,273 +105,8 @@
 <h1 id="index">Index</h1>
 
 <div class="genindex-jumpbox">
- <a href="#O"><strong>O</strong></a>
  
 </div>
-<h2 id="O">O</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3GadE">OxTS::Gad (C++ class)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad3GadE7uint8_t6int8_t">OxTS::Gad::Gad (C++ function)</a>, <a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad3GadERK15GEN_AIDING_DATA">[1]</a>, <a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad3GadERK3Gad">[2]</a>, <a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad3GadEv">[3]</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad15GetAcqTimestampEv">OxTS::Gad::GetAcqTimestamp (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad11GetAcqValidEv">OxTS::Gad::GetAcqValid (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad10getCStructEv">OxTS::Gad::getCStruct (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad12GetRes1ValidEv">OxTS::Gad::GetRes1Valid (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad12GetRes2ValidEv">OxTS::Gad::GetRes2Valid (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad11GetStreamIdEv">OxTS::Gad::GetStreamId (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad15GetTimeExternalEv">OxTS::Gad::GetTimeExternal (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad32GetTimeExternalSecondsFromSundayEv">OxTS::Gad::GetTimeExternalSecondsFromSunday (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad19GetTimeExternalWeekEv">OxTS::Gad::GetTimeExternalWeek (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad10GetTimeGpsEv">OxTS::Gad::GetTimeGps (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad27GetTimeGpsSecondsFromSundayEv">OxTS::Gad::GetTimeGpsSecondsFromSunday (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad14GetTimeGpsWeekEv">OxTS::Gad::GetTimeGpsWeek (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad14GetTimeLatencyEv">OxTS::Gad::GetTimeLatency (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad18GetTimePpsRelativeEv">OxTS::Gad::GetTimePpsRelative (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad10GetTimeTAIEv">OxTS::Gad::GetTimeTAI (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad14GetTimeUTCUnixEv">OxTS::Gad::GetTimeUTCUnix (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS3Gad12GetTimeValidEv">OxTS::Gad::GetTimeValid (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3GadaSERK15GEN_AIDING_DATA">OxTS::Gad::operator= (C++ function)</a>, <a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3GadaSERK3Gad">[1]</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad15SetAcqTimestampE8uint32_t">OxTS::Gad::SetAcqTimestamp (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad11SetAcqValidEb">OxTS::Gad::SetAcqValid (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad12SetRes1ValidEb">OxTS::Gad::SetRes1Valid (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad12SetRes2ValidEb">OxTS::Gad::SetRes2Valid (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad11SetStreamIdEi">OxTS::Gad::SetStreamId (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad15SetTimeExternalEdd">OxTS::Gad::SetTimeExternal (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad10SetTimeGpsEdd">OxTS::Gad::SetTimeGps (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad14SetTimeLatencyEd">OxTS::Gad::SetTimeLatency (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad18SetTimePpsRelativeEd">OxTS::Gad::SetTimePpsRelative (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad10SetTimeTAIEd">OxTS::Gad::SetTimeTAI (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad14SetTimeUTCUnixEd">OxTS::Gad::SetTimeUTCUnix (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad12SetTimeValidEb">OxTS::Gad::SetTimeValid (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3Gad11SetTimeVoidEv">OxTS::Gad::SetTimeVoid (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS3GadD0Ev">OxTS::Gad::~Gad (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadAttitudeE">OxTS::GadAttitude (C++ class)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadAttitude11GadAttitudeE7uint8_t">OxTS::GadAttitude::GadAttitude (C++ function)</a>, <a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadAttitude11GadAttitudeEv">[1]</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadAttitude18GetAidingAlignmentEv">OxTS::GadAttitude::GetAidingAlignment (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadAttitude21GetAidingAlignmentVarEv">OxTS::GadAttitude::GetAidingAlignmentVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadAttitude6GetAttEv">OxTS::GadAttitude::GetAtt (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadAttitude9GetAttVarEv">OxTS::GadAttitude::GetAttVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadAttitude23SetAidingAlignmentFixedEddd">OxTS::GadAttitude::SetAidingAlignmentFixed (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadAttitude28SetAidingAlignmentOptimisingEv">OxTS::GadAttitude::SetAidingAlignmentOptimising (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadAttitude21SetAidingAlignmentVarEddd">OxTS::GadAttitude::SetAidingAlignmentVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadAttitude6SetAttEddd">OxTS::GadAttitude::SetAtt (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadAttitude11SetAttLocalEddd">OxTS::GadAttitude::SetAttLocal (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadAttitude9SetAttVarEddd">OxTS::GadAttitude::SetAttVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadEncoderE">OxTS::GadEncoder (C++ class)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadEncoder12EncodePacketER3Gad">OxTS::GadEncoder::EncodePacket (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadEncoder10GadEncoderEv">OxTS::GadEncoder::GadEncoder (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadEncoder9GetPacketEv">OxTS::GadEncoder::GetPacket (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadEncoder13GetPacketSizeEv">OxTS::GadEncoder::GetPacketSize (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadEncoderD0Ev">OxTS::GadEncoder::~GadEncoder (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS13GadEncoderBinE">OxTS::GadEncoderBin (C++ class)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS13GadEncoderBin12EncodePacketER3Gad">OxTS::GadEncoderBin::EncodePacket (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS13GadEncoderBin13GadEncoderBinEv">OxTS::GadEncoderBin::GadEncoderBin (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS13GadEncoderBin9GetPacketEv">OxTS::GadEncoderBin::GetPacket (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS13GadEncoderBin13GetPacketSizeEv">OxTS::GadEncoderBin::GetPacketSize (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS13GadEncoderCsvE">OxTS::GadEncoderCsv (C++ class)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS13GadEncoderCsv12EncodePacketER3Gad">OxTS::GadEncoderCsv::EncodePacket (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS13GadEncoderCsv13GadEncoderCsvEv">OxTS::GadEncoderCsv::GadEncoderCsv (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS13GadEncoderCsv9GetPacketEv">OxTS::GadEncoderCsv::GetPacket (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS13GadEncoderCsv13GetPacketSizeEv">OxTS::GadEncoderCsv::GetPacketSize (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHandlerE">OxTS::GadHandler (C++ class)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHandler10GadHandlerEP10GadEncoder">OxTS::GadHandler::GadHandler (C++ function)</a>
-</li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHandler10SendPacketE3Gad">OxTS::GadHandler::SendPacket (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHandler15SetEncoderToBinEv">OxTS::GadHandler::SetEncoderToBin (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHandler15SetEncoderToCsvEv">OxTS::GadHandler::SetEncoderToCsv (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHandler19SetOutputModeToFileENSt6stringE">OxTS::GadHandler::SetOutputModeToFile (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHandler18SetOutputModeToUdpENSt6stringE">OxTS::GadHandler::SetOutputModeToUdp (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHeadingE">OxTS::GadHeading (C++ class)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHeading10GadHeadingE7uint8_t">OxTS::GadHeading::GadHeading (C++ function)</a>, <a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHeading10GadHeadingEv">[1]</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS10GadHeading18GetAidingAlignmentEv">OxTS::GadHeading::GetAidingAlignment (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS10GadHeading21GetAidingAlignmentVarEv">OxTS::GadHeading::GetAidingAlignmentVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS10GadHeading10GetHeadingEv">OxTS::GadHeading::GetHeading (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS10GadHeading13GetHeadingVarEv">OxTS::GadHeading::GetHeadingVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHeading23SetAidingAlignmentFixedEddd">OxTS::GadHeading::SetAidingAlignmentFixed (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHeading21SetAidingAlignmentVarEddd">OxTS::GadHeading::SetAidingAlignmentVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHeading10SetHeadingEd">OxTS::GadHeading::SetHeading (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHeading15SetHeadingLocalEd">OxTS::GadHeading::SetHeadingLocal (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS10GadHeading13SetHeadingVarEd">OxTS::GadHeading::SetHeadingVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPositionE">OxTS::GadPosition (C++ class)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPosition11GadPositionE7uint8_t">OxTS::GadPosition::GadPosition (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadPosition17GetAidingLeverArmEv">OxTS::GadPosition::GetAidingLeverArm (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadPosition20GetAidingLeverArmVarEv">OxTS::GadPosition::GetAidingLeverArmVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadPosition6GetPosEv">OxTS::GadPosition::GetPos (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadPosition9GetPosVarEv">OxTS::GadPosition::GetPosVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPosition23SetAidingLeverArmConfigEv">OxTS::GadPosition::SetAidingLeverArmConfig (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPosition22SetAidingLeverArmFixedEddd">OxTS::GadPosition::SetAidingLeverArmFixed (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPosition27SetAidingLeverArmOptimisingEv">OxTS::GadPosition::SetAidingLeverArmOptimising (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPosition20SetAidingLeverArmVarEddd">OxTS::GadPosition::SetAidingLeverArmVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPosition14SetPosGeodeticEddd">OxTS::GadPosition::SetPosGeodetic (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPosition17SetPosGeodeticVarEddd">OxTS::GadPosition::SetPosGeodeticVar (C++ function)</a>, <a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPosition17SetPosGeodeticVarEdddddd">[1]</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPosition11SetPosLocalEddd">OxTS::GadPosition::SetPosLocal (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPosition14SetPosLocalVarEddd">OxTS::GadPosition::SetPosLocalVar (C++ function)</a>, <a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadPosition14SetPosLocalVarEdddddd">[1]</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeedE">OxTS::GadSpeed (C++ class)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed8GadSpeedE7uint8_t">OxTS::GadSpeed::GadSpeed (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS8GadSpeed17GetAidingLeverArmEv">OxTS::GadSpeed::GetAidingLeverArm (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS8GadSpeed20GetAidingLeverArmVarEv">OxTS::GadSpeed::GetAidingLeverArmVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS8GadSpeed8GetSpeedEv">OxTS::GadSpeed::GetSpeed (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS8GadSpeed11GetSpeedVarEv">OxTS::GadSpeed::GetSpeedVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed23SetAidingLeverArmConfigEv">OxTS::GadSpeed::SetAidingLeverArmConfig (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed22SetAidingLeverArmFixedEddd">OxTS::GadSpeed::SetAidingLeverArmFixed (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed20SetAidingLeverArmVarEddd">OxTS::GadSpeed::SetAidingLeverArmVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed12SetSpeedBwMsEd">OxTS::GadSpeed::SetSpeedBwMs (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed16SetSpeedBwPulsedEddd">OxTS::GadSpeed::SetSpeedBwPulsed (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed12SetSpeedFwMsEd">OxTS::GadSpeed::SetSpeedFwMs (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed16SetSpeedFwPulsedEddd">OxTS::GadSpeed::SetSpeedFwPulsed (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed13SetSpeedMsVarEd">OxTS::GadSpeed::SetSpeedMsVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed17SetSpeedPulsedVarEdd">OxTS::GadSpeed::SetSpeedPulsedVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed23SetSpeedPulsedVarPeriodEddd">OxTS::GadSpeed::SetSpeedPulsedVarPeriod (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed12SetSpeedUnMsEd">OxTS::GadSpeed::SetSpeedUnMs (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS8GadSpeed16SetSpeedUnPulsedEddd">OxTS::GadSpeed::SetSpeedUnPulsed (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocityE">OxTS::GadVelocity (C++ class)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity11GadVelocityE7uint8_t">OxTS::GadVelocity::GadVelocity (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadVelocity17GetAidingLeverArmEv">OxTS::GadVelocity::GetAidingLeverArm (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadVelocity20GetAidingLeverArmVarEv">OxTS::GadVelocity::GetAidingLeverArmVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadVelocity6GetVelEv">OxTS::GadVelocity::GetVel (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4NK4OxTS11GadVelocity9GetVelVarEv">OxTS::GadVelocity::GetVelVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity23SetAidingLeverArmConfigEv">OxTS::GadVelocity::SetAidingLeverArmConfig (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity22SetAidingLeverArmFixedEddd">OxTS::GadVelocity::SetAidingLeverArmFixed (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity27SetAidingLeverArmOptimisingEv">OxTS::GadVelocity::SetAidingLeverArmOptimising (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity20SetAidingLeverArmVarEddd">OxTS::GadVelocity::SetAidingLeverArmVar (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity11SetVelLocalEddd">OxTS::GadVelocity::SetVelLocal (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity14SetVelLocalVarEddd">OxTS::GadVelocity::SetVelLocalVar (C++ function)</a>, <a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity14SetVelLocalVarEdddddd">[1]</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity9SetVelNedEddd">OxTS::GadVelocity::SetVelNed (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity12SetVelNedVarEddd">OxTS::GadVelocity::SetVelNedVar (C++ function)</a>, <a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity12SetVelNedVarEdddddd">[1]</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity10SetVelOdomEddd">OxTS::GadVelocity::SetVelOdom (C++ function)</a>
-</li>
-      <li><a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity13SetVelOdomVarEddd">OxTS::GadVelocity::SetVelOdomVar (C++ function)</a>, <a href="gal-cpp/gal-cpp_gad.html#_CPPv4N4OxTS11GadVelocity13SetVelOdomVarEdddddd">[1]</a>
-</li>
-  </ul></td>
-</tr></table>
-
 
 
            </div>
@@ -387,7 +116,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021, OxTS.</p>
+    <p>&#169; Copyright 2023, OxTS.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

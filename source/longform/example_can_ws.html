@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAN wheel speed &mdash; GAD-SDK 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="The Kalman Filter" href="KF.html" />
+    <link rel="prev" title="Static-aiding" href="static_aiding.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            GAD-SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of GAD SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aiding_types/index.html">Aiding types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ismydatabeingreceived.html">Debug Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_post_processing.html">Post-processing GAD data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="section5.html">Advanced Options</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials and examples</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="my_first_gad.html">My first GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="static_aiding.html">Static-aiding</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CAN wheel speed</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#source-code">Source code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-specific-code">CAN-specific code</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference section</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="KF.html">The Kalman Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Frames.html">Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lever_arm.html">Lever arms and Alignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cov.html">Covariance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time_stamping.html">Timestamping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary of terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_cols.html">GAD file column definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enum_tab.html">Table of GAD file Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adv_com.html">Advanced commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py_com.html">Python API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GAD-SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">CAN wheel speed</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/source/longform/example_can_ws.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="can-wheel-speed">
+<span id="canws-example"></span><h1>CAN wheel speed<a class="headerlink" href="#can-wheel-speed" title="Link to this heading"></a></h1>
+<p>In this example we show how wheel speed data from a vehicle’s <a class="reference external" href="https://en.wikipedia.org/wiki/CAN_bus">CAN (Control Area Network) bus</a> can be used as a GAD source.</p>
+<p>When using the CAN data, we recommend that you write the GAD SDK program in Python; as this will allow you to make use of Python’s <a class="reference external" href="https://python-can.readthedocs.io/en/stable/index.html">CAN library</a>.
+To our knowledge, a similar library does not exist for C++.</p>
+<p>It should be noted that the code shown here serves to illustrate that it is possible to use the CAN bus’s data as a GAD update.
+In order to use CAN data for your vehicle/device, significant changes to the CAN reader’s configuration will be needed.
+Consult the <a class="reference external" href="https://python-can.readthedocs.io/en/stable/index.html">python-can library</a> and your device/vehicle’s CAN documentation (see note below) on how to do this.</p>
+<blockquote>
+<div><p><strong>A note about CAN message</strong></p>
+<p>If you are using an independent aiding device that uses CAN messages, you can refer to the device’s documentation for the message IDs.
+However, if you are plugging into the CAN bus of a vehicle, it will be harder to identify the message ID you want.
+If you are an OEM employee then you should have full access to all the message IDs your vehicle uses, but if you are not, then you can refer to these <a class="reference external" href="https://en.wikipedia.org/wiki/OBD-II_PIDs">open-source</a> lists that tell you some IDs to look out for.</p>
+</div></blockquote>
+<p>For the specfic vehicle used in this example, the wheel speed data transmitted by its CAN bus is in miles per hour and is a scalar, i.e. it does not give information on whether the motion is in the forwards or backwards direction.
+Therefore, the unsigned aiding frame is used for the GAD speed update. Furthermore, the data needs be converted into metres per second.</p>
+<section id="source-code">
+<h2>Source code<a class="headerlink" href="#source-code" title="Link to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">oxts_sdk</span> <span class="c1"># Used to create and transmit GAD packets</span>
+<span class="kn">import</span> <span class="nn">can</span> <span class="c1"># Used to request, receive and decode CAN packets</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">unit_ip</span> <span class="o">=</span> <span class="s2">&quot;192.168.25.11&quot;</span>
+<span class="n">stream_id</span> <span class="o">=</span> <span class="mi">157</span>
+
+<span class="c1"># Set up the reader to receive CAN messages</span>
+<span class="n">bus</span> <span class="o">=</span> <span class="n">can</span><span class="o">.</span><span class="n">interface</span><span class="o">.</span><span class="n">Bus</span><span class="p">(</span><span class="n">bustype</span><span class="o">=</span><span class="s1">&#39;pcan&#39;</span><span class="p">,</span> <span class="n">channel</span><span class="o">=</span><span class="s1">&#39;PCAN_USBBUS1&#39;</span><span class="p">,</span> <span class="n">bitrate</span><span class="o">=</span><span class="mi">1000000</span><span class="p">)</span>
+
+<span class="c1"># Set up the handler to create and send GAD packets</span>
+<span class="n">gad_hand</span> <span class="o">=</span> <span class="n">oxts_sdk</span><span class="o">.</span><span class="n">GadHandler</span><span class="p">()</span>
+<span class="n">gad_hand</span><span class="o">.</span><span class="n">set_encoder_to_bin</span><span class="p">()</span>
+<span class="n">gad_hand</span><span class="o">.</span><span class="n">set_output_mode_to_udp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">)</span>
+
+<span class="c1"># Cycle through the message bus, looking for a relevant message</span>
+<span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">bus</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">msg</span><span class="o">.</span><span class="n">arbitration_id</span> <span class="o">==</span> <span class="mi">1540</span><span class="p">:</span>
+                <span class="c1"># Forward is 1st set of 2 bytes, little endian, signed</span>
+                <span class="n">ws</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1609.34</span><span class="o">/</span><span class="p">(</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="p">))</span><span class="o">*</span><span class="mf">0.01</span><span class="o">*</span><span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;little&quot;</span><span class="p">,</span> <span class="n">signed</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+                <span class="n">gad_spe</span> <span class="o">=</span> <span class="n">oxts_sdk</span><span class="o">.</span><span class="n">GadSpeed</span><span class="p">(</span><span class="n">stream_id</span><span class="p">)</span>
+                <span class="n">gad_spe</span><span class="o">.</span><span class="n">speed_un_ms</span> <span class="o">=</span> <span class="n">ws</span>
+                <span class="n">gad_spe</span><span class="o">.</span><span class="n">speed_ms_var</span> <span class="o">=</span> <span class="mf">0.01</span><span class="o">*</span><span class="n">ws</span><span class="o">*</span><span class="n">ws</span> <span class="c1"># Just an estimate</span>
+                <span class="n">gad_spe</span><span class="o">.</span><span class="n">time_latency</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1"># Just an estimate, could measure for better results</span>
+                <span class="n">gad_spe</span><span class="o">.</span><span class="n">set_aiding_lever_arm_config</span><span class="p">()</span>
+                <span class="n">gad_hand</span><span class="o">.</span><span class="n">send_packet</span><span class="p">(</span><span class="n">gad_spe</span><span class="p">)</span>
+                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="can-specific-code">
+<h2>CAN-specific code<a class="headerlink" href="#can-specific-code" title="Link to this heading"></a></h2>
+<p>You should be familar with most of the code shown above. However, there is some CAN-specific code that we shall explain.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bus</span> <span class="o">=</span> <span class="n">can</span><span class="o">.</span><span class="n">interface</span><span class="o">.</span><span class="n">Bus</span><span class="p">(</span><span class="n">bustype</span><span class="o">=</span><span class="s1">&#39;pcan&#39;</span><span class="p">,</span> <span class="n">channel</span><span class="o">=</span><span class="s1">&#39;PCAN_USBBUS1&#39;</span><span class="p">,</span> <span class="n">bitrate</span><span class="o">=</span><span class="mi">1000000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The first step in extracting the wheel speed aiding data is to configure the CAN bus reader.
+The line of code above shows how the reader was configured for this specfic example.
+Again refer to the Python CAN libary and your device/vehicle’s CAN documentation for the correct configurations.
+Once configured correctly, the CAN bus reader will extract all CAN messages.</p>
+<p>The CAN bus will send a large number of messages each second, the majority of which will not be useful in providing wheelspeed aiding.
+Therefore, one needs to filter through all the messages to find the specific messages that contains the correct type of aiding data.
+The correct messages are identified by the message ID number, which can be found in the device/vehicle’s CAN documentation.
+(See note below for more information on CAN documentaion.)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">bus</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">msg</span><span class="o">.</span><span class="n">arbitration_id</span> <span class="o">==</span> <span class="mi">1540</span><span class="p">:</span>
+                <span class="n">ws</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1609.34</span><span class="o">/</span><span class="p">(</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="p">))</span><span class="o">*</span><span class="mf">0.01</span><span class="o">*</span><span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;little&quot;</span><span class="p">,</span> <span class="n">signed</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In the lines of code shown above, the first line cycles through all the messages extracted from the CAN bus.</p>
+<p>The second line identifies the messages with the correct ID. In the case given here, the message ID for wheel speed is 1540.</p>
+<p>The third line converts the data from the ID = 1540 messages into speed in metres per second. Specifically, the code converts the first two
+bytes (msg.data[0:2]) of the message data into an integer (int.from_bytes). Here the “little” argument means <a class="reference external" href="https://en.wikipedia.org/wiki/Endianness">little-endian</a>,
+i.e., this specific CAN bus stores the least-significant byte at the smallest address.
+In order to reduce memory usage, this <strong>specific</strong> CAN bus encodes the speed message as integer. Where the integer is equal to 100 times the real value of the speed.
+Hence in order to extract the correct value of the speed in miles per hour, the decoded integer needs to be mulitplied by 0.01.</p>
+<p>Finally, the multiplication by (1609.34/(60*60)) is used to convert from miles per hour to metres per second.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="static_aiding.html" class="btn btn-neutral float-left" title="Static-aiding" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="KF.html" class="btn btn-neutral float-right" title="The Kalman Filter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

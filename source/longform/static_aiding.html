@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Static-aiding &mdash; GAD-SDK 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="CAN wheel speed" href="example_can_ws.html" />
+    <link rel="prev" title="My first GAD" href="my_first_gad.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            GAD-SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of GAD SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aiding_types/index.html">Aiding types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ismydatabeingreceived.html">Debug Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_post_processing.html">Post-processing GAD data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="section5.html">Advanced Options</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials and examples</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="my_first_gad.html">My first GAD</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Static-aiding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-run-the-executable">How to run the executable</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#source-code">Source code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-breakdown">Code breakdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercise">Exercise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example_can_ws.html">CAN wheel speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference section</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="KF.html">The Kalman Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Frames.html">Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lever_arm.html">Lever arms and Alignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cov.html">Covariance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time_stamping.html">Timestamping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary of terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_cols.html">GAD file column definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enum_tab.html">Table of GAD file Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adv_com.html">Advanced commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py_com.html">Python API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GAD-SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Static-aiding</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/source/longform/static_aiding.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="static-aiding">
+<span id="staticaiding"></span><h1>Static-aiding<a class="headerlink" href="#static-aiding" title="Link to this heading"></a></h1>
+<p>In this example, position, velocity, and attitude data is sent to an OxTS INS in real time or saved as a GAD file for postprocessing. The full source code for the GAD SDK in both C++ and Python can be found below.</p>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>An OxTS INS with the relevant Generic Aiding Feature Codes enabled. If you are not sure whether you have the right Feature Codes or are unfamiliar with them, contact <a class="reference external" href="mailto:support&#37;&#52;&#48;oxts&#46;com">support<span>&#64;</span>oxts<span>&#46;</span>com</a>.</p></li>
+<li><p>A PC, connected to the INS via ethernet.</p></li>
+<li><p>The <a class="reference external" href="https://github.com/OxfordTechnicalSolutions/gad-sdk/tree/main#readme">GAD SDK</a> has been built on this machine / pre-built binaries have been downloaded (not currently available).</p></li>
+</ul>
+<section id="how-to-run-the-executable">
+<h3>How to run the executable<a class="headerlink" href="#how-to-run-the-executable" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Linux</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><ol class="arabic simple">
+<li><p>Navigate to the relevant project configuration directory in the build folder: cd &lt;build_dir&gt;/examples/gal.</p></li>
+<li><p>Run the executable: ./static-aiding-example. This will begin sending Generic Aiding packets. There are four possible optional arguments that can be provided:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Device IP address</p></li>
+<li><p>Number of packets</p></li>
+<li><p>Output type (csv)</p></li>
+<li><p>Output file (if outputting to csv)</p></li>
+</ul>
+<p>For example: <cite>./static-aiding-example 192.168.25.10 70 csv debug_out.csv</cite> will output 70 packets of data to debug_out.csv. To output to a live device omit the final 2 arguments: <cite>./static-aiding-example 192.168.25.10 70</cite></p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><ol class="arabic simple">
+<li><p>Navigate to the relevant directory in the build folder: cd &lt;build_dir&gt;/examples/gal/Debug.</p></li>
+<li><p>From the command line run the executable: static-aiding-example.exe. This will begin sending Generic Aiding packets. There are four possible optional arguments that can be provided:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Device IP address</p></li>
+<li><p>Number of packets</p></li>
+<li><p>Output type (csv)</p></li>
+<li><p>Output file (if outputting to csv)</p></li>
+</ul>
+<p>For example: <cite>static-aiding-example.exe 192.168.25.10 70 csv debug_out.csv</cite> will output 70 packets of data to debug_out.csv. To output to a live device omit the final 2 arguments: <cite>static-aiding-example.exe 192.168.25.10 70</cite></p>
+</div></div>
+</section>
+</section>
+<section id="source-code">
+<h2>Source code<a class="headerlink" href="#source-code" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-1-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-1-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;chrono&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;thread&gt;</span>
+<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="o">::</span><span class="nn">chrono_literals</span><span class="p">;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad_handler.hpp&quot;</span>
+
+
+<span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">OUTPUT_TYPE</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="n">UDP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">        </span><span class="n">CSV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="p">};</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="c1">//defaults</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">num_packets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span><span class="w"> </span><span class="c1">// Total number of packets to send</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">unit_ip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;192.168.25.22&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Unit to send GAD to, change to IP address of your unit</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">file_out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;out.gad&quot;</span><span class="p">;</span><span class="w">    </span><span class="c1">// File to send GAD to</span>
+<span class="w">        </span><span class="n">OUTPUT_TYPE</span><span class="w"> </span><span class="n">output_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OUTPUT_TYPE</span><span class="o">::</span><span class="n">UDP</span><span class="p">;</span><span class="w">   </span><span class="c1">// Set output to UDP or CSV</span>
+<span class="w">        </span><span class="c1">//Get from user input if provided</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">                </span><span class="n">unit_ip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">                </span><span class="n">num_packets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">stoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="w"> </span><span class="s">&quot;csv&quot;</span><span class="p">))</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                        </span><span class="n">output_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OUTPUT_TYPE</span><span class="o">::</span><span class="n">CSV</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">                </span><span class="n">file_out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="c1">//==========================================================================</span>
+<span class="w">        </span><span class="c1">// Construct the position aiding class with stream ID 129.</span>
+<span class="w">        </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadPosition</span><span class="w"> </span><span class="n">gp</span><span class="p">(</span><span class="mi">129</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Set the aiding position</span>
+<span class="w">        </span><span class="n">gp</span><span class="p">.</span><span class="n">SetPosGeodetic</span><span class="p">(</span><span class="mf">51.91520330</span><span class="p">,</span><span class="mf">-1.24479140</span><span class="p">,</span><span class="mf">111.525</span><span class="p">);</span><span class="w"> </span><span class="c1">// Change these lat, long, alti values to your location</span>
+<span class="w">        </span><span class="c1">// Set the estimated variance on this position</span>
+<span class="w">        </span><span class="n">gp</span><span class="p">.</span><span class="n">SetPosGeodeticVar</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Set the time mode to Void, since we are not timestamping the aiding data.</span>
+<span class="w">        </span><span class="c1">// With no timestamp, the INS will timestamp the data upon arrival.</span>
+<span class="w">        </span><span class="n">gp</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span>
+<span class="w">        </span><span class="c1">// Set the lever arm between the aiding source and the IMU, in the IMU frame.</span>
+<span class="w">        </span><span class="n">gp</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="w">        </span><span class="n">gp</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">//==========================================================================</span>
+<span class="w">        </span><span class="c1">// Construct the velocity aiding class with stream ID 130.</span>
+<span class="w">        </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadVelocity</span><span class="w"> </span><span class="n">gv</span><span class="p">(</span><span class="mi">130</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Set the aiding velocity</span>
+<span class="w">        </span><span class="n">gv</span><span class="p">.</span><span class="n">SetVelNed</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Set the estimated variance on this velocity</span>
+<span class="w">        </span><span class="n">gv</span><span class="p">.</span><span class="n">SetVelNedVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Set the time mode to Void, since we are not timestamping the aiding data.</span>
+<span class="w">        </span><span class="n">gv</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span>
+<span class="w">        </span><span class="c1">// Set the lever arm between the aiding source and the IMU, in the IMU frame.</span>
+<span class="w">        </span><span class="c1">// In this example, the velocity is coming from the same source as the</span>
+<span class="w">        </span><span class="c1">// position.</span>
+<span class="w">        </span><span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="w">        </span><span class="n">gv</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">//==========================================================================</span>
+<span class="w">        </span><span class="c1">// Construct the attitude aiding class with stream ID 131.</span>
+<span class="w">        </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadAttitude</span><span class="w"> </span><span class="n">ga</span><span class="p">(</span><span class="mi">131</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Set the aiding attitude</span>
+<span class="w">        </span><span class="n">ga</span><span class="p">.</span><span class="n">SetAtt</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Set the estimated variance on this attitude</span>
+<span class="w">        </span><span class="n">ga</span><span class="p">.</span><span class="n">SetAttVar</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Set the time mode to Void</span>
+<span class="w">        </span><span class="n">ga</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span>
+<span class="w">        </span><span class="c1">// Set the aiding source -&gt; IMU frame alignment with the frames aligned.</span>
+<span class="w">        </span><span class="n">ga</span><span class="p">.</span><span class="n">SetAidingAlignmentOptimising</span><span class="p">();</span>
+<span class="w">        </span><span class="c1">// Set the variance on the alignment to 5.0 deg in HPR.</span>
+<span class="w">        </span><span class="n">ga</span><span class="p">.</span><span class="n">SetAidingAlignmentVar</span><span class="p">(</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">5.0</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">//==========================================================================</span>
+<span class="w">        </span><span class="c1">// Initialise the handler</span>
+<span class="w">        </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadHandler</span><span class="w"> </span><span class="n">gh</span><span class="p">;</span>
+<span class="w">        </span><span class="c1">// This switch case sets up the GadHandler to either output binary to UDP or</span>
+<span class="w">        </span><span class="c1">// CSV to file.</span>
+<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">output_type</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">OUTPUT_TYPE</span><span class="o">::</span><span class="no">UDP</span><span class="p">:</span>
+<span class="w">                </span><span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToBin</span><span class="p">();</span>
+<span class="w">                </span><span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToUdp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">);</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="no">OUTPUT_TYPE</span><span class="o">::</span><span class="no">CSV</span><span class="p">:</span>
+<span class="w">                </span><span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToCsv</span><span class="p">();</span>
+<span class="w">                </span><span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToFile</span><span class="p">(</span><span class="n">file_out</span><span class="p">);</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">        </span><span class="k">default</span><span class="o">:</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Output type not known.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">                </span><span class="k">break</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="c1">//==========================================================================</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_packets</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">                </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">gp</span><span class="p">);</span>
+<span class="w">                </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">gv</span><span class="p">);</span>
+<span class="w">                </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">ga</span><span class="p">);</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="c1">// Message is printed for every 10th pack sent</span>
+<span class="w">                </span><span class="p">{</span>
+<span class="w">                        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; packets sent&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="mi">100</span><span class="n">ms</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">oxts_sdk</span>
+<span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+
+<span class="k">class</span> <span class="nc">OUTPUT_TYPE</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+        <span class="n">UDP</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">CSV</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+        <span class="c1"># defaults</span>
+        <span class="n">num_packets</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># Total number of packets to send</span>
+        <span class="n">unit_ip</span> <span class="o">=</span> <span class="s2">&quot;192.168.25.22&quot;</span> <span class="c1"># Unit to send GAD to, change to IP address of your unit</span>
+        <span class="n">file_out</span> <span class="o">=</span> <span class="s2">&quot;out.gad&quot;</span>      <span class="c1"># File to send GAD to</span>
+        <span class="n">output_type</span> <span class="o">=</span> <span class="n">OUTPUT_TYPE</span><span class="o">.</span><span class="n">UDP</span>   <span class="c1"># Set output to UDP</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">unit_ip</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="n">num_packets</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">==</span> <span class="s1">&#39;csv&#39;</span><span class="p">:</span>
+                        <span class="n">output_type</span> <span class="o">=</span> <span class="n">OUTPUT_TYPE</span><span class="o">.</span><span class="n">CSV</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">:</span>
+                <span class="n">file_out</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+
+        <span class="c1">#============================================================================</span>
+        <span class="c1"># Construct the position aiding class with stream ID 129.</span>
+        <span class="n">gp</span> <span class="o">=</span> <span class="n">oxts_sdk</span><span class="o">.</span><span class="n">GadVPosition</span><span class="p">(</span><span class="mi">129</span><span class="p">)</span>
+        <span class="c1"># Set the aiding position</span>
+        <span class="n">gp</span><span class="o">.</span><span class="n">pos_geodetic</span> <span class="o">=</span> <span class="p">[</span><span class="mf">51.91520330</span><span class="p">,</span><span class="o">-</span><span class="mf">1.24479140</span><span class="p">,</span><span class="mf">111.525</span><span class="p">]</span> <span class="c1">#Change these lat, long, alti values to your location</span>
+        <span class="c1"># Set the estimated variance on this position</span>
+        <span class="n">gp</span><span class="o">.</span><span class="n">pos_geodetic_var</span> <span class="o">=</span><span class="p">[</span> <span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">]</span>
+        <span class="c1"># Set the time mode to Void, since we are not timestamping the aiding data.</span>
+        <span class="c1"># With no timestamp, the INS will timestamp the data upon arrival.</span>
+        <span class="n">gp</span><span class="o">.</span><span class="n">set_time_void</span><span class="p">()</span>
+        <span class="c1"># Set the lever arm between the aiding source and the IMU, in the IMU frame.</span>
+        <span class="n">gp</span><span class="o">.</span><span class="n">aiding_lever_arm_fixed</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">]</span>
+        <span class="n">gp</span><span class="o">.</span><span class="n">aiding_lever_arm_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">]</span>
+        <span class="c1">#============================================================================</span>
+        <span class="c1"># Construct the velocity aiding class with stream ID 130.</span>
+        <span class="n">gv</span> <span class="o">=</span> <span class="n">oxts_sdk</span><span class="o">.</span><span class="n">GadVelocity</span><span class="p">(</span><span class="mi">129</span><span class="p">)</span>  <span class="c1"># Set the aiding velocity</span>
+        <span class="n">gv</span><span class="o">.</span><span class="n">vel_ned</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">]</span>
+        <span class="c1"># Set the estimated variance on this velocity</span>
+        <span class="n">gv</span><span class="o">.</span><span class="n">vel_ned_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">]</span>
+        <span class="c1"># Set the time mode to Void, since we are not timestamping the aiding data.</span>
+        <span class="n">gv</span><span class="o">.</span><span class="n">set_time_void</span><span class="p">()</span>
+        <span class="c1"># Set the lever arm between the aiding source and the IMU, in the IMU frame.</span>
+        <span class="c1"># In this example, the velocity is coming from the same source as the</span>
+        <span class="c1"># position.</span>
+        <span class="n">gv</span><span class="o">.</span><span class="n">aiding_lever_arm_fixed</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">]</span>
+        <span class="n">gv</span><span class="o">.</span><span class="n">aiding_lever_arm_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.0</span><span class="p">]</span>
+        <span class="c1">#============================================================================</span>
+        <span class="c1"># Construct the attitude aiding class with stream ID 131.</span>
+        <span class="n">ga</span><span class="o">=</span> <span class="n">oxts_sdk</span><span class="o">.</span><span class="n">GadAttitude</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span>
+        <span class="c1"># Set the aiding attitude</span>
+        <span class="n">ga</span><span class="o">.</span><span class="n">att</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">]</span>
+        <span class="c1"># Set the estimated variance on this attitude</span>
+        <span class="n">ga</span><span class="o">.</span><span class="n">att_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">]</span>
+        <span class="c1"># Set the time mode to Void</span>
+        <span class="n">ga</span><span class="o">.</span><span class="n">set_time_void</span><span class="p">()</span>
+        <span class="c1"># Set the aiding source -&gt; IMU frame alignment with the frames aligned.</span>
+        <span class="n">ga</span><span class="o">.</span><span class="n">aiding_alignment_fixed</span> <span class="o">=</span> <span class="p">[</span><span class="mf">90.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]</span>
+        <span class="c1"># Set the variance on the alignment to 5.0 deg in HPR.</span>
+        <span class="n">ga</span><span class="o">.</span><span class="n">aiding_alignment_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">5.0</span><span class="p">]</span>
+        <span class="c1">#============================================================================</span>
+        <span class="n">gh</span> <span class="o">=</span> <span class="n">oxts_sdk</span><span class="o">.</span><span class="n">GadHandler</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">output_type</span> <span class="o">==</span> <span class="n">OUTPUT_TYPE</span><span class="o">.</span><span class="n">UDP</span><span class="p">:</span>
+                <span class="n">gh</span><span class="o">.</span><span class="n">set_encoder_to_bin</span><span class="p">()</span>
+                <span class="n">gh</span><span class="o">.</span><span class="n">set_output_mode_to_udp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">output_type</span> <span class="o">==</span> <span class="n">OUTPUT_TYPE</span><span class="o">.</span><span class="n">CSV</span><span class="p">:</span>
+                <span class="n">gh</span><span class="o">.</span><span class="n">set_encoder_to_csv</span><span class="p">()</span>
+                <span class="n">gh</span><span class="o">.</span><span class="n">set_output_mode_to_to_file</span><span class="p">(</span><span class="n">file_out</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Output type not known.&quot;</span><span class="p">)</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">num_packets</span><span class="p">,</span><span class="mi">1</span><span class="p">):</span>
+                <span class="c1"># Send the packets</span>
+                <span class="n">gh</span><span class="o">.</span><span class="n">send_packet</span><span class="p">(</span><span class="n">gp</span><span class="p">)</span>
+                <span class="n">gh</span><span class="o">.</span><span class="n">send_packet</span><span class="p">(</span><span class="n">gv</span><span class="p">)</span>
+                <span class="n">gh</span><span class="o">.</span><span class="n">send_packet</span><span class="p">(</span><span class="n">ga</span><span class="p">)</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span> <span class="c1"># Message is printed for every 10th pack sent.</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;packet &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; sent&quot;</span><span class="p">)</span>
+
+                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="code-breakdown">
+<h2>Code breakdown<a class="headerlink" href="#code-breakdown" title="Link to this heading"></a></h2>
+<p>Since a lot of the code seen here is the same as shown previously, we will concentrate on specific sections that show new functionality.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-2-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-2-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-2-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">OUTPUT_TYPE</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="n">UDP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">        </span><span class="n">CSV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-2-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">OUTPUT_TYPE</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+<span class="n">UDP</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">CSV</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div></div>
+<p>This is a simple enum, to allow switching between UDP (via ethernet) and CSV (file) output.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-3-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-3-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-3-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">//defaults</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">num_packets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span><span class="w"> </span><span class="c1">// Total number of packets to send</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">unit_ip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;192.168.25.22&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Unit to send GAD to, change to IP address of your unit</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">file_out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;out.gad&quot;</span><span class="p">;</span><span class="w">    </span><span class="c1">// File to send GAD to</span>
+<span class="n">OUTPUT_TYPE</span><span class="w"> </span><span class="n">output_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OUTPUT_TYPE</span><span class="o">::</span><span class="n">UDP</span><span class="p">;</span><span class="w">   </span><span class="c1">// Set output to UDP or CSV</span>
+<span class="c1">//Get from user input if provided</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="n">unit_ip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="n">num_packets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">stoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<span class="p">}</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span><span class="w"> </span><span class="s">&quot;csv&quot;</span><span class="p">))</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">                </span><span class="n">output_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OUTPUT_TYPE</span><span class="o">::</span><span class="n">CSV</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">        </span><span class="n">file_out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-3-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># defaults</span>
+<span class="n">num_packets</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># Total number of packets to send</span>
+<span class="n">unit_ip</span> <span class="o">=</span> <span class="s2">&quot;192.168.25.22&quot;</span> <span class="c1"># Unit to send GAD to, change to IP address of your unit</span>
+<span class="n">file_out</span> <span class="o">=</span> <span class="s2">&quot;out.gad&quot;</span>      <span class="c1"># File to send GAD to</span>
+<span class="n">output_type</span> <span class="o">=</span> <span class="n">OUTPUT_TYPE</span><span class="o">.</span><span class="n">UDP</span>   <span class="c1"># Set output to UDP</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">unit_ip</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">num_packets</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">==</span> <span class="s1">&#39;csv&#39;</span><span class="p">:</span>
+                <span class="n">output_type</span> <span class="o">=</span> <span class="n">OUTPUT_TYPE</span><span class="o">.</span><span class="n">CSV</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="n">file_out</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div></div>
+<p>This first half of this section sets the default values for the four input arguments of the main function. The four input arguments are (in order):</p>
+<ol class="arabic simple">
+<li><p>IP address of the INS unit</p></li>
+<li><p>Number of measurement packets to be converted into GAD packets (default = 30).</p></li>
+<li><p>Type of output to be sent. If this is “csv” or “CSV” then the output will be saved as a GAD file. Otherwise, it will be sent to the unity via UDP.</p></li>
+<li><p>If the output is to be saved as a GAD file, this is the name of GAD file. (default is “out.gad”).</p></li>
+</ol>
+<p>The second half of this section reads in and sets the input arguments listed above.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-4-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-4-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-4-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// This switch case sets up the GadHandler to either output binary to UDP or</span>
+<span class="c1">// CSV to file.</span>
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">output_type</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="k">case</span><span class="w"> </span><span class="no">OUTPUT_TYPE</span><span class="o">::</span><span class="no">UDP</span><span class="p">:</span>
+<span class="w">        </span><span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToBin</span><span class="p">();</span>
+<span class="w">        </span><span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToUdp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="k">case</span><span class="w"> </span><span class="no">OUTPUT_TYPE</span><span class="o">::</span><span class="no">CSV</span><span class="p">:</span>
+<span class="w">        </span><span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToCsv</span><span class="p">();</span>
+<span class="w">        </span><span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToFile</span><span class="p">(</span><span class="n">file_out</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="k">default</span><span class="o">:</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Output type not known.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-4-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-4-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span>
+<span class="n">gh</span> <span class="o">=</span> <span class="n">oxts_sdk</span><span class="o">.</span><span class="n">GadHandler</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">output_type</span> <span class="o">==</span> <span class="n">OUTPUT_TYPE</span><span class="o">.</span><span class="n">UDP</span><span class="p">:</span>
+        <span class="n">gh</span><span class="o">.</span><span class="n">set_encoder_to_bin</span><span class="p">()</span>
+        <span class="n">gh</span><span class="o">.</span><span class="n">set_output_mode_to_udp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">output_type</span> <span class="o">==</span> <span class="n">OUTPUT_TYPE</span><span class="o">.</span><span class="n">CSV</span><span class="p">:</span>
+        <span class="n">gh</span><span class="o">.</span><span class="n">set_encoder_to_csv</span><span class="p">()</span>
+        <span class="n">gh</span><span class="o">.</span><span class="n">set_output_mode_to_to_file</span><span class="p">(</span><span class="n">file_out</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Output type not known.&quot;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
+<p>This block of code initialises an instance of the GadHandler and sets it up to either send Generic Aiding data via UDP or to CSV file, based on the configuration option at the start of the file.</p>
+</section>
+<section id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Set-up the equipment on a work bench; remember that for this example, no sensor is needed.</p></li>
+<li><p>Configure and initialise the INS. How will you initialise the INS if it is mounted on a work bench?</p></li>
+<li><p>Enter in the position given by the navigation engine into the GAD SDK program.</p></li>
+<li><p>Start the executable, then start the GAD SDK program with the output as UDP.</p></li>
+<li><p>Observe the output of the Navigation engine with NAVDisplay. Remember that the GAD SDK is feeding the navigation engine that give no movement. So, what happens when you move the INS across the work desk?</p></li>
+<li><p>Now try to the output type to csv and rerun the GAD SDK. After the program has finished (run out of packets to send), look at the GAD file with a spreadsheet program such as Excel. Do you understand the information given in this GAD file? See here for more information on the format of gad files.</p></li>
+<li><p>You will notice that in the GAD SDK code, the different update types are made outside of the packet loop. Move the code for one of the update types, e.g. velocity, into the packet loop section. Now write a function that varies the input value, e.g. the velocity could be the square root of the packet number. Run the GAD SDK program again (output type = csv), study the GAD file. Do you see where the values in the gad file have changed?</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="my_first_gad.html" class="btn btn-neutral float-left" title="My first GAD" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="example_can_ws.html" class="btn btn-neutral float-right" title="CAN wheel speed" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

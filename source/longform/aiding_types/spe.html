@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed &mdash; GAD-SDK 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Attitude" href="att.html" />
+    <link rel="prev" title="Velocity" href="vel.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            GAD-SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview of GAD SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Aiding types</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pos.html">Position</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vel.html">Velocity</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Speed</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#aiding-frames">Aiding Frames</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#measurement-values">Measurement values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#covariance">Covariance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lever-arm">Lever Arm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code-examples">Code examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="att.html">Attitude</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hea.html">Heading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ismydatabeingreceived.html">Debug Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GAD_post_processing.html">Post-processing GAD data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../section5.html">Advanced Options</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials and examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../my_first_gad.html">My first GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../static_aiding.html">Static-aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../example_can_ws.html">CAN wheel speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference section</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../KF.html">The Kalman Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Frames.html">Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lever_arm.html">Lever arms and Alignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cov.html">Covariance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time_stamping.html">Timestamping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary of terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GAD_cols.html">GAD file column definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../enum_tab.html">Table of GAD file Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../adv_com.html">Advanced commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../py_com.html">Python API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">GAD-SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Aiding types</a></li>
+      <li class="breadcrumb-item active">Speed</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/source/longform/aiding_types/spe.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="speed">
+<span id="spe-aidingtype"></span><h1>Speed<a class="headerlink" href="#speed" title="Link to this heading"></a></h1>
+<p>The speed aiding type allows you to give a one-dimensional velocity measurement to the INS and is, therefore, a special case of Velocity.
+Each of the fields for this data type can be set using functions from the GadSpeed class.</p>
+<section id="aiding-frames">
+<h2>Aiding Frames<a class="headerlink" href="#aiding-frames" title="Link to this heading"></a></h2>
+<p>Speed updates can only be provided in the vehicle frame. However, there are six variations on that frame.
+First, you can provide speed updates in three directions:</p>
+<p><strong>fw</strong> interprets any positive values as forward motion.</p>
+<p><strong>bw</strong> interprets any negative values as forward motion.</p>
+<p><strong>un</strong> does not specify whether the motion is forwards or backwards. The direction of the motion is determind using the other data available.</p>
+<p>Second, each direction can be combined with one of two types of speed type:</p>
+<p><strong>ms</strong> provides a speed value in m/s..</p>
+<p><strong>pulsed</strong> is designed for pulsed wheelspeed sensors, its input arguments are the number pulses per second, a scale factor, and a period to measure over.
+The scale factor gives the metres per pulse. Both period and scale factor are mandatory inputs.</p>
+<p>So, for example:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">.</span><span class="n">SetSpeedBwMS</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="o">.</span><span class="n">speed_bw_ms</span>
+</pre></div>
+</div>
+</div></div>
+<p>Represents a wheel speed sensor where backwards motion (speed_ms) is given by a positive value in m/s.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-1-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-1-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">.</span><span class="n">SetSpeedUnPulsed</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="o">.</span><span class="n">speed_un_pulsed</span>
+</pre></div>
+</div>
+</div></div>
+<p>Represents a pulsed wheel speed sensor, that does not specify it’s direction of motion.</p>
+</section>
+<section id="measurement-values">
+<h2>Measurement values<a class="headerlink" href="#measurement-values" title="Link to this heading"></a></h2>
+<p>If the speed update is provided in m/s, then no other information is required. However, if this is not the case, then additional information will be needed.
+For example, if the speed sensor provides data in mph, code to convert it into metres per second will be needed.</p>
+<p>For pulsed speed updates additional inputs may also be required:</p>
+<ol class="arabic simple">
+<li><p>A frequency. This is mandatory and is usually just the pulses per second outputted by the sensor.</p></li>
+<li><p>A scale factor. This is optional and is used to convert the frequency into speed. It is usually the circumference of the vehicle’s wheel in metres.</p></li>
+<li><p>A period. This is optional and represents a time window in which the measurement was recorded.</p></li>
+</ol>
+</section>
+<section id="covariance">
+<h2>Covariance<a class="headerlink" href="#covariance" title="Link to this heading"></a></h2>
+<p>Covariance is used as an estimate of the accuracy of a measurement. Measurements with a smaller covariance will be given greater weight in the navigation solution, and any obvious outliers will be rejected by the navigation engine.
+For the speed update, covariance works a little differently.
+This is because, unlike other update types, the three values you provide are completely independent of each other, i.e. they are variances, and the covariances are zero. Each variance is still expected in the same unit as the corresponding measurement – but squared.</p>
+<p>The are two options:</p>
+<ul class="simple">
+<li><p>If you are providing a m/s speed update, you simply provide a variance for the speed value.</p></li>
+<li><p>If you are providing a pulsed update, you need to provide a variance for your frequency and scale factor; the variance for the period is optional.</p></li>
+</ul>
+<p>Note that for any speed update you will need to provide variance for both your data, and for your lever arm.</p>
+</section>
+<section id="lever-arm">
+<h2>Lever Arm<a class="headerlink" href="#lever-arm" title="Link to this heading"></a></h2>
+<p>Speed measurements must be provided with a lever arm (X,Y,Z) which defines the translation from the IMU to the aiding device, in the IMU frame. You can use the following lever arms with speed data:</p>
+<p><strong>Fixed</strong></p>
+<p>A fixed lever arm is the simplest to set up, as it requires no external configuration. It is set within the generic aiding packet itself.</p>
+<p><strong>Config</strong></p>
+<p>A Config lever arm is functionally equivalent to a fixed lever arm. The difference is that the lever arm is set in the config file of the INS instead of within the data packet.</p>
+<p><a class="reference internal" href="../lever_arm.html#lever-arms"><span class="std std-ref">Learn more about lever arms.</span></a></p>
+</section>
+<section id="code-examples">
+<h2>Code examples<a class="headerlink" href="#code-examples" title="Link to this heading"></a></h2>
+<p>Here’s how you might code GadHandler to transmit speed data:</p>
+<p><strong>Example 1: Forward-positive speed only measurement, with a fixed lever arm.</strong></p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-2-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-2-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-2-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadSpeed</span><span class="w"> </span><span class="nf">gs</span><span class="p">(</span><span class="mi">136</span><span class="p">);</span><span class="w"> </span><span class="c1">// Sets speed aiding data to GAD stream ID 136.</span>
+<span class="n">gs</span><span class="p">.</span><span class="n">SetSpeedFw</span><span class="p">(</span><span class="n">speed_ms</span><span class="p">);</span><span class="w"> </span><span class="c1">// Set a forwards-positive speed measurement in m/s.</span>
+<span class="n">gs</span><span class="p">.</span><span class="n">SetSpeedFwVar</span><span class="p">(</span><span class="n">var_speed</span><span class="p">);</span><span class="w"> </span><span class="c1">// Covariance on speed, in (m/s)^2.</span>
+<span class="n">gs</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Lever arm sent in packet, measuring device is 0.1m vertically above the INS.</span>
+<span class="n">gs</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.01</span><span class="p">);</span><span class="w"> </span><span class="c1">// Lever arm variance, diagonal matrix with 0.1m standard deviation on each direction.</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-2-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span> <span class="o">=</span> <span class="n">oxts_sdk</span><span class="o">.</span><span class="n">GadSpeed</span><span class="p">(</span><span class="mi">136</span><span class="p">)</span> <span class="c1"># Sets speed aiding data to GAD stream ID 136.</span>
+<span class="n">gs</span><span class="o">.</span><span class="n">speed_fw_ms</span> <span class="o">=</span> <span class="p">[</span><span class="n">speed_ms</span><span class="p">]</span> <span class="c1"># Set a forwards-positive speed measurement in m/s.</span>
+<span class="n">gs</span><span class="o">.</span><span class="n">speed_ms_var</span> <span class="o">=</span> <span class="n">var_speed</span> <span class="c1"># Covariance on speed, in (m/s)^2.</span>
+<span class="n">gs</span><span class="o">.</span><span class="n">aiding_lever_arm_fixed</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]</span> <span class="c1"># Lever arm sent in packet, measuring device is 0.1m vertically above the INS.</span>
+<span class="n">gs</span><span class="o">.</span><span class="n">aiding_lever_arm_fixed_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">]</span> <span class="c1"># Lever arm variance, diagonal matrix with 0.1m standard deviation on each direction.</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Example 2: Unsigned pulsed speed measurement, with no period variance, with a fixed lever arm.</strong></p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-3-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-3-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-3-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadSpeed</span><span class="w"> </span><span class="nf">gs</span><span class="p">(</span><span class="mi">137</span><span class="p">);</span><span class="w"> </span><span class="c1">// Sets speed aiding data to GAD stream ID 137.</span>
+<span class="n">gs</span><span class="p">.</span><span class="n">SetSpeedUnPulsed</span><span class="p">(</span><span class="n">frequency</span><span class="p">,</span><span class="w"> </span><span class="n">scale_factor</span><span class="p">,</span><span class="w"> </span><span class="n">period</span><span class="p">);</span><span class="w"> </span><span class="c1">// Set an unsigned pulsed speed measurement in pulses per second, with a scale factor in meters and a period in seconds.</span>
+<span class="n">gs</span><span class="p">.</span><span class="n">SetSpeedPulsedVar</span><span class="p">(</span><span class="n">var_frequency</span><span class="p">,</span><span class="w"> </span><span class="n">var_scale_factor</span><span class="p">);</span><span class="w"> </span><span class="c1">// Variance on pulse frequency and scale factor respectively.</span>
+<span class="n">gs</span><span class="p">.</span><span class="n">SetAidingLeverArmFixed</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Lever arm sent in packet, measuring device is 0.1m vertically above the INS.</span>
+<span class="n">gs</span><span class="p">.</span><span class="n">SetAidingLeverArmVar</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.01</span><span class="p">);</span><span class="w"> </span><span class="c1">// Lever arm variance, diagonal matrix with 0.1m standard deviation on each direction.</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-3-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span> <span class="o">=</span> <span class="n">oxts_sdk</span><span class="o">.</span><span class="n">GadSpeed</span><span class="p">(</span><span class="mi">137</span><span class="p">)</span> <span class="c1"># Sets speed aiding data to GAD stream ID 137.</span>
+<span class="n">gs</span><span class="o">.</span><span class="n">speed_un_pulsed</span> <span class="o">=</span> <span class="p">[</span><span class="n">frequency</span><span class="p">,</span> <span class="n">scale_factor</span><span class="p">,</span> <span class="n">period</span><span class="p">]</span> <span class="c1"># Set an unsigned pulsed speed measurement in pulses per second, with a scale factor in meters and a period in seconds.</span>
+<span class="n">gs</span><span class="o">.</span><span class="n">speed_pulsed_var</span> <span class="o">=</span> <span class="p">[</span><span class="n">var_frequency</span><span class="p">,</span> <span class="n">var_scale_factor</span><span class="p">]</span> <span class="c1"># Variance on pulse frequency and scale factor respectively.</span>
+<span class="n">gs</span><span class="o">.</span><span class="n">aiding_lever_arm_fixed</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]</span> <span class="c1"># Lever arm sent in packet, measuring device is 0.1m vertically above the INS.</span>
+<span class="n">gs</span><span class="o">.</span><span class="n">aiding_lever_arm_fixed_var</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">]</span> <span class="c1"># Lever arm variance, diagonal matrix with 0.1m standard deviation on each direction.</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Example 3: Backwards-positive pulsed speed measurement, with a config lever arm.</strong></p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-4-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-4-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-4-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadSpeed</span><span class="w"> </span><span class="nf">gs</span><span class="p">(</span><span class="mi">137</span><span class="p">);</span><span class="w"> </span><span class="c1">// Sets speed aiding data to GAD stream ID 137.</span>
+<span class="n">gs</span><span class="p">.</span><span class="n">SetSpeedBwPulsedPeriod</span><span class="p">(</span><span class="n">frequency</span><span class="p">,</span><span class="w"> </span><span class="n">scale_factor</span><span class="p">,</span><span class="w"> </span><span class="n">period</span><span class="p">);</span><span class="w"> </span><span class="c1">// Set a backwards-positive pulsed speed measurement in pulses per second, with a scale factor in meters and a period in seconds.</span>
+<span class="n">gs</span><span class="p">.</span><span class="n">SetSpeedBwPulsedPeriodVar</span><span class="p">(</span><span class="n">var_frequency</span><span class="p">,</span><span class="w"> </span><span class="n">var_scale_factor</span><span class="p">,</span><span class="w"> </span><span class="n">var_period</span><span class="p">);</span><span class="w"> </span><span class="c1">// Variance on pulse frequency, scale factor and period respectively</span>
+<span class="n">gs</span><span class="p">.</span><span class="n">SetAidingLeverArmConfig</span><span class="p">();</span><span class="w"> </span><span class="c1">// Set the lever arm to ‘config’, ie set in the configuration file.</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-4-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-4-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span> <span class="o">=</span> <span class="n">oxts_sdk</span><span class="o">.</span><span class="n">GadSpeed</span><span class="p">(</span><span class="mi">137</span><span class="p">)</span> <span class="c1"># Sets speed aiding data to GAD stream ID 137.</span>
+<span class="n">gs</span><span class="o">.</span><span class="n">speed_bw_pulsed</span> <span class="o">=</span> <span class="p">[</span><span class="n">frequency</span><span class="p">,</span> <span class="n">scale_factor</span><span class="p">,</span> <span class="n">period</span><span class="p">]</span> <span class="c1"># Set a backwards-positive pulsed speed measurement in pulses per second, with a scale factor in meters and a period in seconds.</span>
+<span class="n">gs</span><span class="o">.</span><span class="n">speed_pulsed_var_period</span> <span class="o">=</span> <span class="p">[</span><span class="n">var_frequency</span><span class="p">,</span> <span class="n">var_scale_factor</span><span class="p">,</span> <span class="n">var_period</span><span class="p">]</span> <span class="c1"># Variance on pulse frequency, scale factor and period respectively</span>
+<span class="n">gs</span><span class="o">.</span><span class="n">aiding_lever_arm_config</span><span class="p">()</span> <span class="c1"># Set the lever arm to ‘config’, ie set in the configuration file.</span>
+</pre></div>
+</div>
+</div></div>
+<p>Note that, in order for the config lever arm to work, you will need to add the following code to the config file of your INS:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">location4_0</span><span class="mf">.0</span><span class="n">_0</span><span class="mf">.0</span><span class="n">_0</span><span class="mf">.1</span><span class="n">_0</span><span class="mf">.01</span><span class="w"> </span><span class="c1">// Set a lever arm with ID &#39;4&#39; to values 0.0m, 0.0m, 0.1m, diagonal variance 0.01m^2 for all</span>
+<span class="o">-</span><span class="n">gad_loc_id137_4</span><span class="w"> </span><span class="c1">// Match the aiding stream with ID &#39;137&#39; with lever arm ID &#39;4&#39;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="vel.html" class="btn btn-neutral float-left" title="Velocity" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="att.html" class="btn btn-neutral float-right" title="Attitude" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

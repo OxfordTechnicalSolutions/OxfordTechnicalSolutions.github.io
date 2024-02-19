@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview of GAD SDK &mdash; GAD-SDK 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Getting Started" href="gettingstarted.html" />
+    <link rel="prev" title="Welcome" href="intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            GAD-SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Manual</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview of GAD SDK</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-generic-aiding-data-gad">What is Generic Aiding Data (GAD)?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-does-gad-sdk-do">What does GAD SDK do?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-might-an-integration-look">How might an integration look?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aiding_types/index.html">Aiding types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ismydatabeingreceived.html">Debug Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_post_processing.html">Post-processing GAD data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="section5.html">Advanced Options</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials and examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="my_first_gad.html">My first GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="static_aiding.html">Static-aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_can_ws.html">CAN wheel speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference section</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="KF.html">The Kalman Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Frames.html">Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lever_arm.html">Lever arms and Alignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cov.html">Covariance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time_stamping.html">Timestamping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary of terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_cols.html">GAD file column definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enum_tab.html">Table of GAD file Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adv_com.html">Advanced commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py_com.html">Python API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GAD-SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Overview of GAD SDK</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/source/longform/overview.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="overview-of-gad-sdk">
+<span id="overview"></span><h1>Overview of GAD SDK<a class="headerlink" href="#overview-of-gad-sdk" title="Link to this heading"></a></h1>
+<section id="what-is-generic-aiding-data-gad">
+<h2>What is Generic Aiding Data (GAD)?<a class="headerlink" href="#what-is-generic-aiding-data-gad" title="Link to this heading"></a></h2>
+<p>An Inertial Navigation System (INS) combines acceleration and angular rate data from its inertial measurement units (IMUs),
+and data from one or more external aiding sources to estimate its position, orientation, velocity, and other measurements of its dynamics.
+The most commonly used aiding source is the Global Navigation Satellite System (GNSS).
+(All OxTS INS’s come with GNSS receivers as a built-in aiding source.) GNSS is an excellent source of aiding data,
+able to provide centimetre-accurate position and velocity globally with minimal infrastructure burden on the end user.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We recommend that before you start to use GAD, you familiarise yourself with
+using your OxTS INS with GNSS as the aiding source. Doing this will give a
+solid foundation in understanding the use of GAD. Learning resources can be
+found on the <a class="reference external" href="https://support.oxts.com/hc/en-us">OxTS website</a>.</p>
+</div>
+<p>However, no single aiding sensor, even GNSS,  can provide a reliable estimate of position and orientation in all conditions and environments.
+For example, places prone to multipath errors such as urban canyons, can significantly reduce the accuracy of GNSS measurements.
+Furthermore, GNSS-denied spaces such as underground car parks, will mean that no aiding source is available.
+For short periods of time the lack of an accurate aiding source can be compensated for by the “dead reckoning” navigation data provided by the IMUs.
+The drawback is that IMUs have limited means of providing an absolute position relative to any global system beyond the pose at the time they were powered on.
+Additionally, measurements of acceleration and angular rate must be integrated to produce velocity and position data,
+meaning they accumulate errors over time and consequently are prone to drift.</p>
+<p>Thus, it makes sense to combine multiple aiding sources, that work in different environments, to gain the benefits of their differing properties.
+This concept is referred to as sensor fusion and allows for users to get high quality data in a variety of environments.
+Examples of this approach include UWB-based indoor navigation solutions such as
+<a class="reference external" href="https://www.oxts.com/products/pozyx2gad/">Posyx2GAD</a>, and LiDAR-based
+odometry aiding in the form of
+<a class="reference external" href="https://www.oxts.com/products/lidar-inertial-odometry-lio/">OxTS LIO</a>.</p>
+<p>Generic Aiding is an extension of these principles, creating an interface between
+an OxTS INS and sensor of your choice.
+The key is that it is generic: as long as the data is provided in the right
+format, you can use any sensor you choose.</p>
+<p>Examples of sensors that can provide these aiding data types include (but
+are not limited to):</p>
+<ul class="simple">
+<li><p>Wheelspeed sensors</p></li>
+<li><p>LiDAR (SLAM or odometry output)</p></li>
+<li><p>Cameras</p></li>
+<li><p>RADAR</p></li>
+<li><p>Ultra-wideband (UWB) devices</p></li>
+</ul>
+<p>While there are a multiple use cases for GAD, they all revolve around the same
+core principle: different sensors have different error models, and fusing
+measurements from multiple sensors can generate higher-accuracy navigation in a
+greater number of environments.</p>
+</section>
+<section id="what-does-gad-sdk-do">
+<h2>What does GAD SDK do?<a class="headerlink" href="#what-does-gad-sdk-do" title="Link to this heading"></a></h2>
+<p>The GAD SDK provides C, C++, and Python libraries which can be used to package
+your measurement data as Generic Aiding. This data can be send  to an INS
+via ethernet, and be used in the sensor fusion process in real-time.
+Or it can be stored in a file for use when post-processing with the INS data.</p>
+<p>Please note, the OxTS GAD SDK is compliant with the Motor Industry Software
+Reliability Association (MISRA) coding standards.</p>
+<p>There are currently five types of aiding data which can be provided to your INS
+through the GAD interface:</p>
+<ol class="arabic simple">
+<li><p>Position</p></li>
+<li><p>Velocity</p></li>
+<li><p>Speed</p></li>
+<li><p>Attitude</p></li>
+<li><p>Heading</p></li>
+</ol>
+<p>Alongside the measurement itself, the navigation engine requires a few other
+pieces of information in order to make proper use of the incoming aiding data:</p>
+<ul class="simple">
+<li><p><strong>Timestamp.</strong> When was the measurement taken?</p></li>
+<li><p><strong>Coordinate frame.</strong> Every device will output measurements in a different
+frame of reference, based on the type of sensor. Some may use a global frame
+like WGS84, whilst others only measure relative to the vehicle itself such as
+as a speed-over-ground sensor.</p></li>
+<li><p><strong>Lever arm / Alignment.</strong> Where is the sensor on the vehicle relative to
+the INS unit?</p></li>
+<li><p><strong>Measurement accuracy (covariance).</strong> Providing an estimate of the accuracy
+of an aiding measurement gives a sensor fusion algorithm the means to weight
+measurements as they are combined. Higher-accuracy updates are allowed more
+influence in the overall navigation solution.</p></li>
+</ul>
+<p>For each of these additional pieces of information, the GAD SDK provides
+options for the user which aim to cater to varying levels of integration.</p>
+</section>
+<section id="how-might-an-integration-look">
+<h2>How might an integration look?<a class="headerlink" href="#how-might-an-integration-look" title="Link to this heading"></a></h2>
+<p>There are many ways the GAD SDK can be integrated into your workflow.
+However, the basic concept is:</p>
+<ul class="simple">
+<li><p>Build your system, connecting your aiding sensor(s) and the INS to a central computer
+(whether that’s a laptop, single board computer, or similar) which has the GAD SDK code installed.</p></li>
+<li><p>During a test, your aiding device begins generating measurements.</p></li>
+<li><p>That data is sent to the processor, where it is converted into GAD packets.</p></li>
+<li><p>These GAD packets are the sent to the INS, where they are combined with the
+INS’ own internal data streams. (Note that you can opt to write the data to a
+file instead, either for debug or to be used in post-processing)</p></li>
+<li><p>The output from the INS (typically NCOM format) will then be the
+navigation solution based on aiding data all sensor(s) and the IMUs measurments.
+It can be consumed in the normal way.</p></li>
+</ul>
+<figure class="align-default" id="id1">
+<img alt="../../_images/GAD_SDK_data_flow.png" src="../../_images/GAD_SDK_data_flow.png" />
+<figcaption>
+<p><span class="caption-text">A process diagram showing how data flows from your aiding device.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="intro.html" class="btn btn-neutral float-left" title="Welcome" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="gettingstarted.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

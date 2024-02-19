@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Search &mdash; OxTS C++ Generic Aiding SDK  documentation</title>
+  <title>Search &mdash; GAD-SDK 0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
+      <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css" />
 
   
@@ -17,9 +17,10 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
         <script src="_static/doctools.js?v=888ff710"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/tabs.js?v=3030b3cb"></script>
     <script src="_static/js/theme.js"></script>
     <script src="_static/searchtools.js"></script>
     <script src="_static/language_data.js"></script>
@@ -36,7 +37,7 @@
           
           
           <a href="index.html" class="icon icon-home">
-            OxTS C++ Generic Aiding SDK
+            GAD-SDK
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="#" method="get">
@@ -46,45 +47,38 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Introduction to Generic Aiding</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="longform/intro.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-requirements.html">Generic Aiding Requirements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/timestamps.html">Timestamping Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/sensorcharacterisation.html">Sensor characterisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/intro.html">Welcome</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Aiding types</span></p>
+<p class="caption" role="heading"><span class="caption-text">Manual</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-position-updates.html">Position</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-velocity-updates.html">Velocity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-attitude-updates.html">Attitude</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-heading-updates.html">Heading</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/generic-aiding-speed-updates.html">Speed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/overview.html">Overview of GAD SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/aiding_types/index.html">Aiding types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/ismydatabeingreceived.html">Debug Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/GAD_post_processing.html">Post-processing GAD data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/section5.html">Advanced Options</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorials and examples</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="longform/example-my-first-gad.html">My First GAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/example-static-aiding.html">Static Aiding</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/example-static-aiding-no-boost.html">Static Aiding (No Boost)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/example-zv-wheelspeed.html">Zero Velocity Wheelspeed</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/example-heading.html">Heading Update Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/my_first_gad.html">My first GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/static_aiding.html">Static-aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/example_can_ws.html">CAN wheel speed</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Additional Material</span></p>
+<p class="caption" role="heading"><span class="caption-text">Reference section</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="longform/defining-a-local-reference-frame.html">User-defined Local Frame</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/gad-files.html">.gad files (Advanced)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/reassigning-traditional-sources.html">Reassigning traditional data sources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/stream-priority.html">Stream priority</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/position-only-initialisation.html">Initialisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/position-only-initialisation.html#position-only-initialisation">Position-only initialisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/is-my-data-being-received.html">Is my data being received?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/ncom-updates.html">NCOM Output</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/advanced-commands.html">Advanced commands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="longform/advanced-commands.html#all-configuration-options">All configuration options</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">API</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/KF.html">The Kalman Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/Frames.html">Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/lever_arm.html">Lever arms and Alignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/cov.html">Covariance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/time_stamping.html">Timestamping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/Glossary.html">Glossary of terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/GAD_cols.html">GAD file column definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/enum_tab.html">Table of GAD file Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/adv_com.html">Advanced commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/longform/py_com.html">Python API</a></li>
 </ul>
 
         </div>
@@ -93,7 +87,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">OxTS C++ Generic Aiding SDK</a>
+          <a href="index.html">GAD-SDK</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -130,7 +124,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021, OxTS.</p>
+    <p>&#169; Copyright 2023, OxTS.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

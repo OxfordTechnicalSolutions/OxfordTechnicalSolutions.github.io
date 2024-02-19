@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frames &mdash; GAD-SDK 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Lever arms and Alignments" href="lever_arm.html" />
+    <link rel="prev" title="The Kalman Filter" href="KF.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            GAD-SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of GAD SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aiding_types/index.html">Aiding types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ismydatabeingreceived.html">Debug Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_post_processing.html">Post-processing GAD data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="section5.html">Advanced Options</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials and examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="my_first_gad.html">My first GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="static_aiding.html">Static-aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_can_ws.html">CAN wheel speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference section</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="KF.html">The Kalman Filter</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Frames</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#an-example">An example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lever_arm.html">Lever arms and Alignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cov.html">Covariance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time_stamping.html">Timestamping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary of terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_cols.html">GAD file column definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enum_tab.html">Table of GAD file Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adv_com.html">Advanced commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py_com.html">Python API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GAD-SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Frames</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/source/longform/Frames.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="frames">
+<span id="id1"></span><h1>Frames<a class="headerlink" href="#frames" title="Link to this heading"></a></h1>
+<p>All aiding data will be in a specific coordinate frame. Which frame will depend on your sensors orientation and the type of data you it’s transmitting.
+Furthermore, the INS can interpret aiding data in different frames, giving you flexibility when it comes to how you transmit the data.</p>
+<p>There are three major types of frame that you’ll deal with:</p>
+<blockquote>
+<div><p><strong>Global frames</strong> are frames that describe location or movement relative to the earth. Global updates in GAD include Geodetic position, NED velocity, Attitude, and Heading.</p>
+<p><strong>Local frames</strong> are frames that describe location or movement relative to a local fixed point and orientation.</p>
+<p><strong>Body frames</strong> are frames which are moving with the vehicle, e.g. odometry-frame velocity or vehicle-frame speed.</p>
+</div></blockquote>
+<p><strong>User-defined local frame</strong></p>
+<p>Position, velocity, and heading data types can be sent in a user-defined local frame. A user-defined local frame is one you create yourself, starting from a known point in space. To do this, you need two pieces of information:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Your origin point in the WGS84 global coordinate frame (latitude, longitude, and altitude). This gives the system the ability to convert the data into the global frame, which your INS will do in real time.</p></li>
+<li><p>The difference rotation between your local coordinate frame and the global coordinate frame, relative to North, East, Down (NED). This is specified by using a rotation matrix of the Euler angles (Tait-Bryan convention <span class="math notranslate nohighlight">\(Z_1 Y_2 X_3\)</span>):</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}R = Z_1 Y_2 X_3 =
+\begin{bmatrix}
+c_1 c_2 &amp; c_1 s_2 s_3 - s_1 c_3 &amp; c_1 s_2 c_3 + s_1 s_3\\
+s_1 c_2 &amp; s_1 s_2 s_3 + c_1 c_3 &amp; s_1 s_2 c_3 - c_1 s_3\\
+-s_2    &amp; c_2 s_3               &amp; c_2 c_3              \\
+\end{bmatrix}
+\label{TaitBryanMatrix}\end{split}\]</div>
+<details class="summary-caption">
+<summary>caption</summary><ol class="arabic simple">
+<li><p>1, 2, 3 represent the angles <span class="math notranslate nohighlight">\({\alpha}\)</span>, <span class="math notranslate nohighlight">\({\beta}\)</span> and <span class="math notranslate nohighlight">\({\gamma}\)</span> , i.e. the angles corresponding to the first, second and third elemental rotations respectively.</p></li>
+<li><p>X, Y, Z are the matrices representing the elemental rotations about the axes x, y, z of the fixed frame (e.g., X1 represents a rotation about x by an angle <span class="math notranslate nohighlight">\({\alpha}\)</span>).</p></li>
+<li><p>s and c represent sine and cosine (e.g., s1 represents the sine of <span class="math notranslate nohighlight">\({\alpha}\)</span>).</p></li>
+</ol>
+</details></div></blockquote>
+<p>You can create up to 32 local reference frames in a dataset, and each needs to be assigned a local reference frame ID and linked to a stream ID, so the INS knows which frame to use for which aiding data. There are a few reasons why you might have multiple local reference frames:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>You might have two different aiding devices using different local frames in the same space. For instance, a LiDAR scanner using reflective targets with one origin point, and a camera using QR codes with a different origin point.</p></li>
+<li><p>You might want to use the same device in two separate locations, which have different local frames. In this case, you would need to remember to switch the stream ID for your aiding data when you moved from site 1 to site 2.</p></li>
+</ol>
+</div></blockquote>
+<section id="an-example">
+<h2>An example<a class="headerlink" href="#an-example" title="Link to this heading"></a></h2>
+<p>Let’s say you have a LiDAR scanner and a camera mounted to your vehicle, which you are using to survey a warehouse (which in this example is a perfect cuboid).
+The warehouse is set up like this (note that the drawing is not to scale, the angles and measurements are for reference only.):</p>
+<figure class="align-default">
+<img alt="../../_images/warehouse.png" src="../../_images/warehouse.png" />
+</figure>
+<p>The LiDAR scanner uses a series of targets to orient itself, while the camera uses a series of QR codes. Both devices can give you position, velocity, and heading data – so you want to create a user-defined local frame for each of them. You would first need to ascertain their origin points in the WGS84 global coordinate frame, which you do using a total station and a quick bit of maths. Let’s say that:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>LiDAR scanner</p>
+<ol class="loweralpha simple">
+<li><p>Lat: 51.91519</p></li>
+<li><p>Long: -1.24407</p></li>
+<li><p>Alt: 94.6</p></li>
+</ol>
+</li>
+<li><p>Camera</p>
+<ol class="loweralpha simple">
+<li><p>Lat: 51.91571</p></li>
+<li><p>Long: -1.24269</p></li>
+<li><p>Alt: 111.9</p></li>
+</ol>
+</li>
+</ol>
+</div></blockquote>
+<p>Next, you need to define what rotations are needed to transform from your local frame to the global coordinate frame. This has to be relative to the NED coordinate frame that your INS uses.</p>
+<p>For your LiDAR, the origin point is on a wall, and assumes that everything forward of that wall is North (0°). But the warehouse itself is in fact pointing to 32° (its heading to use the proper terminology) and is on a slope of 10° (its pitch).</p>
+<figure class="align-default">
+<img alt="../../_images/warehouse2.png" src="../../_images/warehouse2.png" />
+</figure>
+<p>To make matters more complex, your camera’s origin point is on a different wall, meaning that it deviates from the global coordinate frame by a yaw of 122° and the 10° difference is now in the roll rather than the pitch.</p>
+<figure class="align-default">
+<img alt="../../_images/warehouse3.png" src="../../_images/warehouse3.png" />
+</figure>
+<p>For each coordinate frame, you need to describe these rotations so that the INS can correctly compensate when it’s matching up the data. Those transformations look like this:</p>
+<p>LiDAR: Rotate about the Z axis by 32°, then about the Y axis by 10°, and don’t rotate about the X axis (as it’s already aligned to the global coordinate frame).</p>
+<figure class="align-center" id="id2">
+<img alt="../../_images/lidar_rotation_crop.png" src="../../_images/lidar_rotation_crop.png" />
+<figcaption>
+<p><span class="caption-text">Diagram showing the rotations of the LiDAR frame (32° around the Z axis, then 10° around the X axis).</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Camera: Rotate about the Z axis by 122°, don’t rotate about the Y axis (as it’s already aligned to the global coordinate frame), then rotate about the X axis by 10°.</p>
+<figure class="align-center" id="id3">
+<img alt="../../_images/camera_rotation_crop.png" src="../../_images/camera_rotation_crop.png" />
+<figcaption>
+<p><span class="caption-text">Diagram showing the rotations of the camera frame (122° around the Z axis, then 10° around the Y axis).</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The next step is to set the user-defined local frame(s) in the INS’ configuration file:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">gad_lrf</span><span class="p">[</span><span class="n">lrf_id</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">lat</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">lon</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">alt</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">z</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">y</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Note that:</p>
+<ul class="simple">
+<li><p>[lrf_id] refers to the local reference frame ID (start at 2).</p></li>
+<li><p>[lat], [long], and [alt] refer to the WGS84 coordinates of your origin point</p></li>
+<li><p>[z], [y], and [x] refer to the rotations needed to align your local frame with the global frame</p></li>
+</ul>
+<p>To assign a stream ID to that local reference frame, you then need to add the following line:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">gad_lrf_id</span><span class="p">[</span><span class="n">stream_id</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">lrf_id</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>So, to return to our example above, the code that sets local frames for each of our aiding devices and assigns them to the right stream ID would look like this:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">gad_lrf2_51</span><span class="mf">.915</span><span class="n">_</span><span class="mf">-1.244</span><span class="n">_94</span><span class="mf">.597</span><span class="n">_32</span><span class="mf">.0</span><span class="n">_10</span><span class="mf">.0</span><span class="n">_0</span><span class="mf">.0</span>
+<span class="o">-</span><span class="n">gad_lrf3_52</span><span class="mf">.916</span><span class="n">_</span><span class="mf">-1.244</span><span class="n">_94</span><span class="mf">.597</span><span class="n">_122</span><span class="mf">.0</span><span class="n">_0</span><span class="mf">.0</span><span class="n">_10</span><span class="mf">.0</span>
+<span class="o">-</span><span class="n">gad_lrf_id133_2</span>
+<span class="o">-</span><span class="n">gad_lrf_id134_3</span>
+</pre></div>
+</div>
+<p>In this code:</p>
+<blockquote>
+<div><p><strong>Line 1</strong> is setting the first user-defined local frame, using the WGS84 coordinates and setting the z, y, and x rotations.</p>
+<p><strong>Line 2</strong> is setting the second user-defined local frame.</p>
+<p><strong>Line 3</strong> is telling the system to use the first user-defined local frame for stream 133 (the LiDAR).</p>
+<p><strong>Line 4</strong> is telling the system to use the second user-defined local frame for stream 134 (the camera).</p>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="KF.html" class="btn btn-neutral float-left" title="The Kalman Filter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="lever_arm.html" class="btn btn-neutral float-right" title="Lever arms and Alignments" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

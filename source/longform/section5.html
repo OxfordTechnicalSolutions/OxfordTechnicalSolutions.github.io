@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Options &mdash; GAD-SDK 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="My first GAD" href="my_first_gad.html" />
+    <link rel="prev" title="Post-processing GAD data" href="GAD_post_processing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            GAD-SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of GAD SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aiding_types/index.html">Aiding types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ismydatabeingreceived.html">Debug Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_post_processing.html">Post-processing GAD data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Advanced Options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#stream-priority">Stream priority</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#position-only-initialisation">Position-only initialisation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#providing-velocity-and-orientation">Providing velocity and orientation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#interfacing-with-a-can-bus">Interfacing with a CAN bus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ncom-output">NCOM Output</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials and examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="my_first_gad.html">My first GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="static_aiding.html">Static-aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_can_ws.html">CAN wheel speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference section</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="KF.html">The Kalman Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Frames.html">Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lever_arm.html">Lever arms and Alignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cov.html">Covariance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time_stamping.html">Timestamping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary of terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_cols.html">GAD file column definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enum_tab.html">Table of GAD file Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adv_com.html">Advanced commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py_com.html">Python API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GAD-SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Advanced Options</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/source/longform/section5.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="advanced-options">
+<span id="section5"></span><h1>Advanced Options<a class="headerlink" href="#advanced-options" title="Link to this heading"></a></h1>
+<p>In this section we’ve included features, concepts and commands that you won’t need unless you’re doing something very specific with your GAD setup, or are conducting some advanced tests.</p>
+<section id="stream-priority">
+<span id="stream-pri"></span><h2>Stream priority<a class="headerlink" href="#stream-priority" title="Link to this heading"></a></h2>
+<p>Typically, the INS will decide which data to use based on the estimated error of each measurement. However, in some use cases it can be useful to be able to set priority of relative streams.
+This can be done with a single advanced command:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">stream_priority_</span><span class="p">[</span><span class="n">X</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">Y</span><span class="p">]</span><span class="n">_</span><span class="p">[</span><span class="n">Z</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>[X] = high priority stream ID</p>
+<p>[Y] = low priority stream ID</p>
+<p>[Z] = period (s) after using data from stream [X] to block stream [Y].</p>
+<p>It is possible to use this option on the internal GNSS streams, using the following stream IDs:</p>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Internal streams</span><a class="headerlink" href="#id2" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Data type</p></th>
+<th class="head"><p>Stream ID</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GNSS Position</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>GNSS Velocity</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>GNSS Attitude</p></td>
+<td><p>3</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="position-only-initialisation">
+<span id="pos-only-init"></span><h2>Position-only initialisation<a class="headerlink" href="#position-only-initialisation" title="Link to this heading"></a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This feature is still in development. At present, to use position-only initialisation you need to also have a source of heading data. If you do not have this, you will not be able to use position-only initialisation. We are working on building the ability to calculate heading from your position data right now.</p>
+</div>
+<p>When you turn on your INS it will initialise – meaning it will establish its position, velocity, orientation, and the time. Your INS can initialise in a few ways:</p>
+<ul class="simple">
+<li><p>It can use its own GNSS and IMU data to initialise.</p></li>
+<li><p>If the system can’t get a GNSS signal, but has access to position, velocity, and heading data from GAD sources, it can use those to initialise.</p></li>
+<li><p>If the system can’t get a GNSS signal, and you have GAD providing position data but not velocity or heading data, you need to use position-only initialisation.</p></li>
+</ul>
+<p>Position-only initialisation is useful when you are unable to initialise your INS normally – either because you’re in an area with poor or no GNSS signal such as indoors, in a forest, or in an urban canyon, or you don’t have a source of heading or velocity data from a GAD.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Dynamic or static initialisation?</strong></p>
+<p>By default an INS needs to be moving in order to initialise – this is known as dynamic initialisation. This is because the system usually needs forward motion to calculate a position.</p>
+<p>However, you can activate static initialisation in your INS’ config file and initialise your INS without having to move – as long as you have either:</p>
+<ol class="arabic simple">
+<li><p>Dual GNSS antennae (which enables the INS to get a heading without moving).</p></li>
+<li><p>GAD sources providing velocity and heading data that calculate those values while stationary.</p></li>
+</ol>
+</div>
+<section id="providing-velocity-and-orientation">
+<h3>Providing velocity and orientation<a class="headerlink" href="#providing-velocity-and-orientation" title="Link to this heading"></a></h3>
+<p>If you choose to initialise your INS using position data, then the INS will need to calculate its starting velocity, heading, and time separately.</p>
+<p>Add the following advanced command to your INS config file:</p>
+<p><strong>Velocity</strong></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">gad_init_vel_from_pos_</span><span class="p">[</span><span class="n">X</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Note that X should be “on” or “off” depending on whether you want to activate or deactivate the setting.</p>
+<p>By itself, this means that the INS will dynamically initialise once the velocity estimate exceeds 5m/s. If you want to change this, you can edit the following line of code, which is already in the config file:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">motion_speed</span><span class="p">[</span><span class="n">X</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Note that X should be the speed you want for dynamic initialisation, in m/s. If you enter a speed below 5m/s then it’s likely that the accuracy of your measurements will be negatively affected.</p>
+<p><strong>Time</strong></p>
+<p>Your INS needs a source of GPS time in order to initialise correctly. Since position-only initialisation is typically used in GNSS-poor environments, this means you will likely need a GNSS repeater that can give your system GPS time.</p>
+<p>As an alternative to GNSS time, a Precision Time Protocol (PTP) option for OxTS INS’ will soon be released. Contact <a class="reference external" href="mailto:support&#37;&#52;&#48;oxts&#46;com">OxTS support</a> for more information.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>GNSS repeater licence</strong></p>
+<p>Because of their potential to cause interference with any other RF system in the vicinity, most telecom regulators require users to obtain a licence to operate GNSS repeaters.</p>
+</div>
+</section>
+</section>
+<section id="interfacing-with-a-can-bus">
+<span id="can-bus-inter"></span><h2>Interfacing with a CAN bus<a class="headerlink" href="#interfacing-with-a-can-bus" title="Link to this heading"></a></h2>
+<p>The CAN bus allows you to use a car’s own data systems as aiding devices. This is most commonly done by OEMs, but can be done by other users too, if they know the correct message IDs to use.</p>
+<p>The GAD SDK does not include the functionality required to interface with the CAN bus, but it is relatively straightforward to use the Python package python-can using:</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span>pip install python-can
+</pre></div>
+</div>
+<p>The <a class="reference external" href="https://pypi.org/project/python-can/">python-can package</a> has its own documentation, which provides detailed instructions on how to use it in order to interface with the CAN bus.</p>
+<p>See the <a class="reference internal" href="example_can_ws.html#canws-example"><span class="std std-ref">CAN wheelspeed example</span></a> for more information on how to implement CAN messages as a GAD source.</p>
+</section>
+<section id="ncom-output">
+<span id="id1"></span><h2>NCOM Output<a class="headerlink" href="#ncom-output" title="Link to this heading"></a></h2>
+<p>NCOM is the most common output format from the OxTS INS, by default it is output over UDP to port 3000.</p>
+<p>For information on decoding the NCOM format please see the documentation provided on the OxTS support page:</p>
+<p><a class="reference external" href="https://support.oxts.com/hc/en-us/articles/115002163985-Decoding-OxTS-navigation-outputs">https://support.oxts.com/hc/en-us/articles/115002163985-Decoding-OxTS-navigation-outputs</a></p>
+<p>The latest NCOM manual can be found here:</p>
+<p><a class="reference external" href="https://www.oxts.com/ncom-and-mcom/">https://www.oxts.com/ncom-and-mcom/</a></p>
+<p>When the INS receives a GAD packet with valid time it will output the packet information on status channel 95.
+This packet is scheduled at 1 Hz.</p>
+<img alt="../../_images/ncom-status-packet-95.gif" src="../../_images/ncom-status-packet-95.gif" />
+<p>The innovations will match the stream type. To date, no GAD update includes more than three measurements in the same packet, therefore there are only three innovations in this packet.
+Not all innovations will be valid for all stream types, for example; attitude innovation updates will only use innovation1 and innovation2 measurements.</p>
+<p>Note also when using many streams there may be issues getting updates from a specific stream as
+this status channel will always return data from the last received GAD packet when the packet is sent.
+It is possible that data will not be visible from a specific stream when data is being constantly updated from another stream.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="GAD_post_processing.html" class="btn btn-neutral float-left" title="Post-processing GAD data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="my_first_gad.html" class="btn btn-neutral float-right" title="My first GAD" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

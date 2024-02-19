@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timestamping &mdash; GAD-SDK 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Glossary of terms" href="Glossary.html" />
+    <link rel="prev" title="Covariance" href="cov.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            GAD-SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of GAD SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aiding_types/index.html">Aiding types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ismydatabeingreceived.html">Debug Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_post_processing.html">Post-processing GAD data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="section5.html">Advanced Options</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials and examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="my_first_gad.html">My first GAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="static_aiding.html">Static-aiding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_can_ws.html">CAN wheel speed</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference section</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="KF.html">The Kalman Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Frames.html">Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lever_arm.html">Lever arms and Alignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cov.html">Covariance</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Timestamping</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#types-of-timestamp">Types of timestamp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#synchronising-clocks">Synchronising clocks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary of terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GAD_cols.html">GAD file column definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enum_tab.html">Table of GAD file Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adv_com.html">Advanced commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gal-cpp/index.html">C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py_com.html">Python API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GAD-SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Timestamping</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/source/longform/time_stamping.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="timestamping">
+<span id="time-stamp"></span><h1>Timestamping<a class="headerlink" href="#timestamping" title="Link to this heading"></a></h1>
+<p>Knowing the epoch that a measurement was taken is crucial to being able to use it effectively in a sensor fusion algorithm. For example, a centimetre-level position measurement taken on a vehicle when travelling at 10 m/s (22 mph). An error on the timestamp of only 0.1s can look like an error of 1m to the INS.</p>
+<p>The GAD SDK supports a few timestamp modes for users, aiming to cater to as many cases as possible. Some require almost no effort from the user (Void), whilst some require the INS and aiding device to be fully time synchronised (GPS time).
+Generally, lower effort approaches can work well for initial measurements, but the most accurate navigation data require fully synchronised timestamps.</p>
+<section id="types-of-timestamp">
+<h2>Types of timestamp<a class="headerlink" href="#types-of-timestamp" title="Link to this heading"></a></h2>
+<p>There are two categories of timestamps you can give your data:</p>
+<ul class="simple">
+<li><p>A timestamp in a specific format</p></li>
+<li><p>An instruction for the INS to apply its own timestamp to the data when it receives it</p></li>
+</ul>
+<p>It’s much simpler to instruct the INS to apply its own timestamp from a setup perspective, though not as accurate or robust. Which option you choose will depend on your appetite for synchronising time across devices, and how confident you are that all the devices in your setup are synchronised properly.</p>
+<p><strong>Void</strong></p>
+<p>If data is sent with a void timestamp, the INS applies a timestamp when it receives the data. Because you don’t have to synchronise time across any devices, void timestamps are the simplest to set up. However, you do need to ensure that there is negligible transport latency between the aiding device and the INS.
+Using a void timestamp is not a viable choice if you are outputting your data to a GAD file and want to use it in post-processing. This is because the post-processing software will have no way of knowing what time the data should be applied at.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-0-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-0-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-0-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-0-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="p">.</span><span class="n">SetTimeVoid</span><span class="p">();</span><span class="w"> </span><span class="c1">// Just use void time</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-0-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="o">.</span><span class="n">set_time_void</span><span class="p">()</span> <span class="c1"># Just use void time</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>Latency</strong></p>
+<p>The latency timestamp is the same as the void timestamp, but you also specify the latency on the transfer of data between the aiding device and INS. When the INS receives data, it applies the timestamp accounting for that latency.
+If you are aware that your data latency is likely to fluctuate, then you will get much better results using the timestamp formats below, rather than using latency or void mode. This can often be relevant if data is being passed over a busy network.
+As with the void timestamp, the latency timestamp is also not viable if you are outputting data to a GAD file and want to use it in post-processing.</p>
+<p>Note that the latency is measured in seconds.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-1-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-1-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="p">.</span><span class="n">SetTimeLatency</span><span class="p">(</span><span class="mf">0.1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Latency of 0.1s</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-1-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="o">.</span><span class="n">time_latency</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1"># Latency of 0.1s</span>
+</pre></div>
+</div>
+</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to measure your latency if you want to use the Void or Latency timestamps. To best measure it, collect some data under good GNSS conditions (so you know that the INS is calculating time accurately).
+Then, compare the GAD with the INS only output. You should see the data follows the same shape, but with a time-offset between the two data sets. This offset is the latency.</p>
+</div>
+</div>
+<p><strong>GPS time</strong></p>
+<p>If your device’s clock has been synchronised with the INS, this command will provide the timestamp in the GPS format.  That includes the GPS week and the number of seconds from midnight on Sunday.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-2-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-2-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-2-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-2-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="p">.</span><span class="n">SetTimeGps</span><span class="p">(</span><span class="n">gps_week</span><span class="p">,</span><span class="w"> </span><span class="n">gps_seconds</span><span class="p">);</span><span class="w"> </span><span class="c1">// Packet timestamped with GPS time</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-2-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="o">.</span><span class="n">time_gps</span> <span class="o">=</span> <span class="p">[</span><span class="n">gps_week</span><span class="p">,</span> <span class="n">gps_seconds</span><span class="p">]</span> <span class="c1"># Packet timestamped with GPS time</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>UNIX time</strong></p>
+<p>If your device’s clock has been synchronised with the INS, this command will provide the timestamp in UNIX time format, encoded as the number of seconds from the UNIX epoch.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-3-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-3-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-3-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-3-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="p">.</span><span class="n">SetTimeUTCUnix</span><span class="p">(</span><span class="n">unix_seconds</span><span class="p">);</span><span class="w"> </span><span class="c1">// Packet timestamped with Unix time</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-3-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="o">.</span><span class="n">time_utc_unix</span> <span class="o">=</span> <span class="n">unix_seconds</span> <span class="c1"># Packet timestamped with Unix time</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>TAI time</strong></p>
+<p>If your device’s clock has been synchronised with the INS, this command will provide the timestamp in the International Atomic Time format.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-4-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-4-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-4-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-4-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="p">.</span><span class="n">SetTimeTAI</span><span class="p">(</span><span class="n">tai_seconds</span><span class="p">);</span><span class="w"> </span><span class="c1">// Packet timestamped with TAI time</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-4-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-4-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="o">.</span><span class="n">time_tai</span> <span class="o">=</span> <span class="n">tai_seconds</span> <span class="c1"># Packet timestamped with TAI time</span>
+</pre></div>
+</div>
+</div></div>
+<p><strong>PPS relative</strong></p>
+<p>If your device’s clock has been synchronised with the INS, this command will provide a timestamp relative to the pulses per second (PPS) signal from your INS.
+SEE HERE FOR INFORMATION ON HOW TO CONFIGURE THE OXTS INS TO OUTPUT PPS.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-5-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-5-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-5-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-5-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-5-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-5-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="p">.</span><span class="n">SetTimePpsRelative</span><span class="p">(</span><span class="n">pps_relative</span><span class="p">);</span><span class="w"> </span><span class="c1">// Packet timestamped with PPS relative time</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-5-UHl0aG9u" class="sphinx-tabs-panel code-tab group-tab" hidden="true" id="panel-5-UHl0aG9u" name="UHl0aG9u" role="tabpanel" tabindex="0"><div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">gv</span><span class="o">.</span><span class="n">pps_relative</span><span class="o">=</span> <span class="n">pps_relative_seconds</span> <span class="c1"># Packet timestamped with PPS relative time</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="synchronising-clocks">
+<span id="syn-clocks"></span><h2>Synchronising clocks<a class="headerlink" href="#synchronising-clocks" title="Link to this heading"></a></h2>
+<p>To use GPS, UNIX, TAI, or PPS timestamps, you need to first synchronise your clocks. At present, when you synchronise your INS to any other device, the INS will always assert that its time is the correct one (it is the PTP master). Since your INS is usually getting its time from the GNSS signal, it’s a pretty reliable source of time for your system.
+If you don’t have access to time from a GNSS receiver, though, you can still synchronise time between your devices. In this situation, the INS will either use the last GPS time it received via GNSS to continue calculating time, or it will use its internal system time if it didn’t get GPS time since being initialised.
+You can synchronise your devices’ clocks via:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://support.oxts.com/hc/en-us/articles/360016515759-PTP-Quick-Start-Guide">Precision Time Protocol (PTP)</a></p></li>
+<li><p>Network Time Protocol (NTP)</p></li>
+<li><p>PPS output from the INS (in which case you’ll want to use the PPS Relative timestamp mentioned above)</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="cov.html" class="btn btn-neutral float-left" title="Covariance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Glossary.html" class="btn btn-neutral float-right" title="Glossary of terms" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, OxTS.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
