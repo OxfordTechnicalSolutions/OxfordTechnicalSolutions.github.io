@@ -1,0 +1,905 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOxTS_1_1Gal__Cpp_1_1GadVelocity" kind="class" language="C++" prot="public">
+    <compoundname>OxTS::Gal_Cpp::GadVelocity</compoundname>
+    <basecompoundref refid="classOxTS_1_1Gal__Cpp_1_1Gad" prot="public" virt="non-virtual">OxTS::Gal_Cpp::Gad</basecompoundref>
+    <includes local="no">gad.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ab3803209b3a2786b386243ce43075a00" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gal_Cpp::GadVelocity::GadVelocity</definition>
+        <argsstring>(const uint8_t stream_id)</argsstring>
+        <name>GadVelocity</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>stream_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream ID for the velocity aiding source. Must be unique 128-254. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="378" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a3bccf350b3c6a315699f25c550aec6bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetVelNed</definition>
+        <argsstring>(const double_t vel_north, const double_t vel_east, const double_t vel_down)</argsstring>
+        <name>SetVelNed</name>
+        <param>
+          <type>const double_t</type>
+          <declname>vel_north</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>vel_east</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>vel_down</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the aiding velocity estimate in the local NED coordinate frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vel_east</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity estimate in the East direction (m/s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vel_north</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity estimate in the North direction (m/s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vel_down</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity estimate in the Down direction (m/s). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="385" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aef35a3c4ca009f5e8287ac43d7a29136" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetVelOdom</definition>
+        <argsstring>(const double_t vel_x, const double_t vel_y, const double_t vel_z)</argsstring>
+        <name>SetVelOdom</name>
+        <param>
+          <type>const double_t</type>
+          <declname>vel_x</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>vel_y</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>vel_z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the aiding velocity estimate in the odometry frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vel_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity estimate in the x direction (m/s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vel_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity estimate in the y direction (m/s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vel_z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity estimate in the z direction (m/s). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="392" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a07465b9265daa9fc4a5e6f3c3b02b47f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetVelLocal</definition>
+        <argsstring>(const double_t vel_local_x, const double_t vel_local_y, const double_t vel_local_z)</argsstring>
+        <name>SetVelLocal</name>
+        <param>
+          <type>const double_t</type>
+          <declname>vel_local_x</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>vel_local_y</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>vel_local_z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the aiding velocity estimate in the user-defined local coordinate frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vel_local_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity estimate in the x direction (m/s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vel_local_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity estimate in the y direction (m/s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vel_local_z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity estimate in the z direction (m/s). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="399" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a0a60f95c55c22b60522aecac74eb6dac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const container_double3_t &amp;</type>
+        <definition>const container_double3_t&amp; OxTS::Gal_Cpp::GadVelocity::GetVel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the aiding velocity estimate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="403" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aed9826401f4024c1953d05f06bd262da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetVelNedVar</definition>
+        <argsstring>(const double_t var_north, const double_t var_east, const double_t var_down)</argsstring>
+        <name>SetVelNedVar</name>
+        <param>
+          <type>const double_t</type>
+          <declname>var_north</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>var_east</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>var_down</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the aiding velocity variance estimate in the local NED coordinate frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var_north</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity variance estimate in the North direction (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>var_east</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity variance estimate in the East direction (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>var_down</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity variance estimate in the Down direction (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="410" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aa221e7dad9224bc224034adfd792cce4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetVelNedVar</definition>
+        <argsstring>(const double_t v_nn, const double_t v_ee, const double_t v_dd, const double_t v_ne, const double_t v_nd, const double_t v_ed)</argsstring>
+        <name>SetVelNedVar</name>
+        <param>
+          <type>const double_t</type>
+          <declname>v_nn</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_ee</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_dd</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_ne</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_nd</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_ed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the full covariance matrix of aiding velocity in the NED frame. Only six values required due to the symmetry of covariance matrices. (Indices row major) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v_nn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_ee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_uu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_ne</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_nu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_eu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="422" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a43a90e7c8db09cce908e85ff88446c7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetVelOdomVar</definition>
+        <argsstring>(const double_t v_x, const double_t v_y, const double_t v_z)</argsstring>
+        <name>SetVelOdomVar</name>
+        <param>
+          <type>const double_t</type>
+          <declname>v_x</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_y</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the aiding velocity variance estimate in the local NED coordinate frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity variance estimate in the x direction (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity variance estimate in the y direction (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity variance estimate in the z direction (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="432" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7fffba654adbb12e5bd793a3ba496b5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetVelOdomVar</definition>
+        <argsstring>(const double_t v_xx, const double_t v_yy, const double_t v_zz, const double_t v_xy, const double_t v_xz, const double_t v_yz)</argsstring>
+        <name>SetVelOdomVar</name>
+        <param>
+          <type>const double_t</type>
+          <declname>v_xx</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_yy</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_zz</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_xy</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_xz</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_yz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the full covariance matrix of aiding velocity in the odometry frame. Only six values required due to the symmetry of covariance matrices. (Indices row major) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v_xx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_yy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_zz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_xy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_xz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_yz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="444" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ad1c3f905a221620093c2551744e3a03b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetVelLocalVar</definition>
+        <argsstring>(const double_t v_x, const double_t v_y, const double_t v_z)</argsstring>
+        <name>SetVelLocalVar</name>
+        <param>
+          <type>const double_t</type>
+          <declname>v_x</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_y</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the aiding velocity variance estimate in the local NED coordinate frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity variance estimate in the x direction (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity variance estimate in the y direction (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity variance estimate in the z direction (m/s)^2. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="454" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7e63b9033afd1c4f7237ac635398473c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetVelLocalVar</definition>
+        <argsstring>(const double_t v_xx, const double_t v_yy, const double_t v_zz, const double_t v_xy, const double_t v_xz, const double_t v_yz)</argsstring>
+        <name>SetVelLocalVar</name>
+        <param>
+          <type>const double_t</type>
+          <declname>v_xx</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_yy</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_zz</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_xy</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_xz</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_yz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the full covariance matrix of aiding velocity in the local coordinate frame. Only six values required due to the symmetry of covariance matrices. (Indices row major) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v_xx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m^2). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_yy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m^2). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_zz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m^2). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_xy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m^2). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_xz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m^2). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_yz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance of the position estimate (m^2). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="466" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a3162d5f0c1aacf9d1ae11367ace89d38" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const container_double6_t &amp;</type>
+        <definition>const container_double6_t&amp; OxTS::Gal_Cpp::GadVelocity::GetVelVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVelVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the aiding velocity variance estimate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="473" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a4be63949aa6352025d1561769fd8262c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetAidingLeverArmFixed</definition>
+        <argsstring>(const double_t x, const double_t y, const double_t z)</argsstring>
+        <name>SetAidingLeverArmFixed</name>
+        <param>
+          <type>const double_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set lever arm from the INS to the aiding source. This lever arm will not be optimised by the Kalman Filter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset from INS to aiding source in the x axis of the IMU frame (m). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset from INS to aiding source in the y axis of the IMU frame (m). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset from INS to aiding source in the z axis of the IMU frame (m). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="482" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1abbf30b7f3d7aafbe3c2fc657a9672f4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const container_double3_t &amp;</type>
+        <definition>const container_double3_t&amp; OxTS::Gal_Cpp::GadVelocity::GetAidingLeverArm</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAidingLeverArm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="483" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7716400b586d74d1092750afc8b2cfdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetAidingLeverArmOptimising</definition>
+        <argsstring>()</argsstring>
+        <name>SetAidingLeverArmOptimising</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set lever arm from the INS to the aiding source to be taken from the .gap file. This lever arm will be optimised by the Kalman Filter during navigation. Note that if using this, the GNSS antenna lever arm must be set in mobile.cfg. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="490" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1adbfb5e9029bcc229096b3e9f0eef7be8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetAidingLeverArmConfig</definition>
+        <argsstring>()</argsstring>
+        <name>SetAidingLeverArmConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that lever arm will be configured in the configuration file on the INS. <xrefsect id="todo_1_todo000002"><xreftitle>Todo</xreftitle><xrefdescription><para>Remove and set this mode to be default </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="496" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ae56c1d38f8425f314ba3d30ee8a66f6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadVelocity::SetAidingLeverArmVar</definition>
+        <argsstring>(const double_t x, const double_t y, const double_t z)</argsstring>
+        <name>SetAidingLeverArmVar</name>
+        <param>
+          <type>const double_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the variance (accuracy) of the lever arm measurements from the INS to the aiding source.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance on the lever arm from INS to aiding source in the x axis of the IMU frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance on the lever arm from INS to aiding source in the y axis of the IMU frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance on the lever arm from INS to aiding source in the z axis of the IMU frame. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="505" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ab0b53fea9a394a7575d7d0cd4f4182d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const container_double6_t &amp;</type>
+        <definition>const container_double6_t&amp; OxTS::Gal_Cpp::GadVelocity::GetAidingLeverArmVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAidingLeverArmVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="506" column="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Generic Aiding velocity. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OxTS::Gal_Cpp::Gad</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1Gad"/>
+      </node>
+      <node id="1">
+        <label>OxTS::Gal_Cpp::GadVelocity</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OxTS::Gal_Cpp::Gad</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1Gad"/>
+      </node>
+      <node id="1">
+        <label>OxTS::Gal_Cpp::GadVelocity</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="368" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="369" bodyend="507"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a43ddac918eb52cd8b1f9e71bed76f48d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae91583b25eef92b08f60172a3f67a997" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2b9b5bac508451ec029115c2870f3ca3" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ab3803209b3a2786b386243ce43075a00" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GadVelocity</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a5448f4907c9039f12802b40c34f3f66b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetAcqTimestamp</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6f278b1dbbfff55fdf9129fc84357642" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetAcqValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1abbf30b7f3d7aafbe3c2fc657a9672f4d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetAidingLeverArm</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ab0b53fea9a394a7575d7d0cd4f4182d0" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetAidingLeverArmVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a27e711905e725e18c1f4eb71f234ab49" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetDataType</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4dbf84f14b6c84114a0c51574ed8e165" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetDataVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a24772887cef5ee1d9e21f1f3b72549ce" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetDataVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae92c76f7761c28c95a5024b66bd39707" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetLoc</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a20fd02ece3980d53d8586f84a6087578" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetLocVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a1e209bf57ecd125ab89b157ff6f71256" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetLocValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a982c097e0b20476e8d9e3c84010445ed" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetLocVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa852293aaab71e0039d3708806f28a1e" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetRes1</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa92b0f03f50f5e623e9056cae92ea08e" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetRes1Valid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ac4daee4af420652fc1795702ff90ad5c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetRes2</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af740c18a5c45912e1d36e611694f578d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetRes2Valid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a8f4c4b9d29c682f769659946c7e08d3b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetStreamId</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a25503d1d209e73fe41499eb7fee48a48" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTime</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a989d5272e9318ffffe590dd206101c97" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a99044d3436f36b7ea40c46d98ede9f24" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTimeExternalSecondsFromSunday</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a615ec5834d428217306ee178bc93d331" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTimeExternalWeek</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad8c48a679c5b13e23508c04cd6066ca2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2c928de947b1d750d9d1ea27791ad28f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTimeGpsSecondsFromSunday</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6c719ce3cdfbe9694b258cacc99aabc2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTimeGpsWeek</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a776a9fd3b10dddf49bea94eb4940303f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTimeLatency</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1adf9cbbc46906f8faf87c648fe970c794" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a680fc10457da6deeaf791f647b0a2ac6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTimeTAI</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a47e3c5c49bc8455a2c938a832efe1bd3" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTimeUTCUnix</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7e4cb65fadd0191174b38b5f74e17bdf" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetTimeValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af754391acbc5094e9be0adf1ea85aa82" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetType</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa00abd9701f8f74f189d3a4216d82e2c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a067b0dc2bb574ac948881a1e7956ad13" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetValValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a0a60f95c55c22b60522aecac74eb6dac" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetVel</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a3162d5f0c1aacf9d1ae11367ace89d38" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>GetVelVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a31bbc634c981fe86d337b3b3842cb419" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>operator=</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a662da5024bd3fcd8f80646c24f212dcb" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetAcqTimestamp</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a421363bc956fe01ea5e71b09b4db53c6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetAcqValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1adbfb5e9029bcc229096b3e9f0eef7be8" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetAidingLeverArmConfig</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a4be63949aa6352025d1561769fd8262c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetAidingLeverArmFixed</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7716400b586d74d1092750afc8b2cfdf" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetAidingLeverArmOptimising</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ae56c1d38f8425f314ba3d30ee8a66f6a" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetAidingLeverArmVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af95dccc85f027254c68281e3e32c5946" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetDataMode</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a98f4c13e421230ab4c7c98a14d74bb9a" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetDataType</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a11f0807f2bccfc6fb4a6da23993b0fc1" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetDataVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a84e55360033d0d478c9d761233ef9346" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetDataVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a9c1227246c10b76ba4fd53ea25a55995" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetDataValType</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1afe9f9c7a88aa49184a61bfffb73f78ac" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetDataVarDiag</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4af7b5a9f715e4df01be13cbfa40c21c" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetDataVarSingle</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1adc86914212dd5caeaae18aae1c08c611" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetDataVarUpperDiag</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3b927be794d23bc4195d53034bb649e7" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetLocMode</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af15326cf6c9400491ea443ce03b3cc76" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetLocVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2718839aa607f5a3ca5bece73ddeca42" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetLocValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa934d553b9799a092f7d1fbf629249ae" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetLocValType</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7f96596eb3a52d9c80659989a6a4b80b" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetLocVarDiag</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a8fd508fa5fd9819799c9a95afe63c9f5" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetLocVarSingle</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a892572364c827a59b52ad1440e02320a" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetLocVarUpperDiag</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a85a3d57d10b5794be219c36e022ffefa" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetRes1Valid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a218388ee7f7c6f06bcd84b16fe0602b8" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetRes2Valid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a33240ce2531c307c27d9ae3d1e7fcb33" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetStreamId</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3f8d78d823bca710ca7bb43b260b9fae" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ab38a44d5a7b541a48d1647ad4160aa3f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a57c9653747e06a9569db459b382410b2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetTimeLatency</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a34e94d07721e38dba784659f5979e725" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3a567ec593f2e46adaa44be713200155" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetTimeTAI</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6d0d89762f6242cfc1bd7177128ee6b6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetTimeUTCUnix</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4ffcb37f8a335cba9d58588358a75b93" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetTimeValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae93ba642bdd8f68f9766954751343fc9" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetTimeVoid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad28a9a3c73131d6812a07cac4cbe6c80" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetValValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a07465b9265daa9fc4a5e6f3c3b02b47f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetVelLocal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ad1c3f905a221620093c2551744e3a03b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetVelLocalVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7e63b9033afd1c4f7237ac635398473c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetVelLocalVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a3bccf350b3c6a315699f25c550aec6bc" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetVelNed</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aed9826401f4024c1953d05f06bd262da" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetVelNedVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aa221e7dad9224bc224034adfd792cce4" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetVelNedVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aef35a3c4ca009f5e8287ac43d7a29136" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetVelOdom</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a43a90e7c8db09cce908e85ff88446c7c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetVelOdomVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7fffba654adbb12e5bd793a3ba496b5a" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>SetVelOdomVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a82636336eac0edad74b69641ec612094" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadVelocity</scope><name>~Gad</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

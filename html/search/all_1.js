@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['ccommsg_1',['CComMsg',['../classOxTS_1_1Gal__Cpp_1_1CComMsg.html#a2839474f3e3d1cae4d23fa31377e6c73',1,'OxTS::Gal_Cpp::CComMsg::CComMsg()'],['../classOxTS_1_1Gal__Cpp_1_1CComMsg.html#ac2899709749162ece95966492e5a52cd',1,'OxTS::Gal_Cpp::CComMsg::CComMsg(const CComMsg &amp;other)'],['../classOxTS_1_1Gal__Cpp_1_1CComMsg.html',1,'OxTS::Gal_Cpp::CComMsg']]],
+  ['cleanup_2',['cleanup',['../classOxTS_1_1Lib_1_1SocketSystem.html#a47cb1a00419465cb7a57ea5baf879acc',1,'OxTS::Lib::SocketSystem']]],
+  ['client_3',['client',['../classnetworking__udp_1_1client.html#ad130eba5eeae3e19702e2849e4235b82',1,'networking_udp::client::client()'],['../classnetworking__udp_1_1client.html',1,'networking_udp::client']]],
+  ['close_4',['close',['../classOxTS_1_1Lib_1_1SimpleEthernetImpl.html#af9b389529342e533bcc3fd91c4f889a9',1,'OxTS::Lib::SimpleEthernetImpl']]]
+];

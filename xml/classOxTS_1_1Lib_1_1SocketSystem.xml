@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOxTS_1_1Lib_1_1SocketSystem" kind="class" language="C++" prot="public">
+    <compoundname>OxTS::Lib::SocketSystem</compoundname>
+    <includes local="no">oxts_sockets.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOxTS_1_1Lib_1_1SocketSystem_1aee04e624e1317ddc6165a807d34134ac" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t OxTS::Lib::SocketSystem::m_ref_count</definition>
+        <argsstring></argsstring>
+        <name>m_ref_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="39" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1Lib_1_1SocketSystem_1af1aaa6f563d1710d8983fad152962488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Lib::SocketSystem::SocketSystem</definition>
+        <argsstring>()</argsstring>
+        <name>SocketSystem</name>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Lib_1_1SocketSystem_1a3007c02cce4f1010ddae42ca1d64f7e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Lib::SocketSystem::startup</definition>
+        <argsstring>()</argsstring>
+        <name>startup</name>
+        <briefdescription>
+<para>Starts up the socket system if required, and increments reference count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="48" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Lib_1_1SocketSystem_1a47cb1a00419465cb7a57ea5baf879acc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Lib::SocketSystem::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <briefdescription>
+<para>Decrements the reference count, and cleans up the socket system if no more references exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="52" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Windows requires a socket startup and cleanup. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="36" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="37" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1Lib_1_1SocketSystem_1a47cb1a00419465cb7a57ea5baf879acc" prot="public" virt="non-virtual"><scope>OxTS::Lib::SocketSystem</scope><name>cleanup</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SocketSystem_1aee04e624e1317ddc6165a807d34134ac" prot="private" virt="non-virtual"><scope>OxTS::Lib::SocketSystem</scope><name>m_ref_count</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SocketSystem_1af1aaa6f563d1710d8983fad152962488" prot="public" virt="non-virtual"><scope>OxTS::Lib::SocketSystem</scope><name>SocketSystem</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SocketSystem_1a3007c02cce4f1010ddae42ca1d64f7e1" prot="public" virt="non-virtual"><scope>OxTS::Lib::SocketSystem</scope><name>startup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

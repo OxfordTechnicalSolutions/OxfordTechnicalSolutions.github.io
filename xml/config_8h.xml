@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="config_8h" kind="file" language="C++">
+    <compoundname>config.h</compoundname>
+    <includedby refid="gad__output__udp_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp</label>
+        <link refid="gad__handler_8hpp"/>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp</label>
+        <link refid="gad__output__udp_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+    </programlisting>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/config.h"/>
+  </compounddef>
+</doxygen>

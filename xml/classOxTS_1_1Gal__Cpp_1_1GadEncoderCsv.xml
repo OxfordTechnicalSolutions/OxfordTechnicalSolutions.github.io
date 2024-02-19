@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv" kind="class" language="C++" prot="public">
+    <compoundname>OxTS::Gal_Cpp::GadEncoderCsv</compoundname>
+    <basecompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadEncoder</basecompoundref>
+    <includes local="no">gad_encoder_csv.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a2219d741678eaa385eea7fe4333c85b9" prot="private" static="no" mutable="no">
+        <type>std::stringstream</type>
+        <definition>std::stringstream OxTS::Gal_Cpp::GadEncoderCsv::m_str_stream</definition>
+        <argsstring></argsstring>
+        <name>m_str_stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="23" column="19" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a4c8f41ebd52cae81cd8909d125901954" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string OxTS::Gal_Cpp::GadEncoderCsv::m_str</definition>
+        <argsstring></argsstring>
+        <name>m_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Storage for the string produced by m_str_stream. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="25" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a6c7835ebc129f35014a983951c65c16d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool OxTS::Gal_Cpp::GadEncoderCsv::Write</definition>
+        <argsstring>(const T &amp;val, const bool end_comma=true)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>end_comma</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Private templated method to write a string to the CSV file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="29" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" bodystart="29" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a972dc4fbb75731df1bf856cd93c0bf3b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool OxTS::Gal_Cpp::GadEncoderCsv::WriteWithDecimalPlaces</definition>
+        <argsstring>(const T &amp;val, const uint32_t decimal_places, const bool end_comma=true)</argsstring>
+        <name>WriteWithDecimalPlaces</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>decimal_places</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>end_comma</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Private templated method to write a string to the CSV file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="44" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" bodystart="44" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a0ceefabf7a59da6c1824739757b85206" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool OxTS::Gal_Cpp::GadEncoderCsv::WriteFlagAndValue</definition>
+        <argsstring>(const bool flag, const T &amp;val)</argsstring>
+        <name>WriteFlagAndValue</name>
+        <param>
+          <type>const bool</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Private method to write a flag and value (or blank if flag false) to CSV. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="63" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" bodystart="63" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ac3432937fbc622adb53c90cca06fc5da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Gal_Cpp::GadEncoderCsv::WriteGen3dHeader</definition>
+        <argsstring>(const bool end_comma=true)</argsstring>
+        <name>WriteGen3dHeader</name>
+        <param>
+          <type>const bool</type>
+          <declname>end_comma</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Private method to write Gen3D header to CSV. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="81" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a30442deb89b0819eec13858e92ba6c28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t OxTS::Gal_Cpp::GadEncoderCsv::WriteHeader</definition>
+        <argsstring>()</argsstring>
+        <name>WriteHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Private method to write header to CSV. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="84" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a071cbfdb7ec24b3fc9bc3e5923119855" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Gal_Cpp::GadEncoderCsv::WriteGen3d</definition>
+        <argsstring>(const bool valid_flag, const Gen3d &amp;gen_3d_data, const bool end_flag=true)</argsstring>
+        <name>WriteGen3d</name>
+        <param>
+          <type>const bool</type>
+          <declname>valid_flag</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classOxTS_1_1Gal__Cpp_1_1Gen3d" kindref="compound">Gen3d</ref> &amp;</type>
+          <declname>gen_3d_data</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>end_flag</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Private method to write Gen3D to file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="87" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a12958b86c764791d4924f9e2f5e3c9fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadEncoderCsv::EncodeGadCsv</definition>
+        <argsstring>(const Gad &amp;g)</argsstring>
+        <name>EncodeGadCsv</name>
+        <param>
+          <type>const <ref refid="classOxTS_1_1Gal__Cpp_1_1Gad" kindref="compound">Gad</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Private method to encode GAD to CSV. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="90" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a2649aec587d66949b4b2d58fb7af2230" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gal_Cpp::GadEncoderCsv::GadEncoderCsv</definition>
+        <argsstring>()</argsstring>
+        <name>GadEncoderCsv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ad6e573757e263fe384d4ce12726a59f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void OxTS::Gal_Cpp::GadEncoderCsv::EncodePacket</definition>
+        <argsstring>(const Gad &amp;g) override</argsstring>
+        <name>EncodePacket</name>
+        <reimplements refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1adcf933bd6e93aed8676019064b4eb77d">EncodePacket</reimplements>
+        <param>
+          <type>const <ref refid="classOxTS_1_1Gal__Cpp_1_1Gad" kindref="compound">Gad</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encode the generic aiding packet to csv format. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the <ref refid="classOxTS_1_1Gal__Cpp_1_1Gad" kindref="compound">Gad</ref> data to be encoded. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="98" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1afa82d8be19190e216d9da11ec440d24a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const uint8_t *</type>
+        <definition>virtual const uint8_t* OxTS::Gal_Cpp::GadEncoderCsv::GetPacket</definition>
+        <argsstring>() override</argsstring>
+        <name>GetPacket</name>
+        <reimplements refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1aede2ac0d93306c7157add4f7cf911505">GetPacket</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the encoded packet <simplesect kind="return"><para>Char array containing the packet encoded in csv form. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="102" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a7e6a0ee2acadd8d95212980633450aec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t OxTS::Gal_Cpp::GadEncoderCsv::GetPacketSize</definition>
+        <argsstring>() override</argsstring>
+        <name>GetPacketSize</name>
+        <reimplements refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a9533e6fdef4008a1d232896bab29eabd">GetPacketSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The encoded packet size (bytes) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="106" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Wrapper for C Generic Aiding csv encoding functionality.</para>
+<para><xrefsect id="todo_1_todo000007"><xreftitle>Todo</xreftitle><xrefdescription><para>Implement this csv encoding wrapper. </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OxTS::Gal_Cpp::GadEncoder</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder"/>
+      </node>
+      <node id="1">
+        <label>OxTS::Gal_Cpp::GadEncoderCsv</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OxTS::Gal_Cpp::GadEncoder</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder"/>
+      </node>
+      <node id="1">
+        <label>OxTS::Gal_Cpp::GadEncoderCsv</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="20" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" bodystart="21" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a12958b86c764791d4924f9e2f5e3c9fc" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>EncodeGadCsv</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ad6e573757e263fe384d4ce12726a59f4" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>EncodePacket</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a2649aec587d66949b4b2d58fb7af2230" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>GadEncoderCsv</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1afa82d8be19190e216d9da11ec440d24a" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>GetPacket</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a7e6a0ee2acadd8d95212980633450aec" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>GetPacketSize</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a4c8f41ebd52cae81cd8909d125901954" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>m_str</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a2219d741678eaa385eea7fe4333c85b9" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>m_str_stream</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a6c7835ebc129f35014a983951c65c16d" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>Write</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a0ceefabf7a59da6c1824739757b85206" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>WriteFlagAndValue</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a071cbfdb7ec24b3fc9bc3e5923119855" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>WriteGen3d</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ac3432937fbc622adb53c90cca06fc5da" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>WriteGen3dHeader</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a30442deb89b0819eec13858e92ba6c28" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>WriteHeader</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a972dc4fbb75731df1bf856cd93c0bf3b" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>WriteWithDecimalPlaces</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a671ef4d673c2a38c3db6f932f8d607f5" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>~GadEncoder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

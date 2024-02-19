@@ -1,0 +1,678 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceOxTS_1_1Gal__Cpp" kind="namespace" language="C++">
+    <compoundname>OxTS::Gal_Cpp</compoundname>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1CComMsg" prot="public">OxTS::Gal_Cpp::CComMsg</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1Gen3d" prot="public">OxTS::Gal_Cpp::Gen3d</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1Gad" prot="public">OxTS::Gal_Cpp::Gad</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadPosition" prot="public">OxTS::Gal_Cpp::GadPosition</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity" prot="public">OxTS::Gal_Cpp::GadVelocity</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed" prot="public">OxTS::Gal_Cpp::GadWheelSpeed</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed" prot="public">OxTS::Gal_Cpp::GadSpeed</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude" prot="public">OxTS::Gal_Cpp::GadAttitude</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadHeading" prot="public">OxTS::Gal_Cpp::GadHeading</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder" prot="public">OxTS::Gal_Cpp::GadEncoder</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin" prot="public">OxTS::Gal_Cpp::GadEncoderBin</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv" prot="public">OxTS::Gal_Cpp::GadEncoderCsv</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadHandler" prot="public">OxTS::Gal_Cpp::GadHandler</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadOutput" prot="public">OxTS::Gal_Cpp::GadOutput</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile" prot="public">OxTS::Gal_Cpp::GadOutputFile</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp" prot="public">OxTS::Gal_Cpp::GadOutputUdp</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="gad_8hpp_1a2b27c7d02585011699e19f575f52754d" prot="public" static="no">
+        <type>GEN_BOOL</type>
+        <definition>typedef GEN_BOOL OxTS::Gal_Cpp::GenFlag</definition>
+        <argsstring></argsstring>
+        <name>GenFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="12" column="18" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="gad__struct_8hpp_1afade83be7e524027af0d75e626a511d9" prot="public" static="no">
+        <type>bool</type>
+        <definition>typedef bool OxTS::Gal_Cpp::GEN_BOOL</definition>
+        <argsstring></argsstring>
+        <name>GEN_BOOL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="26" column="24" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="ccomtx_8hpp_1a0b56f9d2ccfba90d6233e2ea0bd4a3bb" prot="public" static="yes" mutable="no">
+        <type>const std::uint8_t</type>
+        <definition>const std::uint8_t OxTS::Gal_Cpp::CComSync</definition>
+        <argsstring></argsstring>
+        <name>CComSync</name>
+        <initializer>= 0x40U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" line="20" column="35" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ccomtx_8hpp_1a8bdc5ddf5c3145444f72c1194234bcf5" prot="public" static="yes" mutable="no">
+        <type>const std::uint8_t</type>
+        <definition>const std::uint8_t OxTS::Gal_Cpp::CComRes</definition>
+        <argsstring></argsstring>
+        <name>CComRes</name>
+        <initializer>= 0x00U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" line="21" column="35" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ccomtx_8hpp_1a3a3c17ef0dd5192d70cb64c45a893c2b" prot="public" static="yes" mutable="no">
+        <type>const std::uint8_t</type>
+        <definition>const std::uint8_t OxTS::Gal_Cpp::CComShort</definition>
+        <argsstring></argsstring>
+        <name>CComShort</name>
+        <initializer>= 0x80U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" line="22" column="35" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="ccomtx_8hpp_1ab2b909b98eb10e00adc7c8c94f6c4cd3" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::CComBuffSize</definition>
+        <argsstring></argsstring>
+        <name>CComBuffSize</name>
+        <initializer>= 65536U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" line="24" column="34" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a2d64f989851650f9edfb33699c83370c" prot="public" static="yes" mutable="no">
+        <type>const std::uint32_t</type>
+        <definition>const std::uint32_t OxTS::Gal_Cpp::MAX_CSV_LINE</definition>
+        <argsstring></argsstring>
+        <name>MAX_CSV_LINE</name>
+        <initializer>= (128U * 64U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="31" column="28" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1af7f54c28039d0899ac5b0f26536f55dd" prot="public" static="yes" mutable="no">
+        <type>const std::uint8_t</type>
+        <definition>const std::uint8_t OxTS::Gal_Cpp::AdditionalBitmaskBit</definition>
+        <argsstring></argsstring>
+        <name>AdditionalBitmaskBit</name>
+        <initializer>= 0x80U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="33" column="27" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1ad89f368b8b3cd3e179bf162bc6f2b073" prot="public" static="yes" mutable="no">
+        <type>const std::uint8_t</type>
+        <definition>const std::uint8_t OxTS::Gal_Cpp::ValueBit</definition>
+        <argsstring></argsstring>
+        <name>ValueBit</name>
+        <initializer>= 0x40U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="34" column="27" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a4c7d95f80e9db815fc03c2de5bd38545" prot="public" static="yes" mutable="no">
+        <type>const std::uint8_t</type>
+        <definition>const std::uint8_t OxTS::Gal_Cpp::TimeBit</definition>
+        <argsstring></argsstring>
+        <name>TimeBit</name>
+        <initializer>= 0x20U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="35" column="27" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a12de0beebde232361d11b66b86a37123" prot="public" static="yes" mutable="no">
+        <type>const std::uint8_t</type>
+        <definition>const std::uint8_t OxTS::Gal_Cpp::LocationBit</definition>
+        <argsstring></argsstring>
+        <name>LocationBit</name>
+        <initializer>= 0x10U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="36" column="27" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a759ce74f1dc6cdba0d0ae996bbd19fa4" prot="public" static="yes" mutable="no">
+        <type>const std::uint8_t</type>
+        <definition>const std::uint8_t OxTS::Gal_Cpp::Res1Bit</definition>
+        <argsstring></argsstring>
+        <name>Res1Bit</name>
+        <initializer>= 0x08U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="37" column="27" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1aa980ae0942544cbe7d22638aa2835880" prot="public" static="yes" mutable="no">
+        <type>const std::uint8_t</type>
+        <definition>const std::uint8_t OxTS::Gal_Cpp::Res2Bit</definition>
+        <argsstring></argsstring>
+        <name>Res2Bit</name>
+        <initializer>= 0x04U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="38" column="27" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a2393e6025355641981dcb3de825b030a" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::GEN_AID_HEADER_MIN_SIZE</definition>
+        <argsstring></argsstring>
+        <name>GEN_AID_HEADER_MIN_SIZE</name>
+        <initializer>= 4U</initializer>
+        <briefdescription>
+<para>Size of basic header in generic aiding binary packet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="40" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a7c943aaedb921b49739927e1c10be076" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::XDEV_ACQUISTION_TIMESTAMP_SIZE</definition>
+        <argsstring></argsstring>
+        <name>XDEV_ACQUISTION_TIMESTAMP_SIZE</name>
+        <initializer>= 8U</initializer>
+        <briefdescription>
+<para>The size in bits of the acquisition timestamp appended to the generic aiding payload on receipt. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="41" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a325d276685cbce2d82489f87c1ac4b4f" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::REALTIME_GENAID_RX_START_IDX</definition>
+        <argsstring></argsstring>
+        <name>REALTIME_GENAID_RX_START_IDX</name>
+        <initializer>= 0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="43" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a3aacb67266f5974494c7dade769246a3" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::MAX_NUM_REALTIME_GENAID_RX</definition>
+        <argsstring></argsstring>
+        <name>MAX_NUM_REALTIME_GENAID_RX</name>
+        <initializer>= 1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="44" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1ab9b2e340cd3fe4ec57f068b79a04dec3" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::PP_GENAID_RX_START_IDX</definition>
+        <argsstring></argsstring>
+        <name>PP_GENAID_RX_START_IDX</name>
+        <initializer>= (REALTIME_GENAID_RX_START_IDX + MAX_NUM_REALTIME_GENAID_RX)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="45" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a0f807e20cbaaf94286b0505a01b9443f" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::MAX_NUM_PP_GENAID_RX</definition>
+        <argsstring></argsstring>
+        <name>MAX_NUM_PP_GENAID_RX</name>
+        <initializer>= 8U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="46" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a34530ae6b5a4f67561a89cad46e23c0a" prot="public" static="yes" mutable="no">
+        <type>const std::double_t</type>
+        <definition>const std::double_t OxTS::Gal_Cpp::GENAID_POS_STATUS_AGE_THRESHOLD</definition>
+        <argsstring></argsstring>
+        <name>GENAID_POS_STATUS_AGE_THRESHOLD</name>
+        <initializer>= 2.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="49" column="28" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a415a692b078524c8ff63face0f270301" prot="public" static="yes" mutable="no">
+        <type>const std::double_t</type>
+        <definition>const std::double_t OxTS::Gal_Cpp::GENAID_VEL_STATUS_AGE_THRESHOLD</definition>
+        <argsstring></argsstring>
+        <name>GENAID_VEL_STATUS_AGE_THRESHOLD</name>
+        <initializer>= 2.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="50" column="28" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a22aa9aaa1f5834347d6f5c61ce742969" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::MAX_GENAID_PKT_SIZE</definition>
+        <argsstring></argsstring>
+        <name>MAX_GENAID_PKT_SIZE</name>
+        <initializer>= 2048U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="52" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1acc780e66c1159ff8a2580d164de7f259" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::MAX_ID_GEN3D</definition>
+        <argsstring></argsstring>
+        <name>MAX_ID_GEN3D</name>
+        <initializer>= 16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="54" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1afc22ebda343e926ad5931e19a5467373" prot="public" static="yes" mutable="no">
+        <type>const std::double_t</type>
+        <definition>const std::double_t OxTS::Gal_Cpp::GAD_LATE_THRESH</definition>
+        <argsstring></argsstring>
+        <name>GAD_LATE_THRESH</name>
+        <initializer>=           -1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="57" column="28" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1abee8c6032461684638e42346cb1a3d1a" prot="public" static="yes" mutable="no">
+        <type>const std::double_t</type>
+        <definition>const std::double_t OxTS::Gal_Cpp::GAD_EARLY_WARN_THRESH</definition>
+        <argsstring></argsstring>
+        <name>GAD_EARLY_WARN_THRESH</name>
+        <initializer>=      0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="58" column="28" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1a3b6b51edd3465244b2afb3447fe21ffd" prot="public" static="yes" mutable="no">
+        <type>const std::double_t</type>
+        <definition>const std::double_t OxTS::Gal_Cpp::GAD_EARLY_REJECT_THRESH</definition>
+        <argsstring></argsstring>
+        <name>GAD_EARLY_REJECT_THRESH</name>
+        <initializer>=    0.3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="59" column="28" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1aff357e62a415daad25a802d34efebce1" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::GAD_MAX_BUF</definition>
+        <argsstring></argsstring>
+        <name>GAD_MAX_BUF</name>
+        <initializer>=       1U</initializer>
+        <briefdescription>
+<para>max number of parallel buffers (e.g., files/streams) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="64" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__defines_8hpp_1ae0d5132ff3c914c709e90bc89ee23879" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::GAD_BUF_MAX_SIZE</definition>
+        <argsstring></argsstring>
+        <name>GAD_BUF_MAX_SIZE</name>
+        <initializer>=  256U</initializer>
+        <briefdescription>
+<para>max number of data in a buffer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" line="65" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__encoder_8hpp_1ac0512a2925aed830d03a33263f88d03e" prot="public" static="yes" mutable="no">
+        <type>const std::size_t</type>
+        <definition>const std::size_t OxTS::Gal_Cpp::MAX_BUFF</definition>
+        <argsstring></argsstring>
+        <name>MAX_BUFF</name>
+        <initializer>= 1024U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp" line="13" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__output__udp_8hpp_1a4315346e2cedc39d5b8adde59e39b66d" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t OxTS::Gal_Cpp::GAD_PORT</definition>
+        <argsstring></argsstring>
+        <name>GAD_PORT</name>
+        <initializer>= 50485U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" line="13" column="16" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1a641e891b7e28f811908b7d19aca1d1f8" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::ENCODER_TYPE</definition>
+        <argsstring></argsstring>
+        <name>ENCODER_TYPE</name>
+        <initializer>{
+            ENCODER_VOID,                    
+            ENCODER_CSV,                     
+            ENCODER_BIN                      
+        }</initializer>
+        <briefdescription>
+<para>Encoder types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="31" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1a302f7af692e6c9b0c76e739942f07361" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::OUTPUT_TYPE</definition>
+        <argsstring></argsstring>
+        <name>OUTPUT_TYPE</name>
+        <initializer>{
+            OUTPUT_VOID,                    
+            OUTPUT_UDP,                     
+            OUTPUT_FILE                     
+        }</initializer>
+        <briefdescription>
+<para>Output types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="41" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1ae25da3869b37c1187cb617662fefc9ce" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::GEN_VAR_TYPE</definition>
+        <argsstring></argsstring>
+        <name>GEN_VAR_TYPE</name>
+        <initializer>{
+            GEN_VAR_VOID,                   
+            GEN_VAR_SINGLE,                 
+            GEN_VAR_DIAG,                   
+            GEN_VAR_HMAT                    
+        }</initializer>
+        <briefdescription>
+<para>Variance formats. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="52" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1a3c70a02287c68324a8c114eb4b3dff42" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::TIME_SYS</definition>
+        <argsstring></argsstring>
+        <name>TIME_SYS</name>
+        <initializer>{
+            TIME_VOID,
+            TIME_GPS,            
+            TIME_PPS_RELATIVE,   
+            TIME_EST_LATENCY,    
+            TIME_SDN,            
+            TIME_EXT,            
+            TIME_UNIX_UTC,       
+            TIME_TAI             
+        }</initializer>
+        <briefdescription>
+<para>Time systems. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="62" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1a3fbde37a47456fe61f05d7d7e5cd40b9" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::GEN_TYPE</definition>
+        <argsstring></argsstring>
+        <name>GEN_TYPE</name>
+        <initializer>{
+            GEN_VOID,
+            GEN_POS,          
+            GEN_RANGE,        
+            GEN_VEL,          
+            GEN_WSPEED,        
+            GEN_ATT,          
+            GEN_HEADING,      
+            GEN_TIMETRIG,     
+            GEN_SPEED,        
+            GEN_ANGRATE,      
+            GEN_NUM
+        }</initializer>
+        <briefdescription>
+<para>Generic Aiding types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="77" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1a534d252638daf764461da8ad179b2528" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::POS_SYS_TYPE</definition>
+        <argsstring></argsstring>
+        <name>POS_SYS_TYPE</name>
+        <initializer>{
+            POS_SYS_VOID,
+            POS_SYS_WGS84,        
+            POS_SYS_LOCAL         
+        }</initializer>
+        <briefdescription>
+<para>Position coordinate systems. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="95" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1a17205339e82e2c1b2c547863706dd245" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::VEL_SYS_TYPE</definition>
+        <argsstring></argsstring>
+        <name>VEL_SYS_TYPE</name>
+        <initializer>{
+            VEL_SYS_VOID,
+            VEL_SYS_NED,             
+            VEL_SYS_ODO,             
+            VEL_SYS_LOCAL            
+        }</initializer>
+        <briefdescription>
+<para>Velocity types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="106" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1a071ca9d88a061554fc09cb5b7dddeffa" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::SPEED_SYS_TYPE</definition>
+        <argsstring></argsstring>
+        <name>SPEED_SYS_TYPE</name>
+        <initializer>{
+            SPEED_SYS_VOID,
+            SPEED_SYS_FW_VEL,         
+            SPEED_SYS_BW_VEL,         
+            SPEED_SYS_UNSIGNED        
+        }</initializer>
+        <briefdescription>
+<para>Speed types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="117" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1a361c2b8a25ff48bc44ee83a31e7f72df" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::ATT_SYS_TYPE</definition>
+        <argsstring></argsstring>
+        <name>ATT_SYS_TYPE</name>
+        <initializer>{
+            ATT_SYS_VOID,
+            ATT_SYS_HPR,      
+            ATT_SYS_LOCAL     
+        }</initializer>
+        <briefdescription>
+<para>Attitude types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="127" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1ab032f628859f61cf0cb52ed504172712" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::HEA_SYS_TYPE</definition>
+        <argsstring></argsstring>
+        <name>HEA_SYS_TYPE</name>
+        <initializer>{
+            HEA_SYS_VOID,
+            HEA_SYS_NAV,        
+            HEA_SYS_LOCAL       
+        }</initializer>
+        <briefdescription>
+<para>Heading types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="136" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1a5c81a682882b7e94e9b9d63110d6f828" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::LOC_SYS</definition>
+        <argsstring></argsstring>
+        <name>LOC_SYS</name>
+        <initializer>{
+            LOC_FIXED = 0,    
+            LOC_KF = 1,       
+            LOC_CONFIG = 2    
+        }</initializer>
+        <briefdescription>
+<para>Location types. (lever arm) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="145" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" line="14" column="5"/>
+  </compounddef>
+</doxygen>

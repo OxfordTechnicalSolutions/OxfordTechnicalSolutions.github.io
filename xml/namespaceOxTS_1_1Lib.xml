@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceOxTS_1_1Lib" kind="namespace" language="C++">
+    <compoundname>OxTS::Lib</compoundname>
+    <innerclass refid="classOxTS_1_1Lib_1_1SocketSystem" prot="public">OxTS::Lib::SocketSystem</innerclass>
+    <innerclass refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl" prot="public">OxTS::Lib::SimpleEthernetImpl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="31" column="1"/>
+  </compounddef>
+</doxygen>

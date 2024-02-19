@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="oxts__misra_8hpp" kind="file" language="C++">
+    <compoundname>oxts_misra.hpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">array</includes>
+    <includes refid="oxts__arrays_8hpp" local="yes">oxts/gal-cpp/oxts_arrays.hpp</includes>
+    <includedby refid="gad_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp</includedby>
+    <includedby refid="gad__defines_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp</includedby>
+    <includedby refid="gad__struct_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp</includedby>
+    <includedby refid="oxts__arrays_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_arrays.hpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>cmath</label>
+      </node>
+      <node id="3">
+        <label>array</label>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp</label>
+        <link refid="oxts__misra_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp</label>
+        <link refid="gad_8hpp"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp</label>
+        <link refid="oxts__misra_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp</label>
+        <link refid="gad__defines_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceOxTS">OxTS</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="oxts__misra_8hpp_1a378181c29a641d58f55d647b5a9599f2" prot="public" static="no">
+        <name>ENUM</name>
+        <initializer>enum</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp" line="32" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Handles MISRA compliance options. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The software is protected by copyright of Oxford Technical Solutions. Copyright (C) 2023 Oxford Technical Solutions - <ulink url="http://www.oxts.com">http://www.oxts.com</ulink></para>
+<para>Redistribution and use in source and binary forms, with or without modification, are only permitted with the specific prior written permission of Oxford Technical Solutions. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//============================================================================================================</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight><highlight class="comment">//============================================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>OXTS_MISRA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OXTS_MISRA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;oxts/gal-cpp/oxts_arrays.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceOxTS" kindref="compound">OxTS</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::array&lt;std::double_t,<sp/>3&gt;<sp/>container_double3_t;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::array&lt;std::double_t,<sp/>6&gt;<sp/>container_double6_t;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>OXTS_ENABLE_CPP11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENUM<sp/>enum<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENUM<sp/>enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp"/>
+  </compounddef>
+</doxygen>

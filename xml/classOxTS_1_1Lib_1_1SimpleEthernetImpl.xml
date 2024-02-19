@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOxTS_1_1Lib_1_1SimpleEthernetImpl" kind="class" language="C++" prot="public">
+    <compoundname>OxTS::Lib::SimpleEthernetImpl</compoundname>
+    <includes local="no">oxts_sockets.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a5eac6782afece73fc67d5f063b022e78" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OxTS::Lib::SimpleEthernetImpl::m_broadcast</definition>
+        <argsstring></argsstring>
+        <name>m_broadcast</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="60" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a085c63f6ac38f875af5f55742a8c6b45" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OxTS::Lib::SimpleEthernetImpl::m_is_good</definition>
+        <argsstring></argsstring>
+        <name>m_is_good</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="61" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a4d9fc6566586521a3b0b8a742ff51799" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OxTS::Lib::SimpleEthernetImpl::m_active</definition>
+        <argsstring></argsstring>
+        <name>m_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="62" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1af5654bc06649bb1bbcf9980ed2c521a5" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t OxTS::Lib::SimpleEthernetImpl::m_handle</definition>
+        <argsstring></argsstring>
+        <name>m_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="68" column="9" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a797a7b299d9964421ba077760d0fa6a3" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t OxTS::Lib::SimpleEthernetImpl::m_my_port</definition>
+        <argsstring></argsstring>
+        <name>m_my_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="70" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a040a4c1063d984df3fda03a597b7ee26" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t OxTS::Lib::SimpleEthernetImpl::m_my_given_port</definition>
+        <argsstring></argsstring>
+        <name>m_my_given_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="71" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1ac12d65b504a213209bf907d3e953e35e" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t OxTS::Lib::SimpleEthernetImpl::m_their_port</definition>
+        <argsstring></argsstring>
+        <name>m_their_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="72" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a1e165bb63a1f480b15a5991c0c7a4ded" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Lib::SimpleEthernetImpl::SimpleEthernetImpl</definition>
+        <argsstring>(const bool broadcast_)</argsstring>
+        <name>SimpleEthernetImpl</name>
+        <param>
+          <type>const bool</type>
+          <declname>broadcast_</declname>
+        </param>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a80571023dd1142378288e8d41c97b90a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Lib::SimpleEthernetImpl::~SimpleEthernetImpl</definition>
+        <argsstring>()</argsstring>
+        <name>~SimpleEthernetImpl</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a9cd64d7da6736615cf62ef966d55409a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Lib::SimpleEthernetImpl::open</definition>
+        <argsstring>(const uint16_t their_port_, const uint16_t my_port_=0U)</argsstring>
+        <name>open</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>their_port_</declname>
+        </param>
+        <param>
+          <type>const uint16_t</type>
+          <declname>my_port_</declname>
+          <defval>0U</defval>
+        </param>
+        <briefdescription>
+<para>Declare all copy/move constructors and assignment operators as invalid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Open. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="99" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1af9b389529342e533bcc3fd91c4f889a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Lib::SimpleEthernetImpl::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Close. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="104" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1acc4e9c4df90a36b42315d3479c2f248f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>SRC_BUFFER_SIZE</declname>
+            <defname>SRC_BUFFER_SIZE</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>MTU</declname>
+            <defname>MTU</defname>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t OxTS::Lib::SimpleEthernetImpl::send_to_endpoint</definition>
+        <argsstring>(const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt; &amp;buffer, const std::size_t packet_size)</argsstring>
+        <name>send_to_endpoint</name>
+        <param>
+          <type>const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>packet_size</declname>
+        </param>
+        <briefdescription>
+<para>Send data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="109" column="8" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1afa957228401d85811049e6d38160292e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>SRC_BUFFER_SIZE</declname>
+            <defname>SRC_BUFFER_SIZE</defname>
+          </param>
+          <param>
+            <type>std::size_t</type>
+            <declname>MTU</declname>
+            <defname>MTU</defname>
+          </param>
+        </templateparamlist>
+        <type>std::size_t</type>
+        <definition>std::size_t OxTS::Lib::SimpleEthernetImpl::send_to_address</definition>
+        <argsstring>(const uint32_t ip, const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt; &amp;buffer, const std::size_t packet_size)</argsstring>
+        <name>send_to_address</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>packet_size</declname>
+        </param>
+        <briefdescription>
+<para>Send data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="117" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="117" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1aef4f7179ddb64934b347aaa509ed180a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Lib::SimpleEthernetImpl::good</definition>
+        <argsstring>() const</argsstring>
+        <name>good</name>
+        <briefdescription>
+<para>Are we good?. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="170" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1ac52208945b200c71f42ee789670be48e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OxTS::Lib::SimpleEthernetImpl::live</definition>
+        <argsstring>() const</argsstring>
+        <name>live</name>
+        <briefdescription>
+<para>Are we live?. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="175" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A very simple class to send datagram packets to a given IP address. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="57" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="58" bodyend="176"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1af9b389529342e533bcc3fd91c4f889a9" prot="public" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>close</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1aef4f7179ddb64934b347aaa509ed180a" prot="public" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>good</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1ac52208945b200c71f42ee789670be48e" prot="public" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>live</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a4d9fc6566586521a3b0b8a742ff51799" prot="private" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>m_active</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a5eac6782afece73fc67d5f063b022e78" prot="private" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>m_broadcast</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1af5654bc06649bb1bbcf9980ed2c521a5" prot="private" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>m_handle</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a085c63f6ac38f875af5f55742a8c6b45" prot="private" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>m_is_good</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a040a4c1063d984df3fda03a597b7ee26" prot="private" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>m_my_given_port</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a797a7b299d9964421ba077760d0fa6a3" prot="private" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>m_my_port</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1ac12d65b504a213209bf907d3e953e35e" prot="private" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>m_their_port</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a9cd64d7da6736615cf62ef966d55409a" prot="public" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>open</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1afa957228401d85811049e6d38160292e" prot="public" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>send_to_address</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1acc4e9c4df90a36b42315d3479c2f248f" prot="public" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>send_to_endpoint</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a1e165bb63a1f480b15a5991c0c7a4ded" prot="public" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>SimpleEthernetImpl</name></member>
+      <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a80571023dd1142378288e8d41c97b90a" prot="public" virt="non-virtual"><scope>OxTS::Lib::SimpleEthernetImpl</scope><name>~SimpleEthernetImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

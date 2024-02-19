@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacenetworking__udp" kind="namespace" language="C++">
+    <compoundname>networking_udp</compoundname>
+    <innerclass refid="structnetworking__udp_1_1endpoint__t" prot="public">networking_udp::endpoint_t</innerclass>
+    <innerclass refid="classnetworking__udp_1_1client" prot="public">networking_udp::client</innerclass>
+    <innerclass refid="classnetworking__udp_1_1server" prot="public">networking_udp::server</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Simple UDP networking implementation for servers and clients. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="21" column="1"/>
+  </compounddef>
+</doxygen>

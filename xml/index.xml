@@ -1,3 +1,475 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1CComMsg" kind="class"><name>OxTS::Gal_Cpp::CComMsg</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a5e01484ca5a32e4fd9c1b16c7c08c516" kind="variable"><name>m_msg_type</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a92a08fdaec61cafda06e68dd3877e43a" kind="variable"><name>m_version</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1ac32922c117a9cf8f5ddd9a05575c61cc" kind="variable"><name>m_msg_len</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1ae5239197b3de2da4895f5087329d0775" kind="variable"><name>m_msg_valid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a21eb0ce8ff16e2e71da594a8cb267012" kind="variable"><name>m_msg</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a2839474f3e3d1cae4d23fa31377e6c73" kind="function"><name>CComMsg</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1ac2899709749162ece95966492e5a52cd" kind="function"><name>CComMsg</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a14f3d49ffb0908790951de452ef4102b" kind="function"><name>operator=</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a4a1fa36ad1474756326820aae8554b6b" kind="function"><name>encode</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a366660a012155de208dc27e20ca19735" kind="function"><name>msg_type</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a8eafc04076ff241fbd46faab2f26897c" kind="function"><name>msg_len</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a04fb5b8dd3faac54825f5a8a4c7fa93f" kind="function"><name>msg</name></member>
+  </compound>
+  <compound refid="classnetworking__udp_1_1client" kind="class"><name>networking_udp::client</name>
+    <member refid="classnetworking__udp_1_1client_1a0f3a891ea9f6aeb0dbdcb577b0b3ed17" kind="variable"><name>m_port</name></member>
+    <member refid="classnetworking__udp_1_1client_1ad130eba5eeae3e19702e2849e4235b82" kind="function"><name>client</name></member>
+    <member refid="classnetworking__udp_1_1client_1ab67c10f990b94486a9a6b4b5a5a173ff" kind="function"><name>client</name></member>
+    <member refid="classnetworking__udp_1_1client_1af66d58e86e620b7ba343205ff2351aac" kind="function"><name>set_local_port</name></member>
+  </compound>
+  <compound refid="structnetworking__udp_1_1endpoint__t" kind="struct"><name>networking_udp::endpoint_t</name>
+    <member refid="structnetworking__udp_1_1endpoint__t_1ac8f78b1721059414e358fb8d45112cc8" kind="variable"><name>ip_address</name></member>
+    <member refid="structnetworking__udp_1_1endpoint__t_1a6c2355932af6d48213eeeb8195c60543" kind="variable"><name>port</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1Gad" kind="class"><name>OxTS::Gal_Cpp::Gad</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4d084c49d0c7c28f6eae93de90b675da" kind="variable"><name>m_type</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aada3bcbc632584f0aef8f1dfcafc5ac1" kind="variable"><name>m_stream_id</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa0e56ee46b5a380b58f3ad7c0ca6e1b7" kind="variable"><name>m_val_data</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2d9dac72ca918a07b130925715b98356" kind="variable"><name>m_val_valid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a5ae4236dd04e99371775413f4c535ed2" kind="variable"><name>m_time_data</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2e0f9562d1648a8c199c70c23a0cde14" kind="variable"><name>m_time_valid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aee9a9ffdfbd4bbe9781252f0a78dd032" kind="variable"><name>m_loc_data</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1acab8189f434865f6caa4e319567fdf55" kind="variable"><name>m_loc_valid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a98de0139fd240d80d0cc425fc58f333f" kind="variable"><name>m_res1_data</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a27f8043ca4c1e664b1259e3040a5d283" kind="variable"><name>m_res1_valid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7c4a5e9cdd4e31a7cfaf0b4a093d6460" kind="variable"><name>m_res2_data</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a9674e3fcb60513477584e36a9ce276a3" kind="variable"><name>m_res2_valid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1abc0151ae16fcafebb6cf063906b47e4e" kind="variable"><name>m_acq_data</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a53e25f93d9cac6d1e448ebf5094d5393" kind="variable"><name>m_acq_valid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a98f4c13e421230ab4c7c98a14d74bb9a" kind="function"><name>SetDataType</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad28a9a3c73131d6812a07cac4cbe6c80" kind="function"><name>SetValValid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af95dccc85f027254c68281e3e32c5946" kind="function"><name>SetDataMode</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a9c1227246c10b76ba4fd53ea25a55995" kind="function"><name>SetDataValType</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a11f0807f2bccfc6fb4a6da23993b0fc1" kind="function"><name>SetDataVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a84e55360033d0d478c9d761233ef9346" kind="function"><name>SetDataVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4dbf84f14b6c84114a0c51574ed8e165" kind="function"><name>GetDataVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1adc86914212dd5caeaae18aae1c08c611" kind="function"><name>SetDataVarUpperDiag</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1afe9f9c7a88aa49184a61bfffb73f78ac" kind="function"><name>SetDataVarDiag</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4af7b5a9f715e4df01be13cbfa40c21c" kind="function"><name>SetDataVarSingle</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a24772887cef5ee1d9e21f1f3b72549ce" kind="function"><name>GetDataVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2718839aa607f5a3ca5bece73ddeca42" kind="function"><name>SetLocValid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3b927be794d23bc4195d53034bb649e7" kind="function"><name>SetLocMode</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa934d553b9799a092f7d1fbf629249ae" kind="function"><name>SetLocValType</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af15326cf6c9400491ea443ce03b3cc76" kind="function"><name>SetLocVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a20fd02ece3980d53d8586f84a6087578" kind="function"><name>GetLocVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a892572364c827a59b52ad1440e02320a" kind="function"><name>SetLocVarUpperDiag</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7f96596eb3a52d9c80659989a6a4b80b" kind="function"><name>SetLocVarDiag</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a8fd508fa5fd9819799c9a95afe63c9f5" kind="function"><name>SetLocVarSingle</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a982c097e0b20476e8d9e3c84010445ed" kind="function"><name>GetLocVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a43ddac918eb52cd8b1f9e71bed76f48d" kind="function"><name>Gad</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae91583b25eef92b08f60172a3f67a997" kind="function"><name>Gad</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a82636336eac0edad74b69641ec612094" kind="function"><name>~Gad</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2b9b5bac508451ec029115c2870f3ca3" kind="function"><name>Gad</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a31bbc634c981fe86d337b3b3842cb419" kind="function"><name>operator=</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a33240ce2531c307c27d9ae3d1e7fcb33" kind="function"><name>SetStreamId</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a8f4c4b9d29c682f769659946c7e08d3b" kind="function"><name>GetStreamId</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4ffcb37f8a335cba9d58588358a75b93" kind="function"><name>SetTimeValid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7e4cb65fadd0191174b38b5f74e17bdf" kind="function"><name>GetTimeValid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3f8d78d823bca710ca7bb43b260b9fae" kind="function"><name>SetTimeExternal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a615ec5834d428217306ee178bc93d331" kind="function"><name>GetTimeExternalWeek</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a99044d3436f36b7ea40c46d98ede9f24" kind="function"><name>GetTimeExternalSecondsFromSunday</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a989d5272e9318ffffe590dd206101c97" kind="function"><name>GetTimeExternal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ab38a44d5a7b541a48d1647ad4160aa3f" kind="function"><name>SetTimeGps</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad8c48a679c5b13e23508c04cd6066ca2" kind="function"><name>GetTimeGps</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6c719ce3cdfbe9694b258cacc99aabc2" kind="function"><name>GetTimeGpsWeek</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2c928de947b1d750d9d1ea27791ad28f" kind="function"><name>GetTimeGpsSecondsFromSunday</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3a567ec593f2e46adaa44be713200155" kind="function"><name>SetTimeTAI</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a680fc10457da6deeaf791f647b0a2ac6" kind="function"><name>GetTimeTAI</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a34e94d07721e38dba784659f5979e725" kind="function"><name>SetTimePpsRelative</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1adf9cbbc46906f8faf87c648fe970c794" kind="function"><name>GetTimePpsRelative</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a57c9653747e06a9569db459b382410b2" kind="function"><name>SetTimeLatency</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a776a9fd3b10dddf49bea94eb4940303f" kind="function"><name>GetTimeLatency</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6d0d89762f6242cfc1bd7177128ee6b6" kind="function"><name>SetTimeUTCUnix</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a47e3c5c49bc8455a2c938a832efe1bd3" kind="function"><name>GetTimeUTCUnix</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae93ba642bdd8f68f9766954751343fc9" kind="function"><name>SetTimeVoid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af754391acbc5094e9be0adf1ea85aa82" kind="function"><name>GetType</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a067b0dc2bb574ac948881a1e7956ad13" kind="function"><name>GetValValid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a27e711905e725e18c1f4eb71f234ab49" kind="function"><name>GetDataType</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a1e209bf57ecd125ab89b157ff6f71256" kind="function"><name>GetLocValid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a85a3d57d10b5794be219c36e022ffefa" kind="function"><name>SetRes1Valid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa92b0f03f50f5e623e9056cae92ea08e" kind="function"><name>GetRes1Valid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a218388ee7f7c6f06bcd84b16fe0602b8" kind="function"><name>SetRes2Valid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af740c18a5c45912e1d36e611694f578d" kind="function"><name>GetRes2Valid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a25503d1d209e73fe41499eb7fee48a48" kind="function"><name>GetTime</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa00abd9701f8f74f189d3a4216d82e2c" kind="function"><name>GetVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae92c76f7761c28c95a5024b66bd39707" kind="function"><name>GetLoc</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa852293aaab71e0039d3708806f28a1e" kind="function"><name>GetRes1</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ac4daee4af420652fc1795702ff90ad5c" kind="function"><name>GetRes2</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a421363bc956fe01ea5e71b09b4db53c6" kind="function"><name>SetAcqValid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6f278b1dbbfff55fdf9129fc84357642" kind="function"><name>GetAcqValid</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a662da5024bd3fcd8f80646c24f212dcb" kind="function"><name>SetAcqTimestamp</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a5448f4907c9039f12802b40c34f3f66b" kind="function"><name>GetAcqTimestamp</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude" kind="class"><name>OxTS::Gal_Cpp::GadAttitude</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1afe027260cc2ded3a1ba7e955883b7de7" kind="function"><name>GadAttitude</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a30d9a91053e2d0c68bb045b54e52f6b2" kind="function"><name>GadAttitude</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a6a4d43d9a76f3e4d1bf2f6533914569b" kind="function"><name>GetAtt</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a415469bbf3f6dbaaca9ab845e39a6aac" kind="function"><name>SetAtt</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1462cdffa0cdae4761a51abaf832ed58" kind="function"><name>SetAttLocal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a8d8ddc951c53f15a2e7ba41a0cd18290" kind="function"><name>SetAttVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1abba803ace5f437776c55b1987676ee5a" kind="function"><name>GetAttVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1ac6b531d0c169646bd6aaaac436670082" kind="function"><name>SetAidingAlignmentFixed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a15d41a1d14afb9d75dcf5805e26e0918" kind="function"><name>GetAidingAlignment</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1aaa41566983a72434d87a265e5d0a71e3" kind="function"><name>SetAidingAlignmentOptimising</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a146b6e76fac9b1acba4a6c5c3a1e89c6" kind="function"><name>SetAidingAlignmentArmConfig</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1b9a3e37cad9a42b23f339cf5e895b0b" kind="function"><name>SetAidingAlignmentVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a55e91373832e8460d57afb7ea9e3b084" kind="function"><name>GetAidingAlignmentVar</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder" kind="class"><name>OxTS::Gal_Cpp::GadEncoder</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a671ef4d673c2a38c3db6f932f8d607f5" kind="function"><name>~GadEncoder</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1adcf933bd6e93aed8676019064b4eb77d" kind="function"><name>EncodePacket</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1aede2ac0d93306c7157add4f7cf911505" kind="function"><name>GetPacket</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a9533e6fdef4008a1d232896bab29eabd" kind="function"><name>GetPacketSize</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin" kind="class"><name>OxTS::Gal_Cpp::GadEncoderBin</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1adba403a48bc637d5a873e1fdc9e1b8ec" kind="typedef"><name>BufferType</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a33897b5c703d992d3028214b868c7283" kind="variable"><name>m_buffer_size</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a8de6d6628feeb32b73db2f53e90ffd0d" kind="variable"><name>m_buffer</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a16bef426717ca5b1b745ddb922216824" kind="variable"><name>m_buffer_offset</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a2e8fabd8a993dfee4c75f169a510219b" kind="variable"><name>m_gad_size</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a86385701bc26c2acfca74fc4d1e4271d" kind="variable"><name>m_ccom_gad</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a0053b5e165a261a3c4ea7d3a743f7dd2" kind="function"><name>EncodeGadBin</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a32a9f706ea41d1c5564c874261879ade" kind="function"><name>EncodeGen3d</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1ad7f92691bff08a1376296e671fd4ed28" kind="function"><name>EncodeGen3dVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1aa346b8b7129f9c35c92b53b16a960df4" kind="function"><name>BufferOverrunCheck</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1ac7c942316e92b9be5bb69306f90d123e" kind="function"><name>GadEncoderBin</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a60467be0c1894852ed519859e4ced280" kind="function"><name>EncodePacket</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1abda7f29d16f6eb62da230b4911e84431" kind="function"><name>GetPacket</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a05df80a7a71a5c47716d0315572aeb17" kind="function"><name>GetPacketSize</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv" kind="class"><name>OxTS::Gal_Cpp::GadEncoderCsv</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a2219d741678eaa385eea7fe4333c85b9" kind="variable"><name>m_str_stream</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a4c8f41ebd52cae81cd8909d125901954" kind="variable"><name>m_str</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a6c7835ebc129f35014a983951c65c16d" kind="function"><name>Write</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a972dc4fbb75731df1bf856cd93c0bf3b" kind="function"><name>WriteWithDecimalPlaces</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a0ceefabf7a59da6c1824739757b85206" kind="function"><name>WriteFlagAndValue</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ac3432937fbc622adb53c90cca06fc5da" kind="function"><name>WriteGen3dHeader</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a30442deb89b0819eec13858e92ba6c28" kind="function"><name>WriteHeader</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a071cbfdb7ec24b3fc9bc3e5923119855" kind="function"><name>WriteGen3d</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a12958b86c764791d4924f9e2f5e3c9fc" kind="function"><name>EncodeGadCsv</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a2649aec587d66949b4b2d58fb7af2230" kind="function"><name>GadEncoderCsv</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ad6e573757e263fe384d4ce12726a59f4" kind="function"><name>EncodePacket</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1afa82d8be19190e216d9da11ec440d24a" kind="function"><name>GetPacket</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a7e6a0ee2acadd8d95212980633450aec" kind="function"><name>GetPacketSize</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadHandler" kind="class"><name>OxTS::Gal_Cpp::GadHandler</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a9ef967bbda65dd2ca41ddd224b6f0129" kind="variable"><name>m_encoder_type</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1af5dac9674aa58aa35b590ee442610aa6" kind="variable"><name>m_output_type</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a4137d14204aae72b253eb24feec8fc38" kind="variable"><name>m_encoder_bin</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a492ad54941afebbf0135a9751ecafe90" kind="variable"><name>m_encoder_csv</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a87c9a533ffa9cdc0abc0280c51b9b63a" kind="variable"><name>m_output_file</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a501f909dedfd4c10065b02301e4b3e1b" kind="variable"><name>m_output_udp</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a38c690ad8ff1faa6d6be9bd640a1bb2f" kind="function"><name>get_encoder</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a9a294a42c5629537b9aaa8453de2991e" kind="function"><name>get_output</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a538cd12ad05e58d01b47e76e5ed08f4f" kind="function"><name>GadHandler</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a9c161f58ab90dbdc6660afe23ebf632b" kind="function"><name>SetEncoderToBin</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a829abc99f722a2e86f337ff457152511" kind="function"><name>SetEncoderToCsv</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a9c691df083e1f6118ac14e43d0abf990" kind="function"><name>SetOutputModeToFile</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a577e66d297e2534267b12979f1b53f36" kind="function"><name>SetOutputModeToUdp</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a2f30698ee11975a76bba24d7eb7f83a0" kind="function"><name>SendPacket</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadHeading" kind="class"><name>OxTS::Gal_Cpp::GadHeading</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a7f77a5cb951d71c1ca625018e4b8b9c6" kind="function"><name>GadHeading</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a046a5a467a7cefcd14a702c46a054ffe" kind="function"><name>GadHeading</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1ae6b319e0f46e9d947840b798f1e34e07" kind="function"><name>GetHeading</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a46d4d2ad8c9f4605de236cfbf84d5189" kind="function"><name>SetHeading</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a6bb36bc8cd45e1f90280e24c4ff6f68e" kind="function"><name>SetHeadingLocal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a21223064844386167a7b0294d0ad9334" kind="function"><name>SetHeadingVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a0716b916ca382d87d0ba5758e3756785" kind="function"><name>GetHeadingVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a835e1d1ccdce6241a78c597d29088583" kind="function"><name>SetAidingAlignmentFixed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a8a002a9f9fa89ccc0de6dd2fb46bca52" kind="function"><name>GetAidingAlignment</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a41c11d6fd253bc9682c41827ca25dfdf" kind="function"><name>SetAidingAlignmentArmConfig</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a696a9c9d9fd9e47fcb4413741e4ba9d6" kind="function"><name>SetAidingAlignmentVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a72a9aaf8971e7dcc2acd436bf555fa9c" kind="function"><name>GetAidingAlignmentVar</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadOutput" kind="class"><name>OxTS::Gal_Cpp::GadOutput</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutput_1a69f31920b2c3506c6514c89ed7900a9c" kind="function"><name>~GadOutput</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutput_1aaaa4b7917e39d57e5edfe3442146a2b4" kind="function"><name>OutputPacket</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile" kind="class"><name>OxTS::Gal_Cpp::GadOutputFile</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile_1a1e1cbf16f6b64a27072a8a79ee49475c" kind="variable"><name>m_file_out</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile_1a23958244fa56844238ef7d0294a3d596" kind="variable"><name>m_file_stream</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile_1a69b1db8100324d3bc055d9d097db5148" kind="function"><name>GadOutputFile</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile_1ada7a43af76627b84d73182f865113741" kind="function"><name>SetFileName</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile_1ad214a980c1578c11cbaf4f6dadd8a468" kind="function"><name>GadOutputFile</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile_1aed04487a370a973643e8d874d311e0a1" kind="function"><name>~GadOutputFile</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile_1a2252abac75d02130f1fec9fd5e27fcb2" kind="function"><name>OutputPacket</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile_1a3743b5e4156e2fadb802b2a56ae1de26" kind="function"><name>GetOutputFilePath</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp" kind="class"><name>OxTS::Gal_Cpp::GadOutputUdp</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp_1aeae5646234ef8b0c88d92672913e373f" kind="variable"><name>UDP_BUFFER_SIZE</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp_1adfd82b5626c142bb58e89ae40eddbb52" kind="variable"><name>ETHERNET_MTU</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp_1ad3add59e3e356d9b4775e49b37558724" kind="variable"><name>m_buffer</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp_1a0b5dc752373a3f315431a8d639f73cdb" kind="variable"><name>m_udpServer</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp_1adda5c10436a5ddc36f2ee6a3ebf3d6af" kind="variable"><name>unitGaPort</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp_1a26f902d8db594e62986aa3ee101f23cb" kind="function"><name>GadOutputUdp</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp_1a495089cce0a39bc80bac69dcac116fdd" kind="function"><name>SetRemoteEndpoint</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp_1a4e941b86a3f2d7cc1eefc1801016cd7a" kind="function"><name>GadOutputUdp</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp_1ac5d433f26b04f688dfcff4e2f634479f" kind="function"><name>OutputPacket</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadPosition" kind="class"><name>OxTS::Gal_Cpp::GadPosition</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1aeee2bd2bb078e3264ce11ce9e63f7623" kind="function"><name>GadPosition</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1acb370a33d45d5b2575ef97c18b246775" kind="function"><name>SetPosGeodetic</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a741045cccd91e159917cdbda6590cebc" kind="function"><name>SetPosLocal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1aaf3eee9e8d6aebb5c96ee0bc64c77ba9" kind="function"><name>GetPos</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1af8fb368168fc310f5c8051230343bc3b" kind="function"><name>SetPosGeodeticVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a291e839bfd597f77ae68b2fa37c076cc" kind="function"><name>SetPosGeodeticVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a7122d42bf9ca606213158425c49672f2" kind="function"><name>SetPosLocalVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1abd70291f78142c56f7b718ea9dfac3b6" kind="function"><name>SetPosLocalVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1ae5be191b84e96a2e98ef9c4485b8a7b1" kind="function"><name>GetPosVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a93636b66037a2349fae523e053cbc54e" kind="function"><name>SetAidingLeverArmFixed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a354931f3456526d7d32265406cbaa825" kind="function"><name>GetAidingLeverArm</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a0219ca4c81114c60e8f7709ecacf14ce" kind="function"><name>SetAidingLeverArmOptimising</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1acb50cb74748ee7da88094b5041a3287b" kind="function"><name>SetAidingLeverArmConfig</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a0d4ab8989fead68a34fde779b544336d" kind="function"><name>SetAidingLeverArmVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a27666464fd1412de59c682f3448b626c" kind="function"><name>GetAidingLeverArmVar</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed" kind="class"><name>OxTS::Gal_Cpp::GadSpeed</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a67253144f9e87b003afb46fa89679f42" kind="function"><name>GadSpeed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a64cc6bdcea969a3e8757d1865da21c7a" kind="function"><name>SetSpeedFwMs</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1aa4d01444c646310b507b8f2a8e7533d5" kind="function"><name>SetSpeedBwMs</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a8353de7cddd9fb2284d6d24664db84c0" kind="function"><name>SetSpeedUnMs</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1ace49d9c4b4dd903635b1b7686e5aaf5f" kind="function"><name>SetSpeedFwPulsed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a4e563124eddbd93346578c04c8212806" kind="function"><name>SetSpeedBwPulsed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1ada1605c278077d0679cb5337addb2b28" kind="function"><name>SetSpeedUnPulsed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a1662e862f3fc9a3573a880315fbc0923" kind="function"><name>GetSpeed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a6dd4aa2c68e99d3bff78d33eea68c516" kind="function"><name>SetSpeedMsVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a90007a0df841c95488eae9529995699e" kind="function"><name>SetSpeedPulsedVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a376ab863d6a56bbd90e15ede2407ad99" kind="function"><name>SetSpeedPulsedVarPeriod</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a2670315c4aa7588e9866a53791aba5e9" kind="function"><name>GetSpeedVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a02c1b9d23b7be419849b8ea4c4ec74a2" kind="function"><name>SetAidingLeverArmFixed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1ab7cc81177cdaf5066b6bcf2cff44cb0d" kind="function"><name>GetAidingLeverArm</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1af55400ffda859a04d993274c36fa078b" kind="function"><name>SetAidingLeverArmConfig</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a574d92d90b38a765a375c16eca8f4f94" kind="function"><name>SetAidingLeverArmVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a075d3b1ae7c3098a46cc0685a49d7775" kind="function"><name>GetAidingLeverArmVar</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity" kind="class"><name>OxTS::Gal_Cpp::GadVelocity</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ab3803209b3a2786b386243ce43075a00" kind="function"><name>GadVelocity</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a3bccf350b3c6a315699f25c550aec6bc" kind="function"><name>SetVelNed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aef35a3c4ca009f5e8287ac43d7a29136" kind="function"><name>SetVelOdom</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a07465b9265daa9fc4a5e6f3c3b02b47f" kind="function"><name>SetVelLocal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a0a60f95c55c22b60522aecac74eb6dac" kind="function"><name>GetVel</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aed9826401f4024c1953d05f06bd262da" kind="function"><name>SetVelNedVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aa221e7dad9224bc224034adfd792cce4" kind="function"><name>SetVelNedVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a43a90e7c8db09cce908e85ff88446c7c" kind="function"><name>SetVelOdomVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7fffba654adbb12e5bd793a3ba496b5a" kind="function"><name>SetVelOdomVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ad1c3f905a221620093c2551744e3a03b" kind="function"><name>SetVelLocalVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7e63b9033afd1c4f7237ac635398473c" kind="function"><name>SetVelLocalVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a3162d5f0c1aacf9d1ae11367ace89d38" kind="function"><name>GetVelVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a4be63949aa6352025d1561769fd8262c" kind="function"><name>SetAidingLeverArmFixed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1abbf30b7f3d7aafbe3c2fc657a9672f4d" kind="function"><name>GetAidingLeverArm</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7716400b586d74d1092750afc8b2cfdf" kind="function"><name>SetAidingLeverArmOptimising</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1adbfb5e9029bcc229096b3e9f0eef7be8" kind="function"><name>SetAidingLeverArmConfig</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ae56c1d38f8425f314ba3d30ee8a66f6a" kind="function"><name>SetAidingLeverArmVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ab0b53fea9a394a7575d7d0cd4f4182d0" kind="function"><name>GetAidingLeverArmVar</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed" kind="class"><name>OxTS::Gal_Cpp::GadWheelSpeed</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1abd2826a802ff322e022243bbe547ebb2" kind="function"><name>GadWheelSpeed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a5cac338cadbde3bb28cab672c7a5e30a" kind="function"><name>SetWheelSpeedFw</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a34194e138d8cf1d395d7df7d3873a33f" kind="function"><name>GetWheelSpeedFw</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1ac132419e3c7eef112dcd6dd8f1d614e7" kind="function"><name>SetWheelSpeedFwVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1ab2c98acb89eb922ec3eb7f07beb6ae2d" kind="function"><name>GetWheelSpeedFwVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a9fcf8ca07b7c545dfaa508bc27420fe9" kind="function"><name>SetWheelSpeedCount</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a8a8e4774c00cee1b16363cf4d21cea27" kind="function"><name>GetWheelSpeedCount</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a3ed4185ed4a0da836dc99dec41012c16" kind="function"><name>SetWheelSpeedVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a408ed06f14908d7b5dc44f4889ee118f" kind="function"><name>GetWheelSpeedVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a157323f928c1b4a206a3586503386eb5" kind="function"><name>SetAidingLeverArmFixed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1aa04cf046c6bb2d1c5b84b611973f8c1d" kind="function"><name>GetAidingLeverArm</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a66b788b777661518f4f13ed4fd93247d" kind="function"><name>SetAidingLeverArmOptimising</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1acdbdb231814882a45e904d3fa1db2c9d" kind="function"><name>SetAidingLeverArmConfig</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1abad75aecdf8ab4d2d2f387b8e3ac73da" kind="function"><name>SetAidingLeverArmVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1ada006aa00c7dca914bca36de9c4102f9" kind="function"><name>GetAidingLeverArmVar</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1Gen3d" kind="class"><name>OxTS::Gal_Cpp::Gen3d</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1ac1cea06b2a0f25275e4f48cac1365aaf" kind="variable"><name>m_mode</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1ac5eab1845aca4f5a0b93887fd3f54c3e" kind="variable"><name>m_x_type</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a768d7c5fd2e798560ea7edbc89ce1a4d" kind="variable"><name>m_x</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a25cf56c6d74217cd0091e9aeb39fbd48" kind="variable"><name>m_v_type</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a5f0442a5acb6330075e68ffe1a380e0c" kind="variable"><name>m_v</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a17e9c1b5063e5a4a65050453c8b60829" kind="function"><name>Gen3d</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a71aeda9b181468fc337192b4ad039896" kind="function"><name>Gen3d</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1abd7f9c6201f494d6fd38a0f4d4a630da" kind="function"><name>operator=</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a496a68dbf0948a831810943b36c7642f" kind="function"><name>SetMode</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1ad63d4ef8f6d7703ecd582c00e3b593f2" kind="function"><name>GetMode</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a3323b6c4609131fe9475e0754efe1473" kind="function"><name>SetValType</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a2db88f27cdc04b850b11ec2605a18c5c" kind="function"><name>GetValType</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1acf09b7a1851a5a89ee125ed7f00b95c4" kind="function"><name>SetValX</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a8070ee3aea33d1bf64e25d1436b9430f" kind="function"><name>GetValX</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1af7b088c1a428eab53467a15a60a3fce6" kind="function"><name>SetValY</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a6847458fc44e1110c2e1bad4432b9b05" kind="function"><name>GetValY</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a3bbe06aa704a6ea99bacc55be9d29b55" kind="function"><name>SetValZ</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a3dbd2769ad1f105c4fcb2325d5000e6e" kind="function"><name>GetValZ</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1acd18b63058f1ed06855a1df8748c02e9" kind="function"><name>SetVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a77703e39ba2930b4b6cad7371f7262a7" kind="function"><name>SetVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1ac4d6992a2f08f5528bf91f41b8083d07" kind="function"><name>GetVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1ae07960d0143c18788a34f5f47733d935" kind="function"><name>GetVarType</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a4aa22a5f80b136fbc9e815079b54e97b" kind="function"><name>SetVarUpperDiag</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a594d9d0513abd103cce76cbfcc623c19" kind="function"><name>SetVarDiag</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a49e920865e8e52eb893a8006e7f70194" kind="function"><name>SetVarSingle</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a77bebb228bf64e7760aca42460650545" kind="function"><name>GetVar</name></member>
+  </compound>
+  <compound refid="classnetworking__udp_1_1server" kind="class"><name>networking_udp::server</name>
+    <member refid="classnetworking__udp_1_1server_1a75c2b57ef471ecf87a0b99666a3be826" kind="variable"><name>m_ethernet</name></member>
+    <member refid="classnetworking__udp_1_1server_1a1601b59a9c7a06fcabc1a1f284194280" kind="variable"><name>m_endpoint</name></member>
+    <member refid="classnetworking__udp_1_1server_1af47894398458760afa6d5b7eb2fd85bc" kind="function"><name>server</name></member>
+    <member refid="classnetworking__udp_1_1server_1aa5cc1dc34bb75ded1d879ea4892f0de0" kind="function"><name>set_endpoint</name></member>
+    <member refid="classnetworking__udp_1_1server_1aeb961f8bd0852a6835f603a3af070658" kind="function"><name>send_to_endpoint</name></member>
+    <member refid="classnetworking__udp_1_1server_1a7a2f045e7ff2d31ce7ada60f470cc5e0" kind="function"><name>send_to</name></member>
+    <member refid="classnetworking__udp_1_1server_1abec8532fed3bf094336ed69ecc8f5f16" kind="function"><name>send_to_port</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl" kind="class"><name>OxTS::Lib::SimpleEthernetImpl</name>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a5eac6782afece73fc67d5f063b022e78" kind="variable"><name>m_broadcast</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a085c63f6ac38f875af5f55742a8c6b45" kind="variable"><name>m_is_good</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a4d9fc6566586521a3b0b8a742ff51799" kind="variable"><name>m_active</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1af5654bc06649bb1bbcf9980ed2c521a5" kind="variable"><name>m_handle</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a797a7b299d9964421ba077760d0fa6a3" kind="variable"><name>m_my_port</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a040a4c1063d984df3fda03a597b7ee26" kind="variable"><name>m_my_given_port</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1ac12d65b504a213209bf907d3e953e35e" kind="variable"><name>m_their_port</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a1e165bb63a1f480b15a5991c0c7a4ded" kind="function"><name>SimpleEthernetImpl</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a80571023dd1142378288e8d41c97b90a" kind="function"><name>~SimpleEthernetImpl</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a9cd64d7da6736615cf62ef966d55409a" kind="function"><name>open</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1af9b389529342e533bcc3fd91c4f889a9" kind="function"><name>close</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1acc4e9c4df90a36b42315d3479c2f248f" kind="function"><name>send_to_endpoint</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1afa957228401d85811049e6d38160292e" kind="function"><name>send_to_address</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1aef4f7179ddb64934b347aaa509ed180a" kind="function"><name>good</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1ac52208945b200c71f42ee789670be48e" kind="function"><name>live</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Lib_1_1SocketSystem" kind="class"><name>OxTS::Lib::SocketSystem</name>
+    <member refid="classOxTS_1_1Lib_1_1SocketSystem_1aee04e624e1317ddc6165a807d34134ac" kind="variable"><name>m_ref_count</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SocketSystem_1af1aaa6f563d1710d8983fad152962488" kind="function"><name>SocketSystem</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SocketSystem_1a3007c02cce4f1010ddae42ca1d64f7e1" kind="function"><name>startup</name></member>
+    <member refid="classOxTS_1_1Lib_1_1SocketSystem_1a47cb1a00419465cb7a57ea5baf879acc" kind="function"><name>cleanup</name></member>
+  </compound>
+  <compound refid="namespacenetworking__udp" kind="namespace"><name>networking_udp</name>
+  </compound>
+  <compound refid="namespaceOxTS" kind="namespace"><name>OxTS</name>
+    <member refid="namespaceOxTS_1a430242be0c3cf319e811a1237f2a142d" kind="typedef"><name>container_double3_t</name></member>
+    <member refid="namespaceOxTS_1ab2aa7fac7ad5091ed0ec34108da304f6" kind="typedef"><name>container_double6_t</name></member>
+    <member refid="namespaceOxTS_1a93c0f0cc9922c2f4d2effa11fddc125e" kind="function"><name>fill_array</name></member>
+    <member refid="namespaceOxTS_1ac462e7743d660e059d75d3df132a1e74" kind="function"><name>copy_array</name></member>
+  </compound>
+  <compound refid="namespaceOxTS_1_1BasicCasts" kind="namespace"><name>OxTS::BasicCasts</name>
+    <member refid="basic__casts_8hpp_1aab34d26e8a49cd69051651e8be575682" kind="function"><name>cast_uint8_to_1_byte_LE</name></member>
+    <member refid="basic__casts_8hpp_1aedad87913125c0dc87bd0be371a7e506" kind="function"><name>cast_uint16_to_2_byte_LE</name></member>
+    <member refid="basic__casts_8hpp_1a80f618777e5b6182d48414e2ebeaae16" kind="function"><name>cast_int16_to_2_byte_LE</name></member>
+    <member refid="basic__casts_8hpp_1a37a199491410be3fc50d2272a85cfd78" kind="function"><name>cast_int8_to_1_byte_LE</name></member>
+    <member refid="basic__casts_8hpp_1ac4d42653af1fe8f7282f6c797201f057" kind="function"><name>cast_double_to_8_byte_LE</name></member>
+  </compound>
+  <compound refid="namespaceOxTS_1_1Gal__Cpp" kind="namespace"><name>OxTS::Gal_Cpp</name>
+    <member refid="gad_8hpp_1a2b27c7d02585011699e19f575f52754d" kind="typedef"><name>GenFlag</name></member>
+    <member refid="gad__struct_8hpp_1afade83be7e524027af0d75e626a511d9" kind="typedef"><name>GEN_BOOL</name></member>
+    <member refid="ccomtx_8hpp_1a0b56f9d2ccfba90d6233e2ea0bd4a3bb" kind="variable"><name>CComSync</name></member>
+    <member refid="ccomtx_8hpp_1a8bdc5ddf5c3145444f72c1194234bcf5" kind="variable"><name>CComRes</name></member>
+    <member refid="ccomtx_8hpp_1a3a3c17ef0dd5192d70cb64c45a893c2b" kind="variable"><name>CComShort</name></member>
+    <member refid="ccomtx_8hpp_1ab2b909b98eb10e00adc7c8c94f6c4cd3" kind="variable"><name>CComBuffSize</name></member>
+    <member refid="gad__defines_8hpp_1a2d64f989851650f9edfb33699c83370c" kind="variable"><name>MAX_CSV_LINE</name></member>
+    <member refid="gad__defines_8hpp_1af7f54c28039d0899ac5b0f26536f55dd" kind="variable"><name>AdditionalBitmaskBit</name></member>
+    <member refid="gad__defines_8hpp_1ad89f368b8b3cd3e179bf162bc6f2b073" kind="variable"><name>ValueBit</name></member>
+    <member refid="gad__defines_8hpp_1a4c7d95f80e9db815fc03c2de5bd38545" kind="variable"><name>TimeBit</name></member>
+    <member refid="gad__defines_8hpp_1a12de0beebde232361d11b66b86a37123" kind="variable"><name>LocationBit</name></member>
+    <member refid="gad__defines_8hpp_1a759ce74f1dc6cdba0d0ae996bbd19fa4" kind="variable"><name>Res1Bit</name></member>
+    <member refid="gad__defines_8hpp_1aa980ae0942544cbe7d22638aa2835880" kind="variable"><name>Res2Bit</name></member>
+    <member refid="gad__defines_8hpp_1a2393e6025355641981dcb3de825b030a" kind="variable"><name>GEN_AID_HEADER_MIN_SIZE</name></member>
+    <member refid="gad__defines_8hpp_1a7c943aaedb921b49739927e1c10be076" kind="variable"><name>XDEV_ACQUISTION_TIMESTAMP_SIZE</name></member>
+    <member refid="gad__defines_8hpp_1a325d276685cbce2d82489f87c1ac4b4f" kind="variable"><name>REALTIME_GENAID_RX_START_IDX</name></member>
+    <member refid="gad__defines_8hpp_1a3aacb67266f5974494c7dade769246a3" kind="variable"><name>MAX_NUM_REALTIME_GENAID_RX</name></member>
+    <member refid="gad__defines_8hpp_1ab9b2e340cd3fe4ec57f068b79a04dec3" kind="variable"><name>PP_GENAID_RX_START_IDX</name></member>
+    <member refid="gad__defines_8hpp_1a0f807e20cbaaf94286b0505a01b9443f" kind="variable"><name>MAX_NUM_PP_GENAID_RX</name></member>
+    <member refid="gad__defines_8hpp_1a34530ae6b5a4f67561a89cad46e23c0a" kind="variable"><name>GENAID_POS_STATUS_AGE_THRESHOLD</name></member>
+    <member refid="gad__defines_8hpp_1a415a692b078524c8ff63face0f270301" kind="variable"><name>GENAID_VEL_STATUS_AGE_THRESHOLD</name></member>
+    <member refid="gad__defines_8hpp_1a22aa9aaa1f5834347d6f5c61ce742969" kind="variable"><name>MAX_GENAID_PKT_SIZE</name></member>
+    <member refid="gad__defines_8hpp_1acc780e66c1159ff8a2580d164de7f259" kind="variable"><name>MAX_ID_GEN3D</name></member>
+    <member refid="gad__defines_8hpp_1afc22ebda343e926ad5931e19a5467373" kind="variable"><name>GAD_LATE_THRESH</name></member>
+    <member refid="gad__defines_8hpp_1abee8c6032461684638e42346cb1a3d1a" kind="variable"><name>GAD_EARLY_WARN_THRESH</name></member>
+    <member refid="gad__defines_8hpp_1a3b6b51edd3465244b2afb3447fe21ffd" kind="variable"><name>GAD_EARLY_REJECT_THRESH</name></member>
+    <member refid="gad__defines_8hpp_1aff357e62a415daad25a802d34efebce1" kind="variable"><name>GAD_MAX_BUF</name></member>
+    <member refid="gad__defines_8hpp_1ae0d5132ff3c914c709e90bc89ee23879" kind="variable"><name>GAD_BUF_MAX_SIZE</name></member>
+    <member refid="gad__encoder_8hpp_1ac0512a2925aed830d03a33263f88d03e" kind="variable"><name>MAX_BUFF</name></member>
+    <member refid="gad__output__udp_8hpp_1a4315346e2cedc39d5b8adde59e39b66d" kind="variable"><name>GAD_PORT</name></member>
+    <member refid="gad__struct_8hpp_1a641e891b7e28f811908b7d19aca1d1f8" kind="variable"><name>ENCODER_TYPE</name></member>
+    <member refid="gad__struct_8hpp_1a302f7af692e6c9b0c76e739942f07361" kind="variable"><name>OUTPUT_TYPE</name></member>
+    <member refid="gad__struct_8hpp_1ae25da3869b37c1187cb617662fefc9ce" kind="variable"><name>GEN_VAR_TYPE</name></member>
+    <member refid="gad__struct_8hpp_1a3c70a02287c68324a8c114eb4b3dff42" kind="variable"><name>TIME_SYS</name></member>
+    <member refid="gad__struct_8hpp_1a3fbde37a47456fe61f05d7d7e5cd40b9" kind="variable"><name>GEN_TYPE</name></member>
+    <member refid="gad__struct_8hpp_1a534d252638daf764461da8ad179b2528" kind="variable"><name>POS_SYS_TYPE</name></member>
+    <member refid="gad__struct_8hpp_1a17205339e82e2c1b2c547863706dd245" kind="variable"><name>VEL_SYS_TYPE</name></member>
+    <member refid="gad__struct_8hpp_1a071ca9d88a061554fc09cb5b7dddeffa" kind="variable"><name>SPEED_SYS_TYPE</name></member>
+    <member refid="gad__struct_8hpp_1a361c2b8a25ff48bc44ee83a31e7f72df" kind="variable"><name>ATT_SYS_TYPE</name></member>
+    <member refid="gad__struct_8hpp_1ab032f628859f61cf0cb52ed504172712" kind="variable"><name>HEA_SYS_TYPE</name></member>
+    <member refid="gad__struct_8hpp_1a5c81a682882b7e94e9b9d63110d6f828" kind="variable"><name>LOC_SYS</name></member>
+  </compound>
+  <compound refid="namespaceOxTS_1_1Lib" kind="namespace"><name>OxTS::Lib</name>
+  </compound>
+  <compound refid="basic__casts_8hpp" kind="file"><name>basic_casts.hpp</name>
+  </compound>
+  <compound refid="basic__types_8hpp" kind="file"><name>basic_types.hpp</name>
+    <member refid="basic__types_8hpp_1aeb7e7a856ab7a794b05b6b63ef36ea3e" kind="define"><name>__STDC_LIMIT_MACROS</name></member>
+    <member refid="basic__types_8hpp_1aacbb9e1f38be71e22df1584a37c56693" kind="define"><name>__STDC_FORMAT_MACROS</name></member>
+    <member refid="basic__types_8hpp_1a786132414c30f947907be33a4c28125a" kind="define"><name>__STDC_CONSTANT_MACROS</name></member>
+    <member refid="basic__types_8hpp_1a0cd78fd003cf72fcd0afed8523f5a057" kind="define"><name>OXTS_FORCE_C</name></member>
+    <member refid="basic__types_8hpp_1a0855108ee8c9689193118457373c7fcd" kind="define"><name>PRIzd</name></member>
+    <member refid="basic__types_8hpp_1a3b5c970ea7e50fe76805d522c665b3f6" kind="define"><name>PRIzu</name></member>
+    <member refid="basic__types_8hpp_1aa5d3ccde649720b6444a201515ce1794" kind="define"><name>PRIzx</name></member>
+    <member refid="basic__types_8hpp_1a99e762a418d90e1df1c6897a2ec5065e" kind="define"><name>SCNX8</name></member>
+    <member refid="basic__types_8hpp_1a0c139165956b5fba7b44bd35cfafc86d" kind="define"><name>SCNX16</name></member>
+    <member refid="basic__types_8hpp_1a50fd54ef494b4a246ada865e1de61d53" kind="define"><name>SCNX32</name></member>
+    <member refid="basic__types_8hpp_1ad57bb9b57b3afdb70185fb10af5ef140" kind="define"><name>SCNX64</name></member>
+    <member refid="basic__types_8hpp_1a2becff213668701e9a7df6b19cd00fb9" kind="typedef"><name>real80_t</name></member>
+    <member refid="basic__types_8hpp_1aa4fe3cbe865a52135d2b270189da0353" kind="typedef"><name>real64_t</name></member>
+    <member refid="basic__types_8hpp_1a3367af45445891b41c9671c4962c37f1" kind="typedef"><name>real32_t</name></member>
+  </compound>
+  <compound refid="ccomtx_8hpp" kind="file"><name>ccomtx.hpp</name>
+  </compound>
+  <compound refid="config_8h" kind="file"><name>config.h</name>
+  </compound>
+  <compound refid="gad_8hpp" kind="file"><name>gad.hpp</name>
+  </compound>
+  <compound refid="gad__defines_8hpp" kind="file"><name>gad_defines.hpp</name>
+  </compound>
+  <compound refid="gad__encoder_8hpp" kind="file"><name>gad_encoder.hpp</name>
+  </compound>
+  <compound refid="gad__encoder__bin_8hpp" kind="file"><name>gad_encoder_bin.hpp</name>
+  </compound>
+  <compound refid="gad__encoder__csv_8hpp" kind="file"><name>gad_encoder_csv.hpp</name>
+  </compound>
+  <compound refid="gad__handler_8hpp" kind="file"><name>gad_handler.hpp</name>
+  </compound>
+  <compound refid="gad__output_8hpp" kind="file"><name>gad_output.hpp</name>
+  </compound>
+  <compound refid="gad__output__file_8hpp" kind="file"><name>gad_output_file.hpp</name>
+  </compound>
+  <compound refid="gad__output__udp_8hpp" kind="file"><name>gad_output_udp.hpp</name>
+  </compound>
+  <compound refid="gad__struct_8hpp" kind="file"><name>gad_struct.hpp</name>
+  </compound>
+  <compound refid="Lib__Detect_8hpp" kind="file"><name>Lib_Detect.hpp</name>
+    <member refid="Lib__Detect_8hpp_1aebfc15fe93eba3772ca1df0374460118" kind="define"><name>OXTS_OS_LINUX</name></member>
+  </compound>
+  <compound refid="oxts__arrays_8hpp" kind="file"><name>oxts_arrays.hpp</name>
+  </compound>
+  <compound refid="oxts__misra_8hpp" kind="file"><name>oxts_misra.hpp</name>
+    <member refid="oxts__misra_8hpp_1a378181c29a641d58f55d647b5a9599f2" kind="define"><name>ENUM</name></member>
+  </compound>
+  <compound refid="oxts__sockets_8hpp" kind="file"><name>oxts_sockets.hpp</name>
+    <member refid="oxts__sockets_8hpp_1a9ae4d5a82c2622946c49c2ed3cd68017" kind="typedef"><name>ADDRESS_FAMILY</name></member>
+  </compound>
+  <compound refid="udp__server__client_8hpp" kind="file"><name>udp_server_client.hpp</name>
+  </compound>
+  <compound refid="todo" kind="page"><name>todo</name>
+  </compound>
+  <compound refid="dir_4959924cdc15bb93b790f8757bfd9a58" kind="dir"><name>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders</name>
+  </compound>
+  <compound refid="dir_b123d9e155dfd5db63653f44cef9448d" kind="dir"><name>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output</name>
+  </compound>
+  <compound refid="dir_204a691ff14fc2dbfad971c36b436a6d" kind="dir"><name>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp</name>
+  </compound>
+  <compound refid="dir_a2443a174390bd68ad79f06386f727b3" kind="dir"><name>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include</name>
+  </compound>
+  <compound refid="dir_eb3be30d1661ef808a64de174db7bc68" kind="dir"><name>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts</name>
+  </compound>
+  <compound refid="dir_f95bc1f4a7a99f80bdb277aed3104530" kind="dir"><name>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp</name>
+  </compound>
 </doxygenindex>

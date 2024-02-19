@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="gad__encoder__bin_8hpp" kind="file" language="C++">
+    <compoundname>gad_encoder_bin.hpp</compoundname>
+    <includes refid="gad__encoder_8hpp" local="yes">oxts/gal-cpp/gad_encoders/gad_encoder.hpp</includes>
+    <includes refid="ccomtx_8hpp" local="yes">oxts/gal-cpp/ccomtx.hpp</includes>
+    <includedby refid="gad__handler_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp</label>
+        <link refid="gad__encoder__bin_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp</label>
+        <link refid="gad__handler_8hpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin" prot="public">OxTS::Gal_Cpp::GadEncoderBin</innerclass>
+    <innernamespace refid="namespaceOxTS">OxTS</innernamespace>
+    <innernamespace refid="namespaceOxTS_1_1Gal__Cpp">OxTS::Gal_Cpp</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GAD_ENCODER_BIN_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAD_ENCODER_BIN_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;oxts/gal-cpp/gad_encoders/gad_encoder.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;oxts/gal-cpp/ccomtx.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceOxTS" kindref="compound">OxTS</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Gal_Cpp</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15" refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin" kindref="compound">GadEncoderBin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder" kindref="compound">GadEncoder</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::array&lt;std::uint8_t,<sp/>MAX_BUFF&gt;<sp/>BufferType;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::size_t<sp/>m_buffer_size<sp/>=<sp/>MAX_BUFF;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BufferType<sp/>m_buffer;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>m_buffer_offset;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>m_gad_size;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1CComMsg" kindref="compound">CComMsg</ref><sp/>m_ccom_gad;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Private<sp/>method<sp/>to<sp/>encode<sp/>the<sp/>GAD<sp/>portion.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>EncodeGadBin(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1Gad" kindref="compound">Gad</ref>&amp;<sp/>g);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Private<sp/>method<sp/>to<sp/>encode<sp/>a<sp/>specific<sp/>GEN_3D<sp/>part.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>EncodeGen3d(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1Gen3d" kindref="compound">Gen3d</ref>&amp;<sp/>field,<sp/>BufferType::iterator<sp/>&amp;it);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Private<sp/>method<sp/>to<sp/>encode<sp/>a<sp/>GEN_3D<sp/>Variance.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int32_t<sp/>EncodeGen3dVar(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1Gen3d" kindref="compound">Gen3d</ref>&amp;<sp/>field,<sp/>BufferType::iterator<sp/>&amp;it);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Private<sp/>method<sp/>for<sp/>checking<sp/>for<sp/>buffer<sp/>overruns.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>BufferOverrunCheck(BufferType::iterator<sp/>&amp;it,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>expected_data_size);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1ac7c942316e92b9be5bb69306f90d123e" kindref="member">GadEncoderBin</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a60467be0c1894852ed519859e4ced280" kindref="member">EncodePacket</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1Gad" kindref="compound">Gad</ref>&amp;<sp/>g)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::uint8_t*<sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1abda7f29d16f6eb62da230b4911e84431" kindref="member">GetPacket</ref>()<sp/><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::size_t<sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a05df80a7a71a5c47716d0315572aeb17" kindref="member">GetPacketSize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>GAD_ENCODER_BIN</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp"/>
+  </compounddef>
+</doxygen>

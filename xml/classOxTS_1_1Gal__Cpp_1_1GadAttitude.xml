@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOxTS_1_1Gal__Cpp_1_1GadAttitude" kind="class" language="C++" prot="public">
+    <compoundname>OxTS::Gal_Cpp::GadAttitude</compoundname>
+    <basecompoundref refid="classOxTS_1_1Gal__Cpp_1_1Gad" prot="public" virt="non-virtual">OxTS::Gal_Cpp::Gad</basecompoundref>
+    <includes local="no">gad.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1afe027260cc2ded3a1ba7e955883b7de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gal_Cpp::GadAttitude::GadAttitude</definition>
+        <argsstring>()</argsstring>
+        <name>GadAttitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="704" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a30d9a91053e2d0c68bb045b54e52f6b2" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OxTS::Gal_Cpp::GadAttitude::GadAttitude</definition>
+        <argsstring>(const uint8_t stream_id)</argsstring>
+        <name>GadAttitude</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>stream_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream ID for the attitude aiding source. Must be unique 128-254. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="708" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a6a4d43d9a76f3e4d1bf2f6533914569b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const container_double3_t &amp;</type>
+        <definition>const container_double3_t&amp; OxTS::Gal_Cpp::GadAttitude::GetAtt</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAtt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="709" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a415469bbf3f6dbaaca9ab845e39a6aac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadAttitude::SetAtt</definition>
+        <argsstring>(const double_t heading, const double_t pitch, const double_t roll)</argsstring>
+        <name>SetAtt</name>
+        <param>
+          <type>const double_t</type>
+          <declname>heading</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>roll</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the aiding attitude measurement relative to the NED coordinate frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>heading</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>roll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>All parameters are in degrees. Roll is not yet used! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="719" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1462cdffa0cdae4761a51abaf832ed58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadAttitude::SetAttLocal</definition>
+        <argsstring>(const double_t heading, const double_t pitch, const double_t roll)</argsstring>
+        <name>SetAttLocal</name>
+        <param>
+          <type>const double_t</type>
+          <declname>heading</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>roll</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the aiding attitude measurement relative to the local coordinate frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>heading</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>roll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>All parameters are in degrees. Roll is not yet used! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="727" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a8d8ddc951c53f15a2e7ba41a0cd18290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadAttitude::SetAttVar</definition>
+        <argsstring>(const double_t v_h, const double_t v_p, const double_t v_r)</argsstring>
+        <name>SetAttVar</name>
+        <param>
+          <type>const double_t</type>
+          <declname>v_h</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_p</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v_r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the estimated variance on the aiding attitude measurement. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v_h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance estimate on the heading angle (deg)^2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance estimate on the pitch angle (deg)^2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variance estimate on the roll angle (deg)^2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="734" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1abba803ace5f437776c55b1987676ee5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const container_double6_t &amp;</type>
+        <definition>const container_double6_t&amp; OxTS::Gal_Cpp::GadAttitude::GetAttVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAttVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="735" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1ac6b531d0c169646bd6aaaac436670082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadAttitude::SetAidingAlignmentFixed</definition>
+        <argsstring>(const double_t x, const double_t y, const double_t z)</argsstring>
+        <name>SetAidingAlignmentFixed</name>
+        <param>
+          <type>const double_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="743" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a15d41a1d14afb9d75dcf5805e26e0918" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const container_double3_t &amp;</type>
+        <definition>const container_double3_t&amp; OxTS::Gal_Cpp::GadAttitude::GetAidingAlignment</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAidingAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="744" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1aaa41566983a72434d87a265e5d0a71e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadAttitude::SetAidingAlignmentOptimising</definition>
+        <argsstring>()</argsstring>
+        <name>SetAidingAlignmentOptimising</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set alignment to be optimised by the INS. The alignment values will be read from the mobile.att file, so are not set here. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="749" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a146b6e76fac9b1acba4a6c5c3a1e89c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadAttitude::SetAidingAlignmentArmConfig</definition>
+        <argsstring>()</argsstring>
+        <name>SetAidingAlignmentArmConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicate that alignment will be configured in the configuration file on the INS. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="754" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1b9a3e37cad9a42b23f339cf5e895b0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OxTS::Gal_Cpp::GadAttitude::SetAidingAlignmentVar</definition>
+        <argsstring>(const double_t x, const double_t y, const double_t z)</argsstring>
+        <name>SetAidingAlignmentVar</name>
+        <param>
+          <type>const double_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the estimated variance (error) on the alignment angles between the IMU and aiding sensor frames. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="762" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a55e91373832e8460d57afb7ea9e3b084" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const container_double6_t &amp;</type>
+        <definition>const container_double6_t&amp; OxTS::Gal_Cpp::GadAttitude::GetAidingAlignmentVar</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAidingAlignmentVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="763" column="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Generic Aiding attitude. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>OxTS::Gal_Cpp::GadAttitude</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OxTS::Gal_Cpp::Gad</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1Gad"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>OxTS::Gal_Cpp::GadAttitude</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OxTS::Gal_Cpp::Gad</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1Gad"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="698" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="699" bodyend="764"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a43ddac918eb52cd8b1f9e71bed76f48d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae91583b25eef92b08f60172a3f67a997" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2b9b5bac508451ec029115c2870f3ca3" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>Gad</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1afe027260cc2ded3a1ba7e955883b7de7" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GadAttitude</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a30d9a91053e2d0c68bb045b54e52f6b2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GadAttitude</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a5448f4907c9039f12802b40c34f3f66b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetAcqTimestamp</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6f278b1dbbfff55fdf9129fc84357642" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetAcqValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a15d41a1d14afb9d75dcf5805e26e0918" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetAidingAlignment</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a55e91373832e8460d57afb7ea9e3b084" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetAidingAlignmentVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a6a4d43d9a76f3e4d1bf2f6533914569b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetAtt</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1abba803ace5f437776c55b1987676ee5a" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetAttVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a27e711905e725e18c1f4eb71f234ab49" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetDataType</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4dbf84f14b6c84114a0c51574ed8e165" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetDataVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a24772887cef5ee1d9e21f1f3b72549ce" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetDataVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae92c76f7761c28c95a5024b66bd39707" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetLoc</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a20fd02ece3980d53d8586f84a6087578" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetLocVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a1e209bf57ecd125ab89b157ff6f71256" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetLocValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a982c097e0b20476e8d9e3c84010445ed" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetLocVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa852293aaab71e0039d3708806f28a1e" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetRes1</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa92b0f03f50f5e623e9056cae92ea08e" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetRes1Valid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ac4daee4af420652fc1795702ff90ad5c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetRes2</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af740c18a5c45912e1d36e611694f578d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetRes2Valid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a8f4c4b9d29c682f769659946c7e08d3b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetStreamId</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a25503d1d209e73fe41499eb7fee48a48" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTime</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a989d5272e9318ffffe590dd206101c97" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a99044d3436f36b7ea40c46d98ede9f24" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeExternalSecondsFromSunday</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a615ec5834d428217306ee178bc93d331" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeExternalWeek</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad8c48a679c5b13e23508c04cd6066ca2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2c928de947b1d750d9d1ea27791ad28f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeGpsSecondsFromSunday</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6c719ce3cdfbe9694b258cacc99aabc2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeGpsWeek</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a776a9fd3b10dddf49bea94eb4940303f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeLatency</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1adf9cbbc46906f8faf87c648fe970c794" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a680fc10457da6deeaf791f647b0a2ac6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeTAI</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a47e3c5c49bc8455a2c938a832efe1bd3" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeUTCUnix</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7e4cb65fadd0191174b38b5f74e17bdf" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af754391acbc5094e9be0adf1ea85aa82" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetType</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa00abd9701f8f74f189d3a4216d82e2c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a067b0dc2bb574ac948881a1e7956ad13" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetValValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a31bbc634c981fe86d337b3b3842cb419" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>operator=</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a662da5024bd3fcd8f80646c24f212dcb" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAcqTimestamp</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a421363bc956fe01ea5e71b09b4db53c6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAcqValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a146b6e76fac9b1acba4a6c5c3a1e89c6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAidingAlignmentArmConfig</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1ac6b531d0c169646bd6aaaac436670082" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAidingAlignmentFixed</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1aaa41566983a72434d87a265e5d0a71e3" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAidingAlignmentOptimising</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1b9a3e37cad9a42b23f339cf5e895b0b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAidingAlignmentVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a415469bbf3f6dbaaca9ab845e39a6aac" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAtt</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1462cdffa0cdae4761a51abaf832ed58" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAttLocal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a8d8ddc951c53f15a2e7ba41a0cd18290" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAttVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af95dccc85f027254c68281e3e32c5946" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetDataMode</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a98f4c13e421230ab4c7c98a14d74bb9a" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetDataType</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a11f0807f2bccfc6fb4a6da23993b0fc1" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetDataVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a84e55360033d0d478c9d761233ef9346" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetDataVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a9c1227246c10b76ba4fd53ea25a55995" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetDataValType</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1afe9f9c7a88aa49184a61bfffb73f78ac" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetDataVarDiag</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4af7b5a9f715e4df01be13cbfa40c21c" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetDataVarSingle</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1adc86914212dd5caeaae18aae1c08c611" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetDataVarUpperDiag</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3b927be794d23bc4195d53034bb649e7" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetLocMode</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af15326cf6c9400491ea443ce03b3cc76" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetLocVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2718839aa607f5a3ca5bece73ddeca42" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetLocValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa934d553b9799a092f7d1fbf629249ae" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetLocValType</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7f96596eb3a52d9c80659989a6a4b80b" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetLocVarDiag</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a8fd508fa5fd9819799c9a95afe63c9f5" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetLocVarSingle</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a892572364c827a59b52ad1440e02320a" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetLocVarUpperDiag</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a85a3d57d10b5794be219c36e022ffefa" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetRes1Valid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a218388ee7f7c6f06bcd84b16fe0602b8" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetRes2Valid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a33240ce2531c307c27d9ae3d1e7fcb33" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetStreamId</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3f8d78d823bca710ca7bb43b260b9fae" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ab38a44d5a7b541a48d1647ad4160aa3f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a57c9653747e06a9569db459b382410b2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeLatency</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a34e94d07721e38dba784659f5979e725" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3a567ec593f2e46adaa44be713200155" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeTAI</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6d0d89762f6242cfc1bd7177128ee6b6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeUTCUnix</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4ffcb37f8a335cba9d58588358a75b93" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae93ba642bdd8f68f9766954751343fc9" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeVoid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad28a9a3c73131d6812a07cac4cbe6c80" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetValValid</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a82636336eac0edad74b69641ec612094" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>~Gad</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

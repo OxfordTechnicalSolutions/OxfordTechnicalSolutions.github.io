@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classOxTS_1_1Gal__Cpp_1_1GadOutput" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OxTS::Gal_Cpp::GadOutput</compoundname>
+    <derivedcompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadOutputFile</derivedcompoundref>
+    <derivedcompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadOutputUdp</derivedcompoundref>
+    <includes local="no">gad_output.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadOutput_1a69f31920b2c3506c6514c89ed7900a9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual OxTS::Gal_Cpp::GadOutput::~GadOutput</definition>
+        <argsstring>()</argsstring>
+        <name>~GadOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Virtual destructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output.hpp" line="21" column="9" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output.hpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadOutput_1aaaa4b7917e39d57e5edfe3442146a2b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OxTS::Gal_Cpp::GadOutput::OutputPacket</definition>
+        <argsstring>(const std::uint8_t *const packet, const std::size_t packet_size)=0</argsstring>
+        <name>OutputPacket</name>
+        <param>
+          <type>const std::uint8_t *const</type>
+          <declname>packet</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>packet_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Output a GAD packet </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output.hpp" line="26" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Virtual interface class for different methods of outputting GAD. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>OxTS::Gal_Cpp::GadOutput</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadOutput"/>
+      </node>
+      <node id="2">
+        <label>OxTS::Gal_Cpp::GadOutputFile</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>OxTS::Gal_Cpp::GadOutputUdp</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output.hpp" line="15" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output.hpp" bodystart="16" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutput_1aaaa4b7917e39d57e5edfe3442146a2b4" prot="public" virt="pure-virtual"><scope>OxTS::Gal_Cpp::GadOutput</scope><name>OutputPacket</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutput_1a69f31920b2c3506c6514c89ed7900a9c" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadOutput</scope><name>~GadOutput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

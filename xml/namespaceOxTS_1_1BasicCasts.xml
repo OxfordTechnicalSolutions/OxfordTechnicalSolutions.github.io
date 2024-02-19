@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceOxTS_1_1BasicCasts" kind="namespace" language="C++">
+    <compoundname>OxTS::BasicCasts</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="basic__casts_8hpp_1aab34d26e8a49cd69051651e8be575682" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void OxTS::BasicCasts::cast_uint8_to_1_byte_LE</definition>
+        <argsstring>(typename std::array&lt; uint8_t, N &gt;::iterator &amp;start, const typename std::array&lt; uint8_t, N &gt;::iterator &amp;end, const uint8_t v)</argsstring>
+        <name>cast_uint8_to_1_byte_LE</name>
+        <param>
+          <type>typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" line="13" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" bodystart="13" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="basic__casts_8hpp_1aedad87913125c0dc87bd0be371a7e506" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void OxTS::BasicCasts::cast_uint16_to_2_byte_LE</definition>
+        <argsstring>(typename std::array&lt; uint8_t, N &gt;::iterator &amp;start, const typename std::array&lt; uint8_t, N &gt;::iterator &amp;end, const uint16_t v)</argsstring>
+        <name>cast_uint16_to_2_byte_LE</name>
+        <param>
+          <type>typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const uint16_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" line="23" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" bodystart="23" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="basic__casts_8hpp_1a80f618777e5b6182d48414e2ebeaae16" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void OxTS::BasicCasts::cast_int16_to_2_byte_LE</definition>
+        <argsstring>(typename std::array&lt; uint8_t, N &gt;::iterator &amp;start, const typename std::array&lt; uint8_t, N &gt;::iterator &amp;end, const std::int16_t v)</argsstring>
+        <name>cast_int16_to_2_byte_LE</name>
+        <param>
+          <type>typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const std::int16_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" line="38" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" bodystart="38" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="basic__casts_8hpp_1a37a199491410be3fc50d2272a85cfd78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void OxTS::BasicCasts::cast_int8_to_1_byte_LE</definition>
+        <argsstring>(typename std::array&lt; uint8_t, N &gt;::iterator &amp;start, const typename std::array&lt; uint8_t, N &gt;::iterator &amp;end, const int8_t v)</argsstring>
+        <name>cast_int8_to_1_byte_LE</name>
+        <param>
+          <type>typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const int8_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" line="55" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" bodystart="55" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="basic__casts_8hpp_1ac4d42653af1fe8f7282f6c797201f057" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>std::size_t</type>
+            <declname>N</declname>
+            <defname>N</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void OxTS::BasicCasts::cast_double_to_8_byte_LE</definition>
+        <argsstring>(typename std::array&lt; uint8_t, N &gt;::iterator &amp;start, const typename std::array&lt; uint8_t, N &gt;::iterator &amp;end, const double_t v)</argsstring>
+        <name>cast_double_to_8_byte_LE</name>
+        <param>
+          <type>typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const double_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" line="65" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" bodystart="65" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" line="10" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a2443a174390bd68ad79f06386f727b3" kind="dir">
+    <compoundname>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include</compoundname>
+    <innerdir refid="dir_eb3be30d1661ef808a64de174db7bc68">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/"/>
+  </compounddef>
+</doxygen>

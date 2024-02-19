@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a4a1fa36ad1474756326820aae8554b6b" kindref="member">OxTS::Gal_Cpp::CComMsg::encode</ref>  (const std::array&lt; std::uint8_t, SRC_BUFFER_SIZE &gt; &amp;data, const std::size_t length)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>check type  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv" kindref="compound">OxTS::Gal_Cpp::GadEncoderCsv</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000007"/>Implement this csv encoding wrapper.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1af55400ffda859a04d993274c36fa078b" kindref="member">OxTS::Gal_Cpp::GadSpeed::SetAidingLeverArmConfig</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000006"/>Remove and set this mode to be default  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1adbfb5e9029bcc229096b3e9f0eef7be8" kindref="member">OxTS::Gal_Cpp::GadVelocity::SetAidingLeverArmConfig</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000002"/>Remove and set this mode to be default  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1acdbdb231814882a45e904d3fa1db2c9d" kindref="member">OxTS::Gal_Cpp::GadWheelSpeed::SetAidingLeverArmConfig</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000005"/>Remove and set this mode to be default  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a9fcf8ca07b7c545dfaa508bc27420fe9" kindref="member">OxTS::Gal_Cpp::GadWheelSpeed::SetWheelSpeedCount</ref>  (const double_t count, const double_t period)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000003"/>Clarify where the timestamp should correspond to in the period: start, middle, end.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a3ed4185ed4a0da836dc99dec41012c16" kindref="member">OxTS::Gal_Cpp::GadWheelSpeed::SetWheelSpeedVar</ref>  (const double_t v_c)</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000004"/>Clarify units </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+    <location file="todo"/>
+  </compounddef>
+</doxygen>
