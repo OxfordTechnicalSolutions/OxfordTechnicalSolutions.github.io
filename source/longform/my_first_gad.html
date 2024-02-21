@@ -145,12 +145,10 @@ Since this is the same code as discussed in <a class="reference internal" href="
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-Qysr" aria-selected="true" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-Qysr" name="Qysr" role="tab" tabindex="0">C++</button><button aria-controls="panel-1-UHl0aG9u" aria-selected="false" class="sphinx-tabs-tab code-tab group-tab" id="tab-1-UHl0aG9u" name="UHl0aG9u" role="tab" tabindex="-1">Python</button></div><div aria-labelledby="tab-1-Qysr" class="sphinx-tabs-panel code-tab group-tab" id="panel-1-Qysr" name="Qysr" role="tabpanel" tabindex="0"><div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;chrono&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;thread&gt;</span>
-<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="o">::</span><span class="nn">chrono_literals</span><span class="p">;</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad.hpp&quot;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts/gal-cpp/gad_handler.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;oxts_sleep.hpp&quot;</span>
 
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">argv</span><span class="p">[])</span>
@@ -164,7 +162,7 @@ Since this is the same code as discussed in <a class="reference internal" href="
 <span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">unit_ip</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span><span class="w"> </span><span class="c1">// Unit to send GAD to</span>
 <span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">num_packets</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">stoi</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Number of packets to send.</span>
 
-<span class="w">                </span><span class="c1">// Initialise the handler</span>
+<span class="w">        </span><span class="c1">// Initialise the handler</span>
 <span class="w">        </span><span class="n">OxTS</span><span class="o">::</span><span class="n">Gal_Cpp</span><span class="o">::</span><span class="n">GadHandler</span><span class="w"> </span><span class="n">gh</span><span class="p">;</span>
 <span class="w">        </span><span class="n">gh</span><span class="p">.</span><span class="n">SetEncoderToBin</span><span class="p">();</span>
 <span class="w">        </span><span class="n">gh</span><span class="p">.</span><span class="n">SetOutputModeToUdp</span><span class="p">(</span><span class="n">unit_ip</span><span class="p">);</span>
@@ -182,7 +180,7 @@ Since this is the same code as discussed in <a class="reference internal" href="
 <span class="w">                </span><span class="c1">// Send packet</span>
 <span class="w">                </span><span class="n">gh</span><span class="p">.</span><span class="n">SendPacket</span><span class="p">(</span><span class="n">gv</span><span class="p">);</span>
 <span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;packet &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; sent&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="mi">100</span><span class="n">ms</span><span class="p">);</span>
+<span class="w">                </span><span class="n">OxTS</span><span class="o">::</span><span class="n">sleep_milliseconds</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
 
 <span class="w">        </span><span class="p">}</span>
 
