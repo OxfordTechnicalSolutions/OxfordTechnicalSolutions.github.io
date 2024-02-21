@@ -10,6 +10,6 @@
     <detaileddescription>
 <para>Simple UDP networking implementation for servers and clients. </para>
     </detaileddescription>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="21" column="1"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="25" column="1"/>
   </compounddef>
 </doxygen>

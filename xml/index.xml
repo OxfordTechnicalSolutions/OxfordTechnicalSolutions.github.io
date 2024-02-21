@@ -457,6 +457,7 @@
     <member refid="oxts__sockets_8hpp_1a9ae4d5a82c2622946c49c2ed3cd68017" kind="typedef"><name>ADDRESS_FAMILY</name></member>
   </compound>
   <compound refid="udp__server__client_8hpp" kind="file"><name>udp_server_client.hpp</name>
+    <member refid="udp__server__client_8hpp_1adfc8f90f3a8caa8423099cf36ff214f1" kind="define"><name>_WINSOCK_DEPRECATED_NO_WARNINGS</name></member>
   </compound>
   <compound refid="todo" kind="page"><name>todo</name>
   </compound>
