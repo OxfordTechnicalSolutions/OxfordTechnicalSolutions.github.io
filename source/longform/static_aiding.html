@@ -116,13 +116,14 @@
              
   <section id="static-aiding">
 <span id="staticaiding"></span><h1>Static-aiding<a class="headerlink" href="#static-aiding" title="Link to this heading"></a></h1>
-<p>In this example, position, velocity, and attitude data is sent to an OxTS INS in real time or saved as a GAD file for postprocessing. The full source code for the GAD SDK in both C++ and Python can be found below.</p>
+<p>In this example, position, velocity, and attitude data is sent to an OxTS INS in real time, or saved as a GAD file for postprocessing.
+The full source code for the GAD SDK in both C++ and Python is shown below.</p>
 <section id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>An OxTS INS with the relevant Generic Aiding Feature Codes enabled. If you are not sure whether you have the right Feature Codes or are unfamiliar with them, contact <a class="reference external" href="mailto:support&#37;&#52;&#48;oxts&#46;com">support<span>&#64;</span>oxts<span>&#46;</span>com</a>.</p></li>
 <li><p>A PC, connected to the INS via ethernet.</p></li>
-<li><p>The <a class="reference external" href="https://github.com/OxfordTechnicalSolutions/gad-sdk/tree/main#readme">GAD SDK</a> has been built on this machine / pre-built binaries have been downloaded (not currently available).</p></li>
+<li><p>The <a class="reference external" href="https://github.com/OxfordTechnicalSolutions/gad-sdk/tree/main#readme">GAD SDK</a> has been built on this machine.</p></li>
 </ul>
 <section id="how-to-run-the-executable">
 <h3>How to run the executable<a class="headerlink" href="#how-to-run-the-executable" title="Link to this heading"></a></h3>
@@ -379,12 +380,12 @@
 </pre></div>
 </div>
 </div></div>
-<p>This first half of this section sets the default values for the four input arguments of the main function. The four input arguments are (in order):</p>
+<p>The first half of this section sets the default values for the four input arguments of the main function. The four input arguments are (in order):</p>
 <ol class="arabic simple">
 <li><p>IP address of the INS unit</p></li>
 <li><p>Number of measurement packets to be converted into GAD packets (default = 30).</p></li>
-<li><p>Type of output to be sent. If this is “csv” or “CSV” then the output will be saved as a GAD file. Otherwise, it will be sent to the unity via UDP.</p></li>
-<li><p>If the output is to be saved as a GAD file, this is the name of GAD file. (default is “out.gad”).</p></li>
+<li><p>Type of output to be sent. If this is “csv” or “CSV” then the output will be saved as a GAD file. Otherwise, it will be sent to the unit via UDP.</p></li>
+<li><p>If the output is to be saved as a GAD file, then this is the name of GAD file. (default is “out.gad”).</p></li>
 </ol>
 <p>The second half of this section reads in and sets the input arguments listed above.</p>
 <div class="sphinx-tabs docutils container">
@@ -425,10 +426,11 @@
 <li><p>Set-up the equipment on a work bench; remember that for this example, no sensor is needed.</p></li>
 <li><p>Configure and initialise the INS. How will you initialise the INS if it is mounted on a work bench?</p></li>
 <li><p>Enter in the position given by the navigation engine into the GAD SDK program.</p></li>
-<li><p>Start the executable, then start the GAD SDK program with the output as UDP.</p></li>
+<li><p>Run the executable (C++) or run the code from the Python command line. Make sure the output type is set to UDP.</p></li>
 <li><p>Observe the output of the Navigation engine with NAVDisplay. Remember that the GAD SDK is feeding the navigation engine that give no movement. So, what happens when you move the INS across the work desk?</p></li>
 <li><p>Now try to the output type to csv and rerun the GAD SDK. After the program has finished (run out of packets to send), look at the GAD file with a spreadsheet program such as Excel. Do you understand the information given in this GAD file? See here for more information on the format of gad files.</p></li>
-<li><p>You will notice that in the GAD SDK code, the different update types are made outside of the packet loop. Move the code for one of the update types, e.g. velocity, into the packet loop section. Now write a function that varies the input value, e.g. the velocity could be the square root of the packet number. Run the GAD SDK program again (output type = csv), study the GAD file. Do you see where the values in the gad file have changed?</p></li>
+<li><p>You will notice that in the GAD SDK code, the different update types are made outside of the packet loop. Move the code for one of the update types, e.g. velocity, into the packet loop section. Now write a function that varies the input value, e.g. the velocity could be the square root of the packet number.
+Run the GAD SDK program again (output type = csv), study the GAD file. Do you see where the values in the gad file have changed?</p></li>
 </ul>
 </section>
 </section>

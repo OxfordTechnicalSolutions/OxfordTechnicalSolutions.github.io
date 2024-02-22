@@ -117,13 +117,13 @@ To our knowledge, a similar library does not exist for C++.</p>
 In order to use CAN data for your vehicle/device, significant changes to the CAN reader’s configuration will be needed.
 Consult the <a class="reference external" href="https://python-can.readthedocs.io/en/stable/index.html">python-can library</a> and your device/vehicle’s CAN documentation (see note below) on how to do this.</p>
 <blockquote>
-<div><p><strong>A note about CAN message</strong></p>
-<p>If you are using an independent aiding device that uses CAN messages, you can refer to the device’s documentation for the message IDs.
+<div><p><strong>A note about CAN messages</strong></p>
+<p>If you are using an independent aiding device that produces CAN messages, you can refer to the device’s documentation for the message IDs.
 However, if you are plugging into the CAN bus of a vehicle, it will be harder to identify the message ID you want.
 If you are an OEM employee then you should have full access to all the message IDs your vehicle uses, but if you are not, then you can refer to these <a class="reference external" href="https://en.wikipedia.org/wiki/OBD-II_PIDs">open-source</a> lists that tell you some IDs to look out for.</p>
 </div></blockquote>
 <p>For the specfic vehicle used in this example, the wheel speed data transmitted by its CAN bus is in miles per hour and is a scalar, i.e. it does not give information on whether the motion is in the forwards or backwards direction.
-Therefore, the unsigned aiding frame is used for the GAD speed update. Furthermore, the data needs be converted into metres per second.</p>
+Therefore, the unsigned aiding frame is used for the GAD speed update. Furthermore, the data needs to be converted into metres per second.</p>
 <section id="source-code">
 <h2>Source code<a class="headerlink" href="#source-code" title="Link to this heading"></a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">oxts_sdk</span> <span class="c1"># Used to create and transmit GAD packets</span>
@@ -158,18 +158,17 @@ Therefore, the unsigned aiding frame is used for the GAD speed update. Furthermo
 </section>
 <section id="can-specific-code">
 <h2>CAN-specific code<a class="headerlink" href="#can-specific-code" title="Link to this heading"></a></h2>
-<p>You should be familar with most of the code shown above. However, there is some CAN-specific code that we shall explain.</p>
+<p>You should be familiar with most of the code shown above. However, there is some CAN-specific code that we shall explain.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bus</span> <span class="o">=</span> <span class="n">can</span><span class="o">.</span><span class="n">interface</span><span class="o">.</span><span class="n">Bus</span><span class="p">(</span><span class="n">bustype</span><span class="o">=</span><span class="s1">&#39;pcan&#39;</span><span class="p">,</span> <span class="n">channel</span><span class="o">=</span><span class="s1">&#39;PCAN_USBBUS1&#39;</span><span class="p">,</span> <span class="n">bitrate</span><span class="o">=</span><span class="mi">1000000</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The first step in extracting the wheel speed aiding data is to configure the CAN bus reader.
-The line of code above shows how the reader was configured for this specfic example.
-Again refer to the Python CAN libary and your device/vehicle’s CAN documentation for the correct configurations.
+The line of code above shows how the reader was configured for this specific example.
+Again, refer to the Python CAN library and your device/vehicle’s CAN documentation for the correct configurations.
 Once configured correctly, the CAN bus reader will extract all CAN messages.</p>
 <p>The CAN bus will send a large number of messages each second, the majority of which will not be useful in providing wheelspeed aiding.
 Therefore, one needs to filter through all the messages to find the specific messages that contains the correct type of aiding data.
-The correct messages are identified by the message ID number, which can be found in the device/vehicle’s CAN documentation.
-(See note below for more information on CAN documentaion.)</p>
+The correct messages are identified by the message ID number, which can be found in the device/vehicle’s CAN documentation.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">bus</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">msg</span><span class="o">.</span><span class="n">arbitration_id</span> <span class="o">==</span> <span class="mi">1540</span><span class="p">:</span>
                 <span class="n">ws</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1609.34</span><span class="o">/</span><span class="p">(</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="p">))</span><span class="o">*</span><span class="mf">0.01</span><span class="o">*</span><span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;little&quot;</span><span class="p">,</span> <span class="n">signed</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -181,7 +180,7 @@ The correct messages are identified by the message ID number, which can be found
 bytes (msg.data[0:2]) of the message data into an integer (int.from_bytes). Here the “little” argument means <a class="reference external" href="https://en.wikipedia.org/wiki/Endianness">little-endian</a>,
 i.e., this specific CAN bus stores the least-significant byte at the smallest address.
 In order to reduce memory usage, this <strong>specific</strong> CAN bus encodes the speed message as integer. Where the integer is equal to 100 times the real value of the speed.
-Hence in order to extract the correct value of the speed in miles per hour, the decoded integer needs to be mulitplied by 0.01.</p>
+Hence to extract the correct value of the speed in miles per hour, the decoded integer needs to be multiplied by 0.01.</p>
 <p>Finally, the multiplication by (1609.34/(60*60)) is used to convert from miles per hour to metres per second.</p>
 </section>
 </section>

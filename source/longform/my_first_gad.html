@@ -117,7 +117,7 @@
 <span id="myfirstgad"></span><h1>My first GAD<a class="headerlink" href="#my-first-gad" title="Link to this heading"></a></h1>
 <p>In this example, velocity data is sent to an OxTS INS in real time. Instead of using an actual sensor, the velocity is hard coded.
 The full source code for the GAD SDK in both C++ and Python can be found below.
-Since this is the same code as discussed in <a class="reference internal" href="gettingstarted.html#gettingstarted"><span class="std std-ref">Getting Started</span></a>, a full breakdown of the code will not be given here.</p>
+Since this is the same code as discussed in <a class="reference internal" href="gettingstarted.html#gettingstarted"><span class="std std-ref">Getting Started</span></a> , a full breakdown of the code will not be given here.</p>
 <section id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading"></a></h2>
 <ul class="simple">
@@ -127,7 +127,8 @@ Since this is the same code as discussed in <a class="reference internal" href="
 </ul>
 <section id="how-to-run-the-executable">
 <h3>How to run the executable<a class="headerlink" href="#how-to-run-the-executable" title="Link to this heading"></a></h3>
-<p>If you are using C++, then the GAD SDK code needs to be run via an executable.</p>
+<p>If you are using C++, then the GAD SDK code needs to be run via an executable.
+The executable for this example is created when building the GAD SDK.</p>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Linux</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><ol class="arabic simple">
 <li><p>Navigate to the relevant directory in the GAD-SDK build folder: <cite>cd &lt;build_dir&gt;/examples/gal</cite>.</p></li>
@@ -228,7 +229,7 @@ Since this is the same code as discussed in <a class="reference internal" href="
 <ul class="simple">
 <li><p>Set-up the equipment on a work bench; remember that for this example, no sensor is needed.</p></li>
 <li><p>Configure and initialise the INS. How will you initialise the INS if it is mounted on a work bench?</p></li>
-<li><p>Start the executable, then start the GAD SDK program.</p></li>
+<li><p>Run the executable (C++) or run the code from the Python command line.</p></li>
 <li><p>Observe the output of the navigation engine with NAVDisplay. Remember that the GAD SDK is feeding the navigation engine with velocity updates that give no movement. So what happens when you move the INS across the work desk?</p></li>
 <li><p>Stop the GAD SDK program and change the velocity of the packets to a value such as (5.0,0.0,0.0) and restart. What happens to the Navigation engines solution? What are the velocity innovations?</p></li>
 <li><p>Stop the GAD SDK program and reset the velocity of the packets to (0.0,0.0,0.0). Now increase the covariance of the packets to something like (1.0,1.0,1.0). What is the navigations solution while the INS is stationary on the bench? Now, try moving the INS across the table. How does changing the covariance value affect the navigation engines solution when the INS is moving? Can you explain these changes?</p></li>
