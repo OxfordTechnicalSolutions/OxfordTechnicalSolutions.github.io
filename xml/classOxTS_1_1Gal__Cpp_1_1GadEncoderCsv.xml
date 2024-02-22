@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="63" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" bodystart="63" bodyend="78"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="63" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" bodystart="63" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ac3432937fbc622adb53c90cca06fc5da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="81" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="82" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a30442deb89b0819eec13858e92ba6c28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
@@ -152,12 +152,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="84" column="9"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="85" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a071cbfdb7ec24b3fc9bc3e5923119855" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a472e973ca766bab86b3afa7df08880c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool OxTS::Gal_Cpp::GadEncoderCsv::WriteGen3d</definition>
-        <argsstring>(const bool valid_flag, const Gen3d &amp;gen_3d_data, const bool end_flag=true)</argsstring>
+        <argsstring>(const bool valid_flag, const Gen3d &amp;gen_3d_data, const bool end_comma=true)</argsstring>
         <name>WriteGen3d</name>
         <param>
           <type>const bool</type>
@@ -169,7 +169,7 @@
         </param>
         <param>
           <type>const bool</type>
-          <declname>end_flag</declname>
+          <declname>end_comma</declname>
           <defval>true</defval>
         </param>
         <briefdescription>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="87" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="88" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a12958b86c764791d4924f9e2f5e3c9fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="90" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="91" column="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -213,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="94" column="1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="95" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ad6e573757e263fe384d4ce12726a59f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -241,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="98" column="14"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="99" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1afa82d8be19190e216d9da11ec440d24a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>const uint8_t *</type>
@@ -258,7 +258,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="102" column="23"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="103" column="23"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a7e6a0ee2acadd8d95212980633450aec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::size_t</type>
@@ -275,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="106" column="21"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="107" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -309,7 +309,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="20" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" bodystart="21" bodyend="107"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" line="20" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp" bodystart="21" bodyend="108"/>
     <listofallmembers>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a12958b86c764791d4924f9e2f5e3c9fc" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>EncodeGadCsv</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ad6e573757e263fe384d4ce12726a59f4" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>EncodePacket</name></member>
@@ -320,7 +320,7 @@
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a2219d741678eaa385eea7fe4333c85b9" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>m_str_stream</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a6c7835ebc129f35014a983951c65c16d" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>Write</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a0ceefabf7a59da6c1824739757b85206" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>WriteFlagAndValue</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a071cbfdb7ec24b3fc9bc3e5923119855" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>WriteGen3d</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a472e973ca766bab86b3afa7df08880c4" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>WriteGen3d</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ac3432937fbc622adb53c90cca06fc5da" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>WriteGen3dHeader</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a30442deb89b0819eec13858e92ba6c28" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>WriteHeader</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a972dc4fbb75731df1bf856cd93c0bf3b" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderCsv</scope><name>WriteWithDecimalPlaces</name></member>

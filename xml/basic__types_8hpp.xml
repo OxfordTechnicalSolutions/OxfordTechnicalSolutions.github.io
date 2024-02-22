@@ -125,50 +125,6 @@
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_types.hpp" line="132" column="9" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_types.hpp" bodystart="132" bodyend="-1"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="basic__types_8hpp_1a2becff213668701e9a7df6b19cd00fb9" prot="public" static="no">
-        <type>long double</type>
-        <definition>typedef long double real80_t</definition>
-        <argsstring></argsstring>
-        <name>real80_t</name>
-        <briefdescription>
-<para>Floating-point real of 80 bits. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_types.hpp" line="136" column="21" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_types.hpp" bodystart="136" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="basic__types_8hpp_1aa4fe3cbe865a52135d2b270189da0353" prot="public" static="no">
-        <type>double</type>
-        <definition>typedef double real64_t</definition>
-        <argsstring></argsstring>
-        <name>real64_t</name>
-        <briefdescription>
-<para>Floating-point real of 64 bits. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_types.hpp" line="137" column="21" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_types.hpp" bodystart="137" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="basic__types_8hpp_1a3367af45445891b41c9671c4962c37f1" prot="public" static="no">
-        <type>float</type>
-        <definition>typedef float real32_t</definition>
-        <argsstring></argsstring>
-        <name>real32_t</name>
-        <briefdescription>
-<para>Floating-point real of 32 bits. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_types.hpp" line="138" column="21" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_types.hpp" bodystart="138" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
     <briefdescription>
 <para>Provide multiple compiler support for standard integer types for 8, 16, 32, and 64 bit quantities. </para>
     </briefdescription>
@@ -216,7 +172,7 @@ By default BasicTypes detects C or C++ and includes needed files accordingly. Wh
 <codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//============================================================================================================</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;climits&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#if(_MSC_VER<sp/>&lt;<sp/>1300)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>int8_t;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t;</highlight></codeline>
@@ -287,12 +243,7 @@ By default BasicTypes detects C or C++ and includes needed files accordingly. Wh
 <codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCNX64<sp/>SCNx64</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="basic__types_8hpp_1a2becff213668701e9a7df6b19cd00fb9" kindref="member">real80_t</ref>;<sp/><sp/></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="basic__types_8hpp_1aa4fe3cbe865a52135d2b270189da0353" kindref="member">real64_t</ref>;<sp/><sp/></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="basic__types_8hpp_1a3367af45445891b41c9671c4962c37f1" kindref="member">real32_t</ref>;<sp/><sp/></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_types.hpp"/>
   </compounddef>

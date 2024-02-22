@@ -148,7 +148,7 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a0ceefabf7a59da6c1824739757b85206" kind="function"><name>WriteFlagAndValue</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ac3432937fbc622adb53c90cca06fc5da" kind="function"><name>WriteGen3dHeader</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a30442deb89b0819eec13858e92ba6c28" kind="function"><name>WriteHeader</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a071cbfdb7ec24b3fc9bc3e5923119855" kind="function"><name>WriteGen3d</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a472e973ca766bab86b3afa7df08880c4" kind="function"><name>WriteGen3d</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a12958b86c764791d4924f9e2f5e3c9fc" kind="function"><name>EncodeGadCsv</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a2649aec587d66949b4b2d58fb7af2230" kind="function"><name>GadEncoderCsv</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ad6e573757e263fe384d4ce12726a59f4" kind="function"><name>EncodePacket</name></member>
@@ -181,7 +181,7 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a0716b916ca382d87d0ba5758e3756785" kind="function"><name>GetHeadingVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a835e1d1ccdce6241a78c597d29088583" kind="function"><name>SetAidingAlignmentFixed</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a8a002a9f9fa89ccc0de6dd2fb46bca52" kind="function"><name>GetAidingAlignment</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a41c11d6fd253bc9682c41827ca25dfdf" kind="function"><name>SetAidingAlignmentArmConfig</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1aaa33a69c08c87c0bff61937b0ac33f8b" kind="function"><name>SetAidingAlignmentConfig</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a696a9c9d9fd9e47fcb4413741e4ba9d6" kind="function"><name>SetAidingAlignmentVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a72a9aaf8971e7dcc2acd436bf555fa9c" kind="function"><name>GetAidingAlignmentVar</name></member>
   </compound>
@@ -417,9 +417,6 @@
     <member refid="basic__types_8hpp_1a0c139165956b5fba7b44bd35cfafc86d" kind="define"><name>SCNX16</name></member>
     <member refid="basic__types_8hpp_1a50fd54ef494b4a246ada865e1de61d53" kind="define"><name>SCNX32</name></member>
     <member refid="basic__types_8hpp_1ad57bb9b57b3afdb70185fb10af5ef140" kind="define"><name>SCNX64</name></member>
-    <member refid="basic__types_8hpp_1a2becff213668701e9a7df6b19cd00fb9" kind="typedef"><name>real80_t</name></member>
-    <member refid="basic__types_8hpp_1aa4fe3cbe865a52135d2b270189da0353" kind="typedef"><name>real64_t</name></member>
-    <member refid="basic__types_8hpp_1a3367af45445891b41c9671c4962c37f1" kind="typedef"><name>real32_t</name></member>
   </compound>
   <compound refid="ccomtx_8hpp" kind="file"><name>ccomtx.hpp</name>
   </compound>
