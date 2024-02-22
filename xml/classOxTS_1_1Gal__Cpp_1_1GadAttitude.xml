@@ -281,11 +281,11 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="748" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a146b6e76fac9b1acba4a6c5c3a1e89c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a43aeb9919e04767af7d2d711af0cfe3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void OxTS::Gal_Cpp::GadAttitude::SetAidingAlignmentArmConfig</definition>
+        <definition>void OxTS::Gal_Cpp::GadAttitude::SetAidingAlignmentConfig</definition>
         <argsstring>()</argsstring>
-        <name>SetAidingAlignmentArmConfig</name>
+        <name>SetAidingAlignmentConfig</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -432,7 +432,7 @@
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a31bbc634c981fe86d337b3b3842cb419" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>operator=</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a662da5024bd3fcd8f80646c24f212dcb" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAcqTimestamp</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a421363bc956fe01ea5e71b09b4db53c6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAcqValid</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a146b6e76fac9b1acba4a6c5c3a1e89c6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAidingAlignmentArmConfig</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a43aeb9919e04767af7d2d711af0cfe3a" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAidingAlignmentConfig</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1ac6b531d0c169646bd6aaaac436670082" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAidingAlignmentFixed</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1aaa41566983a72434d87a265e5d0a71e3" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAidingAlignmentOptimising</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1b9a3e37cad9a42b23f339cf5e895b0b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetAidingAlignmentVar</name></member>

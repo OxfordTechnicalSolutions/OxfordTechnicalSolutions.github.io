@@ -114,7 +114,7 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1ac6b531d0c169646bd6aaaac436670082" kind="function"><name>SetAidingAlignmentFixed</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a15d41a1d14afb9d75dcf5805e26e0918" kind="function"><name>GetAidingAlignment</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1aaa41566983a72434d87a265e5d0a71e3" kind="function"><name>SetAidingAlignmentOptimising</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a146b6e76fac9b1acba4a6c5c3a1e89c6" kind="function"><name>SetAidingAlignmentArmConfig</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a43aeb9919e04767af7d2d711af0cfe3a" kind="function"><name>SetAidingAlignmentConfig</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1b9a3e37cad9a42b23f339cf5e895b0b" kind="function"><name>SetAidingAlignmentVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a55e91373832e8460d57afb7ea9e3b084" kind="function"><name>GetAidingAlignmentVar</name></member>
   </compound>
