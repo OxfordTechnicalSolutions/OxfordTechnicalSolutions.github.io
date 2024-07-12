@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classOxTS_1_1Gal__Cpp_1_1Gad" kind="class" language="C++" prot="public">
     <compoundname>OxTS::Gal_Cpp::Gad</compoundname>
+    <derivedcompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadAngularRate</derivedcompoundref>
     <derivedcompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadAttitude</derivedcompoundref>
     <derivedcompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadHeading" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadHeading</derivedcompoundref>
     <derivedcompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadPosition" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadPosition</derivedcompoundref>
@@ -1351,25 +1352,25 @@
 <para>Cpp wrapper class for C struct GEN_AIDING_DATA </para>
     </detaileddescription>
     <inheritancegraph>
-      <node id="5">
+      <node id="6">
         <label>OxTS::Gal_Cpp::GadSpeed</label>
         <link refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="4">
         <label>OxTS::Gal_Cpp::GadHeading</label>
         <link refid="classOxTS_1_1Gal__Cpp_1_1GadHeading"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>OxTS::Gal_Cpp::GadPosition</label>
         <link refid="classOxTS_1_1Gal__Cpp_1_1GadPosition"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
+      <node id="3">
         <label>OxTS::Gal_Cpp::GadAttitude</label>
         <link refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude"/>
         <childnode refid="1" relation="public-inheritance">
@@ -1379,13 +1380,19 @@
         <label>OxTS::Gal_Cpp::Gad</label>
         <link refid="classOxTS_1_1Gal__Cpp_1_1Gad"/>
       </node>
-      <node id="6">
+      <node id="7">
         <label>OxTS::Gal_Cpp::GadVelocity</label>
         <link refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="7">
+      <node id="2">
+        <label>OxTS::Gal_Cpp::GadAngularRate</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
         <label>OxTS::Gal_Cpp::GadWheelSpeed</label>
         <link refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed"/>
         <childnode refid="1" relation="public-inheritance">

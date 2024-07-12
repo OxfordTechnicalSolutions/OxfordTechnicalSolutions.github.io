@@ -103,6 +103,19 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a662da5024bd3fcd8f80646c24f212dcb" kind="function"><name>SetAcqTimestamp</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a5448f4907c9039f12802b40c34f3f66b" kind="function"><name>GetAcqTimestamp</name></member>
   </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate" kind="class"><name>OxTS::Gal_Cpp::GadAngularRate</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ac79d2927709605cff4dd7d1c755cc9d5" kind="function"><name>GadAngularRate</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ad935d371e5217aa77f12013e1d20afe9" kind="function"><name>GadAngularRate</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1aed16eda8850a39f7a121742c9c3bd0d3" kind="function"><name>GetAngularRate</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a49f5f8441a1d84991852be6da0b41240" kind="function"><name>SetAngularRate</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a8f1ee7b2c834b3a2e2825b7771c8e569" kind="function"><name>SetAngularRateVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a448aa217bc726cde6df6f06a4c3d69eb" kind="function"><name>GetAngularRateVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1af51770c16ff6d61b216db61d25fbc42b" kind="function"><name>SetAidingAlignmentFixed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a8eedb708305117ce59343f4f0a9ce3c1" kind="function"><name>SetAidingAlignmentConfig</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a809684f8009305c27ab224d5c9fa77f9" kind="function"><name>GetAidingAlignment</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a24cbbf6c09de0bd53487f4747e401029" kind="function"><name>SetAidingAlignmentVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1af1baf7024fc6745e32c0d0d4d2e28122" kind="function"><name>GetAidingAlignmentVar</name></member>
+  </compound>
   <compound refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude" kind="class"><name>OxTS::Gal_Cpp::GadAttitude</name>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1afe027260cc2ded3a1ba7e955883b7de7" kind="function"><name>GadAttitude</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a30d9a91053e2d0c68bb045b54e52f6b2" kind="function"><name>GadAttitude</name></member>
@@ -399,6 +412,7 @@
     <member refid="gad__struct_8hpp_1a071ca9d88a061554fc09cb5b7dddeffa" kind="variable"><name>SPEED_SYS_TYPE</name></member>
     <member refid="gad__struct_8hpp_1a361c2b8a25ff48bc44ee83a31e7f72df" kind="variable"><name>ATT_SYS_TYPE</name></member>
     <member refid="gad__struct_8hpp_1ab032f628859f61cf0cb52ed504172712" kind="variable"><name>HEA_SYS_TYPE</name></member>
+    <member refid="gad__struct_8hpp_1a7c849bb99f02a7e13876eff2e1e8ca58" kind="variable"><name>ANG_SYS_TYPE</name></member>
     <member refid="gad__struct_8hpp_1a5c81a682882b7e94e9b9d63110d6f828" kind="variable"><name>LOC_SYS</name></member>
   </compound>
   <compound refid="namespaceOxTS_1_1Lib" kind="namespace"><name>OxTS::Lib</name>

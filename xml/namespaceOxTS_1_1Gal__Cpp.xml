@@ -11,6 +11,7 @@
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed" prot="public">OxTS::Gal_Cpp::GadSpeed</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude" prot="public">OxTS::Gal_Cpp::GadAttitude</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadHeading" prot="public">OxTS::Gal_Cpp::GadHeading</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate" prot="public">OxTS::Gal_Cpp::GadAngularRate</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder" prot="public">OxTS::Gal_Cpp::GadEncoder</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin" prot="public">OxTS::Gal_Cpp::GadEncoderBin</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv" prot="public">OxTS::Gal_Cpp::GadEncoderCsv</innerclass>
@@ -649,6 +650,24 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="136" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="137" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1a7c849bb99f02a7e13876eff2e1e8ca58" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::ANG_SYS_TYPE</definition>
+        <argsstring></argsstring>
+        <name>ANG_SYS_TYPE</name>
+        <initializer>{
+            ANG_SYS_VOID,
+            ANG_SYS_SENSOR        
+        }</initializer>
+        <briefdescription>
+<para>Angular Rate types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="145" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1a5c81a682882b7e94e9b9d63110d6f828" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::LOC_SYS</definition>
@@ -666,7 +685,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="145" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="146" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="153" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="154" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

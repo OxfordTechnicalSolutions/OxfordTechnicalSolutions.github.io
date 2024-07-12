@@ -35,6 +35,7 @@
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed" prot="public">OxTS::Gal_Cpp::GadSpeed</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude" prot="public">OxTS::Gal_Cpp::GadAttitude</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadHeading" prot="public">OxTS::Gal_Cpp::GadHeading</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate" prot="public">OxTS::Gal_Cpp::GadAngularRate</innerclass>
     <innernamespace refid="namespaceOxTS">OxTS</innernamespace>
     <innernamespace refid="namespaceOxTS_1_1Gal__Cpp">OxTS::Gal_Cpp</innernamespace>
     <briefdescription>
@@ -355,12 +356,31 @@
 <codeline lineno="819"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a696a9c9d9fd9e47fcb4413741e4ba9d6" kindref="member">SetAidingAlignmentVar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>double_t<sp/>h_v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>double_t<sp/>p_v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>double_t<sp/>r_v);</highlight></codeline>
 <codeline lineno="820"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>container_double6_t&amp;<sp/>GetAidingAlignmentVar()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="821"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="822"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>gal_cpp</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="823"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>oxts</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="824"><highlight class="normal"></highlight></codeline>
-<codeline lineno="825"><highlight class="normal"></highlight></codeline>
-<codeline lineno="826"><highlight class="normal"></highlight></codeline>
-<codeline lineno="827"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>GAD_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="822"><highlight class="normal"></highlight></codeline>
+<codeline lineno="826" refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate" kindref="compound">GadAngularRate</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1Gad" kindref="compound">Gad</ref></highlight></codeline>
+<codeline lineno="827"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ac79d2927709605cff4dd7d1c755cc9d5" kindref="member">GadAngularRate</ref>();</highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ac79d2927709605cff4dd7d1c755cc9d5" kindref="member">GadAngularRate</ref>(uint8_t<sp/>stream_id);</highlight></codeline>
+<codeline lineno="837"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>container_double3_t&amp;<sp/>GetAngularRate()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="838"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>val</highlight></codeline>
+<codeline lineno="845"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a49f5f8441a1d84991852be6da0b41240" kindref="member">SetAngularRate</ref>(double_t<sp/>wx,<sp/>double_t<sp/>wy,<sp/>double_t<sp/>wz);</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a8f1ee7b2c834b3a2e2825b7771c8e569" kindref="member">SetAngularRateVar</ref>(double_t<sp/>v_wx,<sp/>double_t<sp/>v_wy,<sp/>double_t<sp/>v_wz);</highlight></codeline>
+<codeline lineno="853"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>container_double6_t&amp;<sp/>GetAngularRateVar()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="861"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1af51770c16ff6d61b216db61d25fbc42b" kindref="member">SetAidingAlignmentFixed</ref>(double_t<sp/>h,<sp/>double_t<sp/>p,<sp/>double_t<sp/>r);</highlight></codeline>
+<codeline lineno="866"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a8eedb708305117ce59343f4f0a9ce3c1" kindref="member">SetAidingAlignmentConfig</ref>();</highlight></codeline>
+<codeline lineno="867"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="868"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>container_double3_t&amp;<sp/>GetAidingAlignment()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="876"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a24cbbf6c09de0bd53487f4747e401029" kindref="member">SetAidingAlignmentVar</ref>(double_t<sp/>v_h,<sp/>double_t<sp/>v_p,<sp/>double_t<sp/>v_r);</highlight></codeline>
+<codeline lineno="877"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>container_double6_t&amp;<sp/>GetAidingAlignmentVar()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="879"><highlight class="normal"></highlight></codeline>
+<codeline lineno="880"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>gal_cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="881"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>oxts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="882"><highlight class="normal"></highlight></codeline>
+<codeline lineno="883"><highlight class="normal"></highlight></codeline>
+<codeline lineno="884"><highlight class="normal"></highlight></codeline>
+<codeline lineno="885"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>GAD_HPP</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp"/>
   </compounddef>
