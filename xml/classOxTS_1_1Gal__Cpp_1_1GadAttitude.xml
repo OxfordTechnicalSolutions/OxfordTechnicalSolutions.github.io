@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="703" column="1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="707" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a30d9a91053e2d0c68bb045b54e52f6b2" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="707" column="10"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="711" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a6a4d43d9a76f3e4d1bf2f6533914569b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double3_t &amp;</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="708" column="27"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="712" column="27"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a415469bbf3f6dbaaca9ab845e39a6aac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="718" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="722" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1462cdffa0cdae4761a51abaf832ed58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="726" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="730" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a8d8ddc951c53f15a2e7ba41a0cd18290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -214,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="733" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="737" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1abba803ace5f437776c55b1987676ee5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double6_t &amp;</type>
@@ -227,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="734" column="27"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="738" column="27"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1ac6b531d0c169646bd6aaaac436670082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="742" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="746" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a15d41a1d14afb9d75dcf5805e26e0918" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double3_t &amp;</type>
@@ -265,7 +265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="743" column="27"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="747" column="27"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1aaa41566983a72434d87a265e5d0a71e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -279,7 +279,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="748" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="752" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a43aeb9919e04767af7d2d711af0cfe3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -293,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="753" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="757" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1b9a3e37cad9a42b23f339cf5e895b0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -344,7 +344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="761" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="765" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a55e91373832e8460d57afb7ea9e3b084" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double6_t &amp;</type>
@@ -357,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="762" column="27"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="766" column="27"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -389,7 +389,7 @@
         <link refid="classOxTS_1_1Gal__Cpp_1_1Gad"/>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="697" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="698" bodyend="763"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="701" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="702" bodyend="767"/>
     <listofallmembers>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a43ddac918eb52cd8b1f9e71bed76f48d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>Gad</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae91583b25eef92b08f60172a3f67a997" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>Gad</name></member>
@@ -423,6 +423,7 @@
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6c719ce3cdfbe9694b258cacc99aabc2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeGpsWeek</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a776a9fd3b10dddf49bea94eb4940303f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeLatency</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1adf9cbbc46906f8faf87c648fe970c794" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a09b5dda45f27ab6d60dff44c993fbd40" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimePTP</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a680fc10457da6deeaf791f647b0a2ac6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeTAI</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a47e3c5c49bc8455a2c938a832efe1bd3" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeUTCUnix</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7e4cb65fadd0191174b38b5f74e17bdf" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>GetTimeValid</name></member>
@@ -461,6 +462,7 @@
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ab38a44d5a7b541a48d1647ad4160aa3f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeGps</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a57c9653747e06a9569db459b382410b2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeLatency</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a34e94d07721e38dba784659f5979e725" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimePpsRelative</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a9334a7e9a51bd1fced2f53ac3075abfb" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimePTP</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3a567ec593f2e46adaa44be713200155" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeTAI</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6d0d89762f6242cfc1bd7177128ee6b6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeUTCUnix</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4ffcb37f8a335cba9d58588358a75b93" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAttitude</scope><name>SetTimeValid</name></member>

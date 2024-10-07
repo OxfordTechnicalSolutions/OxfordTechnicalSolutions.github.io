@@ -78,6 +78,8 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2c928de947b1d750d9d1ea27791ad28f" kind="function"><name>GetTimeGpsSecondsFromSunday</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3a567ec593f2e46adaa44be713200155" kind="function"><name>SetTimeTAI</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a680fc10457da6deeaf791f647b0a2ac6" kind="function"><name>GetTimeTAI</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a9334a7e9a51bd1fced2f53ac3075abfb" kind="function"><name>SetTimePTP</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a09b5dda45f27ab6d60dff44c993fbd40" kind="function"><name>GetTimePTP</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a34e94d07721e38dba784659f5979e725" kind="function"><name>SetTimePpsRelative</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1adf9cbbc46906f8faf87c648fe970c794" kind="function"><name>GetTimePpsRelative</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a57c9653747e06a9569db459b382410b2" kind="function"><name>SetTimeLatency</name></member>
