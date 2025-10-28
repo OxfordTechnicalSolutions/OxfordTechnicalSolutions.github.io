@@ -1,16 +1,17 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classOxTS_1_1Gal__Cpp_1_1GadEncoder" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>OxTS::Gal_Cpp::GadEncoder</compoundname>
     <derivedcompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadEncoderBin</derivedcompoundref>
     <derivedcompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadEncoderCsv</derivedcompoundref>
     <includes local="no">gad_encoder.hpp</includes>
-      <sectiondef kind="public-func">
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a671ef4d673c2a38c3db6f932f8d607f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
         <definition>virtual OxTS::Gal_Cpp::GadEncoder::~GadEncoder</definition>
         <argsstring>()</argsstring>
         <name>~GadEncoder</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoder::~GadEncoder</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -25,6 +26,7 @@
         <definition>virtual void OxTS::Gal_Cpp::GadEncoder::EncodePacket</definition>
         <argsstring>(const Gad &amp;g)=0</argsstring>
         <name>EncodePacket</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoder::EncodePacket</qualifiedname>
         <reimplementedby refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a60467be0c1894852ed519859e4ced280">EncodePacket</reimplementedby>
         <reimplementedby refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ad6e573757e263fe384d4ce12726a59f4">EncodePacket</reimplementedby>
         <param>
@@ -40,13 +42,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp" line="25" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1aede2ac0d93306c7157add4f7cf911505" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1af8baa72007c6b585b7385ce34f17affc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>const uint8_t *</type>
-        <definition>virtual const uint8_t* OxTS::Gal_Cpp::GadEncoder::GetPacket</definition>
+        <definition>virtual const uint8_t * OxTS::Gal_Cpp::GadEncoder::GetPacket</definition>
         <argsstring>()=0</argsstring>
         <name>GetPacket</name>
-        <reimplementedby refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1abda7f29d16f6eb62da230b4911e84431">GetPacket</reimplementedby>
-        <reimplementedby refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1afa82d8be19190e216d9da11ec440d24a">GetPacket</reimplementedby>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoder::GetPacket</qualifiedname>
+        <reimplementedby refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a8e9561b5d8387ddbe391d4490bc65280">GetPacket</reimplementedby>
+        <reimplementedby refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1aee027209344ad1360578af912ccfc8cc">GetPacket</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -63,6 +66,7 @@
         <definition>virtual std::size_t OxTS::Gal_Cpp::GadEncoder::GetPacketSize</definition>
         <argsstring>()=0</argsstring>
         <name>GetPacketSize</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoder::GetPacketSize</qualifiedname>
         <reimplementedby refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a05df80a7a71a5c47716d0315572aeb17">GetPacketSize</reimplementedby>
         <reimplementedby refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a7e6a0ee2acadd8d95212980633450aec">GetPacketSize</reimplementedby>
         <briefdescription>
@@ -76,7 +80,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp" line="33" column="22"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -87,15 +91,15 @@
         <label>OxTS::Gal_Cpp::GadEncoder</label>
         <link refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder"/>
       </node>
-      <node id="3">
-        <label>OxTS::Gal_Cpp::GadEncoderCsv</label>
-        <link refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="2">
         <label>OxTS::Gal_Cpp::GadEncoderBin</label>
         <link refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>OxTS::Gal_Cpp::GadEncoderCsv</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
@@ -103,7 +107,7 @@
     <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp" line="19" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp" bodystart="20" bodyend="34"/>
     <listofallmembers>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1adcf933bd6e93aed8676019064b4eb77d" prot="public" virt="pure-virtual"><scope>OxTS::Gal_Cpp::GadEncoder</scope><name>EncodePacket</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1aede2ac0d93306c7157add4f7cf911505" prot="public" virt="pure-virtual"><scope>OxTS::Gal_Cpp::GadEncoder</scope><name>GetPacket</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1af8baa72007c6b585b7385ce34f17affc" prot="public" virt="pure-virtual"><scope>OxTS::Gal_Cpp::GadEncoder</scope><name>GetPacket</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a9533e6fdef4008a1d232896bab29eabd" prot="public" virt="pure-virtual"><scope>OxTS::Gal_Cpp::GadEncoder</scope><name>GetPacketSize</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a671ef4d673c2a38c3db6f932f8d607f5" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadEncoder</scope><name>~GadEncoder</name></member>
     </listofallmembers>

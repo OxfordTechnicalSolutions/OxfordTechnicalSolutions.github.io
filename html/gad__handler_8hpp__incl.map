@@ -1,12 +1,22 @@
 <map id="/home/runner/work/gad&#45;sdk/gad&#45;sdk/oxts&#45;sdk&#45;gal&#45;cpp/include/oxts/gal&#45;cpp/gad_handler.hpp" name="/home/runner/work/gad&#45;sdk/gad&#45;sdk/oxts&#45;sdk&#45;gal&#45;cpp/include/oxts/gal&#45;cpp/gad_handler.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="311,5,478,76"/>
-<area shape="rect" id="node2" href="$gad__encoder__bin_8hpp.html" title=" " alt="" coords="5,124,184,165"/>
-<area shape="rect" id="node3" href="$gad__encoder__csv_8hpp.html" title=" " alt="" coords="208,124,387,165"/>
-<area shape="rect" id="node7" href="$gad__output__udp_8hpp.html" title=" " alt="" coords="411,124,573,165"/>
-<area shape="rect" id="node8" href="$gad__output__file_8hpp.html" title=" " alt="" coords="597,124,758,165"/>
-<area shape="rect" id="node4" title=" " alt="" coords="217,213,287,240"/>
-<area shape="rect" id="node5" title=" " alt="" coords="505,213,559,240"/>
-<area shape="rect" id="node6" title=" " alt="" coords="311,213,377,240"/>
-<area shape="rect" id="node9" title=" " alt="" coords="596,213,665,240"/>
-<area shape="rect" id="node10" title=" " alt="" coords="689,213,756,240"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="311,5,478,75"/>
+<area shape="rect" id="Node000002" href="$gad__encoder__bin_8hpp.html" title=" " alt="" coords="5,123,184,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,72,165,121,163,116,310,67"/>
+<area shape="rect" id="Node000003" href="$gad__encoder__csv_8hpp.html" title=" " alt="" coords="208,123,387,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="364,77,327,114,324,111,360,73"/>
+<area shape="rect" id="Node000007" href="$gad__output__udp_8hpp.html" title=" " alt="" coords="411,123,573,163"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="430,73,466,111,462,114,426,77"/>
+<area shape="rect" id="Node000008" href="$gad__output__file_8hpp.html" title=" " alt="" coords="597,123,758,163"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="479,68,612,115,610,120,477,73"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="217,211,287,236"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="289,164,268,200,263,197,284,162"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="505,211,559,236"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="354,160,492,206,491,211,353,165"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="311,211,377,236"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="311,162,332,197,328,200,306,164"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="644,165,567,206,564,202,641,160"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="596,211,665,236"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="668,164,647,200,642,197,664,162"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="689,211,756,236"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="691,162,711,197,707,200,686,164"/>
 </map>

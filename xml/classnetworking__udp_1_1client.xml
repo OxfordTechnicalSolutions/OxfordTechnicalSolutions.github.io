@@ -1,14 +1,15 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classnetworking__udp_1_1client" kind="class" language="C++" prot="public">
     <compoundname>networking_udp::client</compoundname>
     <includes local="no">udp_server_client.hpp</includes>
-      <sectiondef kind="private-attrib">
+    <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classnetworking__udp_1_1client_1a0f3a891ea9f6aeb0dbdcb577b0b3ed17" prot="private" static="no" mutable="no">
         <type>uint16_t</type>
         <definition>uint16_t networking_udp::client::m_port</definition>
         <argsstring></argsstring>
         <name>m_port</name>
+        <qualifiedname>networking_udp::client::m_port</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -17,13 +18,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="42" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" bodystart="42" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
+    </sectiondef>
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="classnetworking__udp_1_1client_1ad130eba5eeae3e19702e2849e4235b82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>networking_udp::client::client</definition>
         <argsstring>()</argsstring>
         <name>client</name>
+        <qualifiedname>networking_udp::client::client</qualifiedname>
         <briefdescription>
 <para>Constructor requires a port. This will be the local port a socket is opened on param: port - the port on the local machine the socket will be opened on when receiving data. </para>
         </briefdescription>
@@ -39,6 +41,7 @@
         <definition>networking_udp::client::client</definition>
         <argsstring>(const uint16_t local_port)</argsstring>
         <name>client</name>
+        <qualifiedname>networking_udp::client::client</qualifiedname>
         <param>
           <type>const uint16_t</type>
           <declname>local_port</declname>
@@ -56,6 +59,7 @@
         <definition>void networking_udp::client::set_local_port</definition>
         <argsstring>(const uint16_t local_port)</argsstring>
         <name>set_local_port</name>
+        <qualifiedname>networking_udp::client::set_local_port</qualifiedname>
         <param>
           <type>const uint16_t</type>
           <declname>local_port</declname>
@@ -70,7 +74,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="70" column="6" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" bodystart="70" bodyend="73"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

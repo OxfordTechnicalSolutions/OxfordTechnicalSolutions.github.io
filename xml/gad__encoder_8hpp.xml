@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="gad__encoder_8hpp" kind="file" language="C++">
     <compoundname>gad_encoder.hpp</compoundname>
     <includes local="no">cstddef</includes>
@@ -9,17 +9,11 @@
     <includedby refid="gad__encoder__csv_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp</includedby>
     <includedby refid="gad__handler_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp</includedby>
     <incdepgraph>
-      <node id="6">
-        <label>cmath</label>
-      </node>
       <node id="4">
         <label>oxts/gal-cpp/gad.hpp</label>
         <link refid="gad_8hpp"/>
         <childnode refid="5" relation="include">
         </childnode>
-      </node>
-      <node id="7">
-        <label>array</label>
       </node>
       <node id="1">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp</label>
@@ -39,30 +33,20 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>cstdlib</label>
+      <node id="7">
+        <label>array</label>
+      </node>
+      <node id="6">
+        <label>cmath</label>
       </node>
       <node id="2">
         <label>cstddef</label>
       </node>
+      <node id="3">
+        <label>cstdlib</label>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2">
-        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp</label>
-        <link refid="gad__encoder__bin_8hpp"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp</label>
-        <link refid="gad__handler_8hpp"/>
-      </node>
-      <node id="4">
-        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp</label>
-        <link refid="gad__encoder__csv_8hpp"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
       <node id="1">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder.hpp</label>
         <link refid="gad__encoder_8hpp"/>
@@ -72,6 +56,22 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp</label>
+        <link refid="gad__encoder__bin_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_csv.hpp</label>
+        <link refid="gad__encoder__csv_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp</label>
+        <link refid="gad__handler_8hpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder" prot="public">OxTS::Gal_Cpp::GadEncoder</innerclass>
@@ -101,7 +101,7 @@
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a671ef4d673c2a38c3db6f932f8d607f5" kindref="member">~GadEncoder</ref>()<sp/>{<sp/>}</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1adcf933bd6e93aed8676019064b4eb77d" kindref="member">EncodePacket</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1Gad" kindref="compound">Gad</ref>&amp;<sp/>g)<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1aede2ac0d93306c7157add4f7cf911505" kindref="member">GetPacket</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1af8baa72007c6b585b7385ce34f17affc" kindref="member">GetPacket</ref>()<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::size_t<sp/><sp/><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a9533e6fdef4008a1d232896bab29eabd" kindref="member">GetPacketSize</ref>()<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>

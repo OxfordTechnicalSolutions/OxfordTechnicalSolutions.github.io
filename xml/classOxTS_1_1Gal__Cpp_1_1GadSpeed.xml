@@ -1,15 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classOxTS_1_1Gal__Cpp_1_1GadSpeed" kind="class" language="C++" prot="public">
     <compoundname>OxTS::Gal_Cpp::GadSpeed</compoundname>
     <basecompoundref refid="classOxTS_1_1Gal__Cpp_1_1Gad" prot="public" virt="non-virtual">OxTS::Gal_Cpp::Gad</basecompoundref>
     <includes local="no">gad.hpp</includes>
-      <sectiondef kind="public-func">
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a67253144f9e87b003afb46fa89679f42" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
         <definition>OxTS::Gal_Cpp::GadSpeed::GadSpeed</definition>
         <argsstring>(const uint8_t stream_id)</argsstring>
         <name>GadSpeed</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::GadSpeed</qualifiedname>
         <param>
           <type>const uint8_t</type>
           <declname>stream_id</declname>
@@ -27,6 +28,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetSpeedFwMs</definition>
         <argsstring>(const double_t speed)</argsstring>
         <name>SetSpeedFwMs</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetSpeedFwMs</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>speed</declname>
@@ -55,6 +57,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetSpeedBwMs</definition>
         <argsstring>(const double_t speed)</argsstring>
         <name>SetSpeedBwMs</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetSpeedBwMs</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>speed</declname>
@@ -83,6 +86,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetSpeedUnMs</definition>
         <argsstring>(const double_t speed)</argsstring>
         <name>SetSpeedUnMs</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetSpeedUnMs</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>speed</declname>
@@ -111,6 +115,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetSpeedFwPulsed</definition>
         <argsstring>(const double_t frequency, const double_t scale_factor, const double_t period=0.0)</argsstring>
         <name>SetSpeedFwPulsed</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetSpeedFwPulsed</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>frequency</declname>
@@ -164,6 +169,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetSpeedBwPulsed</definition>
         <argsstring>(const double_t frequency, const double_t scale_factor, const double_t period=0.0)</argsstring>
         <name>SetSpeedBwPulsed</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetSpeedBwPulsed</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>frequency</declname>
@@ -217,6 +223,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetSpeedUnPulsed</definition>
         <argsstring>(const double_t frequency, const double_t scale_factor, const double_t period=0.0)</argsstring>
         <name>SetSpeedUnPulsed</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetSpeedUnPulsed</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>frequency</declname>
@@ -265,11 +272,12 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="638" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a1662e862f3fc9a3573a880315fbc0923" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1aad1592db045170a8d4b39eb4589926a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double3_t &amp;</type>
-        <definition>const container_double3_t&amp; OxTS::Gal_Cpp::GadSpeed::GetSpeed</definition>
+        <definition>const container_double3_t &amp; OxTS::Gal_Cpp::GadSpeed::GetSpeed</definition>
         <argsstring>() const</argsstring>
         <name>GetSpeed</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::GetSpeed</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -284,6 +292,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetSpeedMsVar</definition>
         <argsstring>(const double_t v_s)</argsstring>
         <name>SetSpeedMsVar</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetSpeedMsVar</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>v_s</declname>
@@ -312,6 +321,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetSpeedPulsedVar</definition>
         <argsstring>(const double_t v_s, const double_t v_sf)</argsstring>
         <name>SetSpeedPulsedVar</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetSpeedPulsedVar</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>v_s</declname>
@@ -351,6 +361,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetSpeedPulsedVarPeriod</definition>
         <argsstring>(const double_t v_s, const double_t v_sf, const double_t v_p)</argsstring>
         <name>SetSpeedPulsedVarPeriod</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetSpeedPulsedVarPeriod</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>v_s</declname>
@@ -397,11 +408,12 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="661" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a2670315c4aa7588e9866a53791aba5e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a350b8499d4de30d9d9814f01b2025060" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double6_t &amp;</type>
-        <definition>const container_double6_t&amp; OxTS::Gal_Cpp::GadSpeed::GetSpeedVar</definition>
+        <definition>const container_double6_t &amp; OxTS::Gal_Cpp::GadSpeed::GetSpeedVar</definition>
         <argsstring>() const</argsstring>
         <name>GetSpeedVar</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::GetSpeedVar</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -416,6 +428,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetAidingLeverArmFixed</definition>
         <argsstring>(const double_t x, const double_t y, const double_t z)</argsstring>
         <name>SetAidingLeverArmFixed</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetAidingLeverArmFixed</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>x</declname>
@@ -463,11 +476,12 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="674" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1ab7cc81177cdaf5066b6bcf2cff44cb0d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a9f085e78d67a4a6f028ffc9349691137" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double3_t &amp;</type>
-        <definition>const container_double3_t&amp; OxTS::Gal_Cpp::GadSpeed::GetAidingLeverArm</definition>
+        <definition>const container_double3_t &amp; OxTS::Gal_Cpp::GadSpeed::GetAidingLeverArm</definition>
         <argsstring>() const</argsstring>
         <name>GetAidingLeverArm</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::GetAidingLeverArm</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -481,6 +495,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetAidingLeverArmConfig</definition>
         <argsstring>()</argsstring>
         <name>SetAidingLeverArmConfig</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetAidingLeverArmConfig</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -496,6 +511,7 @@
         <definition>void OxTS::Gal_Cpp::GadSpeed::SetAidingLeverArmVar</definition>
         <argsstring>(const double_t x, const double_t y, const double_t z)</argsstring>
         <name>SetAidingLeverArmVar</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::SetAidingLeverArmVar</qualifiedname>
         <param>
           <type>const double_t</type>
           <declname>x</declname>
@@ -543,11 +559,12 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="690" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a075d3b1ae7c3098a46cc0685a49d7775" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1af9e6d1e9e8011d6650de3733ee1539a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double6_t &amp;</type>
-        <definition>const container_double6_t&amp; OxTS::Gal_Cpp::GadSpeed::GetAidingLeverArmVar</definition>
+        <definition>const container_double6_t &amp; OxTS::Gal_Cpp::GadSpeed::GetAidingLeverArmVar</definition>
         <argsstring>() const</argsstring>
         <name>GetAidingLeverArmVar</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadSpeed::GetAidingLeverArmVar</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -556,34 +573,34 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="691" column="27"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
 <para>Generic Aiding speed. </para>
     </detaileddescription>
     <inheritancegraph>
+      <node id="2">
+        <label>OxTS::Gal_Cpp::Gad</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1Gad"/>
+      </node>
       <node id="1">
         <label>OxTS::Gal_Cpp::GadSpeed</label>
         <link refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="2">
-        <label>OxTS::Gal_Cpp::Gad</label>
-        <link refid="classOxTS_1_1Gal__Cpp_1_1Gad"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="2">
+        <label>OxTS::Gal_Cpp::Gad</label>
+        <link refid="classOxTS_1_1Gal__Cpp_1_1Gad"/>
+      </node>
       <node id="1">
         <label>OxTS::Gal_Cpp::GadSpeed</label>
         <link refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="2">
-        <label>OxTS::Gal_Cpp::Gad</label>
-        <link refid="classOxTS_1_1Gal__Cpp_1_1Gad"/>
       </node>
     </collaborationgraph>
     <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="590" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="591" bodyend="692"/>
@@ -594,27 +611,27 @@
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a67253144f9e87b003afb46fa89679f42" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GadSpeed</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a5448f4907c9039f12802b40c34f3f66b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetAcqTimestamp</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6f278b1dbbfff55fdf9129fc84357642" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetAcqValid</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1ab7cc81177cdaf5066b6bcf2cff44cb0d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetAidingLeverArm</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a075d3b1ae7c3098a46cc0685a49d7775" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetAidingLeverArmVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a9f085e78d67a4a6f028ffc9349691137" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetAidingLeverArm</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1af9e6d1e9e8011d6650de3733ee1539a8" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetAidingLeverArmVar</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a27e711905e725e18c1f4eb71f234ab49" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetDataType</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4dbf84f14b6c84114a0c51574ed8e165" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetDataVal</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a24772887cef5ee1d9e21f1f3b72549ce" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetDataVar</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae92c76f7761c28c95a5024b66bd39707" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetLoc</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a20fd02ece3980d53d8586f84a6087578" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetLocVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7655d58ee47e43bf6cf3b434150d7a14" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetDataVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a926cf6ea3bac82aa6212d49712abf66e" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetDataVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ab8602c9af8fceb4b5159062a2c193be8" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetLoc</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a29458d1c500233ee9fcf715cac4adff1" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetLocVal</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a1e209bf57ecd125ab89b157ff6f71256" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetLocValid</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a982c097e0b20476e8d9e3c84010445ed" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetLocVar</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa852293aaab71e0039d3708806f28a1e" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetRes1</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1afbb94407d0f3dafb5a0fb385957852cb" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetLocVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad90ec37810ab895913d3f74a176d4f0d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetRes1</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa92b0f03f50f5e623e9056cae92ea08e" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetRes1Valid</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ac4daee4af420652fc1795702ff90ad5c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetRes2</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a91390487f7f852f3d364daa3dc355f96" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetRes2</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af740c18a5c45912e1d36e611694f578d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetRes2Valid</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a1662e862f3fc9a3573a880315fbc0923" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetSpeed</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a2670315c4aa7588e9866a53791aba5e9" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetSpeedVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1aad1592db045170a8d4b39eb4589926a0" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetSpeed</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a350b8499d4de30d9d9814f01b2025060" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetSpeedVar</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a8f4c4b9d29c682f769659946c7e08d3b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetStreamId</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a25503d1d209e73fe41499eb7fee48a48" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTime</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a989d5272e9318ffffe590dd206101c97" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a0ff025056845e0463f362b86daed0e49" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTime</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a0d3c3659c243ef2efe1b8ebdf36825a5" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTimeExternal</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a99044d3436f36b7ea40c46d98ede9f24" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTimeExternalSecondsFromSunday</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a615ec5834d428217306ee178bc93d331" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTimeExternalWeek</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad8c48a679c5b13e23508c04cd6066ca2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ab834f24882ba1345461767af7bdce87e" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTimeGps</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2c928de947b1d750d9d1ea27791ad28f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTimeGpsSecondsFromSunday</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6c719ce3cdfbe9694b258cacc99aabc2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTimeGpsWeek</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a776a9fd3b10dddf49bea94eb4940303f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTimeLatency</name></member>
@@ -623,9 +640,9 @@
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a47e3c5c49bc8455a2c938a832efe1bd3" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTimeUTCUnix</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7e4cb65fadd0191174b38b5f74e17bdf" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetTimeValid</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af754391acbc5094e9be0adf1ea85aa82" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetType</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa00abd9701f8f74f189d3a4216d82e2c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a38d3d7e22f99e8a71052f5d407d1db0a" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetVal</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a067b0dc2bb574ac948881a1e7956ad13" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>GetValValid</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a31bbc634c981fe86d337b3b3842cb419" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>operator=</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a04b80b279943702d152077abf8690fa7" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>operator=</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a662da5024bd3fcd8f80646c24f212dcb" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>SetAcqTimestamp</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a421363bc956fe01ea5e71b09b4db53c6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>SetAcqValid</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1af55400ffda859a04d993274c36fa078b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadSpeed</scope><name>SetAidingLeverArmConfig</name></member>

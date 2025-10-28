@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="gad__defines_8hpp" kind="file" language="C++">
     <compoundname>gad_defines.hpp</compoundname>
     <includes local="no">cstdint</includes>
@@ -7,23 +7,6 @@
     <includes local="no">cmath</includes>
     <includes refid="oxts__misra_8hpp" local="yes">oxts/gal-cpp/oxts_misra.hpp</includes>
     <incdepgraph>
-      <node id="2">
-        <label>cstdint</label>
-      </node>
-      <node id="4">
-        <label>cmath</label>
-      </node>
-      <node id="6">
-        <label>array</label>
-      </node>
-      <node id="5">
-        <label>oxts/gal-cpp/oxts_misra.hpp</label>
-        <link refid="oxts__misra_8hpp"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
       <node id="1">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp</label>
         <link refid="gad__defines_8hpp"/>
@@ -36,8 +19,25 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
+      <node id="5">
+        <label>oxts/gal-cpp/oxts_misra.hpp</label>
+        <link refid="oxts__misra_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>array</label>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
       <node id="3">
         <label>cstddef</label>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespaceOxTS">OxTS</innernamespace>
@@ -52,7 +52,7 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">//============================================================================================================</highlight></codeline>
-<codeline lineno="17"><highlight class="comment"></highlight><highlight class="comment">//============================================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment">//============================================================================================================</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GA_DEFINES_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GA_DEFINES_HPP</highlight><highlight class="normal"></highlight></codeline>

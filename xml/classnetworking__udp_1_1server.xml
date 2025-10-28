@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classnetworking__udp_1_1server" kind="class" language="C++" prot="public">
     <compoundname>networking_udp::server</compoundname>
     <includes local="no">udp_server_client.hpp</includes>
@@ -10,12 +10,13 @@
         <defname>ETHERNET_MTU</defname>
       </param>
     </templateparamlist>
-      <sectiondef kind="private-attrib">
+    <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classnetworking__udp_1_1server_1a75c2b57ef471ecf87a0b99666a3be826" prot="private" static="no" mutable="no">
         <type><ref refid="classOxTS_1_1Lib_1_1SimpleEthernetImpl" kindref="compound">OxTS::Lib::SimpleEthernetImpl</ref></type>
         <definition>OxTS::Lib::SimpleEthernetImpl networking_udp::server&lt; ETHERNET_MTU &gt;::m_ethernet</definition>
         <argsstring></argsstring>
         <name>m_ethernet</name>
+        <qualifiedname>networking_udp::server::m_ethernet</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -29,6 +30,7 @@
         <definition>endpoint_t networking_udp::server&lt; ETHERNET_MTU &gt;::m_endpoint</definition>
         <argsstring></argsstring>
         <name>m_endpoint</name>
+        <qualifiedname>networking_udp::server::m_endpoint</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -37,13 +39,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="87" column="12" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" bodystart="87" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
+    </sectiondef>
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="classnetworking__udp_1_1server_1af47894398458760afa6d5b7eb2fd85bc" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
         <definition>networking_udp::server&lt; ETHERNET_MTU &gt;::server</definition>
         <argsstring>()</argsstring>
         <name>server</name>
+        <qualifiedname>networking_udp::server::server</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -57,6 +60,7 @@
         <definition>void networking_udp::server&lt; ETHERNET_MTU &gt;::set_endpoint</definition>
         <argsstring>(const std::string &amp;dest_ip, const uint16_t dest_port)</argsstring>
         <name>set_endpoint</name>
+        <qualifiedname>networking_udp::server::set_endpoint</qualifiedname>
         <param>
           <type>const std::string &amp;</type>
           <declname>dest_ip</declname>
@@ -87,6 +91,7 @@
         <definition>std::size_t networking_udp::server&lt; ETHERNET_MTU &gt;::send_to_endpoint</definition>
         <argsstring>(const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt; buffer, const std::size_t packet_size)</argsstring>
         <name>send_to_endpoint</name>
+        <qualifiedname>networking_udp::server::send_to_endpoint</qualifiedname>
         <param>
           <type>const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt;</type>
           <declname>buffer</declname>
@@ -118,6 +123,7 @@
         <definition>std::size_t networking_udp::server&lt; ETHERNET_MTU &gt;::send_to</definition>
         <argsstring>(const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt; buffer, const std::size_t packet_size, const endpoint_t &amp;remote_endpoint)</argsstring>
         <name>send_to</name>
+        <qualifiedname>networking_udp::server::send_to</qualifiedname>
         <param>
           <type>const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt;</type>
           <declname>buffer</declname>
@@ -153,6 +159,7 @@
         <definition>std::size_t networking_udp::server&lt; ETHERNET_MTU &gt;::send_to_port</definition>
         <argsstring>(const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt; buffer, const std::size_t packet_size, const uint16_t port)</argsstring>
         <name>send_to_port</name>
+        <qualifiedname>networking_udp::server::send_to_port</qualifiedname>
         <param>
           <type>const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt;</type>
           <declname>buffer</declname>
@@ -176,7 +183,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="174" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" bodystart="174" bodyend="196"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

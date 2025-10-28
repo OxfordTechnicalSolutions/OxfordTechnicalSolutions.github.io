@@ -1,6 +1,9 @@
 <map id="/home/runner/work/gad&#45;sdk/gad&#45;sdk/oxts&#45;sdk&#45;gal&#45;cpp/include/oxts/gal&#45;cpp/gad_output/gad_output_file.hpp" name="/home/runner/work/gad&#45;sdk/gad&#45;sdk/oxts&#45;sdk&#45;gal&#45;cpp/include/oxts/gal&#45;cpp/gad_output/gad_output_file.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="39,5,200,91"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,139,60,165"/>
-<area shape="rect" id="node3" title=" " alt="" coords="85,139,154,165"/>
-<area shape="rect" id="node4" title=" " alt="" coords="178,139,245,165"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="39,5,200,89"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,137,60,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,91,54,129,50,125,82,88"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="85,137,154,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,89,122,124,117,124,117,89"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="178,137,245,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,88,194,125,190,129,155,91"/>
 </map>

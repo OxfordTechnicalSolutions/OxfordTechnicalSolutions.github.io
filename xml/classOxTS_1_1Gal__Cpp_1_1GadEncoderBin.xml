@@ -1,15 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin" kind="class" language="C++" prot="public">
     <compoundname>OxTS::Gal_Cpp::GadEncoderBin</compoundname>
     <basecompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadEncoder</basecompoundref>
     <includes local="no">gad_encoder_bin.hpp</includes>
-      <sectiondef kind="private-type">
+    <sectiondef kind="private-type">
       <memberdef kind="typedef" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1adba403a48bc637d5a873e1fdc9e1b8ec" prot="private" static="no">
         <type>std::array&lt; std::uint8_t, MAX_BUFF &gt;</type>
         <definition>typedef std::array&lt;std::uint8_t, MAX_BUFF&gt; OxTS::Gal_Cpp::GadEncoderBin::BufferType</definition>
         <argsstring></argsstring>
         <name>BufferType</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::BufferType</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -18,13 +19,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" line="18" column="20" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" bodystart="18" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="private-static-attrib">
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
       <memberdef kind="variable" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a33897b5c703d992d3028214b868c7283" prot="private" static="yes" mutable="no">
         <type>const std::size_t</type>
         <definition>const std::size_t OxTS::Gal_Cpp::GadEncoderBin::m_buffer_size</definition>
         <argsstring></argsstring>
         <name>m_buffer_size</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::m_buffer_size</qualifiedname>
         <initializer>= MAX_BUFF</initializer>
         <briefdescription>
         </briefdescription>
@@ -34,13 +36,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" line="19" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" bodystart="19" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="private-attrib">
+    </sectiondef>
+    <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a8de6d6628feeb32b73db2f53e90ffd0d" prot="private" static="no" mutable="no">
         <type>BufferType</type>
         <definition>BufferType OxTS::Gal_Cpp::GadEncoderBin::m_buffer</definition>
         <argsstring></argsstring>
         <name>m_buffer</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::m_buffer</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -54,6 +57,7 @@
         <definition>std::size_t OxTS::Gal_Cpp::GadEncoderBin::m_buffer_offset</definition>
         <argsstring></argsstring>
         <name>m_buffer_offset</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::m_buffer_offset</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -67,6 +71,7 @@
         <definition>std::size_t OxTS::Gal_Cpp::GadEncoderBin::m_gad_size</definition>
         <argsstring></argsstring>
         <name>m_gad_size</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::m_gad_size</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -80,6 +85,7 @@
         <definition>CComMsg OxTS::Gal_Cpp::GadEncoderBin::m_ccom_gad</definition>
         <argsstring></argsstring>
         <name>m_ccom_gad</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::m_ccom_gad</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -88,13 +94,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" line="23" column="9" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" bodystart="23" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="private-func">
+    </sectiondef>
+    <sectiondef kind="private-func">
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a0053b5e165a261a3c4ea7d3a743f7dd2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int32_t</type>
         <definition>int32_t OxTS::Gal_Cpp::GadEncoderBin::EncodeGadBin</definition>
         <argsstring>(const Gad &amp;g)</argsstring>
         <name>EncodeGadBin</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::EncodeGadBin</qualifiedname>
         <param>
           <type>const <ref refid="classOxTS_1_1Gal__Cpp_1_1Gad" kindref="compound">Gad</ref> &amp;</type>
           <declname>g</declname>
@@ -112,6 +119,7 @@
         <definition>int32_t OxTS::Gal_Cpp::GadEncoderBin::EncodeGen3d</definition>
         <argsstring>(const Gen3d &amp;field, BufferType::iterator &amp;it)</argsstring>
         <name>EncodeGen3d</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::EncodeGen3d</qualifiedname>
         <param>
           <type>const <ref refid="classOxTS_1_1Gal__Cpp_1_1Gen3d" kindref="compound">Gen3d</ref> &amp;</type>
           <declname>field</declname>
@@ -133,6 +141,7 @@
         <definition>int32_t OxTS::Gal_Cpp::GadEncoderBin::EncodeGen3dVar</definition>
         <argsstring>(const Gen3d &amp;field, BufferType::iterator &amp;it)</argsstring>
         <name>EncodeGen3dVar</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::EncodeGen3dVar</qualifiedname>
         <param>
           <type>const <ref refid="classOxTS_1_1Gal__Cpp_1_1Gen3d" kindref="compound">Gen3d</ref> &amp;</type>
           <declname>field</declname>
@@ -154,6 +163,7 @@
         <definition>bool OxTS::Gal_Cpp::GadEncoderBin::BufferOverrunCheck</definition>
         <argsstring>(BufferType::iterator &amp;it, const size_t expected_data_size)</argsstring>
         <name>BufferOverrunCheck</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::BufferOverrunCheck</qualifiedname>
         <param>
           <type>BufferType::iterator &amp;</type>
           <declname>it</declname>
@@ -170,13 +180,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" line="35" column="6"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
+    </sectiondef>
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1ac7c942316e92b9be5bb69306f90d123e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>OxTS::Gal_Cpp::GadEncoderBin::GadEncoderBin</definition>
         <argsstring>()</argsstring>
         <name>GadEncoderBin</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::GadEncoderBin</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -191,6 +202,7 @@
         <definition>virtual void OxTS::Gal_Cpp::GadEncoderBin::EncodePacket</definition>
         <argsstring>(const Gad &amp;g) override</argsstring>
         <name>EncodePacket</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::EncodePacket</qualifiedname>
         <reimplements refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1adcf933bd6e93aed8676019064b4eb77d">EncodePacket</reimplements>
         <param>
           <type>const <ref refid="classOxTS_1_1Gal__Cpp_1_1Gad" kindref="compound">Gad</ref> &amp;</type>
@@ -205,12 +217,13 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" line="43" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1abda7f29d16f6eb62da230b4911e84431" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a8e9561b5d8387ddbe391d4490bc65280" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>const std::uint8_t *</type>
-        <definition>virtual const std::uint8_t* OxTS::Gal_Cpp::GadEncoderBin::GetPacket</definition>
+        <definition>virtual const std::uint8_t * OxTS::Gal_Cpp::GadEncoderBin::GetPacket</definition>
         <argsstring>() override</argsstring>
         <name>GetPacket</name>
-        <reimplements refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1aede2ac0d93306c7157add4f7cf911505">GetPacket</reimplements>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::GetPacket</qualifiedname>
+        <reimplements refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1af8baa72007c6b585b7385ce34f17affc">GetPacket</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -225,6 +238,7 @@
         <definition>virtual std::size_t OxTS::Gal_Cpp::GadEncoderBin::GetPacketSize</definition>
         <argsstring>() override</argsstring>
         <name>GetPacketSize</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadEncoderBin::GetPacketSize</qualifiedname>
         <reimplements refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a9533e6fdef4008a1d232896bab29eabd">GetPacketSize</reimplements>
         <briefdescription>
         </briefdescription>
@@ -235,7 +249,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_encoders/gad_encoder_bin.hpp" line="53" column="21"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -274,7 +288,7 @@
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1ad7f92691bff08a1376296e671fd4ed28" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderBin</scope><name>EncodeGen3dVar</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a60467be0c1894852ed519859e4ced280" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadEncoderBin</scope><name>EncodePacket</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1ac7c942316e92b9be5bb69306f90d123e" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderBin</scope><name>GadEncoderBin</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1abda7f29d16f6eb62da230b4911e84431" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadEncoderBin</scope><name>GetPacket</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a8e9561b5d8387ddbe391d4490bc65280" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadEncoderBin</scope><name>GetPacket</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a05df80a7a71a5c47716d0315572aeb17" prot="public" virt="virtual"><scope>OxTS::Gal_Cpp::GadEncoderBin</scope><name>GetPacketSize</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a8de6d6628feeb32b73db2f53e90ffd0d" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderBin</scope><name>m_buffer</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a16bef426717ca5b1b745ddb922216824" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadEncoderBin</scope><name>m_buffer_offset</name></member>

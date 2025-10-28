@@ -1,15 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate" kind="class" language="C++" prot="public">
     <compoundname>OxTS::Gal_Cpp::GadAngularRate</compoundname>
     <basecompoundref refid="classOxTS_1_1Gal__Cpp_1_1Gad" prot="public" virt="non-virtual">OxTS::Gal_Cpp::Gad</basecompoundref>
     <includes local="no">gad.hpp</includes>
-      <sectiondef kind="public-func">
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ac79d2927709605cff4dd7d1c755cc9d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>OxTS::Gal_Cpp::GadAngularRate::GadAngularRate</definition>
         <argsstring>()</argsstring>
         <name>GadAngularRate</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadAngularRate::GadAngularRate</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -17,13 +18,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="832" column="1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="833" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ad935d371e5217aa77f12013e1d20afe9" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
         <definition>OxTS::Gal_Cpp::GadAngularRate::GadAngularRate</definition>
         <argsstring>(uint8_t stream_id)</argsstring>
         <name>GadAngularRate</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadAngularRate::GadAngularRate</qualifiedname>
         <param>
           <type>uint8_t</type>
           <declname>stream_id</declname>
@@ -44,26 +46,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="836" column="10"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="837" column="10"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1aed16eda8850a39f7a121742c9c3bd0d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a008db6af357c1b1822900ce190186ca9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double3_t &amp;</type>
-        <definition>const container_double3_t&amp; OxTS::Gal_Cpp::GadAngularRate::GetAngularRate</definition>
+        <definition>const container_double3_t &amp; OxTS::Gal_Cpp::GadAngularRate::GetAngularRate</definition>
         <argsstring>() const</argsstring>
         <name>GetAngularRate</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadAngularRate::GetAngularRate</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="837" column="27"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="838" column="27"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a49f5f8441a1d84991852be6da0b41240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void OxTS::Gal_Cpp::GadAngularRate::SetAngularRate</definition>
         <argsstring>(double_t wx, double_t wy, double_t wz)</argsstring>
         <name>SetAngularRate</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadAngularRate::SetAngularRate</qualifiedname>
         <param>
           <type>double_t</type>
           <declname>wx</declname>
@@ -108,13 +112,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="845" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="846" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a8f1ee7b2c834b3a2e2825b7771c8e569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void OxTS::Gal_Cpp::GadAngularRate::SetAngularRateVar</definition>
         <argsstring>(double_t v_wx, double_t v_wy, double_t v_wz)</argsstring>
         <name>SetAngularRateVar</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadAngularRate::SetAngularRateVar</qualifiedname>
         <param>
           <type>double_t</type>
           <declname>v_wx</declname>
@@ -159,26 +164,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="852" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="853" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a448aa217bc726cde6df6f06a4c3d69eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a849baa30308e181b03613ff55a7107d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double6_t &amp;</type>
-        <definition>const container_double6_t&amp; OxTS::Gal_Cpp::GadAngularRate::GetAngularRateVar</definition>
+        <definition>const container_double6_t &amp; OxTS::Gal_Cpp::GadAngularRate::GetAngularRateVar</definition>
         <argsstring>() const</argsstring>
         <name>GetAngularRateVar</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadAngularRate::GetAngularRateVar</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="853" column="27"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="854" column="27"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1af51770c16ff6d61b216db61d25fbc42b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void OxTS::Gal_Cpp::GadAngularRate::SetAidingAlignmentFixed</definition>
         <argsstring>(double_t h, double_t p, double_t r)</argsstring>
         <name>SetAidingAlignmentFixed</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadAngularRate::SetAidingAlignmentFixed</qualifiedname>
         <param>
           <type>double_t</type>
           <declname>h</declname>
@@ -223,13 +230,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="861" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="862" column="6"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a8eedb708305117ce59343f4f0a9ce3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void OxTS::Gal_Cpp::GadAngularRate::SetAidingAlignmentConfig</definition>
         <argsstring>()</argsstring>
         <name>SetAidingAlignmentConfig</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadAngularRate::SetAidingAlignmentConfig</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -237,26 +245,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="866" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="867" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a809684f8009305c27ab224d5c9fa77f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ab2e4bab2744e0354dade5e40d38b049f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double3_t &amp;</type>
-        <definition>const container_double3_t&amp; OxTS::Gal_Cpp::GadAngularRate::GetAidingAlignment</definition>
+        <definition>const container_double3_t &amp; OxTS::Gal_Cpp::GadAngularRate::GetAidingAlignment</definition>
         <argsstring>() const</argsstring>
         <name>GetAidingAlignment</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadAngularRate::GetAidingAlignment</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="868" column="27"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="869" column="27"/>
       </memberdef>
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a24cbbf6c09de0bd53487f4747e401029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void OxTS::Gal_Cpp::GadAngularRate::SetAidingAlignmentVar</definition>
         <argsstring>(double_t v_h, double_t v_p, double_t v_r)</argsstring>
         <name>SetAidingAlignmentVar</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadAngularRate::SetAidingAlignmentVar</qualifiedname>
         <param>
           <type>double_t</type>
           <declname>v_h</declname>
@@ -301,22 +311,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="876" column="6"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="877" column="6"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1af1baf7024fc6745e32c0d0d4d2e28122" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a83d4d05111fa1dfa0d2115b57fbb5388" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const container_double6_t &amp;</type>
-        <definition>const container_double6_t&amp; OxTS::Gal_Cpp::GadAngularRate::GetAidingAlignmentVar</definition>
+        <definition>const container_double6_t &amp; OxTS::Gal_Cpp::GadAngularRate::GetAidingAlignmentVar</definition>
         <argsstring>() const</argsstring>
         <name>GetAidingAlignmentVar</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadAngularRate::GetAidingAlignmentVar</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="877" column="27"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="878" column="27"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -346,7 +357,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="826" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="827" bodyend="878"/>
+    <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" line="827" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp" bodystart="828" bodyend="879"/>
     <listofallmembers>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a43ddac918eb52cd8b1f9e71bed76f48d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>Gad</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae91583b25eef92b08f60172a3f67a997" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>Gad</name></member>
@@ -355,27 +366,27 @@
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ad935d371e5217aa77f12013e1d20afe9" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GadAngularRate</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a5448f4907c9039f12802b40c34f3f66b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetAcqTimestamp</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6f278b1dbbfff55fdf9129fc84357642" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetAcqValid</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a809684f8009305c27ab224d5c9fa77f9" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetAidingAlignment</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1af1baf7024fc6745e32c0d0d4d2e28122" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetAidingAlignmentVar</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1aed16eda8850a39f7a121742c9c3bd0d3" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetAngularRate</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a448aa217bc726cde6df6f06a4c3d69eb" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetAngularRateVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ab2e4bab2744e0354dade5e40d38b049f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetAidingAlignment</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a83d4d05111fa1dfa0d2115b57fbb5388" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetAidingAlignmentVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a008db6af357c1b1822900ce190186ca9" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetAngularRate</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a849baa30308e181b03613ff55a7107d4" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetAngularRateVar</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a27e711905e725e18c1f4eb71f234ab49" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetDataType</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4dbf84f14b6c84114a0c51574ed8e165" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetDataVal</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a24772887cef5ee1d9e21f1f3b72549ce" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetDataVar</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae92c76f7761c28c95a5024b66bd39707" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetLoc</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a20fd02ece3980d53d8586f84a6087578" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetLocVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7655d58ee47e43bf6cf3b434150d7a14" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetDataVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a926cf6ea3bac82aa6212d49712abf66e" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetDataVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ab8602c9af8fceb4b5159062a2c193be8" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetLoc</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a29458d1c500233ee9fcf715cac4adff1" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetLocVal</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a1e209bf57ecd125ab89b157ff6f71256" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetLocValid</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a982c097e0b20476e8d9e3c84010445ed" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetLocVar</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa852293aaab71e0039d3708806f28a1e" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetRes1</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1afbb94407d0f3dafb5a0fb385957852cb" prot="protected" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetLocVar</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad90ec37810ab895913d3f74a176d4f0d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetRes1</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa92b0f03f50f5e623e9056cae92ea08e" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetRes1Valid</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ac4daee4af420652fc1795702ff90ad5c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetRes2</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a91390487f7f852f3d364daa3dc355f96" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetRes2</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af740c18a5c45912e1d36e611694f578d" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetRes2Valid</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a8f4c4b9d29c682f769659946c7e08d3b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetStreamId</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a25503d1d209e73fe41499eb7fee48a48" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTime</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a989d5272e9318ffffe590dd206101c97" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTimeExternal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a0ff025056845e0463f362b86daed0e49" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTime</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a0d3c3659c243ef2efe1b8ebdf36825a5" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTimeExternal</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a99044d3436f36b7ea40c46d98ede9f24" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTimeExternalSecondsFromSunday</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a615ec5834d428217306ee178bc93d331" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTimeExternalWeek</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad8c48a679c5b13e23508c04cd6066ca2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTimeGps</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ab834f24882ba1345461767af7bdce87e" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTimeGps</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2c928de947b1d750d9d1ea27791ad28f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTimeGpsSecondsFromSunday</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6c719ce3cdfbe9694b258cacc99aabc2" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTimeGpsWeek</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a776a9fd3b10dddf49bea94eb4940303f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTimeLatency</name></member>
@@ -384,9 +395,9 @@
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a47e3c5c49bc8455a2c938a832efe1bd3" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTimeUTCUnix</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7e4cb65fadd0191174b38b5f74e17bdf" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetTimeValid</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af754391acbc5094e9be0adf1ea85aa82" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetType</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa00abd9701f8f74f189d3a4216d82e2c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetVal</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a38d3d7e22f99e8a71052f5d407d1db0a" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetVal</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a067b0dc2bb574ac948881a1e7956ad13" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>GetValValid</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a31bbc634c981fe86d337b3b3842cb419" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>operator=</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a04b80b279943702d152077abf8690fa7" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>operator=</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a662da5024bd3fcd8f80646c24f212dcb" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>SetAcqTimestamp</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a421363bc956fe01ea5e71b09b4db53c6" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>SetAcqValid</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a8eedb708305117ce59343f4f0a9ce3c1" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadAngularRate</scope><name>SetAidingAlignmentConfig</name></member>

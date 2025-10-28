@@ -1,13 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classOxTS_1_1Gal__Cpp_1_1CComMsg" kind="class" language="C++" prot="public">
     <compoundname>OxTS::Gal_Cpp::CComMsg</compoundname>
-      <sectiondef kind="private-attrib">
+    <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a5e01484ca5a32e4fd9c1b16c7c08c516" prot="private" static="no" mutable="no">
         <type>std::uint16_t</type>
         <definition>std::uint16_t OxTS::Gal_Cpp::CComMsg::m_msg_type</definition>
         <argsstring></argsstring>
         <name>m_msg_type</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::m_msg_type</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -21,6 +22,7 @@
         <definition>std::uint8_t OxTS::Gal_Cpp::CComMsg::m_version</definition>
         <argsstring></argsstring>
         <name>m_version</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::m_version</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -34,6 +36,7 @@
         <definition>std::size_t OxTS::Gal_Cpp::CComMsg::m_msg_len</definition>
         <argsstring></argsstring>
         <name>m_msg_len</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::m_msg_len</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -47,6 +50,7 @@
         <definition>std::uint8_t OxTS::Gal_Cpp::CComMsg::m_msg_valid</definition>
         <argsstring></argsstring>
         <name>m_msg_valid</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::m_msg_valid</qualifiedname>
         <briefdescription>
 <para>encoded message valid </para>
         </briefdescription>
@@ -61,6 +65,7 @@
         <definition>std::array&lt;std::uint8_t, CComBuffSize&gt; OxTS::Gal_Cpp::CComMsg::m_msg</definition>
         <argsstring></argsstring>
         <name>m_msg</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::m_msg</qualifiedname>
         <briefdescription>
 <para>encoded message </para>
         </briefdescription>
@@ -70,13 +75,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" line="36" column="31" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" bodystart="36" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
+    </sectiondef>
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a2839474f3e3d1cae4d23fa31377e6c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>OxTS::Gal_Cpp::CComMsg::CComMsg</definition>
         <argsstring>()</argsstring>
         <name>CComMsg</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::CComMsg</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -91,6 +97,7 @@
         <definition>OxTS::Gal_Cpp::CComMsg::CComMsg</definition>
         <argsstring>(const CComMsg &amp;other)</argsstring>
         <name>CComMsg</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::CComMsg</qualifiedname>
         <param>
           <type>const <ref refid="classOxTS_1_1Gal__Cpp_1_1CComMsg" kindref="compound">CComMsg</ref> &amp;</type>
           <declname>other</declname>
@@ -104,11 +111,12 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" line="41" column="13"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a14f3d49ffb0908790951de452ef4102b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1CComMsg_1aa21b6627fc32f1d18f90e857d4513faf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classOxTS_1_1Gal__Cpp_1_1CComMsg" kindref="compound">CComMsg</ref> &amp;</type>
-        <definition>CComMsg&amp; OxTS::Gal_Cpp::CComMsg::operator=</definition>
+        <definition>CComMsg &amp; OxTS::Gal_Cpp::CComMsg::operator=</definition>
         <argsstring>(const CComMsg &amp;other)</argsstring>
         <name>operator=</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::operator=</qualifiedname>
         <param>
           <type>const <ref refid="classOxTS_1_1Gal__Cpp_1_1CComMsg" kindref="compound">CComMsg</ref> &amp;</type>
           <declname>other</declname>
@@ -134,6 +142,7 @@
         <definition>std::int32_t OxTS::Gal_Cpp::CComMsg::encode</definition>
         <argsstring>(const std::array&lt; std::uint8_t, SRC_BUFFER_SIZE &gt; &amp;data, const std::size_t length)</argsstring>
         <name>encode</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::encode</qualifiedname>
         <param>
           <type>const std::array&lt; std::uint8_t, SRC_BUFFER_SIZE &gt; &amp;</type>
           <declname>data</declname>
@@ -153,11 +162,12 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" line="52" column="26" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" bodystart="52" bodyend="112"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a366660a012155de208dc27e20ca19735" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1CComMsg_1ac807ae787254aa0d2aa4e82f0e594fcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::uint16_t &amp;</type>
-        <definition>std::uint16_t&amp; OxTS::Gal_Cpp::CComMsg::msg_type</definition>
+        <definition>std::uint16_t &amp; OxTS::Gal_Cpp::CComMsg::msg_type</definition>
         <argsstring>()</argsstring>
         <name>msg_type</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::msg_type</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -167,11 +177,12 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" line="115" column="34" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" bodystart="115" bodyend="115"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a8eafc04076ff241fbd46faab2f26897c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1CComMsg_1aee512611523bbf442c43753531d58b8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::size_t &amp;</type>
-        <definition>std::size_t&amp; OxTS::Gal_Cpp::CComMsg::msg_len</definition>
+        <definition>std::size_t &amp; OxTS::Gal_Cpp::CComMsg::msg_len</definition>
         <argsstring>()</argsstring>
         <name>msg_len</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::msg_len</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -181,11 +192,12 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" line="118" column="32" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" bodystart="118" bodyend="118"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a04fb5b8dd3faac54825f5a8a4c7fa93f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1CComMsg_1aa8bd57eb4ca942b00ddd30081ff525dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const std::uint8_t *</type>
-        <definition>const std::uint8_t* OxTS::Gal_Cpp::CComMsg::msg</definition>
+        <definition>const std::uint8_t * OxTS::Gal_Cpp::CComMsg::msg</definition>
         <argsstring>() const</argsstring>
         <name>msg</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComMsg::msg</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -195,7 +207,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" line="121" column="39" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/ccomtx.hpp" bodystart="121" bodyend="121"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -210,10 +222,10 @@
       <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a5e01484ca5a32e4fd9c1b16c7c08c516" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::CComMsg</scope><name>m_msg_type</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1ae5239197b3de2da4895f5087329d0775" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::CComMsg</scope><name>m_msg_valid</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a92a08fdaec61cafda06e68dd3877e43a" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::CComMsg</scope><name>m_version</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a04fb5b8dd3faac54825f5a8a4c7fa93f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::CComMsg</scope><name>msg</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a8eafc04076ff241fbd46faab2f26897c" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::CComMsg</scope><name>msg_len</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a366660a012155de208dc27e20ca19735" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::CComMsg</scope><name>msg_type</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a14f3d49ffb0908790951de452ef4102b" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::CComMsg</scope><name>operator=</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1aa8bd57eb4ca942b00ddd30081ff525dd" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::CComMsg</scope><name>msg</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1aee512611523bbf442c43753531d58b8f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::CComMsg</scope><name>msg_len</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1ac807ae787254aa0d2aa4e82f0e594fcd" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::CComMsg</scope><name>msg_type</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1aa21b6627fc32f1d18f90e857d4513faf" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::CComMsg</scope><name>operator=</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

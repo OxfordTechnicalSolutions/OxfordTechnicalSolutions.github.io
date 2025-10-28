@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
   <compound refid="classOxTS_1_1Gal__Cpp_1_1CComMsg" kind="class"><name>OxTS::Gal_Cpp::CComMsg</name>
     <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a5e01484ca5a32e4fd9c1b16c7c08c516" kind="variable"><name>m_msg_type</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a92a08fdaec61cafda06e68dd3877e43a" kind="variable"><name>m_version</name></member>
@@ -8,11 +8,11 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a21eb0ce8ff16e2e71da594a8cb267012" kind="variable"><name>m_msg</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a2839474f3e3d1cae4d23fa31377e6c73" kind="function"><name>CComMsg</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1ac2899709749162ece95966492e5a52cd" kind="function"><name>CComMsg</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a14f3d49ffb0908790951de452ef4102b" kind="function"><name>operator=</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1aa21b6627fc32f1d18f90e857d4513faf" kind="function"><name>operator=</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a4a1fa36ad1474756326820aae8554b6b" kind="function"><name>encode</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a366660a012155de208dc27e20ca19735" kind="function"><name>msg_type</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a8eafc04076ff241fbd46faab2f26897c" kind="function"><name>msg_len</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1a04fb5b8dd3faac54825f5a8a4c7fa93f" kind="function"><name>msg</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1ac807ae787254aa0d2aa4e82f0e594fcd" kind="function"><name>msg_type</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1aee512611523bbf442c43753531d58b8f" kind="function"><name>msg_len</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1CComMsg_1aa8bd57eb4ca942b00ddd30081ff525dd" kind="function"><name>msg</name></member>
   </compound>
   <compound refid="classnetworking__udp_1_1client" kind="class"><name>networking_udp::client</name>
     <member refid="classnetworking__udp_1_1client_1a0f3a891ea9f6aeb0dbdcb577b0b3ed17" kind="variable"><name>m_port</name></member>
@@ -45,25 +45,25 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a9c1227246c10b76ba4fd53ea25a55995" kind="function"><name>SetDataValType</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a11f0807f2bccfc6fb4a6da23993b0fc1" kind="function"><name>SetDataVal</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a84e55360033d0d478c9d761233ef9346" kind="function"><name>SetDataVal</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4dbf84f14b6c84114a0c51574ed8e165" kind="function"><name>GetDataVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7655d58ee47e43bf6cf3b434150d7a14" kind="function"><name>GetDataVal</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1adc86914212dd5caeaae18aae1c08c611" kind="function"><name>SetDataVarUpperDiag</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1afe9f9c7a88aa49184a61bfffb73f78ac" kind="function"><name>SetDataVarDiag</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4af7b5a9f715e4df01be13cbfa40c21c" kind="function"><name>SetDataVarSingle</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a24772887cef5ee1d9e21f1f3b72549ce" kind="function"><name>GetDataVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a926cf6ea3bac82aa6212d49712abf66e" kind="function"><name>GetDataVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2718839aa607f5a3ca5bece73ddeca42" kind="function"><name>SetLocValid</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3b927be794d23bc4195d53034bb649e7" kind="function"><name>SetLocMode</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa934d553b9799a092f7d1fbf629249ae" kind="function"><name>SetLocValType</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af15326cf6c9400491ea443ce03b3cc76" kind="function"><name>SetLocVal</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a20fd02ece3980d53d8586f84a6087578" kind="function"><name>GetLocVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a29458d1c500233ee9fcf715cac4adff1" kind="function"><name>GetLocVal</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a892572364c827a59b52ad1440e02320a" kind="function"><name>SetLocVarUpperDiag</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a7f96596eb3a52d9c80659989a6a4b80b" kind="function"><name>SetLocVarDiag</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a8fd508fa5fd9819799c9a95afe63c9f5" kind="function"><name>SetLocVarSingle</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a982c097e0b20476e8d9e3c84010445ed" kind="function"><name>GetLocVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1afbb94407d0f3dafb5a0fb385957852cb" kind="function"><name>GetLocVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a43ddac918eb52cd8b1f9e71bed76f48d" kind="function"><name>Gad</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae91583b25eef92b08f60172a3f67a997" kind="function"><name>Gad</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a82636336eac0edad74b69641ec612094" kind="function"><name>~Gad</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2b9b5bac508451ec029115c2870f3ca3" kind="function"><name>Gad</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a31bbc634c981fe86d337b3b3842cb419" kind="function"><name>operator=</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a04b80b279943702d152077abf8690fa7" kind="function"><name>operator=</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a33240ce2531c307c27d9ae3d1e7fcb33" kind="function"><name>SetStreamId</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a8f4c4b9d29c682f769659946c7e08d3b" kind="function"><name>GetStreamId</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a4ffcb37f8a335cba9d58588358a75b93" kind="function"><name>SetTimeValid</name></member>
@@ -71,9 +71,9 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3f8d78d823bca710ca7bb43b260b9fae" kind="function"><name>SetTimeExternal</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a615ec5834d428217306ee178bc93d331" kind="function"><name>GetTimeExternalWeek</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a99044d3436f36b7ea40c46d98ede9f24" kind="function"><name>GetTimeExternalSecondsFromSunday</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a989d5272e9318ffffe590dd206101c97" kind="function"><name>GetTimeExternal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a0d3c3659c243ef2efe1b8ebdf36825a5" kind="function"><name>GetTimeExternal</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ab38a44d5a7b541a48d1647ad4160aa3f" kind="function"><name>SetTimeGps</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad8c48a679c5b13e23508c04cd6066ca2" kind="function"><name>GetTimeGps</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ab834f24882ba1345461767af7bdce87e" kind="function"><name>GetTimeGps</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6c719ce3cdfbe9694b258cacc99aabc2" kind="function"><name>GetTimeGpsWeek</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a2c928de947b1d750d9d1ea27791ad28f" kind="function"><name>GetTimeGpsSecondsFromSunday</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a3a567ec593f2e46adaa44be713200155" kind="function"><name>SetTimeTAI</name></member>
@@ -93,11 +93,11 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa92b0f03f50f5e623e9056cae92ea08e" kind="function"><name>GetRes1Valid</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a218388ee7f7c6f06bcd84b16fe0602b8" kind="function"><name>SetRes2Valid</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1af740c18a5c45912e1d36e611694f578d" kind="function"><name>GetRes2Valid</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a25503d1d209e73fe41499eb7fee48a48" kind="function"><name>GetTime</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa00abd9701f8f74f189d3a4216d82e2c" kind="function"><name>GetVal</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ae92c76f7761c28c95a5024b66bd39707" kind="function"><name>GetLoc</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1aa852293aaab71e0039d3708806f28a1e" kind="function"><name>GetRes1</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ac4daee4af420652fc1795702ff90ad5c" kind="function"><name>GetRes2</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a0ff025056845e0463f362b86daed0e49" kind="function"><name>GetTime</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a38d3d7e22f99e8a71052f5d407d1db0a" kind="function"><name>GetVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ab8602c9af8fceb4b5159062a2c193be8" kind="function"><name>GetLoc</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1ad90ec37810ab895913d3f74a176d4f0d" kind="function"><name>GetRes1</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a91390487f7f852f3d364daa3dc355f96" kind="function"><name>GetRes2</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a421363bc956fe01ea5e71b09b4db53c6" kind="function"><name>SetAcqValid</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a6f278b1dbbfff55fdf9129fc84357642" kind="function"><name>GetAcqValid</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gad_1a662da5024bd3fcd8f80646c24f212dcb" kind="function"><name>SetAcqTimestamp</name></member>
@@ -106,35 +106,35 @@
   <compound refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate" kind="class"><name>OxTS::Gal_Cpp::GadAngularRate</name>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ac79d2927709605cff4dd7d1c755cc9d5" kind="function"><name>GadAngularRate</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ad935d371e5217aa77f12013e1d20afe9" kind="function"><name>GadAngularRate</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1aed16eda8850a39f7a121742c9c3bd0d3" kind="function"><name>GetAngularRate</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a008db6af357c1b1822900ce190186ca9" kind="function"><name>GetAngularRate</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a49f5f8441a1d84991852be6da0b41240" kind="function"><name>SetAngularRate</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a8f1ee7b2c834b3a2e2825b7771c8e569" kind="function"><name>SetAngularRateVar</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a448aa217bc726cde6df6f06a4c3d69eb" kind="function"><name>GetAngularRateVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a849baa30308e181b03613ff55a7107d4" kind="function"><name>GetAngularRateVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1af51770c16ff6d61b216db61d25fbc42b" kind="function"><name>SetAidingAlignmentFixed</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a8eedb708305117ce59343f4f0a9ce3c1" kind="function"><name>SetAidingAlignmentConfig</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a809684f8009305c27ab224d5c9fa77f9" kind="function"><name>GetAidingAlignment</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1ab2e4bab2744e0354dade5e40d38b049f" kind="function"><name>GetAidingAlignment</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a24cbbf6c09de0bd53487f4747e401029" kind="function"><name>SetAidingAlignmentVar</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1af1baf7024fc6745e32c0d0d4d2e28122" kind="function"><name>GetAidingAlignmentVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate_1a83d4d05111fa1dfa0d2115b57fbb5388" kind="function"><name>GetAidingAlignmentVar</name></member>
   </compound>
   <compound refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude" kind="class"><name>OxTS::Gal_Cpp::GadAttitude</name>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1afe027260cc2ded3a1ba7e955883b7de7" kind="function"><name>GadAttitude</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a30d9a91053e2d0c68bb045b54e52f6b2" kind="function"><name>GadAttitude</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a6a4d43d9a76f3e4d1bf2f6533914569b" kind="function"><name>GetAtt</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a2d234b5491ed2f40751015622d04efc6" kind="function"><name>GetAtt</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a415469bbf3f6dbaaca9ab845e39a6aac" kind="function"><name>SetAtt</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1462cdffa0cdae4761a51abaf832ed58" kind="function"><name>SetAttLocal</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a8d8ddc951c53f15a2e7ba41a0cd18290" kind="function"><name>SetAttVar</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1abba803ace5f437776c55b1987676ee5a" kind="function"><name>GetAttVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a598227a6e769b4246ac708d44d0032ee" kind="function"><name>GetAttVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1ac6b531d0c169646bd6aaaac436670082" kind="function"><name>SetAidingAlignmentFixed</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a15d41a1d14afb9d75dcf5805e26e0918" kind="function"><name>GetAidingAlignment</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a70bbed608808a57c2eb51f450a8530ad" kind="function"><name>GetAidingAlignment</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1aaa41566983a72434d87a265e5d0a71e3" kind="function"><name>SetAidingAlignmentOptimising</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a43aeb9919e04767af7d2d711af0cfe3a" kind="function"><name>SetAidingAlignmentConfig</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a1b9a3e37cad9a42b23f339cf5e895b0b" kind="function"><name>SetAidingAlignmentVar</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1a55e91373832e8460d57afb7ea9e3b084" kind="function"><name>GetAidingAlignmentVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude_1ad5b63fa9fde48ec3da5776faa13ab7fc" kind="function"><name>GetAidingAlignmentVar</name></member>
   </compound>
   <compound refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder" kind="class"><name>OxTS::Gal_Cpp::GadEncoder</name>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a671ef4d673c2a38c3db6f932f8d607f5" kind="function"><name>~GadEncoder</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1adcf933bd6e93aed8676019064b4eb77d" kind="function"><name>EncodePacket</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1aede2ac0d93306c7157add4f7cf911505" kind="function"><name>GetPacket</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1af8baa72007c6b585b7385ce34f17affc" kind="function"><name>GetPacket</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder_1a9533e6fdef4008a1d232896bab29eabd" kind="function"><name>GetPacketSize</name></member>
   </compound>
   <compound refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin" kind="class"><name>OxTS::Gal_Cpp::GadEncoderBin</name>
@@ -150,7 +150,7 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1aa346b8b7129f9c35c92b53b16a960df4" kind="function"><name>BufferOverrunCheck</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1ac7c942316e92b9be5bb69306f90d123e" kind="function"><name>GadEncoderBin</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a60467be0c1894852ed519859e4ced280" kind="function"><name>EncodePacket</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1abda7f29d16f6eb62da230b4911e84431" kind="function"><name>GetPacket</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a8e9561b5d8387ddbe391d4490bc65280" kind="function"><name>GetPacket</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin_1a05df80a7a71a5c47716d0315572aeb17" kind="function"><name>GetPacketSize</name></member>
   </compound>
   <compound refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv" kind="class"><name>OxTS::Gal_Cpp::GadEncoderCsv</name>
@@ -165,7 +165,7 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a12958b86c764791d4924f9e2f5e3c9fc" kind="function"><name>EncodeGadCsv</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a2649aec587d66949b4b2d58fb7af2230" kind="function"><name>GadEncoderCsv</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1ad6e573757e263fe384d4ce12726a59f4" kind="function"><name>EncodePacket</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1afa82d8be19190e216d9da11ec440d24a" kind="function"><name>GetPacket</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1aee027209344ad1360578af912ccfc8cc" kind="function"><name>GetPacket</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv_1a7e6a0ee2acadd8d95212980633450aec" kind="function"><name>GetPacketSize</name></member>
   </compound>
   <compound refid="classOxTS_1_1Gal__Cpp_1_1GadHandler" kind="class"><name>OxTS::Gal_Cpp::GadHandler</name>
@@ -175,8 +175,8 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a492ad54941afebbf0135a9751ecafe90" kind="variable"><name>m_encoder_csv</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a87c9a533ffa9cdc0abc0280c51b9b63a" kind="variable"><name>m_output_file</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a501f909dedfd4c10065b02301e4b3e1b" kind="variable"><name>m_output_udp</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a38c690ad8ff1faa6d6be9bd640a1bb2f" kind="function"><name>get_encoder</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a9a294a42c5629537b9aaa8453de2991e" kind="function"><name>get_output</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a1516632a7fac9eab8b1da779f70e3adf" kind="function"><name>get_encoder</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a0102261dd9be38e29581ed8dafe0fbe3" kind="function"><name>get_output</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a538cd12ad05e58d01b47e76e5ed08f4f" kind="function"><name>GadHandler</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a9c161f58ab90dbdc6660afe23ebf632b" kind="function"><name>SetEncoderToBin</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a829abc99f722a2e86f337ff457152511" kind="function"><name>SetEncoderToCsv</name></member>
@@ -193,10 +193,25 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a21223064844386167a7b0294d0ad9334" kind="function"><name>SetHeadingVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a0716b916ca382d87d0ba5758e3756785" kind="function"><name>GetHeadingVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a835e1d1ccdce6241a78c597d29088583" kind="function"><name>SetAidingAlignmentFixed</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a8a002a9f9fa89ccc0de6dd2fb46bca52" kind="function"><name>GetAidingAlignment</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a6d256779915dbbe36f4fcf2a6f272b8d" kind="function"><name>GetAidingAlignment</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1aaa33a69c08c87c0bff61937b0ac33f8b" kind="function"><name>SetAidingAlignmentConfig</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a696a9c9d9fd9e47fcb4413741e4ba9d6" kind="function"><name>SetAidingAlignmentVar</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a72a9aaf8971e7dcc2acd436bf555fa9c" kind="function"><name>GetAidingAlignmentVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadHeading_1a08c294b3f351bb275803113e5bec39ab" kind="function"><name>GetAidingAlignmentVar</name></member>
+  </compound>
+  <compound refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation" kind="class"><name>OxTS::Gal_Cpp::GadOrientation</name>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1a5e6728ed21cce22aab9ab8743bf9a2ec" kind="function"><name>GadOrientation</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1aa741b8e3b70f4c0898c181642c52025c" kind="function"><name>GadOrientation</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1abc39de94ef517766c034e0d5c623b78b" kind="function"><name>GetOri</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1a622bd9278a3db93c628e38eda9662b70" kind="function"><name>SetOri</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1aa80660856d9dfc6958fedc374c4b7942" kind="function"><name>SetOriLocal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1a0641e44c286acdb7c612ca5093f4b8f9" kind="function"><name>SetOriVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1a733fbf6cdce2b368d8b862ee06ef19a5" kind="function"><name>GetOriVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1ace46426a043acd90dbd4676f1adefad1" kind="function"><name>SetAidingAlignmentFixed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1a84c55625d2dfb54d03a47dbcf37f4e3e" kind="function"><name>GetAidingAlignment</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1ab49ece97b26dbcb9419127840b42c2ee" kind="function"><name>SetAidingAlignmentOptimising</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1a27f386f04414e536e9c07eba6577aed0" kind="function"><name>SetAidingAlignmentConfig</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1a65b2f70f1ca49e54fb0c5b7e45ea1280" kind="function"><name>SetAidingAlignmentVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation_1a44590e2361a1958a6346caa0f4814152" kind="function"><name>GetAidingAlignmentVar</name></member>
   </compound>
   <compound refid="classOxTS_1_1Gal__Cpp_1_1GadOutput" kind="class"><name>OxTS::Gal_Cpp::GadOutput</name>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadOutput_1a69f31920b2c3506c6514c89ed7900a9c" kind="function"><name>~GadOutput</name></member>
@@ -227,18 +242,18 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1aeee2bd2bb078e3264ce11ce9e63f7623" kind="function"><name>GadPosition</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1acb370a33d45d5b2575ef97c18b246775" kind="function"><name>SetPosGeodetic</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a741045cccd91e159917cdbda6590cebc" kind="function"><name>SetPosLocal</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1aaf3eee9e8d6aebb5c96ee0bc64c77ba9" kind="function"><name>GetPos</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a6df748193ac9747353bf5223df71cfad" kind="function"><name>GetPos</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1af8fb368168fc310f5c8051230343bc3b" kind="function"><name>SetPosGeodeticVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a291e839bfd597f77ae68b2fa37c076cc" kind="function"><name>SetPosGeodeticVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a7122d42bf9ca606213158425c49672f2" kind="function"><name>SetPosLocalVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1abd70291f78142c56f7b718ea9dfac3b6" kind="function"><name>SetPosLocalVar</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1ae5be191b84e96a2e98ef9c4485b8a7b1" kind="function"><name>GetPosVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1ac053be73baf3444107de1e75b19d894a" kind="function"><name>GetPosVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a93636b66037a2349fae523e053cbc54e" kind="function"><name>SetAidingLeverArmFixed</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a354931f3456526d7d32265406cbaa825" kind="function"><name>GetAidingLeverArm</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a428d3a81c6e1b8b93ada2613ba0cd4c4" kind="function"><name>GetAidingLeverArm</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a0219ca4c81114c60e8f7709ecacf14ce" kind="function"><name>SetAidingLeverArmOptimising</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1acb50cb74748ee7da88094b5041a3287b" kind="function"><name>SetAidingLeverArmConfig</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a0d4ab8989fead68a34fde779b544336d" kind="function"><name>SetAidingLeverArmVar</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1a27666464fd1412de59c682f3448b626c" kind="function"><name>GetAidingLeverArmVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadPosition_1ac6e3973cf26630bbb8722e9f023debb8" kind="function"><name>GetAidingLeverArmVar</name></member>
   </compound>
   <compound refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed" kind="class"><name>OxTS::Gal_Cpp::GadSpeed</name>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a67253144f9e87b003afb46fa89679f42" kind="function"><name>GadSpeed</name></member>
@@ -248,36 +263,36 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1ace49d9c4b4dd903635b1b7686e5aaf5f" kind="function"><name>SetSpeedFwPulsed</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a4e563124eddbd93346578c04c8212806" kind="function"><name>SetSpeedBwPulsed</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1ada1605c278077d0679cb5337addb2b28" kind="function"><name>SetSpeedUnPulsed</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a1662e862f3fc9a3573a880315fbc0923" kind="function"><name>GetSpeed</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1aad1592db045170a8d4b39eb4589926a0" kind="function"><name>GetSpeed</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a6dd4aa2c68e99d3bff78d33eea68c516" kind="function"><name>SetSpeedMsVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a90007a0df841c95488eae9529995699e" kind="function"><name>SetSpeedPulsedVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a376ab863d6a56bbd90e15ede2407ad99" kind="function"><name>SetSpeedPulsedVarPeriod</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a2670315c4aa7588e9866a53791aba5e9" kind="function"><name>GetSpeedVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a350b8499d4de30d9d9814f01b2025060" kind="function"><name>GetSpeedVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a02c1b9d23b7be419849b8ea4c4ec74a2" kind="function"><name>SetAidingLeverArmFixed</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1ab7cc81177cdaf5066b6bcf2cff44cb0d" kind="function"><name>GetAidingLeverArm</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a9f085e78d67a4a6f028ffc9349691137" kind="function"><name>GetAidingLeverArm</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1af55400ffda859a04d993274c36fa078b" kind="function"><name>SetAidingLeverArmConfig</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a574d92d90b38a765a375c16eca8f4f94" kind="function"><name>SetAidingLeverArmVar</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1a075d3b1ae7c3098a46cc0685a49d7775" kind="function"><name>GetAidingLeverArmVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed_1af9e6d1e9e8011d6650de3733ee1539a8" kind="function"><name>GetAidingLeverArmVar</name></member>
   </compound>
   <compound refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity" kind="class"><name>OxTS::Gal_Cpp::GadVelocity</name>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ab3803209b3a2786b386243ce43075a00" kind="function"><name>GadVelocity</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a3bccf350b3c6a315699f25c550aec6bc" kind="function"><name>SetVelNed</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aef35a3c4ca009f5e8287ac43d7a29136" kind="function"><name>SetVelOdom</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a07465b9265daa9fc4a5e6f3c3b02b47f" kind="function"><name>SetVelLocal</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a0a60f95c55c22b60522aecac74eb6dac" kind="function"><name>GetVel</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a81b1e39d0d24d2e1a5690d1e33fd5a6e" kind="function"><name>GetVel</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aed9826401f4024c1953d05f06bd262da" kind="function"><name>SetVelNedVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aa221e7dad9224bc224034adfd792cce4" kind="function"><name>SetVelNedVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a43a90e7c8db09cce908e85ff88446c7c" kind="function"><name>SetVelOdomVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7fffba654adbb12e5bd793a3ba496b5a" kind="function"><name>SetVelOdomVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ad1c3f905a221620093c2551744e3a03b" kind="function"><name>SetVelLocalVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7e63b9033afd1c4f7237ac635398473c" kind="function"><name>SetVelLocalVar</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a3162d5f0c1aacf9d1ae11367ace89d38" kind="function"><name>GetVelVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a0c6a1bdf53e044b44e6441d4049eb799" kind="function"><name>GetVelVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a4be63949aa6352025d1561769fd8262c" kind="function"><name>SetAidingLeverArmFixed</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1abbf30b7f3d7aafbe3c2fc657a9672f4d" kind="function"><name>GetAidingLeverArm</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1aaf62e551f962a6e0fbab5aaeac88c2a8" kind="function"><name>GetAidingLeverArm</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a7716400b586d74d1092750afc8b2cfdf" kind="function"><name>SetAidingLeverArmOptimising</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1adbfb5e9029bcc229096b3e9f0eef7be8" kind="function"><name>SetAidingLeverArmConfig</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ae56c1d38f8425f314ba3d30ee8a66f6a" kind="function"><name>SetAidingLeverArmVar</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1ab0b53fea9a394a7575d7d0cd4f4182d0" kind="function"><name>GetAidingLeverArmVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity_1a46e029ff274e2090a1f604067b77f52f" kind="function"><name>GetAidingLeverArmVar</name></member>
   </compound>
   <compound refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed" kind="class"><name>OxTS::Gal_Cpp::GadWheelSpeed</name>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1abd2826a802ff322e022243bbe547ebb2" kind="function"><name>GadWheelSpeed</name></member>
@@ -286,15 +301,15 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1ac132419e3c7eef112dcd6dd8f1d614e7" kind="function"><name>SetWheelSpeedFwVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1ab2c98acb89eb922ec3eb7f07beb6ae2d" kind="function"><name>GetWheelSpeedFwVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a9fcf8ca07b7c545dfaa508bc27420fe9" kind="function"><name>SetWheelSpeedCount</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a8a8e4774c00cee1b16363cf4d21cea27" kind="function"><name>GetWheelSpeedCount</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1aff62a0d5300155e7b59aca231285f3d7" kind="function"><name>GetWheelSpeedCount</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a3ed4185ed4a0da836dc99dec41012c16" kind="function"><name>SetWheelSpeedVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a408ed06f14908d7b5dc44f4889ee118f" kind="function"><name>GetWheelSpeedVar</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a157323f928c1b4a206a3586503386eb5" kind="function"><name>SetAidingLeverArmFixed</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1aa04cf046c6bb2d1c5b84b611973f8c1d" kind="function"><name>GetAidingLeverArm</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a7064d74506538ab1ca67d7d3e98dd9c4" kind="function"><name>GetAidingLeverArm</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a66b788b777661518f4f13ed4fd93247d" kind="function"><name>SetAidingLeverArmOptimising</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1acdbdb231814882a45e904d3fa1db2c9d" kind="function"><name>SetAidingLeverArmConfig</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1abad75aecdf8ab4d2d2f387b8e3ac73da" kind="function"><name>SetAidingLeverArmVar</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1ada006aa00c7dca914bca36de9c4102f9" kind="function"><name>GetAidingLeverArmVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed_1a142ac7460db4380fbea30397f8459784" kind="function"><name>GetAidingLeverArmVar</name></member>
   </compound>
   <compound refid="classOxTS_1_1Gal__Cpp_1_1Gen3d" kind="class"><name>OxTS::Gal_Cpp::Gen3d</name>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1ac1cea06b2a0f25275e4f48cac1365aaf" kind="variable"><name>m_mode</name></member>
@@ -304,7 +319,7 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a5f0442a5acb6330075e68ffe1a380e0c" kind="variable"><name>m_v</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a17e9c1b5063e5a4a65050453c8b60829" kind="function"><name>Gen3d</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a71aeda9b181468fc337192b4ad039896" kind="function"><name>Gen3d</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1abd7f9c6201f494d6fd38a0f4d4a630da" kind="function"><name>operator=</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a0c4caeeea4fc68bc5be8ac22ed618ba5" kind="function"><name>operator=</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a496a68dbf0948a831810943b36c7642f" kind="function"><name>SetMode</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1ad63d4ef8f6d7703ecd582c00e3b593f2" kind="function"><name>GetMode</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a3323b6c4609131fe9475e0754efe1473" kind="function"><name>SetValType</name></member>
@@ -317,12 +332,12 @@
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a3dbd2769ad1f105c4fcb2325d5000e6e" kind="function"><name>GetValZ</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1acd18b63058f1ed06855a1df8748c02e9" kind="function"><name>SetVal</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a77703e39ba2930b4b6cad7371f7262a7" kind="function"><name>SetVal</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1ac4d6992a2f08f5528bf91f41b8083d07" kind="function"><name>GetVal</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a1a64bce15c21e2f51e6f27a600f08b2a" kind="function"><name>GetVal</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1ae07960d0143c18788a34f5f47733d935" kind="function"><name>GetVarType</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a4aa22a5f80b136fbc9e815079b54e97b" kind="function"><name>SetVarUpperDiag</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a594d9d0513abd103cce76cbfcc623c19" kind="function"><name>SetVarDiag</name></member>
     <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a49e920865e8e52eb893a8006e7f70194" kind="function"><name>SetVarSingle</name></member>
-    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1a77bebb228bf64e7760aca42460650545" kind="function"><name>GetVar</name></member>
+    <member refid="classOxTS_1_1Gal__Cpp_1_1Gen3d_1af58e8879563d409e846033621f3ee34d" kind="function"><name>GetVar</name></member>
   </compound>
   <compound refid="classnetworking__udp_1_1server" kind="class"><name>networking_udp::server</name>
     <member refid="classnetworking__udp_1_1server_1a75c2b57ef471ecf87a0b99666a3be826" kind="variable"><name>m_ethernet</name></member>
@@ -411,6 +426,7 @@
     <member refid="gad__struct_8hpp_1a17205339e82e2c1b2c547863706dd245" kind="variable"><name>VEL_SYS_TYPE</name></member>
     <member refid="gad__struct_8hpp_1a071ca9d88a061554fc09cb5b7dddeffa" kind="variable"><name>SPEED_SYS_TYPE</name></member>
     <member refid="gad__struct_8hpp_1a361c2b8a25ff48bc44ee83a31e7f72df" kind="variable"><name>ATT_SYS_TYPE</name></member>
+    <member refid="gad__struct_8hpp_1a412dec03b9de8f049ee4f5fbfcf31926" kind="variable"><name>ORI_SYS_TYPE</name></member>
     <member refid="gad__struct_8hpp_1ab032f628859f61cf0cb52ed504172712" kind="variable"><name>HEA_SYS_TYPE</name></member>
     <member refid="gad__struct_8hpp_1a7c849bb99f02a7e13876eff2e1e8ca58" kind="variable"><name>ANG_SYS_TYPE</name></member>
     <member refid="gad__struct_8hpp_1a5c81a682882b7e94e9b9d63110d6f828" kind="variable"><name>LOC_SYS</name></member>

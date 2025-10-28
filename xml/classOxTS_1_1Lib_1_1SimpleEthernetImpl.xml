@@ -1,14 +1,15 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classOxTS_1_1Lib_1_1SimpleEthernetImpl" kind="class" language="C++" prot="public">
     <compoundname>OxTS::Lib::SimpleEthernetImpl</compoundname>
     <includes local="no">oxts_sockets.hpp</includes>
-      <sectiondef kind="private-attrib">
+    <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a5eac6782afece73fc67d5f063b022e78" prot="private" static="no" mutable="no">
         <type>bool</type>
         <definition>bool OxTS::Lib::SimpleEthernetImpl::m_broadcast</definition>
         <argsstring></argsstring>
         <name>m_broadcast</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::m_broadcast</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>bool OxTS::Lib::SimpleEthernetImpl::m_is_good</definition>
         <argsstring></argsstring>
         <name>m_is_good</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::m_is_good</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>bool OxTS::Lib::SimpleEthernetImpl::m_active</definition>
         <argsstring></argsstring>
         <name>m_active</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::m_active</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>int32_t OxTS::Lib::SimpleEthernetImpl::m_handle</definition>
         <argsstring></argsstring>
         <name>m_handle</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::m_handle</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>uint16_t OxTS::Lib::SimpleEthernetImpl::m_my_port</definition>
         <argsstring></argsstring>
         <name>m_my_port</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::m_my_port</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,6 +79,7 @@
         <definition>uint16_t OxTS::Lib::SimpleEthernetImpl::m_my_given_port</definition>
         <argsstring></argsstring>
         <name>m_my_given_port</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::m_my_given_port</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -87,6 +93,7 @@
         <definition>uint16_t OxTS::Lib::SimpleEthernetImpl::m_their_port</definition>
         <argsstring></argsstring>
         <name>m_their_port</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::m_their_port</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -95,13 +102,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="72" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" bodystart="72" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
+    </sectiondef>
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="classOxTS_1_1Lib_1_1SimpleEthernetImpl_1a1e165bb63a1f480b15a5991c0c7a4ded" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
         <definition>OxTS::Lib::SimpleEthernetImpl::SimpleEthernetImpl</definition>
         <argsstring>(const bool broadcast_)</argsstring>
         <name>SimpleEthernetImpl</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::SimpleEthernetImpl</qualifiedname>
         <param>
           <type>const bool</type>
           <declname>broadcast_</declname>
@@ -120,6 +128,7 @@
         <definition>OxTS::Lib::SimpleEthernetImpl::~SimpleEthernetImpl</definition>
         <argsstring>()</argsstring>
         <name>~SimpleEthernetImpl</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::~SimpleEthernetImpl</qualifiedname>
         <briefdescription>
 <para>Destructor. </para>
         </briefdescription>
@@ -134,6 +143,7 @@
         <definition>bool OxTS::Lib::SimpleEthernetImpl::open</definition>
         <argsstring>(const uint16_t their_port_, const uint16_t my_port_=0U)</argsstring>
         <name>open</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::open</qualifiedname>
         <param>
           <type>const uint16_t</type>
           <declname>their_port_</declname>
@@ -158,6 +168,7 @@
         <definition>bool OxTS::Lib::SimpleEthernetImpl::close</definition>
         <argsstring>()</argsstring>
         <name>close</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::close</qualifiedname>
         <briefdescription>
 <para>Close. </para>
         </briefdescription>
@@ -184,6 +195,7 @@
         <definition>size_t OxTS::Lib::SimpleEthernetImpl::send_to_endpoint</definition>
         <argsstring>(const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt; &amp;buffer, const std::size_t packet_size)</argsstring>
         <name>send_to_endpoint</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::send_to_endpoint</qualifiedname>
         <param>
           <type>const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt; &amp;</type>
           <declname>buffer</declname>
@@ -218,6 +230,7 @@
         <definition>std::size_t OxTS::Lib::SimpleEthernetImpl::send_to_address</definition>
         <argsstring>(const uint32_t ip, const std::array&lt; uint8_t, SRC_BUFFER_SIZE &gt; &amp;buffer, const std::size_t packet_size)</argsstring>
         <name>send_to_address</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::send_to_address</qualifiedname>
         <param>
           <type>const uint32_t</type>
           <declname>ip</declname>
@@ -244,6 +257,7 @@
         <definition>bool OxTS::Lib::SimpleEthernetImpl::good</definition>
         <argsstring>() const</argsstring>
         <name>good</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::good</qualifiedname>
         <briefdescription>
 <para>Are we good?. </para>
         </briefdescription>
@@ -258,6 +272,7 @@
         <definition>bool OxTS::Lib::SimpleEthernetImpl::live</definition>
         <argsstring>() const</argsstring>
         <name>live</name>
+        <qualifiedname>OxTS::Lib::SimpleEthernetImpl::live</qualifiedname>
         <briefdescription>
 <para>Are we live?. </para>
         </briefdescription>
@@ -267,7 +282,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp" line="175" column="6"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
 <para>A very simple class to send datagram packets to a given IP address. </para>
     </briefdescription>

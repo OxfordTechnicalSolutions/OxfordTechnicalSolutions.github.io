@@ -1,13 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="structnetworking__udp_1_1endpoint__t" kind="struct" language="C++" prot="public">
     <compoundname>networking_udp::endpoint_t</compoundname>
-      <sectiondef kind="public-attrib">
+    <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structnetworking__udp_1_1endpoint__t_1ac8f78b1721059414e358fb8d45112cc8" prot="public" static="no" mutable="no">
         <type>std::uint32_t</type>
         <definition>std::uint32_t networking_udp::endpoint_t::ip_address</definition>
         <argsstring></argsstring>
         <name>ip_address</name>
+        <qualifiedname>networking_udp::endpoint_t::ip_address</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -21,6 +22,7 @@
         <definition>std::uint16_t networking_udp::endpoint_t::port</definition>
         <argsstring></argsstring>
         <name>port</name>
+        <qualifiedname>networking_udp::endpoint_t::port</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -29,7 +31,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="30" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" bodystart="30" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

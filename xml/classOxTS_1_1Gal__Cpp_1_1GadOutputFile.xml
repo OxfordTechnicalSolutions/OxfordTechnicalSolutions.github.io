@@ -1,14 +1,15 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classOxTS_1_1Gal__Cpp_1_1GadOutputFile" kind="class" language="C++" prot="public">
     <compoundname>OxTS::Gal_Cpp::GadOutputFile</compoundname>
     <basecompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadOutput" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadOutput</basecompoundref>
-      <sectiondef kind="private-attrib">
+    <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classOxTS_1_1Gal__Cpp_1_1GadOutputFile_1a1e1cbf16f6b64a27072a8a79ee49475c" prot="private" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string OxTS::Gal_Cpp::GadOutputFile::m_file_out</definition>
         <argsstring></argsstring>
         <name>m_file_out</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadOutputFile::m_file_out</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>std::ofstream OxTS::Gal_Cpp::GadOutputFile::m_file_stream</definition>
         <argsstring></argsstring>
         <name>m_file_stream</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadOutputFile::m_file_stream</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -31,13 +33,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="18" column="15" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="18" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
+    </sectiondef>
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadOutputFile_1a69b1db8100324d3bc055d9d097db5148" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>OxTS::Gal_Cpp::GadOutputFile::GadOutputFile</definition>
         <argsstring>()</argsstring>
         <name>GadOutputFile</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadOutputFile::GadOutputFile</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -52,6 +55,7 @@
         <definition>void OxTS::Gal_Cpp::GadOutputFile::SetFileName</definition>
         <argsstring>(const std::string &amp;file_path)</argsstring>
         <name>SetFileName</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadOutputFile::SetFileName</qualifiedname>
         <param>
           <type>const std::string &amp;</type>
           <declname>file_path</declname>
@@ -69,6 +73,7 @@
         <definition>OxTS::Gal_Cpp::GadOutputFile::GadOutputFile</definition>
         <argsstring>(const std::string &amp;file_path)</argsstring>
         <name>GadOutputFile</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadOutputFile::GadOutputFile</qualifiedname>
         <param>
           <type>const std::string &amp;</type>
           <declname>file_path</declname>
@@ -86,6 +91,7 @@
         <definition>virtual OxTS::Gal_Cpp::GadOutputFile::~GadOutputFile</definition>
         <argsstring>()</argsstring>
         <name>~GadOutputFile</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadOutputFile::~GadOutputFile</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -100,6 +106,7 @@
         <definition>virtual void OxTS::Gal_Cpp::GadOutputFile::OutputPacket</definition>
         <argsstring>(const uint8_t *const packet, const std::size_t packet_size) override</argsstring>
         <name>OutputPacket</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadOutputFile::OutputPacket</qualifiedname>
         <param>
           <type>const uint8_t *const</type>
           <declname>packet</declname>
@@ -122,6 +129,7 @@
         <definition>std::string OxTS::Gal_Cpp::GadOutputFile::GetOutputFilePath</definition>
         <argsstring>() const</argsstring>
         <name>GetOutputFilePath</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadOutputFile::GetOutputFilePath</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -131,7 +139,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" line="56" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp" bodystart="56" bodyend="59"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

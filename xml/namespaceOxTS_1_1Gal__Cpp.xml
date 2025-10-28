@@ -1,30 +1,32 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="namespaceOxTS_1_1Gal__Cpp" kind="namespace" language="C++">
     <compoundname>OxTS::Gal_Cpp</compoundname>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1CComMsg" prot="public">OxTS::Gal_Cpp::CComMsg</innerclass>
-    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1Gen3d" prot="public">OxTS::Gal_Cpp::Gen3d</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1Gad" prot="public">OxTS::Gal_Cpp::Gad</innerclass>
-    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadPosition" prot="public">OxTS::Gal_Cpp::GadPosition</innerclass>
-    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity" prot="public">OxTS::Gal_Cpp::GadVelocity</innerclass>
-    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed" prot="public">OxTS::Gal_Cpp::GadWheelSpeed</innerclass>
-    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed" prot="public">OxTS::Gal_Cpp::GadSpeed</innerclass>
-    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude" prot="public">OxTS::Gal_Cpp::GadAttitude</innerclass>
-    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadHeading" prot="public">OxTS::Gal_Cpp::GadHeading</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadAngularRate" prot="public">OxTS::Gal_Cpp::GadAngularRate</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadAttitude" prot="public">OxTS::Gal_Cpp::GadAttitude</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder" prot="public">OxTS::Gal_Cpp::GadEncoder</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderBin" prot="public">OxTS::Gal_Cpp::GadEncoderBin</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadEncoderCsv" prot="public">OxTS::Gal_Cpp::GadEncoderCsv</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadHandler" prot="public">OxTS::Gal_Cpp::GadHandler</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadHeading" prot="public">OxTS::Gal_Cpp::GadHeading</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadOrientation" prot="public">OxTS::Gal_Cpp::GadOrientation</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadOutput" prot="public">OxTS::Gal_Cpp::GadOutput</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile" prot="public">OxTS::Gal_Cpp::GadOutputFile</innerclass>
     <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp" prot="public">OxTS::Gal_Cpp::GadOutputUdp</innerclass>
-      <sectiondef kind="typedef">
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadPosition" prot="public">OxTS::Gal_Cpp::GadPosition</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadSpeed" prot="public">OxTS::Gal_Cpp::GadSpeed</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadVelocity" prot="public">OxTS::Gal_Cpp::GadVelocity</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1GadWheelSpeed" prot="public">OxTS::Gal_Cpp::GadWheelSpeed</innerclass>
+    <innerclass refid="classOxTS_1_1Gal__Cpp_1_1Gen3d" prot="public">OxTS::Gal_Cpp::Gen3d</innerclass>
+    <sectiondef kind="typedef">
       <memberdef kind="typedef" id="gad_8hpp_1a2b27c7d02585011699e19f575f52754d" prot="public" static="no">
         <type>GEN_BOOL</type>
         <definition>typedef GEN_BOOL OxTS::Gal_Cpp::GenFlag</definition>
         <argsstring></argsstring>
         <name>GenFlag</name>
+        <qualifiedname>OxTS::Gal_Cpp::GenFlag</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -38,6 +40,7 @@
         <definition>typedef bool OxTS::Gal_Cpp::GEN_BOOL</definition>
         <argsstring></argsstring>
         <name>GEN_BOOL</name>
+        <qualifiedname>OxTS::Gal_Cpp::GEN_BOOL</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -46,13 +49,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="26" column="24" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="26" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="var">
+    </sectiondef>
+    <sectiondef kind="var">
       <memberdef kind="variable" id="ccomtx_8hpp_1a0b56f9d2ccfba90d6233e2ea0bd4a3bb" prot="public" static="yes" mutable="no">
         <type>const std::uint8_t</type>
         <definition>const std::uint8_t OxTS::Gal_Cpp::CComSync</definition>
         <argsstring></argsstring>
         <name>CComSync</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComSync</qualifiedname>
         <initializer>= 0x40U</initializer>
         <briefdescription>
         </briefdescription>
@@ -67,6 +71,7 @@
         <definition>const std::uint8_t OxTS::Gal_Cpp::CComRes</definition>
         <argsstring></argsstring>
         <name>CComRes</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComRes</qualifiedname>
         <initializer>= 0x00U</initializer>
         <briefdescription>
         </briefdescription>
@@ -81,6 +86,7 @@
         <definition>const std::uint8_t OxTS::Gal_Cpp::CComShort</definition>
         <argsstring></argsstring>
         <name>CComShort</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComShort</qualifiedname>
         <initializer>= 0x80U</initializer>
         <briefdescription>
         </briefdescription>
@@ -95,6 +101,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::CComBuffSize</definition>
         <argsstring></argsstring>
         <name>CComBuffSize</name>
+        <qualifiedname>OxTS::Gal_Cpp::CComBuffSize</qualifiedname>
         <initializer>= 65536U</initializer>
         <briefdescription>
         </briefdescription>
@@ -109,6 +116,7 @@
         <definition>const std::uint32_t OxTS::Gal_Cpp::MAX_CSV_LINE</definition>
         <argsstring></argsstring>
         <name>MAX_CSV_LINE</name>
+        <qualifiedname>OxTS::Gal_Cpp::MAX_CSV_LINE</qualifiedname>
         <initializer>= (128U * 64U)</initializer>
         <briefdescription>
         </briefdescription>
@@ -123,6 +131,7 @@
         <definition>const std::uint8_t OxTS::Gal_Cpp::AdditionalBitmaskBit</definition>
         <argsstring></argsstring>
         <name>AdditionalBitmaskBit</name>
+        <qualifiedname>OxTS::Gal_Cpp::AdditionalBitmaskBit</qualifiedname>
         <initializer>= 0x80U</initializer>
         <briefdescription>
         </briefdescription>
@@ -137,6 +146,7 @@
         <definition>const std::uint8_t OxTS::Gal_Cpp::ValueBit</definition>
         <argsstring></argsstring>
         <name>ValueBit</name>
+        <qualifiedname>OxTS::Gal_Cpp::ValueBit</qualifiedname>
         <initializer>= 0x40U</initializer>
         <briefdescription>
         </briefdescription>
@@ -151,6 +161,7 @@
         <definition>const std::uint8_t OxTS::Gal_Cpp::TimeBit</definition>
         <argsstring></argsstring>
         <name>TimeBit</name>
+        <qualifiedname>OxTS::Gal_Cpp::TimeBit</qualifiedname>
         <initializer>= 0x20U</initializer>
         <briefdescription>
         </briefdescription>
@@ -165,6 +176,7 @@
         <definition>const std::uint8_t OxTS::Gal_Cpp::LocationBit</definition>
         <argsstring></argsstring>
         <name>LocationBit</name>
+        <qualifiedname>OxTS::Gal_Cpp::LocationBit</qualifiedname>
         <initializer>= 0x10U</initializer>
         <briefdescription>
         </briefdescription>
@@ -179,6 +191,7 @@
         <definition>const std::uint8_t OxTS::Gal_Cpp::Res1Bit</definition>
         <argsstring></argsstring>
         <name>Res1Bit</name>
+        <qualifiedname>OxTS::Gal_Cpp::Res1Bit</qualifiedname>
         <initializer>= 0x08U</initializer>
         <briefdescription>
         </briefdescription>
@@ -193,6 +206,7 @@
         <definition>const std::uint8_t OxTS::Gal_Cpp::Res2Bit</definition>
         <argsstring></argsstring>
         <name>Res2Bit</name>
+        <qualifiedname>OxTS::Gal_Cpp::Res2Bit</qualifiedname>
         <initializer>= 0x04U</initializer>
         <briefdescription>
         </briefdescription>
@@ -207,6 +221,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::GEN_AID_HEADER_MIN_SIZE</definition>
         <argsstring></argsstring>
         <name>GEN_AID_HEADER_MIN_SIZE</name>
+        <qualifiedname>OxTS::Gal_Cpp::GEN_AID_HEADER_MIN_SIZE</qualifiedname>
         <initializer>= 4U</initializer>
         <briefdescription>
 <para>Size of basic header in generic aiding binary packet. </para>
@@ -222,6 +237,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::XDEV_ACQUISTION_TIMESTAMP_SIZE</definition>
         <argsstring></argsstring>
         <name>XDEV_ACQUISTION_TIMESTAMP_SIZE</name>
+        <qualifiedname>OxTS::Gal_Cpp::XDEV_ACQUISTION_TIMESTAMP_SIZE</qualifiedname>
         <initializer>= 8U</initializer>
         <briefdescription>
 <para>The size in bits of the acquisition timestamp appended to the generic aiding payload on receipt. </para>
@@ -237,6 +253,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::REALTIME_GENAID_RX_START_IDX</definition>
         <argsstring></argsstring>
         <name>REALTIME_GENAID_RX_START_IDX</name>
+        <qualifiedname>OxTS::Gal_Cpp::REALTIME_GENAID_RX_START_IDX</qualifiedname>
         <initializer>= 0U</initializer>
         <briefdescription>
         </briefdescription>
@@ -251,6 +268,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::MAX_NUM_REALTIME_GENAID_RX</definition>
         <argsstring></argsstring>
         <name>MAX_NUM_REALTIME_GENAID_RX</name>
+        <qualifiedname>OxTS::Gal_Cpp::MAX_NUM_REALTIME_GENAID_RX</qualifiedname>
         <initializer>= 1U</initializer>
         <briefdescription>
         </briefdescription>
@@ -265,6 +283,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::PP_GENAID_RX_START_IDX</definition>
         <argsstring></argsstring>
         <name>PP_GENAID_RX_START_IDX</name>
+        <qualifiedname>OxTS::Gal_Cpp::PP_GENAID_RX_START_IDX</qualifiedname>
         <initializer>= (REALTIME_GENAID_RX_START_IDX + MAX_NUM_REALTIME_GENAID_RX)</initializer>
         <briefdescription>
         </briefdescription>
@@ -279,6 +298,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::MAX_NUM_PP_GENAID_RX</definition>
         <argsstring></argsstring>
         <name>MAX_NUM_PP_GENAID_RX</name>
+        <qualifiedname>OxTS::Gal_Cpp::MAX_NUM_PP_GENAID_RX</qualifiedname>
         <initializer>= 8U</initializer>
         <briefdescription>
         </briefdescription>
@@ -293,6 +313,7 @@
         <definition>const std::double_t OxTS::Gal_Cpp::GENAID_POS_STATUS_AGE_THRESHOLD</definition>
         <argsstring></argsstring>
         <name>GENAID_POS_STATUS_AGE_THRESHOLD</name>
+        <qualifiedname>OxTS::Gal_Cpp::GENAID_POS_STATUS_AGE_THRESHOLD</qualifiedname>
         <initializer>= 2.0</initializer>
         <briefdescription>
         </briefdescription>
@@ -307,6 +328,7 @@
         <definition>const std::double_t OxTS::Gal_Cpp::GENAID_VEL_STATUS_AGE_THRESHOLD</definition>
         <argsstring></argsstring>
         <name>GENAID_VEL_STATUS_AGE_THRESHOLD</name>
+        <qualifiedname>OxTS::Gal_Cpp::GENAID_VEL_STATUS_AGE_THRESHOLD</qualifiedname>
         <initializer>= 2.0</initializer>
         <briefdescription>
         </briefdescription>
@@ -321,6 +343,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::MAX_GENAID_PKT_SIZE</definition>
         <argsstring></argsstring>
         <name>MAX_GENAID_PKT_SIZE</name>
+        <qualifiedname>OxTS::Gal_Cpp::MAX_GENAID_PKT_SIZE</qualifiedname>
         <initializer>= 2048U</initializer>
         <briefdescription>
         </briefdescription>
@@ -335,6 +358,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::MAX_ID_GEN3D</definition>
         <argsstring></argsstring>
         <name>MAX_ID_GEN3D</name>
+        <qualifiedname>OxTS::Gal_Cpp::MAX_ID_GEN3D</qualifiedname>
         <initializer>= 16U</initializer>
         <briefdescription>
         </briefdescription>
@@ -349,6 +373,7 @@
         <definition>const std::double_t OxTS::Gal_Cpp::GAD_LATE_THRESH</definition>
         <argsstring></argsstring>
         <name>GAD_LATE_THRESH</name>
+        <qualifiedname>OxTS::Gal_Cpp::GAD_LATE_THRESH</qualifiedname>
         <initializer>=           -1.0</initializer>
         <briefdescription>
         </briefdescription>
@@ -363,6 +388,7 @@
         <definition>const std::double_t OxTS::Gal_Cpp::GAD_EARLY_WARN_THRESH</definition>
         <argsstring></argsstring>
         <name>GAD_EARLY_WARN_THRESH</name>
+        <qualifiedname>OxTS::Gal_Cpp::GAD_EARLY_WARN_THRESH</qualifiedname>
         <initializer>=      0.1</initializer>
         <briefdescription>
         </briefdescription>
@@ -377,6 +403,7 @@
         <definition>const std::double_t OxTS::Gal_Cpp::GAD_EARLY_REJECT_THRESH</definition>
         <argsstring></argsstring>
         <name>GAD_EARLY_REJECT_THRESH</name>
+        <qualifiedname>OxTS::Gal_Cpp::GAD_EARLY_REJECT_THRESH</qualifiedname>
         <initializer>=    0.3</initializer>
         <briefdescription>
         </briefdescription>
@@ -391,6 +418,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::GAD_MAX_BUF</definition>
         <argsstring></argsstring>
         <name>GAD_MAX_BUF</name>
+        <qualifiedname>OxTS::Gal_Cpp::GAD_MAX_BUF</qualifiedname>
         <initializer>=       1U</initializer>
         <briefdescription>
 <para>max number of parallel buffers (e.g., files/streams) </para>
@@ -406,6 +434,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::GAD_BUF_MAX_SIZE</definition>
         <argsstring></argsstring>
         <name>GAD_BUF_MAX_SIZE</name>
+        <qualifiedname>OxTS::Gal_Cpp::GAD_BUF_MAX_SIZE</qualifiedname>
         <initializer>=  256U</initializer>
         <briefdescription>
 <para>max number of data in a buffer </para>
@@ -421,6 +450,7 @@
         <definition>const std::size_t OxTS::Gal_Cpp::MAX_BUFF</definition>
         <argsstring></argsstring>
         <name>MAX_BUFF</name>
+        <qualifiedname>OxTS::Gal_Cpp::MAX_BUFF</qualifiedname>
         <initializer>= 1024U</initializer>
         <briefdescription>
         </briefdescription>
@@ -435,6 +465,7 @@
         <definition>const uint16_t OxTS::Gal_Cpp::GAD_PORT</definition>
         <argsstring></argsstring>
         <name>GAD_PORT</name>
+        <qualifiedname>OxTS::Gal_Cpp::GAD_PORT</qualifiedname>
         <initializer>= 50485U</initializer>
         <briefdescription>
         </briefdescription>
@@ -449,6 +480,7 @@
         <definition>ENUM OxTS::Gal_Cpp::ENCODER_TYPE</definition>
         <argsstring></argsstring>
         <name>ENCODER_TYPE</name>
+        <qualifiedname>OxTS::Gal_Cpp::ENCODER_TYPE</qualifiedname>
         <initializer>{
             ENCODER_VOID,                    
             ENCODER_CSV,                     
@@ -461,13 +493,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="31" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="32" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="31" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="32" bodyend="36"/>
       </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1a302f7af692e6c9b0c76e739942f07361" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::OUTPUT_TYPE</definition>
         <argsstring></argsstring>
         <name>OUTPUT_TYPE</name>
+        <qualifiedname>OxTS::Gal_Cpp::OUTPUT_TYPE</qualifiedname>
         <initializer>{
             OUTPUT_VOID,                    
             OUTPUT_UDP,                     
@@ -480,13 +513,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="41" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="42" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="41" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="42" bodyend="46"/>
       </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1ae25da3869b37c1187cb617662fefc9ce" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::GEN_VAR_TYPE</definition>
         <argsstring></argsstring>
         <name>GEN_VAR_TYPE</name>
+        <qualifiedname>OxTS::Gal_Cpp::GEN_VAR_TYPE</qualifiedname>
         <initializer>{
             GEN_VAR_VOID,                   
             GEN_VAR_SINGLE,                 
@@ -500,13 +534,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="52" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="53" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="52" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="53" bodyend="58"/>
       </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1a3c70a02287c68324a8c114eb4b3dff42" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::TIME_SYS</definition>
         <argsstring></argsstring>
         <name>TIME_SYS</name>
+        <qualifiedname>OxTS::Gal_Cpp::TIME_SYS</qualifiedname>
         <initializer>{
             TIME_VOID,
             TIME_GPS,            
@@ -524,13 +559,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="62" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="63" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="62" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="63" bodyend="72"/>
       </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1a3fbde37a47456fe61f05d7d7e5cd40b9" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::GEN_TYPE</definition>
         <argsstring></argsstring>
         <name>GEN_TYPE</name>
+        <qualifiedname>OxTS::Gal_Cpp::GEN_TYPE</qualifiedname>
         <initializer>{
             GEN_VOID,
             GEN_POS,          
@@ -542,6 +578,7 @@
             GEN_TIMETRIG,     
             GEN_SPEED,        
             GEN_ANGRATE,      
+            GEN_ORI,          
             GEN_NUM
         }</initializer>
         <briefdescription>
@@ -551,13 +588,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="77" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="78" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="77" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="78" bodyend="91"/>
       </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1a534d252638daf764461da8ad179b2528" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::POS_SYS_TYPE</definition>
         <argsstring></argsstring>
         <name>POS_SYS_TYPE</name>
+        <qualifiedname>OxTS::Gal_Cpp::POS_SYS_TYPE</qualifiedname>
         <initializer>{
             POS_SYS_VOID,
             POS_SYS_WGS84,        
@@ -570,13 +608,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="95" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="96" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="96" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="97" bodyend="101"/>
       </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1a17205339e82e2c1b2c547863706dd245" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::VEL_SYS_TYPE</definition>
         <argsstring></argsstring>
         <name>VEL_SYS_TYPE</name>
+        <qualifiedname>OxTS::Gal_Cpp::VEL_SYS_TYPE</qualifiedname>
         <initializer>{
             VEL_SYS_VOID,
             VEL_SYS_NED,             
@@ -590,13 +629,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="106" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="107" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="107" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="108" bodyend="113"/>
       </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1a071ca9d88a061554fc09cb5b7dddeffa" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::SPEED_SYS_TYPE</definition>
         <argsstring></argsstring>
         <name>SPEED_SYS_TYPE</name>
+        <qualifiedname>OxTS::Gal_Cpp::SPEED_SYS_TYPE</qualifiedname>
         <initializer>{
             SPEED_SYS_VOID,
             SPEED_SYS_FW_VEL,         
@@ -610,13 +650,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="117" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="118" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="118" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="119" bodyend="124"/>
       </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1a361c2b8a25ff48bc44ee83a31e7f72df" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::ATT_SYS_TYPE</definition>
         <argsstring></argsstring>
         <name>ATT_SYS_TYPE</name>
+        <qualifiedname>OxTS::Gal_Cpp::ATT_SYS_TYPE</qualifiedname>
         <initializer>{
             ATT_SYS_VOID,
             ATT_SYS_HPR,      
@@ -629,13 +670,34 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="127" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="128" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="128" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="129" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="variable" id="gad__struct_8hpp_1a412dec03b9de8f049ee4f5fbfcf31926" prot="public" static="no" mutable="no">
+        <type>ENUM</type>
+        <definition>ENUM OxTS::Gal_Cpp::ORI_SYS_TYPE</definition>
+        <argsstring></argsstring>
+        <name>ORI_SYS_TYPE</name>
+        <qualifiedname>OxTS::Gal_Cpp::ORI_SYS_TYPE</qualifiedname>
+        <initializer>{
+            ORI_SYS_VOID,
+            ORI_SYS_HPR,      
+            ORI_SYS_LOCAL     
+        }</initializer>
+        <briefdescription>
+<para>Orientation types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="138" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="139" bodyend="143"/>
       </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1ab032f628859f61cf0cb52ed504172712" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::HEA_SYS_TYPE</definition>
         <argsstring></argsstring>
         <name>HEA_SYS_TYPE</name>
+        <qualifiedname>OxTS::Gal_Cpp::HEA_SYS_TYPE</qualifiedname>
         <initializer>{
             HEA_SYS_VOID,
             HEA_SYS_NAV,        
@@ -648,13 +710,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="136" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="137" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="147" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="148" bodyend="152"/>
       </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1a7c849bb99f02a7e13876eff2e1e8ca58" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::ANG_SYS_TYPE</definition>
         <argsstring></argsstring>
         <name>ANG_SYS_TYPE</name>
+        <qualifiedname>OxTS::Gal_Cpp::ANG_SYS_TYPE</qualifiedname>
         <initializer>{
             ANG_SYS_VOID,
             ANG_SYS_SENSOR        
@@ -666,13 +729,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="145" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="146" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="156" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="157" bodyend="160"/>
       </memberdef>
       <memberdef kind="variable" id="gad__struct_8hpp_1a5c81a682882b7e94e9b9d63110d6f828" prot="public" static="no" mutable="no">
         <type>ENUM</type>
         <definition>ENUM OxTS::Gal_Cpp::LOC_SYS</definition>
         <argsstring></argsstring>
         <name>LOC_SYS</name>
+        <qualifiedname>OxTS::Gal_Cpp::LOC_SYS</qualifiedname>
         <initializer>{
             LOC_FIXED = 0,    
             LOC_KF = 1,       
@@ -685,9 +749,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="153" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="154" bodyend="-1"/>
+        <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" line="164" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp" bodystart="165" bodyend="169"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="oxts__misra_8hpp" kind="file" language="C++">
     <compoundname>oxts_misra.hpp</compoundname>
     <includes local="no">cmath</includes>
@@ -10,12 +10,6 @@
     <includedby refid="gad__struct_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_struct.hpp</includedby>
     <includedby refid="oxts__arrays_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_arrays.hpp</includedby>
     <incdepgraph>
-      <node id="2">
-        <label>cmath</label>
-      </node>
-      <node id="3">
-        <label>array</label>
-      </node>
       <node id="1">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp</label>
         <link refid="oxts__misra_8hpp"/>
@@ -23,6 +17,12 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+      </node>
+      <node id="3">
+        <label>array</label>
+      </node>
+      <node id="2">
+        <label>cmath</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -30,6 +30,10 @@
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp</label>
         <link refid="gad_8hpp"/>
       </node>
+      <node id="3">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp</label>
+        <link refid="gad__defines_8hpp"/>
+      </node>
       <node id="1">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp</label>
         <link refid="oxts__misra_8hpp"/>
@@ -38,13 +42,9 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp</label>
-        <link refid="gad__defines_8hpp"/>
-      </node>
     </invincdepgraph>
     <innernamespace refid="namespaceOxTS">OxTS</innernamespace>
-      <sectiondef kind="define">
+    <sectiondef kind="define">
       <memberdef kind="define" id="oxts__misra_8hpp_1a378181c29a641d58f55d647b5a9599f2" prot="public" static="no">
         <name>ENUM</name>
         <initializer>enum</initializer>
@@ -56,7 +56,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp" line="32" column="10" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp" bodystart="32" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
 <para>Handles MISRA compliance options. </para>
     </briefdescription>
@@ -66,7 +66,7 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">//============================================================================================================</highlight></codeline>
-<codeline lineno="13"><highlight class="comment"></highlight><highlight class="comment">//============================================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">//============================================================================================================</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>OXTS_MISRA_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OXTS_MISRA_H</highlight><highlight class="normal"></highlight></codeline>

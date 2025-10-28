@@ -1,20 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="basic__casts_8hpp" kind="file" language="C++">
     <compoundname>basic_casts.hpp</compoundname>
     <includes local="no">cstdint</includes>
     <includes local="no">cmath</includes>
     <includes local="no">array</includes>
     <incdepgraph>
-      <node id="2">
-        <label>cstdint</label>
-      </node>
-      <node id="3">
-        <label>cmath</label>
-      </node>
-      <node id="4">
-        <label>array</label>
-      </node>
       <node id="1">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp</label>
         <link refid="basic__casts_8hpp"/>
@@ -24,6 +15,15 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
+      </node>
+      <node id="4">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>cmath</label>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespaceOxTS">OxTS</innernamespace>

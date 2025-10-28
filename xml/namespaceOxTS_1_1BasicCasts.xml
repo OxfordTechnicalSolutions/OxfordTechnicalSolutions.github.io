@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="namespaceOxTS_1_1BasicCasts" kind="namespace" language="C++">
     <compoundname>OxTS::BasicCasts</compoundname>
-      <sectiondef kind="func">
+    <sectiondef kind="func">
       <memberdef kind="function" id="basic__casts_8hpp_1aab34d26e8a49cd69051651e8be575682" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
@@ -15,6 +15,7 @@
         <definition>static void OxTS::BasicCasts::cast_uint8_to_1_byte_LE</definition>
         <argsstring>(typename std::array&lt; uint8_t, N &gt;::iterator &amp;start, const typename std::array&lt; uint8_t, N &gt;::iterator &amp;end, const uint8_t v)</argsstring>
         <name>cast_uint8_to_1_byte_LE</name>
+        <qualifiedname>OxTS::BasicCasts::cast_uint8_to_1_byte_LE</qualifiedname>
         <param>
           <type>typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
           <declname>start</declname>
@@ -47,6 +48,7 @@
         <definition>static void OxTS::BasicCasts::cast_uint16_to_2_byte_LE</definition>
         <argsstring>(typename std::array&lt; uint8_t, N &gt;::iterator &amp;start, const typename std::array&lt; uint8_t, N &gt;::iterator &amp;end, const uint16_t v)</argsstring>
         <name>cast_uint16_to_2_byte_LE</name>
+        <qualifiedname>OxTS::BasicCasts::cast_uint16_to_2_byte_LE</qualifiedname>
         <param>
           <type>typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
           <declname>start</declname>
@@ -79,6 +81,7 @@
         <definition>static void OxTS::BasicCasts::cast_int16_to_2_byte_LE</definition>
         <argsstring>(typename std::array&lt; uint8_t, N &gt;::iterator &amp;start, const typename std::array&lt; uint8_t, N &gt;::iterator &amp;end, const std::int16_t v)</argsstring>
         <name>cast_int16_to_2_byte_LE</name>
+        <qualifiedname>OxTS::BasicCasts::cast_int16_to_2_byte_LE</qualifiedname>
         <param>
           <type>typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
           <declname>start</declname>
@@ -111,6 +114,7 @@
         <definition>static void OxTS::BasicCasts::cast_int8_to_1_byte_LE</definition>
         <argsstring>(typename std::array&lt; uint8_t, N &gt;::iterator &amp;start, const typename std::array&lt; uint8_t, N &gt;::iterator &amp;end, const int8_t v)</argsstring>
         <name>cast_int8_to_1_byte_LE</name>
+        <qualifiedname>OxTS::BasicCasts::cast_int8_to_1_byte_LE</qualifiedname>
         <param>
           <type>typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
           <declname>start</declname>
@@ -143,6 +147,7 @@
         <definition>static void OxTS::BasicCasts::cast_double_to_8_byte_LE</definition>
         <argsstring>(typename std::array&lt; uint8_t, N &gt;::iterator &amp;start, const typename std::array&lt; uint8_t, N &gt;::iterator &amp;end, const double_t v)</argsstring>
         <name>cast_double_to_8_byte_LE</name>
+        <qualifiedname>OxTS::BasicCasts::cast_double_to_8_byte_LE</qualifiedname>
         <param>
           <type>typename std::array&lt; uint8_t, N &gt;::iterator &amp;</type>
           <declname>start</declname>
@@ -163,7 +168,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" line="65" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" bodystart="65" bodyend="81"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -1,4 +1,5 @@
 <map id="OxTS::Gal_Cpp::GadAttitude" name="OxTS::Gal_Cpp::GadAttitude">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,197,107"/>
-<area shape="rect" id="node2" href="$classOxTS_1_1Gal__Cpp_1_1Gad.html" title=" " alt="" coords="28,5,175,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,79,197,104"/>
+<area shape="rect" id="Node000002" href="$classOxTS_1_1Gal__Cpp_1_1Gad.html" title=" " alt="" coords="28,5,175,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,44,104,79,99,79,99,44"/>
 </map>

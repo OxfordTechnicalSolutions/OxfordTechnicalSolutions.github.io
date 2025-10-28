@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="gad__output_8hpp" kind="file" language="C++">
     <compoundname>gad_output.hpp</compoundname>
     <includes local="no">cstddef</includes>
@@ -9,6 +9,10 @@
     <includedby refid="gad__output__file_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_file.hpp</includedby>
     <includedby refid="gad__output__udp_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp</includedby>
     <incdepgraph>
+      <node id="4">
+        <label>oxts/gal-cpp/basic_types.hpp</label>
+        <link refid="basic__types_8hpp"/>
+      </node>
       <node id="1">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output.hpp</label>
         <link refid="gad__output_8hpp"/>
@@ -19,18 +23,18 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="3">
-        <label>cstdint</label>
-      </node>
       <node id="2">
         <label>cstddef</label>
       </node>
-      <node id="4">
-        <label>oxts/gal-cpp/basic_types.hpp</label>
-        <link refid="basic__types_8hpp"/>
+      <node id="3">
+        <label>cstdint</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="2">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp</label>
+        <link refid="gad__handler_8hpp"/>
+      </node>
       <node id="1">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output.hpp</label>
         <link refid="gad__output_8hpp"/>
@@ -46,10 +50,6 @@
         <link refid="gad__output__file_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-      </node>
-      <node id="2">
-        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp</label>
-        <link refid="gad__handler_8hpp"/>
       </node>
       <node id="4">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp</label>

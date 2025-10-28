@@ -1,8 +1,14 @@
 <map id="/home/runner/work/gad&#45;sdk/gad&#45;sdk/oxts&#45;sdk&#45;gal&#45;cpp/include/oxts/gal&#45;cpp/gad_defines.hpp" name="/home/runner/work/gad&#45;sdk/gad&#45;sdk/oxts&#45;sdk&#45;gal&#45;cpp/include/oxts/gal&#45;cpp/gad_defines.hpp">
-<area shape="rect" id="node1" title="C++ definitions relevant to Generic Aiding." alt="" coords="75,5,242,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,124,67,151"/>
-<area shape="rect" id="node3" title=" " alt="" coords="91,124,157,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="192,199,251,225"/>
-<area shape="rect" id="node5" href="$oxts__misra_8hpp.html" title="Handles MISRA compliance options." alt="" coords="232,124,419,151"/>
-<area shape="rect" id="node6" title=" " alt="" coords="300,199,351,225"/>
+<area shape="rect" id="Node000001" title="C++ definitions relevant to Generic Aiding." alt="" coords="75,5,242,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,123,67,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,77,64,116,61,112,113,73"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="91,123,157,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,76,136,111,131,109,144,74"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="192,196,251,221"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,74,215,182,210,184,169,76"/>
+<area shape="rect" id="Node000005" href="$oxts__misra_8hpp.html" title="Handles MISRA compliance options." alt="" coords="232,123,419,148"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="220,72,294,113,291,118,218,77"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="310,150,251,190,248,186,307,146"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="300,196,351,221"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="328,148,328,182,323,182,323,148"/>
 </map>

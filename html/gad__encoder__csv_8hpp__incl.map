@@ -1,6 +1,9 @@
 <map id="/home/runner/work/gad&#45;sdk/gad&#45;sdk/oxts&#45;sdk&#45;gal&#45;cpp/include/oxts/gal&#45;cpp/gad_encoders/gad_encoder_csv.hpp" name="/home/runner/work/gad&#45;sdk/gad&#45;sdk/oxts&#45;sdk&#45;gal&#45;cpp/include/oxts/gal&#45;cpp/gad_encoders/gad_encoder_csv.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="37,5,216,91"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,139,75,165"/>
-<area shape="rect" id="node3" title=" " alt="" coords="99,139,154,165"/>
-<area shape="rect" id="node4" title=" " alt="" coords="179,139,245,165"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="37,5,216,89"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,137,75,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,91,61,129,57,125,89,88"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="99,137,154,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,89,129,124,124,124,124,89"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="179,137,245,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,88,195,125,191,129,159,91"/>
 </map>

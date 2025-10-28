@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="udp__server__client_8hpp" kind="file" language="C++">
     <compoundname>udp_server_client.hpp</compoundname>
     <includes refid="Lib__Detect_8hpp" local="yes">oxts/gal-cpp/Lib_Detect.hpp</includes>
@@ -9,42 +9,6 @@
     <includes local="no">arpa/inet.h</includes>
     <includedby refid="gad__output__udp_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output_udp.hpp</includedby>
     <incdepgraph>
-      <node id="4">
-        <label>netinet/in.h</label>
-      </node>
-      <node id="12">
-        <label>arpa/inet.h</label>
-      </node>
-      <node id="1">
-        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp</label>
-        <link refid="udp__server__client_8hpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>cstdint</label>
-      </node>
-      <node id="5">
-        <label>fcntl.h</label>
-      </node>
-      <node id="11">
-        <label>string</label>
-      </node>
-      <node id="7">
-        <label>pthread.h</label>
-      </node>
-      <node id="6">
-        <label>unistd.h</label>
-      </node>
-      <node id="10">
-        <label>iostream</label>
-      </node>
       <node id="2">
         <label>oxts/gal-cpp/oxts_sockets.hpp</label>
         <link refid="oxts__sockets_8hpp"/>
@@ -63,20 +27,50 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="8">
-        <label>cstddef</label>
-      </node>
-      <node id="3">
-        <label>sys/socket.h</label>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
       <node id="1">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp</label>
         <link refid="udp__server__client_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
       </node>
+      <node id="12">
+        <label>arpa/inet.h</label>
+      </node>
+      <node id="8">
+        <label>cstddef</label>
+      </node>
+      <node id="9">
+        <label>cstdint</label>
+      </node>
+      <node id="5">
+        <label>fcntl.h</label>
+      </node>
+      <node id="10">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>netinet/in.h</label>
+      </node>
+      <node id="7">
+        <label>pthread.h</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>sys/socket.h</label>
+      </node>
+      <node id="6">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
       <node id="3">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp</label>
         <link refid="gad__handler_8hpp"/>
@@ -87,12 +81,18 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
+      <node id="1">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp</label>
+        <link refid="udp__server__client_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
     </invincdepgraph>
     <innerclass refid="structnetworking__udp_1_1endpoint__t" prot="public">networking_udp::endpoint_t</innerclass>
     <innerclass refid="classnetworking__udp_1_1client" prot="public">networking_udp::client</innerclass>
     <innerclass refid="classnetworking__udp_1_1server" prot="public">networking_udp::server</innerclass>
     <innernamespace refid="namespacenetworking__udp">networking_udp</innernamespace>
-      <sectiondef kind="define">
+    <sectiondef kind="define">
       <memberdef kind="define" id="udp__server__client_8hpp_1adfc8f90f3a8caa8423099cf36ff214f1" prot="public" static="no">
         <name>_WINSOCK_DEPRECATED_NO_WARNINGS</name>
         <briefdescription>
@@ -103,7 +103,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" line="9" column="9" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/udp_server_client.hpp" bodystart="9" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

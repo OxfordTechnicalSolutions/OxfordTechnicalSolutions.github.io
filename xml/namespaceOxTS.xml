@@ -1,16 +1,17 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="namespaceOxTS" kind="namespace" language="C++">
     <compoundname>OxTS</compoundname>
     <innernamespace refid="namespaceOxTS_1_1BasicCasts">OxTS::BasicCasts</innernamespace>
     <innernamespace refid="namespaceOxTS_1_1Gal__Cpp">OxTS::Gal_Cpp</innernamespace>
     <innernamespace refid="namespaceOxTS_1_1Lib">OxTS::Lib</innernamespace>
-      <sectiondef kind="typedef">
+    <sectiondef kind="typedef">
       <memberdef kind="typedef" id="namespaceOxTS_1a430242be0c3cf319e811a1237f2a142d" prot="public" static="no">
         <type>std::array&lt; std::double_t, 3 &gt;</type>
         <definition>typedef std::array&lt;std::double_t, 3&gt; OxTS::container_double3_t</definition>
         <argsstring></argsstring>
         <name>container_double3_t</name>
+        <qualifiedname>OxTS::container_double3_t</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -24,6 +25,7 @@
         <definition>typedef std::array&lt;std::double_t, 6&gt; OxTS::container_double6_t</definition>
         <argsstring></argsstring>
         <name>container_double6_t</name>
+        <qualifiedname>OxTS::container_double6_t</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -32,8 +34,8 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp" line="26" column="20" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp" bodystart="26" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="func">
+    </sectiondef>
+    <sectiondef kind="func">
       <memberdef kind="function" id="namespaceOxTS_1a93c0f0cc9922c2f4d2effa11fddc125e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
@@ -49,6 +51,7 @@
         <definition>std::size_t OxTS::fill_array</definition>
         <argsstring>(const typename std::array&lt; TArray, N &gt;::iterator &amp;start, const typename std::array&lt; TArray, N &gt;::iterator &amp;end, const TArray v)</argsstring>
         <name>fill_array</name>
+        <qualifiedname>OxTS::fill_array</qualifiedname>
         <param>
           <type>const typename std::array&lt; TArray, N &gt;::iterator &amp;</type>
           <declname>start</declname>
@@ -89,6 +92,7 @@
         <definition>std::size_t OxTS::copy_array</definition>
         <argsstring>(const typename std::array&lt; TArray, SrcSize &gt;::const_iterator &amp;src_start, const typename std::array&lt; TArray, SrcSize &gt;::const_iterator &amp;src_end, const typename std::array&lt; TArray, DstSize &gt;::iterator &amp;dst_start, const typename std::array&lt; TArray, DstSize &gt;::iterator &amp;dst_end, const std::size_t items_to_copy)</argsstring>
         <name>copy_array</name>
+        <qualifiedname>OxTS::copy_array</qualifiedname>
         <param>
           <type>const typename std::array&lt; TArray, SrcSize &gt;::const_iterator &amp;</type>
           <declname>src_start</declname>
@@ -117,13 +121,13 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_arrays.hpp" line="23" column="13" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_arrays.hpp" bodystart="23" bodyend="49"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
 <para>C++ version of gad_struct.h. </para>
     </briefdescription>
     <detaileddescription>
 <para>The software is protected by copyright of Oxford Technical Solutions. Copyright (C) 2020 Oxford Technical Solutions - <ulink url="http://www.oxts.com">http://www.oxts.com</ulink></para>
-<para>Redistribution and use in source and binary forms, with or without modification, are only permitted with the specific prior written permission of Oxford Technical Solutions. </para>
+<para>Redistribution and use in source and binary forms, with or without modification, are only permitted with the specific prior written permission of Oxford Technical Solutions.</para>
     </detaileddescription>
     <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/basic_casts.hpp" line="8" column="1"/>
   </compounddef>

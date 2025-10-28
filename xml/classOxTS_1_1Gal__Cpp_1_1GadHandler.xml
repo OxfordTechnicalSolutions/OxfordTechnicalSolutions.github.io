@@ -1,14 +1,15 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classOxTS_1_1Gal__Cpp_1_1GadHandler" kind="class" language="C++" prot="public">
     <compoundname>OxTS::Gal_Cpp::GadHandler</compoundname>
     <includes local="no">gad_handler.hpp</includes>
-      <sectiondef kind="private-attrib">
+    <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a9ef967bbda65dd2ca41ddd224b6f0129" prot="private" static="no" mutable="no">
         <type>ENCODER_TYPE</type>
         <definition>ENCODER_TYPE OxTS::Gal_Cpp::GadHandler::m_encoder_type</definition>
         <argsstring></argsstring>
         <name>m_encoder_type</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::m_encoder_type</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -22,6 +23,7 @@
         <definition>OUTPUT_TYPE OxTS::Gal_Cpp::GadHandler::m_output_type</definition>
         <argsstring></argsstring>
         <name>m_output_type</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::m_output_type</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -35,6 +37,7 @@
         <definition>GadEncoderBin OxTS::Gal_Cpp::GadHandler::m_encoder_bin</definition>
         <argsstring></argsstring>
         <name>m_encoder_bin</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::m_encoder_bin</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -48,6 +51,7 @@
         <definition>GadEncoderCsv OxTS::Gal_Cpp::GadHandler::m_encoder_csv</definition>
         <argsstring></argsstring>
         <name>m_encoder_csv</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::m_encoder_csv</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -61,6 +65,7 @@
         <definition>GadOutputFile OxTS::Gal_Cpp::GadHandler::m_output_file</definition>
         <argsstring></argsstring>
         <name>m_output_file</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::m_output_file</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,6 +79,7 @@
         <definition>GadOutputUdp OxTS::Gal_Cpp::GadHandler::m_output_udp</definition>
         <argsstring></argsstring>
         <name>m_output_udp</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::m_output_udp</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -82,13 +88,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp" line="30" column="14" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp" bodystart="30" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="private-func">
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a38c690ad8ff1faa6d6be9bd640a1bb2f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a1516632a7fac9eab8b1da779f70e3adf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classOxTS_1_1Gal__Cpp_1_1GadEncoder" kindref="compound">GadEncoder</ref> *</type>
-        <definition>GadEncoder* OxTS::Gal_Cpp::GadHandler::get_encoder</definition>
+        <definition>GadEncoder * OxTS::Gal_Cpp::GadHandler::get_encoder</definition>
         <argsstring>()</argsstring>
         <name>get_encoder</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::get_encoder</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -97,11 +104,12 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp" line="32" column="12"/>
       </memberdef>
-      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a9a294a42c5629537b9aaa8453de2991e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a0102261dd9be38e29581ed8dafe0fbe3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classOxTS_1_1Gal__Cpp_1_1GadOutput" kindref="compound">GadOutput</ref> *</type>
-        <definition>GadOutput* OxTS::Gal_Cpp::GadHandler::get_output</definition>
+        <definition>GadOutput * OxTS::Gal_Cpp::GadHandler::get_output</definition>
         <argsstring>()</argsstring>
         <name>get_output</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::get_output</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -110,13 +118,14 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp" line="33" column="11"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
+    </sectiondef>
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a538cd12ad05e58d01b47e76e5ed08f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>OxTS::Gal_Cpp::GadHandler::GadHandler</definition>
         <argsstring>()</argsstring>
         <name>GadHandler</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::GadHandler</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -131,6 +140,7 @@
         <definition>void OxTS::Gal_Cpp::GadHandler::SetEncoderToBin</definition>
         <argsstring>()</argsstring>
         <name>SetEncoderToBin</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::SetEncoderToBin</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -145,6 +155,7 @@
         <definition>void OxTS::Gal_Cpp::GadHandler::SetEncoderToCsv</definition>
         <argsstring>()</argsstring>
         <name>SetEncoderToCsv</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::SetEncoderToCsv</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -159,6 +170,7 @@
         <definition>void OxTS::Gal_Cpp::GadHandler::SetOutputModeToFile</definition>
         <argsstring>(const std::string &amp;file_path)</argsstring>
         <name>SetOutputModeToFile</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::SetOutputModeToFile</qualifiedname>
         <param>
           <type>const std::string &amp;</type>
           <declname>file_path</declname>
@@ -186,6 +198,7 @@
         <definition>void OxTS::Gal_Cpp::GadHandler::SetOutputModeToUdp</definition>
         <argsstring>(const std::string &amp;ip)</argsstring>
         <name>SetOutputModeToUdp</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::SetOutputModeToUdp</qualifiedname>
         <param>
           <type>const std::string &amp;</type>
           <declname>ip</declname>
@@ -213,6 +226,7 @@
         <definition>void OxTS::Gal_Cpp::GadHandler::SendPacket</definition>
         <argsstring>(const Gad &amp;g)</argsstring>
         <name>SendPacket</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadHandler::SendPacket</qualifiedname>
         <param>
           <type>const <ref refid="classOxTS_1_1Gal__Cpp_1_1Gad" kindref="compound">Gad</ref> &amp;</type>
           <declname>g</declname>
@@ -235,7 +249,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp" line="56" column="6"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -244,8 +258,8 @@
     <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp" line="20" column="1" bodyfile="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_handler.hpp" bodystart="21" bodyend="57"/>
     <listofallmembers>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a538cd12ad05e58d01b47e76e5ed08f4f" prot="public" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadHandler</scope><name>GadHandler</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a38c690ad8ff1faa6d6be9bd640a1bb2f" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadHandler</scope><name>get_encoder</name></member>
-      <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a9a294a42c5629537b9aaa8453de2991e" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadHandler</scope><name>get_output</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a1516632a7fac9eab8b1da779f70e3adf" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadHandler</scope><name>get_encoder</name></member>
+      <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a0102261dd9be38e29581ed8dafe0fbe3" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadHandler</scope><name>get_output</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a4137d14204aae72b253eb24feec8fc38" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadHandler</scope><name>m_encoder_bin</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a492ad54941afebbf0135a9751ecafe90" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadHandler</scope><name>m_encoder_csv</name></member>
       <member refid="classOxTS_1_1Gal__Cpp_1_1GadHandler_1a9ef967bbda65dd2ca41ddd224b6f0129" prot="private" virt="non-virtual"><scope>OxTS::Gal_Cpp::GadHandler</scope><name>m_encoder_type</name></member>

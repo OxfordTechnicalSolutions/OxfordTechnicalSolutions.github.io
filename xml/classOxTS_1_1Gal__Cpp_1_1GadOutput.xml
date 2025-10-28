@@ -1,16 +1,17 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classOxTS_1_1Gal__Cpp_1_1GadOutput" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>OxTS::Gal_Cpp::GadOutput</compoundname>
     <derivedcompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadOutputFile" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadOutputFile</derivedcompoundref>
     <derivedcompoundref refid="classOxTS_1_1Gal__Cpp_1_1GadOutputUdp" prot="public" virt="non-virtual">OxTS::Gal_Cpp::GadOutputUdp</derivedcompoundref>
     <includes local="no">gad_output.hpp</includes>
-      <sectiondef kind="public-func">
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="classOxTS_1_1Gal__Cpp_1_1GadOutput_1a69f31920b2c3506c6514c89ed7900a9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
         <definition>virtual OxTS::Gal_Cpp::GadOutput::~GadOutput</definition>
         <argsstring>()</argsstring>
         <name>~GadOutput</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadOutput::~GadOutput</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -25,6 +26,7 @@
         <definition>virtual void OxTS::Gal_Cpp::GadOutput::OutputPacket</definition>
         <argsstring>(const std::uint8_t *const packet, const std::size_t packet_size)=0</argsstring>
         <name>OutputPacket</name>
+        <qualifiedname>OxTS::Gal_Cpp::GadOutput::OutputPacket</qualifiedname>
         <param>
           <type>const std::uint8_t *const</type>
           <declname>packet</declname>
@@ -42,7 +44,7 @@
         </inbodydescription>
         <location file="/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_output/gad_output.hpp" line="26" column="14"/>
       </memberdef>
-      </sectiondef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

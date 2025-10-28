@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="oxts__arrays_8hpp" kind="file" language="C++">
     <compoundname>oxts_arrays.hpp</compoundname>
     <includes local="no">cstddef</includes>
@@ -9,11 +9,15 @@
     <includedby refid="oxts__misra_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp</includedby>
     <includedby refid="oxts__sockets_8hpp" local="yes">/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp</includedby>
     <incdepgraph>
-      <node id="5">
-        <label>cmath</label>
-      </node>
-      <node id="3">
-        <label>array</label>
+      <node id="1">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_arrays.hpp</label>
+        <link refid="oxts__arrays_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
       <node id="4">
         <label>oxts_misra.hpp</label>
@@ -23,24 +27,32 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
+      <node id="3">
+        <label>array</label>
+      </node>
+      <node id="5">
+        <label>cmath</label>
+      </node>
       <node id="2">
         <label>cstddef</label>
-      </node>
-      <node id="1">
-        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_arrays.hpp</label>
-        <link refid="oxts__arrays_8hpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
       <node id="3">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad.hpp</label>
         <link refid="gad_8hpp"/>
+      </node>
+      <node id="4">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp</label>
+        <link refid="gad__defines_8hpp"/>
+      </node>
+      <node id="1">
+        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_arrays.hpp</label>
+        <link refid="oxts__arrays_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_misra.hpp</label>
@@ -50,21 +62,9 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/gad_defines.hpp</label>
-        <link refid="gad__defines_8hpp"/>
-      </node>
       <node id="5">
         <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_sockets.hpp</label>
         <link refid="oxts__sockets_8hpp"/>
-      </node>
-      <node id="1">
-        <label>/home/runner/work/gad-sdk/gad-sdk/oxts-sdk-gal-cpp/include/oxts/gal-cpp/oxts_arrays.hpp</label>
-        <link refid="oxts__arrays_8hpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
       </node>
     </invincdepgraph>
     <innernamespace refid="namespaceOxTS">OxTS</innernamespace>
